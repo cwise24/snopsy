@@ -61,14 +61,6 @@ html_static_path = ['_static']
 
 
 # html_theme_options = {}
-html_theme_options = {
-    'site_name': 'SNOPsy',
-    'next_prev_link': True
-#    'github_banner': 'true',
-#    'github_user': 'jmcalalang',
-#    'github_button': 'true'
-
-}
 
 
 
