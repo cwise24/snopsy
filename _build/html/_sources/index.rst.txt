@@ -10,8 +10,8 @@ Welcome to SNOPsy's documentation!
    :maxdepth: 2
    :caption: Contents:
    :glob:
-
-    docs/What_is_Ansible.rst
+   
+   docs/What_is_Ansible
 
 Indices and tables
 ==================
