@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Search &mdash; SNOPsy .1 documentation</title>
+  <title>Commands &mdash; SNOPsy .1 documentation</title>
   
 
   
@@ -25,7 +25,6 @@
         <script type="text/javascript" src="_static/underscore.js"></script>
         <script type="text/javascript" src="_static/doctools.js"></script>
         <script type="text/javascript" src="_static/language_data.js"></script>
-        <script type="text/javascript" src="_static/searchtools.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -35,7 +34,7 @@
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" /> 
+    <link rel="search" title="Search" href="search.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -62,7 +61,7 @@
 
           
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="#" method="get">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -79,27 +78,11 @@
               
             
             
-              <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="What_is_Ansible.html">Ansible</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Terminology.html">Terminology</a></li>
-<li class="toctree-l1"><a class="reference internal" href="SSH_Key_Generation.html">SSH Key Generation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Installation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Linux.html">Linux</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Configurations.html">Configurations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Repository.html">Repository</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Adhoc.html">Adhoc</a></li>
-<li class="toctree-l1"><a class="reference internal" href="YAML.html">YAML</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Linting.html">Linting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Playbook.html">Playbook</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Commands.html">Commands</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Debug1.html">Debug1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Jinja_Playbook.html">Jinja Playbook</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Debug2.html">Debug2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Loop.html">Loop</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Facts.html">Facts</a></li>
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Commands</a></li>
 </ul>
-
+</div>
             
           
         </div>
@@ -143,12 +126,14 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Search</li>
+      <li>Commands</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
+            <a href="_sources/Commands.rst.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
     
@@ -160,19 +145,32 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <noscript>
-  <div id="fallback" class="admonition warning">
-    <p class="last">
-      Please activate JavaScript to enable the search
-      functionality.
-    </p>
-  </div>
-  </noscript>
+  <div class="section" id="commands">
+<h1>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h1>
+<p>To run this playbook:</p>
+<p>Make suer you are in the working directory for both your play and inventory</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">ansible_lab</span>
 
-  
-  <div id="search-results">
-  
-  </div>
+<span class="n">ansible</span><span class="o">-</span><span class="n">playbook</span> <span class="o">-</span><span class="n">i</span> <span class="n">inventory</span> <span class="n">ios</span><span class="o">.</span><span class="n">yml</span>
+</pre></div>
+</div>
+<p>Other switches that can be added:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>-b for <em>become</em></p></li>
+<li><p>-K <em>ask for password</em></p></li>
+<li><p>-e <em>pass extra varialbes in</em></p></li>
+</ul>
+</div></blockquote>
+<p>Extra runs with verbose (for troubleshooting):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ansible</span><span class="o">-</span><span class="n">playbook</span> <span class="o">-</span><span class="n">i</span> <span class="n">inventory</span> <span class="n">ios</span><span class="o">.</span><span class="n">yml</span> <span class="o">-</span><span class="n">v</span>
+<span class="n">ansible</span><span class="o">-</span><span class="n">playbook</span> <span class="o">-</span><span class="n">i</span> <span class="n">inventory</span> <span class="n">ios</span><span class="o">.</span><span class="n">yml</span> <span class="o">-</span><span class="n">vv</span>
+<span class="n">ansible</span><span class="o">-</span><span class="n">playbook</span> <span class="o">-</span><span class="n">i</span> <span class="n">inventory</span> <span class="n">ios</span><span class="o">.</span><span class="n">yml</span> <span class="o">-</span><span class="n">vvv</span>
+<span class="n">ansible</span><span class="o">-</span><span class="n">playbook</span> <span class="o">-</span><span class="n">i</span> <span class="n">inventory</span> <span class="n">ios</span><span class="o">.</span><span class="n">yml</span> <span class="o">-</span><span class="n">vvvv</span>
+</pre></div>
+</div>
+</div>
+
 
            </div>
            
@@ -210,14 +208,7 @@
   
   
     
-  
-  <script type="text/javascript">
-    jQuery(function() { Search.loadIndex("searchindex.js"); });
-  </script>
-  
-  <script type="text/javascript" id="searchindexloader"></script>
    
-
 
 </body>
 </html>

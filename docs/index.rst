@@ -15,23 +15,23 @@ This serves as a starting point to F5's SUPER-NETOPS (SNOPs) training
    :caption: Contents:
    :glob:
    
-   docs/What_is_Ansible
-   docs/Terminology
-   docs/SSH_Key_Generation
-   docs/Installation
-   docs/Linux
-   docs/Configurations
-   docs/Repository
-   docs/Adhoc
-   docs/YAML
-   docs/Linting
-   docs/Playbook
-   docs/Commands
-   docs/Debug1
-   docs/Jinja_Playbook
-   docs/Debug2
-   docs/Loop
-   docs/Facts
+   What_is_Ansible
+   Terminology
+   SSH_Key_Generation
+   Installation
+   Linux
+   Configurations
+   Repository
+   Adhoc
+   YAML
+   Linting
+   Playbook
+   Commands
+   Debug1
+   Jinja_Playbook
+   Debug2
+   Loop
+   Facts
 
 Indices and tables
 ==================

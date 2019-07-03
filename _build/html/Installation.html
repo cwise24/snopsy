@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>&lt;no title&gt; &mdash; SNOPsy .1 documentation</title>
+  <title>Installation &mdash; SNOPsy .1 documentation</title>
   
 
   
@@ -79,7 +79,14 @@
             
             
               <!-- Local TOC -->
-              <div class="local-toc"><ul class="simple">
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Installation</a><ul>
+<li><a class="reference internal" href="#macos">MacOS</a></li>
+<li><a class="reference internal" href="#linux">Linux</a></li>
+<li><a class="reference internal" href="#windows">Windows</a></li>
+<li><a class="reference internal" href="#docker">Docker</a></li>
+</ul>
+</li>
 </ul>
 </div>
             
@@ -125,13 +132,13 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>&lt;no title&gt;</li>
+      <li>Installation</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/contents.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Installation.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -144,7 +151,64 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  
+  <div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="macos">
+<h2>MacOS<a class="headerlink" href="#macos" title="Permalink to this headline">¶</a></h2>
+<p>Install <a class="reference external" href="https://howtogeek.com/211541/homebrew-for-os-x-easily-installs-desktop-apps-and-terminal-utilities/">homebrew</a></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>brew install python3</p></li>
+<li><p>pip3 install ansible</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="linux">
+<h2>Linux<a class="headerlink" href="#linux" title="Permalink to this headline">¶</a></h2>
+<p>Install python3-pip (apt/yum)</p>
+<ul class="simple">
+<li><p>pip3 install ansible</p></li>
+</ul>
+</div>
+<div class="section" id="windows">
+<h2>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Just move to linux already, Windows is</div>
+<div class="line">Follow the Docker CE link below</div>
+</div>
+</div>
+<div class="section" id="docker">
+<h2>Docker<a class="headerlink" href="#docker" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Install Docker CE <a class="reference external" href="https://docs.docker.com/install/">link</a></div>
+<div class="line">Run the Ansible container:</div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">pull</span> <span class="n">cwise24</span><span class="o">/</span><span class="n">ansiblelab</span><span class="p">:</span><span class="n">latest</span>
+<span class="n">docker</span> <span class="n">run</span> <span class="o">-</span><span class="n">p</span> <span class="mi">2222</span><span class="p">:</span><span class="mi">22</span> <span class="o">--</span><span class="n">name</span> <span class="n">ansiblec</span> <span class="o">-</span><span class="n">dit</span> <span class="n">cwise24</span><span class="o">/</span><span class="n">ansiblelab</span>
+</pre></div>
+</div>
+<p>To run the Ansible container’s shell:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">exec</span> <span class="o">-</span><span class="n">it</span> <span class="n">ansiblec</span> <span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">sh</span>
+</pre></div>
+</div>
+<p>This will open a shell to the container as the user ‘ansible’</p>
+<p>Suggested list of packages to install:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Ansible</p></li>
+<li><p>Yamllint</p></li>
+<li><p>Jmespath</p></li>
+<li><p>Netmiko</p></li>
+<li><p>git</p></li>
+</ul>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you are using the container, the above packages have been installed</p>
+</div>
+</div>
+</div>
+
 
            </div>
            

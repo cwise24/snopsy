@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Search &mdash; SNOPsy .1 documentation</title>
+  <title>SSH Key Generation &mdash; SNOPsy .1 documentation</title>
   
 
   
@@ -25,7 +25,6 @@
         <script type="text/javascript" src="_static/underscore.js"></script>
         <script type="text/javascript" src="_static/doctools.js"></script>
         <script type="text/javascript" src="_static/language_data.js"></script>
-        <script type="text/javascript" src="_static/searchtools.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -35,7 +34,7 @@
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" /> 
+    <link rel="search" title="Search" href="search.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -62,7 +61,7 @@
 
           
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="#" method="get">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -79,27 +78,11 @@
               
             
             
-              <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="What_is_Ansible.html">Ansible</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Terminology.html">Terminology</a></li>
-<li class="toctree-l1"><a class="reference internal" href="SSH_Key_Generation.html">SSH Key Generation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Installation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Linux.html">Linux</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Configurations.html">Configurations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Repository.html">Repository</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Adhoc.html">Adhoc</a></li>
-<li class="toctree-l1"><a class="reference internal" href="YAML.html">YAML</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Linting.html">Linting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Playbook.html">Playbook</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Commands.html">Commands</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Debug1.html">Debug1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Jinja_Playbook.html">Jinja Playbook</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Debug2.html">Debug2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Loop.html">Loop</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Facts.html">Facts</a></li>
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">SSH Key Generation</a></li>
 </ul>
-
+</div>
             
           
         </div>
@@ -143,12 +126,14 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Search</li>
+      <li>SSH Key Generation</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
+            <a href="_sources/SSH_Key_Generation.rst.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
     
@@ -160,19 +145,28 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <noscript>
-  <div id="fallback" class="admonition warning">
-    <p class="last">
-      Please activate JavaScript to enable the search
-      functionality.
-    </p>
-  </div>
-  </noscript>
+  <div class="section" id="ssh-key-generation">
+<h1>SSH Key Generation<a class="headerlink" href="#ssh-key-generation" title="Permalink to this headline">¶</a></h1>
+<p>Create Public and Private key pair:</p>
+<p>From a terminal screen you can generate a ssh key of type (-t) rsa and length (-b) 2048.</p>
+<blockquote>
+<div><blockquote>
+<div><p><cite>ssh-keygen -t rsa -b 2048</cite></p>
+</div></blockquote>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/ssh_keygen.png"><img alt="_images/ssh_keygen.png" src="_images/ssh_keygen.png" style="width: 608.0px; height: 306.40000000000003px;" /></a>
+<p class="caption"><span class="caption-text">Fig 1</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+</div></blockquote>
+<p>The above command would produce two files:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>ansible_key</p></li>
+<li><p>ansible_key.pub</p></li>
+</ul>
+</div></blockquote>
+</div>
 
-  
-  <div id="search-results">
-  
-  </div>
 
            </div>
            
@@ -210,14 +204,7 @@
   
   
     
-  
-  <script type="text/javascript">
-    jQuery(function() { Search.loadIndex("searchindex.js"); });
-  </script>
-  
-  <script type="text/javascript" id="searchindexloader"></script>
    
-
 
 </body>
 </html>
