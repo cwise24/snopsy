@@ -1,0 +1,13 @@
+
+- hosts: 1.1.1.1
+   gather_facts: no
+
+  vars_files:
+       ext_vars.yml
+
+
+  tasks:
+
+   - name: Some task here
+     module: 
+       module_commands:

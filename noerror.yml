@@ -1,0 +1,8 @@
+---
+- hosts: 1.1.1.1
+  gather_facts: false
+
+
+  tasks:
+
+  - name: task here
