@@ -12,6 +12,22 @@ Welcome to SNOPsy's documentation!
    :glob:
    
    docs/What_is_Ansible
+   docs/Terminology
+   docs/SSH_Key_Generation
+   docs/Installation
+   docs/Linux
+   docs/Configurations
+   docs/Repository
+   docs/Adhoc
+   docs/YAML
+   docs/Linting
+   docs/Playbook
+   docs/Commands
+   docs/Debug1
+   docs/Jinja_Playbook
+   docs/Debug2
+   docs/Loop
+   docs/Facts
 
 Indices and tables
 ==================
