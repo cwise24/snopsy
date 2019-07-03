@@ -3,6 +3,13 @@ Linux
 
 .. centered::  Some useful Linux commands
 
+Help
+
+::
+
+   man          { the 'man' pages }
+
+
 vi or visual editor
 
 ::
@@ -31,4 +38,4 @@ Files
 ::
 
   cat            { print contents of a file }
-  
+  rm             { remove file }
