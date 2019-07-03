@@ -1,5 +1,5 @@
 Installation
-=======
+=============
 
 MacOS
 ~~~~~~~
@@ -51,3 +51,4 @@ Suggested list of packages to install:
  - git
 
 .. note:: If you are using the container, the above packages have been installed
+

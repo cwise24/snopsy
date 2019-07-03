@@ -1,5 +1,5 @@
 Repository
-=======
+===========
 
 
 Create directories to server as our local repository
@@ -66,3 +66,5 @@ We can now edit files locally and push them to our remote repository by
 ::
 
    git push
+   
+   

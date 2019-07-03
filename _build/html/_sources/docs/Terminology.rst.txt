@@ -1,8 +1,9 @@
 Terminology
-=======
+============
 
 Ansible Terms
-------
+--------------
+
  - Adhoc
  - Modules
  - Inventory
@@ -15,7 +16,8 @@ Ansible Terms
 
 
 Additional Terms
--------
+-----------------
+
  - Git
  - Linting (yamllint)
  - CI/CD
