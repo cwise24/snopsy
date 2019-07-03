@@ -44,6 +44,10 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 # -- Options for HTML output -------------------------------------------------
 
+# The name of the Pygments (syntax highlighting) style to use.
+pygments_style = 'sphinx'
+
+
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
@@ -54,3 +58,17 @@ html_theme = 'sphinx_rtd_theme'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+
+# html_theme_options = {}
+html_theme_options = {
+    'site_name': 'SNOPsy',
+    'next_prev_link': True
+#    'github_banner': 'true',
+#    'github_user': 'jmcalalang',
+#    'github_button': 'true'
+
+}
+
+
+
