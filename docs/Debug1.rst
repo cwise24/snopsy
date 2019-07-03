@@ -9,7 +9,7 @@ If we print (*debug*) our registed variable *'vland'* we see...a bunch of garbag
    :scale: 40%
    :align: center
 
-    Fig 3
+.. centered:: Fig 3
 
 
 However, from this mess we can see what we want. In Python a list is denoted by '[ ]', and at *stdout_lines* we see the start of a list `[` followed by another list `[`.  This means we have a list of lists and all lists have indexes.

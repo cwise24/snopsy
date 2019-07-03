@@ -1,5 +1,5 @@
 Configurations
-=======
+===============
 
 For Mac you'll want to associate this new key for use (automatically), otherwise you will have to use the `-i` switch every time. 
 

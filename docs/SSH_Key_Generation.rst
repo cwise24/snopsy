@@ -1,8 +1,6 @@
 SSH Key Generation
-==============
+===================
 
-   .. |br| raw:: html
-      <br>
 
 Create Public and Private key pair::
 
@@ -25,3 +23,5 @@ The above command would produce two files:
 
  - ansible_key
  - ansible_key.pub
+ 
+ 
