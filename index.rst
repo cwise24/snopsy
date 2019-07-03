@@ -8,6 +8,7 @@ Welcome to SNOPsy's documentation!
 
 .. toctree::
    :maxdepth: 1
+   :caption: Contests
 
    What is Ansible
 
