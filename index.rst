@@ -11,7 +11,7 @@ Welcome to SNOPsy's documentation!
    :caption: Contents:
    :glob:
 
-    docs/What_is_Ansible
+    docs/What_is_Ansible.rst
 
 Indices and tables
 ==================
