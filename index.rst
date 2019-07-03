@@ -10,7 +10,7 @@ Welcome to SNOPsy's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-    What is Ansible
+    docs/What is Ansible
 
 Indices and tables
 ==================
