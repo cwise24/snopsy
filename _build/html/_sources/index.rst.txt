@@ -9,8 +9,9 @@ Welcome to SNOPsy's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+   :glob:
 
-
+    docs/What is Ansible
 
 Indices and tables
 ==================
