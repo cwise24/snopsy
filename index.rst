@@ -8,7 +8,7 @@ Devops and Ansible, An Intro
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
+   :titlesonly:
    :caption: Contents:
    :glob:
    
