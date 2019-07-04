@@ -7,9 +7,11 @@ Devops and Ansible, An Intro
 ==================================
 
 This serves as a starting point to F5's SUPER-NETOPS (`SNOPs <https://f5.com/education/super-netops-training>`_) training
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Authored by `Chad Wise <https://github.com/cwise24>`_
+
+Contributors: `TonyPNode <https://github.com/tonypnode>`_
 
 
 .. toctree::
