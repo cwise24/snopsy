@@ -13,8 +13,7 @@ Authored by `Chad Wise <https://github.com/cwise24>`_
 
 
 .. toctree::
-   :maxdepth: 2
-   :titlesonly:
+   :maxdepth: 1
    :caption: Contents:
    :glob:
    
@@ -35,7 +34,7 @@ Authored by `Chad Wise <https://github.com/cwise24>`_
    Debug2
    Loop
    Facts
-   modules/*
+   module*/module*
 
 Indices and tables
 ==================
