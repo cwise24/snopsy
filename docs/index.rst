@@ -9,14 +9,15 @@ Devops and Ansible, An Intro
 This serves as a starting point to F5's SUPER-NETOPS (`SNOPs <https://f5.com/education/super-netops-training>`_) training
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Authored by `Chad Wise <https://github.com/cwise24>`_
-
+| Authored by `Chad Wise <https://github.com/cwise24>`_
+| Contributors: `TonyPNode <https://github.com/tonypnode>`_
 
 .. toctree::
    :maxdepth: 1
    :caption: Contents:
    :glob:
    
+<<<<<<< HEAD
    What_is_Ansible
    Terminology
    SSH_Key_Generation
@@ -34,6 +35,8 @@ Authored by `Chad Wise <https://github.com/cwise24>`_
    Debug2
    Loop
    Facts
+=======
+>>>>>>> master
    module*/module*
 
 Indices and tables
