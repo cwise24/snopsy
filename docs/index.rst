@@ -17,23 +17,6 @@ Authored by `Chad Wise <https://github.com/cwise24>`_
    :caption: Contents:
    :glob:
    
-   What_is_Ansible
-   Terminology
-   SSH_Key_Generation
-   Installation
-   Linux
-   Configurations
-   Repository
-   Adhoc
-   YAML
-   Linting
-   Playbook
-   Commands
-   Debug1
-   Jinja_Playbook
-   Debug2
-   Loop
-   Facts
    module*/module*
 
 Indices and tables
