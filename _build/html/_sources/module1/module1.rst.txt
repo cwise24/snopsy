@@ -1,0 +1,27 @@
+Module 1
+=========
+
+This section contains 
+
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   1_What_is_Ansible
+   2_Terminology
+   3_SSH_Key_Generation
+   4_Installation
+   5_Linux
+   6_Configurations
+   7_Repository
+   8_Adhoc
+   9_YAML
+   10_Linting
+   11_Playbook
+   12_Commands
+   13_Debug1
+   14_Jinja_Playbook
+   15_Debug2
+   16_Loop
+   17_Facts

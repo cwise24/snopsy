@@ -1,0 +1,267 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Commands &mdash; SNOPsy .1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Debug1" href="13_Debug1.html" />
+    <link rel="prev" title="Playbook" href="11_Playbook.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> SNOPsy
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../What_is_Ansible.html">Ansible</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Terminology.html">Terminology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SSH_Key_Generation.html">SSH Key Generation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Linux.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Configurations.html">Configurations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Repository.html">Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Adhoc.html">Adhoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../YAML.html">YAML</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Linting.html">Linting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Playbook.html">Playbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Commands.html">Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Debug1.html">Debug1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Jinja_Playbook.html">Jinja Playbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Debug2.html">Debug2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Loop.html">Loop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Facts.html">Facts</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="module1.html">Module 1</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="1_What_is_Ansible.html">Ansible</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_Terminology.html">Terminology</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_SSH_Key_Generation.html">SSH Key Generation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_Installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5_Linux.html">Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="6_Configurations.html">Configurations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="7_Repository.html">Repository</a></li>
+<li class="toctree-l2"><a class="reference internal" href="8_Adhoc.html">Adhoc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="9_YAML.html">YAML</a></li>
+<li class="toctree-l2"><a class="reference internal" href="10_Linting.html">Linting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="11_Playbook.html">Playbook</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="13_Debug1.html">Debug1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="14_Jinja_Playbook.html">Jinja Playbook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="15_Debug2.html">Debug2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="16_Loop.html">Loop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="17_Facts.html">Facts</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../module2/module2.html">Module 2</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">SNOPsy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="module1.html">Module 1</a> &raquo;</li>
+        
+      <li>Commands</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/module1/12_Commands.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="commands">
+<h1>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h1>
+<p>To run this playbook:</p>
+<p>Make suer you are in the working directory for both your play and inventory</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">ansible_lab</span>
+
+<span class="n">ansible</span><span class="o">-</span><span class="n">playbook</span> <span class="o">-</span><span class="n">i</span> <span class="n">inventory</span> <span class="n">ios</span><span class="o">.</span><span class="n">yml</span>
+</pre></div>
+</div>
+<p>Other switches that can be added:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>-b for <em>become</em></p></li>
+<li><p>-K <em>ask for password</em></p></li>
+<li><p>-e <em>pass extra varialbes in</em></p></li>
+</ul>
+</div></blockquote>
+<p>Extra runs with verbose (for troubleshooting):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ansible</span><span class="o">-</span><span class="n">playbook</span> <span class="o">-</span><span class="n">i</span> <span class="n">inventory</span> <span class="n">ios</span><span class="o">.</span><span class="n">yml</span> <span class="o">-</span><span class="n">v</span>
+<span class="n">ansible</span><span class="o">-</span><span class="n">playbook</span> <span class="o">-</span><span class="n">i</span> <span class="n">inventory</span> <span class="n">ios</span><span class="o">.</span><span class="n">yml</span> <span class="o">-</span><span class="n">vv</span>
+<span class="n">ansible</span><span class="o">-</span><span class="n">playbook</span> <span class="o">-</span><span class="n">i</span> <span class="n">inventory</span> <span class="n">ios</span><span class="o">.</span><span class="n">yml</span> <span class="o">-</span><span class="n">vvv</span>
+<span class="n">ansible</span><span class="o">-</span><span class="n">playbook</span> <span class="o">-</span><span class="n">i</span> <span class="n">inventory</span> <span class="n">ios</span><span class="o">.</span><span class="n">yml</span> <span class="o">-</span><span class="n">vvvv</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="13_Debug1.html" class="btn btn-neutral float-right" title="Debug1" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="11_Playbook.html" class="btn btn-neutral float-left" title="Playbook" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Chad Wise
+      <span class="lastupdated">
+        Last updated on True.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
