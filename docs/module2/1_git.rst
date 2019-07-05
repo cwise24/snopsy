@@ -1,7 +1,9 @@
 Git
 ~~~~
 
-Git
+Git -
+
+created by Linus Torvalds in 2005 for development of the Linux kernel
 
 ::  
 
