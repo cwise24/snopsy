@@ -8,6 +8,7 @@ Ansible
 - Industry adoption
 - Tower
 
+=======
 According to ansible.com:
 ::
     Ansible is a radically simple IT automation engine that automates cloud provisioning,
@@ -25,4 +26,3 @@ a "Source Of Truth".
 Ansible is Free Open Source Software (FOSS), however, `Ansible Tower` is a specific product
 offered by RedHat for enterprise deployments of Ansible. It features a web interface, provides Role Based Access
 Controls (RBAC), enables Teams and Orgs, smart inventories and others.
-

@@ -18,6 +18,26 @@ Contributors: `TonyPNode <https://github.com/tonypnode>`_
    :caption: Contents:
    :glob:
    
+<<<<<<< HEAD
+   What_is_Ansible
+   Terminology
+   SSH_Key_Generation
+   Installation
+   Linux
+   Configurations
+   Repository
+   Adhoc
+   YAML
+   Linting
+   Playbook
+   Commands
+   Debug1
+   Jinja_Playbook
+   Debug2
+   Loop
+   Facts
+=======
+>>>>>>> master
    module*/module*
 
 Indices and tables
