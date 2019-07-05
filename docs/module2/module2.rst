@@ -8,7 +8,8 @@ Module 2
 
    1_git
    2_branch
-   3_pull
-   4_merge
-   5_rebase
-   6_merge_rebase
+   3_clone
+   4_pull
+   5_merge
+   6_rebase
+   7_merge_rebase
