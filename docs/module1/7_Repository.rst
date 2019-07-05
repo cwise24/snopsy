@@ -66,5 +66,3 @@ We can now edit files locally and push them to our remote repository by
 ::
 
    git push
-   
-   

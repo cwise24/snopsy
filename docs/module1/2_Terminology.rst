@@ -22,4 +22,3 @@ Additional Terms
  - Linting (yamllint)
  - CI/CD
  - Pipeline
-

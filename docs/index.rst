@@ -16,32 +16,12 @@ This serves as a starting point to F5's SUPER-NETOPS (`SNOPs <https://f5.com/edu
    :maxdepth: 1
    :caption: Contents:
    :glob:
-   
-<<<<<<< HEAD
-   What_is_Ansible
-   Terminology
-   SSH_Key_Generation
-   Installation
-   Linux
-   Configurations
-   Repository
-   Adhoc
-   YAML
-   Linting
-   Playbook
-   Commands
-   Debug1
-   Jinja_Playbook
-   Debug2
-   Loop
-   Facts
-=======
->>>>>>> master
-   module*/module*
+
+   module1/module1.rst
+   module2/module2.rst
 
 Indices and tables
 ==================
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
