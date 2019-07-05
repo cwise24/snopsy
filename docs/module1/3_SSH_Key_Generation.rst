@@ -22,5 +22,3 @@ The above command would produce two files:
 
  - ansible_key
  - ansible_key.pub
- 
- 
