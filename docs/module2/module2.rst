@@ -6,4 +6,9 @@ Module 2
    :maxdepth: 1
    :glob:
 
-   git*
+   1_git
+   2_branch
+   3_pull
+   4_merge
+   5_rebase
+   6_merge_rebase
