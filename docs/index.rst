@@ -17,8 +17,7 @@ This serves as a starting point to F5's SUPER-NETOPS (`SNOPs <https://f5.com/edu
    :caption: Contents:
    :glob:
 
-   module1/module1.rst
-   module2/module2.rst
+   module*/module*
 
 Indices and tables
 ==================
