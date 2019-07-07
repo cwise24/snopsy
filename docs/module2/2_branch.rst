@@ -15,7 +15,7 @@ users to file issues they've expericed and use to fix those.
 
 ::
 
-    git branch                                    { show the working branch }
+    git branch                      { show the working branch }
     git checkout <branch name>      { command to switch our working branch }
     git checkout -b <new branch>    { creates a new branch }
 
