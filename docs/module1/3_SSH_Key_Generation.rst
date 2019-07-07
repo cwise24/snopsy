@@ -10,7 +10,7 @@ From a terminal screen you can generate a ssh key of type (-t) rsa and length (-
     `ssh-keygen -t rsa -b 2048`
 
 
-   .. figure:: imgs/ssh_keygen.png
+   .. figure:: imgs/ssh_key_gen.png
       :align: center
 
       Fig 1
