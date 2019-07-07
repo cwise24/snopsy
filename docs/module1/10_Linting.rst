@@ -35,5 +35,4 @@ In our example files:
 .. figure:: imgs/lint.png
    :align: center
 
-   Fig 2
-
+   Fig 3
