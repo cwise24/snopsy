@@ -15,9 +15,13 @@ users to file issues they've expericed and use to fix those.
 
 ::
 
-    git branch
-    git checkout <branch name>
-    git checkout -b <new branch>
+    git branch                                    { show the working branch }
+    git checkout <branch name>      { command to switch our working branch }
+    git checkout -b <new branch>    { creates a new branch }
+
+    From module 1 we created our master branch (default branch), let's verify that using:
+
+.. centered:: `git branch`
 
 
 ..  [#] https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell
