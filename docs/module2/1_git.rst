@@ -9,7 +9,7 @@ created by Linus Torvalds in 2005 for development of the Linux kernel
 
     man git 
 
-    GIT(1)                                               Git Manual                                GIT(1)
+    GIT(1)                                    Git Manual                                GIT(1)
     
       NAME
         git - the stupid content tracker
