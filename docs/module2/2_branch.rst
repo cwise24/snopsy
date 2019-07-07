@@ -19,9 +19,16 @@ users to file issues they've expericed and use to fix those.
     git checkout <branch name>      { command to switch our working branch }
     git checkout -b <new branch>    { creates a new branch }
 
-    From module 1 we created our master branch (default branch), let's verify that using:
+From module 1 we created our master branch (default branch), let's verify that using:
+::
 
-.. centered:: `git branch`
+    git branch
+
+Now we will create a new branch *'dev'*, this is where we will make our changes and merge them back into the mainline *Master*
+
+::
+
+    git checkout -b dev 
 
 
 ..  [#] https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell
