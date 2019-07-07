@@ -1,7 +1,7 @@
 Branch 
 ~~~~~~~
 
-Let's first take a definition straight from [#]_ git itself
+Let's first take a definition straight from git [#]_ itself
 
 ::
 
