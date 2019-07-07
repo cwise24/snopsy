@@ -22,3 +22,9 @@ The above command would produce two files:
 
  - ansible_key
  - ansible_key.pub
+
+Let's validate our files exist
+.. figure:: imgs/validate_key.png
+   :align: center
+
+   Fig 2
