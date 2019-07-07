@@ -13,7 +13,7 @@ users to file issues they've expericed and use to fix those.
 
 ..  centered::  Commands we will use for Branch
 
-;;
+::
 
     git branch
     git checkout <branch name>
