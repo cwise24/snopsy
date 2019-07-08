@@ -18,5 +18,5 @@ created by Linus Torvalds in 2005 for development of the Linux kernel
 It is designed for coordinating work among programmers, but it can be used to track changes in any set of files. 
 Its goals include speed, data integrity, and support for distributed, non-linear workflows."
 
-| TL;DR 
+| **TL;DR** 
 | A nice way to manage chaos across distributed teams
