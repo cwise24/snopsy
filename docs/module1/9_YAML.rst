@@ -29,7 +29,7 @@ It's easy to read!
         module:
           module_command:
 
-The three ``---`` dashes indicate the start of a YML file.  Then comes the playbook definitions based on indentions much like that of Python.
+The three  ``---``  dashes indicate the start of a YML file.  Then comes the playbook definitions based on indentions much like that of Python.
 
 We declare what hosts we want to work with or group of hosts based on a inventory file, we can also make an external variable sheet to reference to run our play against. Example, we want to declare how a vlan, a route or a virtual server are built and only allow individuals to pass variables to the play standardizing how we build.
 
