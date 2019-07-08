@@ -13,7 +13,7 @@ To exit vim:
 
 ::
 
-     ``press``  <esc>
+   `press`  <esc>
 
     ``type``  :wq
 
