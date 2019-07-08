@@ -32,7 +32,7 @@ We will need to make a new entry into our inventory file:
 
       - name: Gather F5 Info
         bigip_device_facts:
-          provider:
+          provider: "{{ provider }}"
           gather_subset:
             - system-info
             - interfaces
