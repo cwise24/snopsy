@@ -56,4 +56,5 @@ Once that file is created and saved, let's set our up-stream dev branch and comm
 
     git push --set-upstream git@gitlab.com:<username>/ansible_lab.git dev
 
+.. rubric:: Footnotes
 ..  [#] https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell
