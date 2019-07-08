@@ -44,7 +44,7 @@ Files
 No in scope for this particular training, but build some aliases. These are located in different places depending on your OS and shell. For the BASH shell in Linux
 ::
 
-    vi .bashrc
+    vim .bashrc
 
 From here you can add an aliases
 ::
