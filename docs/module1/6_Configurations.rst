@@ -13,9 +13,9 @@ To exit vim:
 
 ::
 
-    press <esc>
+    ``press`` <esc>
 
-    type  :wq
+    ``type``  :wq
 
 Now we can configure the Ansible config file:
 
