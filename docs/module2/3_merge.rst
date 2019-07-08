@@ -53,3 +53,10 @@ Flipping back over to our Gitlab site
    :scale: 60%
    :align: center
 .. centered:: Fig 6
+
+From here we can click on History
+
+.. figure:: imgs/master_gitlab_box.png
+   :scale: 60%
+   :align: center
+.. centered:: Fig 7
