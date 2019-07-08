@@ -42,13 +42,13 @@ Configurations of yamllint
 Depending on your OS
 
 Container
-- ls usr/lib/python3.7/site-packages/yamllint/conf
+ - ls usr/lib/python3.7/site-packages/yamllint/conf
 
 pip3 on Ubuntu
-- ls /usr/lib/python3/dist-packages/yamllint/conf
+ - ls /usr/lib/python3/dist-packages/yamllint/conf
 
 pip3 on Mac (homebrew)
-- ls /usr/local/lib/python3.7/site-packages/yamllint/conf
+ - ls /usr/local/lib/python3.7/site-packages/yamllint/conf
 
 You will see two files, default and relaxed.  These come included during installatin but you can always make your own, Happy Googling
 
