@@ -33,7 +33,7 @@ Now we will create a new branch *'dev'*, this is where we will make our changes 
 
 This will create a branch locally, We'll now add a README.md to our *dev* branch.
 
-.. sidebar::  Cheat Sheet
+.. sidebar::  Linux Cheat Sheet
 
 
     | i for insert
@@ -43,7 +43,10 @@ This will create a branch locally, We'll now add a README.md to our *dev* branch
 ::
 
     vi README.md
+    This is a readme file
 
+
+Once that file is created and saved, let's set our up-stream dev branch and commit our file
 ::
 
     git push --set-upstream git@gitlab.com:<username>/ansible_lab.git dev
