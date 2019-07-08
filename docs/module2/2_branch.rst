@@ -36,9 +36,9 @@ This will create a branch locally, We'll now add a README.md to our *dev* branch
 .. sidebar::  Cheat Sheet
 
 
-    i for insert
-    esc to exit for saving
-    :wq   write & quit
+    | i for insert
+    | esc to exit for saving
+    | :wq   write & quit
 
 ::
 
