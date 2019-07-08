@@ -31,5 +31,19 @@ Now we will create a new branch *'dev'*, this is where we will make our changes 
 
     git checkout -b dev 
 
+This will create a branch locally, We'll now add a README.md to our *dev* branch.
+
+.. sidebar:: Cheat Sheet
+    i for insert
+    esc to exit for saving
+    :wq   write & quit
+
+::
+
+    vi README.md
+
+::
+
+    git push --set-upstream git@gitlab.com:<username>/ansible_lab.git dev
 
 ..  [#] https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell
