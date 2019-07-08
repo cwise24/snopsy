@@ -1,5 +1,6 @@
 Module 1
 =========
+:github_url: hide
 
 This section touches on a lot of very high level DevOps and Automation practices. In this section you will learn about Linux, Ansible, Git, Linting and how to configure Ansible.
 
