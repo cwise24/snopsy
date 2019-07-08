@@ -14,6 +14,9 @@ created by Linus Torvalds in 2005 for development of the Linux kernel
       NAME
         git -  the stupid content tracker
 
-| is a distributed version-control system for tracking changes in source code during software development. 
-| It is designed for coordinating work among programmers, but it can be used to track changes in any set of files. 
-| Its goals include speed, data integrity, and support for distributed, non-linear workflows.
+"is a distributed version-control system for tracking changes in source code during software development. 
+It is designed for coordinating work among programmers, but it can be used to track changes in any set of files. 
+Its goals include speed, data integrity, and support for distributed, non-linear workflows."
+
+TL;DR 
+A nice way to manage chaos across distributed teams
