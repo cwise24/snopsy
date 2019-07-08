@@ -37,7 +37,7 @@ To run the Ansible container's shell:
 
 ::
 
-    docker exec -it ansiblec /bin/sh
+    docker exec -it ansiblec /bin/bash
 
 
 This will open a shell to the container as the user 'ansible'
@@ -51,4 +51,3 @@ Suggested list of packages to install:
  - git
 
 .. note:: If you are using the container, the above packages have been installed
-
