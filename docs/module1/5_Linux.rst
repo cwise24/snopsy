@@ -51,3 +51,4 @@ From here you can add an aliases
 ::
 
     alias ap='ansible-playbook'
+Now instead of typing `ansible-playbook -i inventory error.yml` you can just use the alias `ap -i inventory error.yml`
