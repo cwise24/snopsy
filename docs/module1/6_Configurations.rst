@@ -13,9 +13,9 @@ To exit vim:
 
 ::
 
-    esc
+    press <esc>
 
-    :wq
+    type  :wq
 
 Now we can configure the Ansible config file:
 
@@ -32,7 +32,7 @@ Now let's get a copy of your public ssh key
 
 ::
 
-    cat .ssh/ansible_lab.pub 
+    cat .ssh/ansible_key.pub 
 
 Copy the output, it should start like below:
 
