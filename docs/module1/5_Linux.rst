@@ -11,11 +11,11 @@ Help - you will find help for any package in the 'man' pages or 'info' pages. Ea
    info <package name>
 
 
-vi or visual editor
+vim or visual editor
 
 ::
 
-  vi <filename> { opens or creates file for editing }
+  vim <filename> { opens or creates file for editing }
   i             { stands for insert and allows you enter text }
   esc           { escape key, exits editor mode }
   :wq           { write quit; saves and quits vi }
