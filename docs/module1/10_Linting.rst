@@ -84,3 +84,8 @@ You will see two files, default and relaxed.  These come included during install
         level: warning
 
 .. centered:: default.yaml
+
+One more "linting" item to cover before we look into plays/playbooks.  We can use anisble to find other issues that are more ansible related
+::
+
+    ansible-playbook error.yml --syntax-check
