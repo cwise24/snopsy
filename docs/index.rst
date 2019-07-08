@@ -6,7 +6,7 @@
 Devops and Ansible, An Intro
 ==================================
 
-This serves as a starting point to F5's SUPER-NETOPS (`SNOPs <https://f5.com/education/super-netops-training>`_) training
+This serves as a starting point to a much deeper training such as F5's SUPER-NETOPS (`SNOPs <https://f5.com/education/super-netops-training>`_) training
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 | Authored by `Chad Wise <https://github.com/cwise24>`_
@@ -18,6 +18,12 @@ This serves as a starting point to F5's SUPER-NETOPS (`SNOPs <https://f5.com/edu
    :glob:
 
    module*/module*
+
+*This is not official training from F5, nor does any support come with it. Rather this was my journey from a NetOps perspective. These represent things I learned, my struggles. 
+As a NetOps person the new terms and agile deployment causes a lot of heartache between teams. NetOps wants stability, DevOps wants programmability and constant update. 
+This training won’t bridge the divide, but can definitely help with faster NetOps processes and higher reliability.
+| 
+Having said that, I do work at F5 as a System Engineer and I’m more than willing to talk about what we do.*
 
 Indices and tables
 ==================
