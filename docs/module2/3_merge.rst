@@ -48,6 +48,7 @@ Remember, this is only a merge locally, you must still push these changed to the
 .. centered:: Fig 5
 
 Flipping back over to our Gitlab site
+
 .. figure:: imgs/master_gitlab.png
    :scale: 60%
    :align: center
