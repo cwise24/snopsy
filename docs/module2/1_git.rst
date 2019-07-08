@@ -3,7 +3,7 @@ Git
 
 Git -
 
-created by Linus Torvalds in 2005 for development of the Linux kernel
+created by Linus Torvalds in 2005 for development of the Linux kernel [#1]_
 
 ::  
 
@@ -16,7 +16,9 @@ created by Linus Torvalds in 2005 for development of the Linux kernel
 
 "is a distributed version-control system for tracking changes in source code during software development. 
 It is designed for coordinating work among programmers, but it can be used to track changes in any set of files. 
-Its goals include speed, data integrity, and support for distributed, non-linear workflows."
+Its goals include speed, data integrity, and support for distributed, non-linear workflows.[#1]_"
 
 | **TL;DR** 
 | A nice way to manage chaos across distributed teams
+
+.. [#1] https://en.wikipedia.org/wiki/Git
