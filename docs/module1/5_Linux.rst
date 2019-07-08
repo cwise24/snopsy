@@ -39,6 +39,7 @@ Files
 ::
 
   cat            { print contents of a file }
+  touch          { creates a blank file; or updates the timestamp on the file } 
   rm             { remove file }
 
 No in scope for this particular training, but build some aliases. These are located in different places depending on your OS and shell. For the BASH shell in Linux
