@@ -36,3 +36,10 @@ Now we call the branch we want to merge into our current working branch.  We wil
    :scale: 60%
    :align: center
 .. centered:: Fig 4
+
+Flipping back over to our Gitlab site
+
+.. figure:: imgs/master_gitlab.png
+   :scale: 60%
+   :align: center
+.. centered:: Fig 5
