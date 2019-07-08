@@ -31,3 +31,8 @@ Now we call the branch we want to merge into our current working branch.  We wil
 ::
 
     git merge dev
+
+.. figure:: imgs/merge_d.png
+   :scale: 60%
+   :align: center
+.. centered:: Fig 4
