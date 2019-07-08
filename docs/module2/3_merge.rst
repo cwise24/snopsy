@@ -54,7 +54,7 @@ Flipping back over to our Gitlab site
    :align: center
 .. centered:: Fig 6
 
-From here we can click on History
+From here we can click on History to view commits that have been made
 
 .. figure:: imgs/master_gitlab_box.png
    :scale: 60%
