@@ -43,7 +43,7 @@ This will create a branch locally, We'll now add a README.md to our *dev* branch
 
 ::
 
-    vi README.md
+    vim README.md
 
 And now insert some text
 
