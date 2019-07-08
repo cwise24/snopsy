@@ -2,7 +2,7 @@ Repository
 ===========
 
 
-Create directories to server as our local repository
+Create directories to serve as our local repository
 
  * mkdir ansible_roles
  * mkdir ansible_lab
