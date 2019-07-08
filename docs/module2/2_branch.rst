@@ -18,6 +18,7 @@ users to file issues they've expericed and use to fix those.
     git branch                      { show the working branch }
     git checkout <branch name>      { command to switch our working branch }
     git checkout -b <new branch>    { creates a new branch }
+    git checkout -d <branch name>   { deletes branch name }
 
 From module 1 we created our master branch (default branch), let's verify that using:
 ::
