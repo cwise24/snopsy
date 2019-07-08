@@ -60,7 +60,7 @@ Now we can verify our new file and branch are present from out Gitlab page
 
 .. figure::  imgs/devb.png
    :scale: 60%
-   :align: centered
+   :align: center
     Fig 1
    
 .. rubric:: Footnotes
