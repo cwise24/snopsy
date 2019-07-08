@@ -56,5 +56,12 @@ Once that file is created and saved, let's set our up-stream dev branch and comm
 
     git push --set-upstream git@gitlab.com:<username>/ansible_lab.git dev
 
+Now we can verify our new file and branch are present from out Gitlab page
+
+.. figure::  imgs/devb.png
+   :scale: 60%
+   :align: centered
+    Fig 1
+   
 .. rubric:: Footnotes
 ..  [#] https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell
