@@ -3,18 +3,19 @@ Linux
 
 .. centered::  Some useful Linux commands
 
-Help
+Help - you will find help for any package in the 'man' pages or 'info' pages. Each switch will be described and some examples. 
 
 ::
 
-   man          { the 'man' pages }
+   man <pachage name>
+   info <package name>
 
 
-vi or visual editor
+vim or visual editor
 
 ::
 
-  vi <filename> { opens or creates file for editing }
+  vim <filename> { opens or creates file for editing }
   i             { stands for insert and allows you enter text }
   esc           { escape key, exits editor mode }
   :wq           { write quit; saves and quits vi }
@@ -38,4 +39,19 @@ Files
 ::
 
   cat            { print contents of a file }
+  touch          { creates a blank file; or updates the timestamp on the file } 
   rm             { remove file }
+
+No in scope for this particular training, but build some aliases. These are located in different places depending on your OS and shell. For the BASH shell in Linux
+::
+
+    vim .bashrc
+
+From here you can add an aliases
+::
+
+    alias ap='ansible-playbook'
+| Now instead of typing 
+| `ansible-playbook -i inventory error.yml` 
+| you can just use the alias 
+| `ap -i inventory error.yml`

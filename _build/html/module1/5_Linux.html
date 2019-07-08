@@ -82,26 +82,6 @@
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<<<<<<< HEAD
-<li class="toctree-l1"><a class="reference internal" href="../What_is_Ansible.html">Ansible</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Terminology.html">Terminology</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../SSH_Key_Generation.html">SSH Key Generation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Installation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Linux.html">Linux</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Configurations.html">Configurations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Repository.html">Repository</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Adhoc.html">Adhoc</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../YAML.html">YAML</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Linting.html">Linting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Playbook.html">Playbook</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Commands.html">Commands</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Debug1.html">Debug1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Jinja_Playbook.html">Jinja Playbook</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Debug2.html">Debug2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Loop.html">Loop</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Facts.html">Facts</a></li>
-=======
->>>>>>> master
 <li class="toctree-l1 current"><a class="reference internal" href="module1.html">Module 1</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="1_What_is_Ansible.html">Ansible</a></li>
 <li class="toctree-l2"><a class="reference internal" href="2_Terminology.html">Terminology</a></li>
@@ -192,12 +172,13 @@
   <div class="section" id="linux">
 <h1>Linux<a class="headerlink" href="#linux" title="Permalink to this headline">¶</a></h1>
 <p class="centered">
-<strong>Some useful Linux commands</strong></p><p>Help</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">man</span>          <span class="p">{</span> <span class="n">the</span> <span class="s1">&#39;man&#39;</span> <span class="n">pages</span> <span class="p">}</span>
+<strong>Some useful Linux commands</strong></p><p>Help - you will find help for any package in the ‘man’ pages or ‘info’ pages. Each switch will be described and some examples.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">man</span> <span class="o">&lt;</span><span class="n">pachage</span> <span class="n">name</span><span class="o">&gt;</span>
+<span class="n">info</span> <span class="o">&lt;</span><span class="n">package</span> <span class="n">name</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>vi or visual editor</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>vi &lt;filename&gt; { opens or creates file for editing }
+<p>vim or visual editor</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>vim &lt;filename&gt; { opens or creates file for editing }
 i             { stands for insert and allows you enter text }
 esc           { escape key, exits editor mode }
 :wq           { write quit; saves and quits vi }
@@ -217,8 +198,23 @@ esc           { escape key, exits editor mode }
 </div>
 <p>Files</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cat</span>            <span class="p">{</span> <span class="nb">print</span> <span class="n">contents</span> <span class="n">of</span> <span class="n">a</span> <span class="n">file</span> <span class="p">}</span>
+<span class="n">touch</span>          <span class="p">{</span> <span class="n">creates</span> <span class="n">a</span> <span class="n">blank</span> <span class="n">file</span><span class="p">;</span> <span class="ow">or</span> <span class="n">updates</span> <span class="n">the</span> <span class="n">timestamp</span> <span class="n">on</span> <span class="n">the</span> <span class="n">file</span> <span class="p">}</span>
 <span class="n">rm</span>             <span class="p">{</span> <span class="n">remove</span> <span class="n">file</span> <span class="p">}</span>
 </pre></div>
+</div>
+<p>No in scope for this particular training, but build some aliases. These are located in different places depending on your OS and shell. For the BASH shell in Linux</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">vim</span> <span class="o">.</span><span class="n">bashrc</span>
+</pre></div>
+</div>
+<p>From here you can add an aliases</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">alias</span> <span class="n">ap</span><span class="o">=</span><span class="s1">&#39;ansible-playbook&#39;</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">Now instead of typing</div>
+<div class="line"><cite>ansible-playbook -i inventory error.yml</cite></div>
+<div class="line">you can just use the alias</div>
+<div class="line"><cite>ap -i inventory error.yml</cite></div>
 </div>
 </div>
 
