@@ -61,7 +61,8 @@ Now we can verify our new file and branch are present from out Gitlab page
 .. figure::  imgs/devb.png
    :scale: 60%
    :align: center
-    Fig 1
+
+.. centered:: Fig 1
    
 .. rubric:: Footnotes
 ..  [#] https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell
