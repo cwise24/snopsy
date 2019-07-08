@@ -11,6 +11,7 @@ From a terminal screen you can generate a ssh key of type (-t) rsa and length (-
 
 
    .. figure:: imgs/ssh_key_gen.png
+      :scale: 40%
       :align: center
 
       Fig 1
@@ -25,6 +26,7 @@ The above command would produce two files:
 
 Let's validate our files exist
    .. figure:: imgs/validate_key.png
+      :scale: 40%
       :align: center
 
       Fig 2
