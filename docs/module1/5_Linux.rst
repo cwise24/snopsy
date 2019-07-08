@@ -3,11 +3,12 @@ Linux
 
 .. centered::  Some useful Linux commands
 
-Help
+Help - you will find help for any package in the 'man' pages or 'info' pages. Each switch will be described and some examples. 
 
 ::
 
-   man          { the 'man' pages }
+   man <pachage name>
+   info <package name>
 
 
 vi or visual editor
@@ -39,3 +40,13 @@ Files
 
   cat            { print contents of a file }
   rm             { remove file }
+
+No in scope for this particular training, but build some aliases. These are located in different places depending on your OS and shell. For the BASH shell in Linux
+::
+
+    vi .bashrc
+
+From here you can add an aliases
+::
+
+    alias ap='ansible-playbook'
