@@ -82,26 +82,6 @@
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<<<<<<< HEAD
-<li class="toctree-l1"><a class="reference internal" href="../What_is_Ansible.html">Ansible</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Terminology.html">Terminology</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../SSH_Key_Generation.html">SSH Key Generation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Installation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Linux.html">Linux</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Configurations.html">Configurations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Repository.html">Repository</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Adhoc.html">Adhoc</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../YAML.html">YAML</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Linting.html">Linting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Playbook.html">Playbook</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Commands.html">Commands</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Debug1.html">Debug1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Jinja_Playbook.html">Jinja Playbook</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Debug2.html">Debug2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Loop.html">Loop</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Facts.html">Facts</a></li>
-=======
->>>>>>> master
 <li class="toctree-l1 current"><a class="reference internal" href="module1.html">Module 1</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="1_What_is_Ansible.html">Ansible</a></li>
 <li class="toctree-l2"><a class="reference internal" href="2_Terminology.html">Terminology</a></li>
@@ -223,16 +203,30 @@
 24
 25
 26
-27</pre></div></td><td class="code"><div class="highlight"><pre><span></span> <span class="l l-Scalar l-Scalar-Plain">---</span>
+27
+28
+29
+30
+31
+32
+33
+34</pre></div></td><td class="code"><div class="highlight"><pre><span></span> <span class="l l-Scalar l-Scalar-Plain">---</span>
  <span class="l l-Scalar l-Scalar-Plain">- hosts</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">[</span><span class="nv">adc</span><span class="p p-Indicator">]</span>
    <span class="nt">gather_facts</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
    <span class="nt">connection</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">local</span>
+
+   <span class="nt">vars</span><span class="p">:</span>
+     <span class="nt">provider</span><span class="p">:</span>
+        <span class="nt">server</span><span class="p">:</span>
+        <span class="nt">user</span><span class="p">:</span>
+        <span class="nt">password</span><span class="p">:</span>
+        <span class="nt">validate_certs</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">no</span>
 
    <span class="nt">tasks</span><span class="p">:</span>
 
    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Gather F5 Info</span>
      <span class="nt">bigip_device_facts</span><span class="p">:</span>
-       <span class="nt">provider</span><span class="p">:</span>
+       <span class="nt">provider</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">provider</span><span class="nv"> </span><span class="s">}}&quot;</span>
        <span class="nt">gather_subset</span><span class="p">:</span>
          <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">system-info</span>
          <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">interfaces</span>

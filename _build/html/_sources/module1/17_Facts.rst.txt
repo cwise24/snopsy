@@ -20,12 +20,19 @@ We will need to make a new entry into our inventory file:
     - hosts: [adc]
       gather_facts: false
       connection: local
+    
+      vars:
+        provider:
+           server:
+           user:
+           password:
+           validate_certs: no  
 
       tasks:
 
       - name: Gather F5 Info
         bigip_device_facts:
-          provider:
+          provider: "{{ provider }}"
           gather_subset:
             - system-info
             - interfaces

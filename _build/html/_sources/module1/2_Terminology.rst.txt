@@ -15,11 +15,11 @@ Ansible Terms
  - Debugging (verbosity)
 
 
-Additional Terms
+DevOps Terms
 -----------------
 
  - Git
  - Linting (yamllint)
- - CI/CD
- - Pipeline
-
+ - CI/CD Pipeline
+ - Agile
+ - API/Rest
