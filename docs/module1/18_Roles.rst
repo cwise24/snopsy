@@ -2,6 +2,9 @@ Roles
 ======
 
 Definintion:
+"Roles are a robust feature of Ansible that facilitate reuse and further promote modularization of configuration, but Ansible roles are often overlooked in lieu of straightforward playbooks for the task at hand. The good news is that Ansible roles are simple to get set up and allow for complexity when necessary" [#]_
+
+With roles we can define how things get built, what actions need to be taken after (i.e. restart webserver after config file is updated) and make all of this modular to be consumed by others.
 
 
 Let's use Ansible Galaxy to build our file structure for our role ``ansible_role``
@@ -36,3 +39,7 @@ Handlers
 
 Meta
   * main.yml
+
+:.. rubric:: Footnote
+
+.. [#] https://linuxacademy.com/blog/red-hat/ansible-roles-explained/
