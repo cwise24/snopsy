@@ -50,7 +50,7 @@ pip3 on Ubuntu
 pip3 on Mac (homebrew)
  - ``ls /usr/local/lib/python3.7/site-packages/yamllint/conf``
 
-You will see two files, default and relaxed.  These come included during installatin but you can always make your own, Happy Googling
+You will see two files, default and relaxed.  These come included during installatin but you can always make your own, Happy `Googling <https://buildmedia.readthedocs.org/media/pdf/yamllint/stable/yamllint.pdf>`_
 
 .. code-block:: yaml
    :linenos:
