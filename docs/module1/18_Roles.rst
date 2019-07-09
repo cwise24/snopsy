@@ -35,5 +35,4 @@ Handlers
  * main.yml
 
  Meta
- ******
   * main.yml
