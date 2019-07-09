@@ -23,6 +23,7 @@ Ansible Galaxy has now made our directory ``ansible_role`` and the complete fold
 .. centered:: Fig 9
 
 Folder breakdown
+^^^^^^^^^^^^^^
 
 Tasks
  * main.yml - this is file will contain our plays; this serves as the same ``tasks`` section of our playbook
@@ -34,5 +35,5 @@ Handlers
  * main.yml
 
  Meta
- +++++
+ ******
   * main.yml
