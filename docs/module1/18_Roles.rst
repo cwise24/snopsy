@@ -40,6 +40,6 @@ Handlers
 Meta
   * main.yml
 
-:.. rubric:: Footnote
+.. rubric:: Footnote
 
 .. [#] https://linuxacademy.com/blog/red-hat/ansible-roles-explained/
