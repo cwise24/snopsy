@@ -11,7 +11,8 @@ and merging updates in.
    1_git
    2_branch
    3_merge
-   4_ pull
-   5_clone
-   6_rebase
-   7_merge_rebase
+   4_pull
+   5_ clone
+   6_fork
+   7_rebase
+   8_merge_rebase
