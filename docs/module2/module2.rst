@@ -12,6 +12,6 @@ and merging updates in.
    2_branch
    3_merge
    4_pull
-   5_ operations
+   5_operations
    7_rebase
    8_merge_rebase
