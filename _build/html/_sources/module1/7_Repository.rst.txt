@@ -32,19 +32,19 @@ Let's configure our git config
   git config --global user.name "username"
 
 
-This marks all files '.' in the working directory to be added to stagging
+This marks all files ``.`` in the working directory to be added to stagging
 
 ::
 
     git add .
 
-Now we can move the stagged files to commit.  We use the *'-m'* for the commit message and will see this in Gitlab.
+Now we can move the stagged files to commit.  We use the ``-m`` for the commit message and will see this in Gitlab.
 
 ::
 
     git commit -m "initial push"
 
-.. warning:: Make sure you use the switch -m and add a message
+.. warning:: Make sure you use the switch ``-m`` and add a message
     
 Now let's set the remote repository (Gitlab) and sync our local files to the remote master
 
@@ -59,7 +59,7 @@ You can also see what branches you have within your repository:
     git branch
     * master
 
-This shows the branch *'master'* that we just made and that we are in that branch denoted by the '*'
+This shows the branch *'master'* that we just made and that we are in that branch denoted by the ``*``
 
 We can now edit files locally and push them to our remote repository by
 
