@@ -3,11 +3,11 @@ Operations
 
 Clone
 ^^^^^
-
+define
 
 Fork
 ^^^^
-
+define
 
 Locations
 ^^^^^^^^
