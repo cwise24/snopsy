@@ -100,6 +100,7 @@
 <li class="toctree-l2"><a class="reference internal" href="15_Debug2.html">Debug2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="16_Loop.html">Loop</a></li>
 <li class="toctree-l2"><a class="reference internal" href="17_Facts.html">Facts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="18_Roles.html">Roles</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../module2/module2.html">Module 2</a></li>
@@ -171,15 +172,15 @@
             
   <div class="section" id="configurations">
 <h1>Configurations<a class="headerlink" href="#configurations" title="Permalink to this headline">¶</a></h1>
-<p>For Mac you’ll want to associate this new key for use (automatically), otherwise you will have to use the <cite>-i</cite> switch every time.</p>
+<p>For Mac you’ll want to associate this new key for use (automatically), otherwise you will have to use the  <code class="docutils literal notranslate"><span class="pre">-i</span></code>  switch every time.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">vim</span> <span class="o">.</span><span class="n">ssh</span><span class="o">/</span><span class="n">config</span>
 <span class="n">IdentityFile</span> <span class="o">~/.</span><span class="n">ssh</span><span class="o">/</span><span class="n">ansible_key</span>
 </pre></div>
 </div>
 <p>To exit vim:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">press</span> <span class="o">&lt;</span><span class="n">esc</span><span class="o">&gt;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">press</span>  <span class="o">&lt;</span><span class="n">esc</span><span class="o">&gt;</span>
 
-<span class="nb">type</span>  <span class="p">:</span><span class="n">wq</span>
+<span class="nb">type</span>   <span class="p">:</span><span class="n">wq</span>
 </pre></div>
 </div>
 <p>Now we can configure the Ansible config file:</p>
@@ -202,7 +203,7 @@
 <p>Now go to <a class="reference external" href="https://gitlab.com/users/sign_in">Gitlab</a> and create an account, once that is created upload your public ssh key to Gitlab (ansible_lab.pub)  Click on your icon (top right, then Settings).  On the left hand side you should see SSH Keys</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Make certain you are not about to put your private keys in the cloud</p>
+<p>Make certain you are <code class="docutils literal notranslate"><span class="pre">NOT</span></code> about to put your private keys in the cloud</p>
 </div>
 </div>
 

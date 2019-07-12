@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Adhoc &mdash; SNOPsy .1 documentation</title>
+  <title>Pull &mdash; SNOPsy .1 documentation</title>
   
 
   
@@ -35,8 +35,7 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="YAML" href="9_YAML.html" />
-    <link rel="prev" title="Repository" href="7_Repository.html" /> 
+    <link rel="prev" title="Merge" href="3_merge.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -82,28 +81,14 @@
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="module1.html">Module 1</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="1_What_is_Ansible.html">Ansible</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_Terminology.html">Terminology</a></li>
-<li class="toctree-l2"><a class="reference internal" href="3_SSH_Key_Generation.html">SSH Key Generation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="4_Installation.html">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="5_Linux.html">Linux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="6_Configurations.html">Configurations</a></li>
-<li class="toctree-l2"><a class="reference internal" href="7_Repository.html">Repository</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Adhoc</a></li>
-<li class="toctree-l2"><a class="reference internal" href="9_YAML.html">YAML</a></li>
-<li class="toctree-l2"><a class="reference internal" href="10_Linting.html">Linting</a></li>
-<li class="toctree-l2"><a class="reference internal" href="11_Playbook.html">Playbook</a></li>
-<li class="toctree-l2"><a class="reference internal" href="12_Commands.html">Commands</a></li>
-<li class="toctree-l2"><a class="reference internal" href="13_Debug1.html">Debug1</a></li>
-<li class="toctree-l2"><a class="reference internal" href="14_Jinja_Playbook.html">Jinja Playbook</a></li>
-<li class="toctree-l2"><a class="reference internal" href="15_Debug2.html">Debug2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="16_Loop.html">Loop</a></li>
-<li class="toctree-l2"><a class="reference internal" href="17_Facts.html">Facts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="18_Roles.html">Roles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module1/module1.html">Module 1</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="module2.html">Module 2</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="1_git.html">Git</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_branch.html">Branch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_merge.html">Merge</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Pull</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../module2/module2.html">Module 2</a></li>
 </ul>
 
             
@@ -149,15 +134,15 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="module1.html">Module 1</a> &raquo;</li>
+          <li><a href="module2.html">Module 2</a> &raquo;</li>
         
-      <li>Adhoc</li>
+      <li>Pull</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/module1/8_Adhoc.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/module2/4_pull.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -170,15 +155,20 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="adhoc">
-<h1>Adhoc<a class="headerlink" href="#adhoc" title="Permalink to this headline">¶</a></h1>
-<p>Using Ansible, the host (localhost in this case) is defined and the <code class="docutils literal notranslate"><span class="pre">-m</span></code> switch for <em>module</em> (setup module in this example) will return facts about your machine.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ansible</span> <span class="n">localhost</span> <span class="o">-</span><span class="n">m</span> <span class="n">setup</span>
-</pre></div>
-</div>
-<p>This returns a large amout of data that would be extremely time consuming to sift through.
-Let’s filter it using the <code class="docutils literal notranslate"><span class="pre">-a</span></code> switch for <em>argument</em></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ansible</span> <span class="n">localhost</span> <span class="o">-</span><span class="n">m</span> <span class="n">setup</span> <span class="o">-</span><span class="n">a</span> <span class="s2">&quot;filter=ansible_distribution*&quot;</span>
+  <div class="section" id="pull">
+<h1>Pull<a class="headerlink" href="#pull" title="Permalink to this headline">¶</a></h1>
+<p>We’ve worked on our branches, keeping careful not to let things get out of sync.  But what happens with they do? This is where <code class="docutils literal notranslate"><span class="pre">pull</span></code> shorthand for <code class="docutils literal notranslate"><span class="pre">fetch</span> <span class="pre">+</span> <span class="pre">merge</span></code> come into play.
+With <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code> we can update our local repository with new commits from the remote repository.</p>
+<p>Let’s say you have a remote repository,</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">remote</span> <span class="o">-</span><span class="n">v</span>
+
+<span class="n">git</span> <span class="n">pull</span> <span class="n">git</span><span class="nd">@gitlab</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="o">&lt;</span><span class="n">user</span><span class="o">&gt;/&lt;</span><span class="n">repo</span><span class="o">&gt;.</span><span class="n">git</span>
+<span class="n">git</span> <span class="n">remote</span> <span class="n">add</span> <span class="n">origin</span> <span class="n">git</span><span class="nd">@gitlab</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="o">&lt;</span><span class="n">user</span><span class="o">&gt;/&lt;</span><span class="n">repo</span><span class="o">&gt;.</span><span class="n">git</span>
+<span class="n">git</span> <span class="n">remote</span> <span class="o">-</span><span class="n">v</span>
+  <span class="n">origin</span>    <span class="n">git</span><span class="nd">@gitlab</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="o">&lt;</span><span class="n">user</span><span class="o">&gt;/&lt;</span><span class="n">repo</span><span class="o">&gt;</span><span class="n">t</span><span class="o">.</span><span class="n">git</span> <span class="p">(</span><span class="n">fetch</span><span class="p">)</span>
+  <span class="n">origin</span>    <span class="n">git</span><span class="nd">@gitlab</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="o">&lt;</span><span class="n">user</span><span class="o">&gt;/&lt;</span><span class="n">repo</span><span class="o">&gt;.</span><span class="n">git</span> <span class="p">(</span><span class="n">push</span><span class="p">)</span>
+
+<span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">master</span>
 </pre></div>
 </div>
 </div>
@@ -191,10 +181,8 @@ Let’s filter it using the <code class="docutils literal notranslate"><span cla
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="9_YAML.html" class="btn btn-neutral float-right" title="YAML" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-      
-        <a href="7_Repository.html" class="btn btn-neutral float-left" title="Repository" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="3_merge.html" class="btn btn-neutral float-left" title="Merge" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

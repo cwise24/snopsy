@@ -1,5 +1,3 @@
-:github_url: hide
-
 Module 1
 =========
 
@@ -27,3 +25,4 @@ This section touches on a lot of very high level DevOps and Automation practices
    15_Debug2
    16_Loop
    17_Facts
+   18_Roles
