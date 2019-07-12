@@ -16,3 +16,6 @@ Let's say you have a remote repository,
       origin	git@gitlab.com:<user>/<repo>.git (push)
 
     git push origin master
+
+Operations
+^^^^^^^^^
