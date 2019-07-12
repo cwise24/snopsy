@@ -1,7 +1,12 @@
 Operations
 ~~~~~~~~~~
+Clone
+^^^^^
+Define
 
-
+Fork
+^^^^
+Define
 
 
 ::
@@ -10,5 +15,7 @@ Operations
 
 
 Origin
+Define
 
 Upstream
+Define 
