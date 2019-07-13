@@ -20,21 +20,9 @@ repository and yours so you may contribute back.  You may also pull updates from
 Origin
 ---------
 Your own repository (i.e. git@gitlab.com:your_username/your_reposity.git )
+To set an origin (and origin is just a name space, could easy be just your name)
+``git remote add origin git@gitlab.com:<username>/<repo>.git``
 
 Upstream
 -------------
 The source repository you're forked from (i.e. git@gitlab.com:someonelse_username/their_reposity.git  )
-
-Fonts
-
-Here^
-^^^^^^
-
-Here-
---------
-
-Here~
-~~~~~~
-
-Here=
-======
