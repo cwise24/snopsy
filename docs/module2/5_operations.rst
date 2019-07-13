@@ -23,7 +23,7 @@ Your own repository (i.e. git@gitlab.com:your_username/your_reposity.git )
 
 Upstream
 -------------
-The source repository your forked from (i.e. git@gitlab.com:someonelse_username/their_reposity.git  )
+The source repository you're forked from (i.e. git@gitlab.com:someonelse_username/their_reposity.git  )
 
 Fonts
 
@@ -37,12 +37,4 @@ Here~
 ~~~~~~
 
 Here=
-=====
-
-++++++
-Here+overunder
-++++++
-
 ======
-Here=overunder
-=====
