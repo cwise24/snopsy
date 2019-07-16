@@ -1,7 +1,7 @@
 Configurations
 ===============
 
-For Mac you'll want to associate this new key for use (automatically), otherwise you will have to use the  ``-i``  switch every time. 
+We will associate our newly generated key to be used for Gitlab connections.  Doing it this way, we can separate ssh keys between sites. 
 
 ::
 
