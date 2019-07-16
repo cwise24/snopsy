@@ -16,6 +16,12 @@ repository and yours so you may contribute back.  You may also pull updates from
 
     git remote -v
 
+Origin and Upstream
+^^^^^^^^^^^^^^^^
+.. figure:: imgs/g_o_u.png
+   :scale: 60%
+   :align: center
+.. centered:: Fig 8
 
 Origin
 ---------
