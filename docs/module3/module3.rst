@@ -1,7 +1,7 @@
 Module 3
 =========
 
-This is not necessarily a module of training, this is a reference to all pieces that went into this high levle course
+This is not necessarily a module of training, this is a reference to all pieces that went into this high level course.
 
 .. toctree::
    :maxdepth: 1
