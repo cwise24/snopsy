@@ -45,9 +45,9 @@ Let's view our remote's now
 
     git remote -v
     origin	git@gitlab.com:your_username/ansible_lab.git (fetch)
-   origin	git@gitlab.com:your_username/ansible_lab.git (push)
-   upstream	git@gitlab.com:cwise24/ansible_lab.git (fetch)
-   upstream	git@gitlab.com:cwise24/ansible_lab.git (push)
+    origin	git@gitlab.com:your_username/ansible_lab.git (push)
+    upstream	git@gitlab.com:cwise24/ansible_lab.git (fetch)
+    upstream	git@gitlab.com:cwise24/ansible_lab.git (push)
 
 Merge Request
 ^^^^^^^^^^^
