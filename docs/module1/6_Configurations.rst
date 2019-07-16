@@ -6,7 +6,9 @@ For Mac you'll want to associate this new key for use (automatically), otherwise
 ::
 
     vim .ssh/config
-    IdentityFile ~/.ssh/ansible_key
+    Host gitlab.com
+      HostName gitlab.com
+      IdentityFile ~/.ssh/ansible_key
 
 
 To exit vim:
