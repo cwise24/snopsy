@@ -34,5 +34,13 @@ Upstream
 -------------
 The source repository you're forked from (i.e. git@gitlab.com:someonelse_username/their_reposity.git  )
 
+To set an upstream:
+``git remote add upstream git@gitlab.com:someonelse_username/their_reposity.git``
+
+Let's view our remote's now
+::
+
+    git remote -v
+
 Merge Request
 ^^^^^^^^^^^
