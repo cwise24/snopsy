@@ -42,7 +42,7 @@ Files
   touch          { creates a blank file; or updates the timestamp on the file } 
   rm             { remove file }
 
-No in scope for this particular training, but build some aliases. These are located in different places depending on your OS and shell. For the BASH shell in Linux
+No in scope for this particular training, but build some aliases. These are located in different places depending on your OS and shell. For BASH in Linux (for Mac this will be ``.bash_profile``)
 ::
 
     vim .bashrc
