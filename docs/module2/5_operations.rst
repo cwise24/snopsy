@@ -13,16 +13,18 @@ repository and yours so you may contribute back.  You may also pull updates from
 
 I have a public repository that you can Fork `here <https://gitlab.com/cwise24/devops_ansible_class>`_
 
-::
-
-    git remote -v
-
 Origin and Upstream
 ^^^^^^^^^^^^^^^^
 .. figure:: imgs/g_o_u.png
    :scale: 60%
    :align: center
 .. centered:: Fig 8
+
+Let's check what remotes (if any) you currently have in your local repository
+
+::
+
+    git remote -v
 
 Origin
 ---------
