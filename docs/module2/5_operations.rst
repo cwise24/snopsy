@@ -11,7 +11,7 @@ Fork
 When you fork a repository, you make a copy of the source repository and are able to freely make changes without affecting the source repository. There will be a connection between the source
 repository and yours so you may contribute back.  You may also pull updates from the source repository into your fork.
 
-I have a public repository that you can Fork `here <https://gitlab.com/cwise24/devops_ansible_class>`_
+I have a public repository that you can Fork `here <https://gitlab.com/cwise24/ansible_lab>`_
 
 Origin and Upstream
 ^^^^^^^^^^^^^^^^
@@ -44,6 +44,10 @@ Let's view our remote's now
 ::
 
     git remote -v
+    origin	git@gitlab.com:your_username/ansible_lab.git (fetch)
+   origin	git@gitlab.com:your_username/ansible_lab.git (push)
+   upstream	git@gitlab.com:cwise24/ansible_lab.git (fetch)
+   upstream	git@gitlab.com:cwise24/ansible_lab.git (push)
 
 Merge Request
 ^^^^^^^^^^^
