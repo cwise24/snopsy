@@ -20,7 +20,11 @@ To exit vim:
    type   :wq
 
 Now we can configure the Ansible config file:
+Ansible has host key checking enabled by default.
 
+If a host is reinstalled and has a different key in ‘known_hosts’, this will result in an error message until corrected. If a host is not initially in ‘known_hosts’ this will result in prompting for confirmation of the key, which results in an interactive experience if using Ansible, from say, cron. You might not want this.
+
+If you understand the implications and wish to disable this behavior, you can do so by editing ``.ansible.cfg`` [#]_
 ::
 
     vim .ansible.cfg
@@ -29,6 +33,7 @@ Now we can configure the Ansible config file:
     Host_key_checking = False
     Log_path = ~/ansible_lab
     #vault_password_file = .vault.key
+
 
 Now let's get a copy of your public ssh key
 
@@ -46,3 +51,6 @@ Copy the output, it should start like below:
 Now go to `Gitlab <https://gitlab.com/users/sign_in>`_ and create an account, once that is created upload your public ssh key to Gitlab (ansible_lab.pub)  Click on your icon (top right, then Settings).  On the left hand side you should see SSH Keys
 
 .. warning:: Make certain you are ``NOT`` about to put your private keys in the cloud
+
+.. rubric:: Footnotes
+.. [#] https://docs.ansible.com/ansible/latest/user_guide/intro_getting_started.html#host-key-checking
