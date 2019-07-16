@@ -1,7 +1,7 @@
 Configurations
 ===============
 
-We will associate our newly generated key to be used for Gitlab connections.  Doing it this way, we can separate ssh keys between sites. 
+We will associate our newly generated key to be used for Gitlab connections.  Doing it this way, we can separate ssh keys between many sites.
 
 ::
 
