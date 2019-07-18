@@ -72,15 +72,21 @@ Then click **New merge request**
    :align: center
 .. centered:: Fig 10
 
+You must view the compare before you can submit 
+
 .. figure:: imgs/mr3.png
    :scale: 60%
    :align: center
 .. centered:: Fig 11
 
+Click Submit Merge Request
+
 .. figure:: imgs/mr4.png
    :scale: 60%
    :align: center
 .. centered:: Fig 12
+
+Your submitted Merge Request
 
 .. figure:: imgs/mr5.png
    :scale: 60%
