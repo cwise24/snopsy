@@ -107,7 +107,7 @@ Accepting a Merge Request
 .. centered:: Fig 15
 
 .. figure:: imgs/mr8.png
-   :scale: 60%
+   :scale: 40%
    :align: center
 .. centered:: Fig 16
 
