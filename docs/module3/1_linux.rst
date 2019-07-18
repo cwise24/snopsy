@@ -15,7 +15,7 @@ Some VIM features I used for this project
 To edit files in VIM with tabs use the command  ``:tabedit <filename>``
 
 .. figure:: imgs/tabedit1.png
-   :scale: 40%
+   :scale: 60%
    :align: center
 .. centered:: Fig 1
 
