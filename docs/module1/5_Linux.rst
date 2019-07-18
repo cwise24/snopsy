@@ -31,6 +31,7 @@ Directories
   cd ..          { change directory up one level }
   cd -           { return to last directory }
   mkdir          { make directory }
+  rm -rf         { remove directory }
   ls             { list contents of a directory; files and folders }
   ls -la         { list contents to include hidden files and permissions }
 
