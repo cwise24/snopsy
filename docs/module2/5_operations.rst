@@ -113,8 +113,9 @@ Accepting a Merge Request
 
 Pull from Upstream
 ^^^^^^^^^^^^^^
-To keep your local (and origin) in sync with the upstream repository, you'll want to do either a ``fetch`` or ``pull`
+To keep your local (and origin) in sync with the upstream repository, you'll want to do either a ``fetch`` or ``pull``
 
 ::
     
+    git fetch upstream <branch>
     git pull upstream <branch>
