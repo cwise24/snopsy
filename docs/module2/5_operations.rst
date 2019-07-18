@@ -38,7 +38,9 @@ The source repository you're forked from (i.e. git@gitlab.com:someonelse_usernam
 
 To set an upstream:
 
-``git remote add upstream git@gitlab.com:someonelse_username/their_reposity.git``
+``git remote add upstream https://gitlab.com/someonelse_username/their_reposity.git``
+
+.. info:: If you make a typo in the upstream use ``git remote rm upstream``
 
 Let's view our remote's now
 ::
@@ -46,8 +48,15 @@ Let's view our remote's now
     git remote -v
     origin	git@gitlab.com:your_username/ansible_lab.git (fetch)
     origin	git@gitlab.com:your_username/ansible_lab.git (push)
-    upstream	git@gitlab.com:cwise24/ansible_lab.git (fetch)
-    upstream	git@gitlab.com:cwise24/ansible_lab.git (push)
+    upstream	https://gitlab.com/cwise24/ansible_lab.git (fetch)
+    upstream	https://gitlab.com/cwise24/ansible_lab.git (push)
 
 Merge Request
 ^^^^^^^^^^^
+
+Pull from Upstream
+^^^^^^^^^^^^^^
+
+::
+    
+    git pull upstream <branch>
