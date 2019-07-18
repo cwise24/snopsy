@@ -22,7 +22,7 @@ Origin and Upstream
 
 Let's check what remotes (if any) you currently have in your local repository
 
-.. notice:: If you cloned a repository you will have your origin listed
+.. note:: If you cloned a repository you will have your origin listed
 
 ::
 
