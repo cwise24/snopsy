@@ -61,21 +61,21 @@ Create a Merge Request
 To create a mergre request, from your repository on left side click **Merge Request**
 
 .. figure:: imgs/mr1.png
-   :scale: 60%
+   :scale: 40%
    :align: center
 .. centered:: Fig 9
 
 Then click **New merge request**
 
 .. figure:: imgs/mr2.png
-   :scale: 60%
+   :scale: 40%
    :align: center
 .. centered:: Fig 10
 
 You must view the compare branches before you can submit 
 
 .. figure:: imgs/mr3.png
-   :scale: 60%
+   :scale: 40%
    :align: center
 .. centered:: Fig 11
 
