@@ -33,3 +33,20 @@ Earlier copies
 ::
 
     :earlier 2m
+
+    Examples:
+
+.. figure:: imgs/time1.png
+   :scale: 40%
+   :align: center
+.. centered:: Fig 3
+
+.. figure:: imgs/time2.png
+   :scale: 40%
+   :align: center
+.. centered:: Fig 4
+
+.. figure:: imgs/time3.png
+   :scale: 40%
+   :align: center
+.. centered:: Fig 5
