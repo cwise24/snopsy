@@ -53,6 +53,15 @@ Let's view our remote's now
 
 Merge Request
 ^^^^^^^^^^^
+.. figure:: imgs/mr1.png
+   :scale: 60%
+   :align: center
+.. centered:: Fig 9
+
+.. figure:: imgs/mr2.png
+   :scale: 60%
+   :align: center
+.. centered:: Fig 10
 
 Pull from Upstream
 ^^^^^^^^^^^^^^
