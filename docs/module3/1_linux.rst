@@ -22,7 +22,6 @@ Now both files will show up
    :scale: 40%
    :align: center
 .. centered:: Fig 2
-
 To navigate between tabs use the keys
  * gt
  * gT
