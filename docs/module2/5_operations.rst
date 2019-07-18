@@ -93,6 +93,24 @@ Your submitted Merge Request
    :align: center
 .. centered:: Fig 13
 
+Accepting a Merge Request
+------------------------------
+
+.. figure:: imgs/mr6.png
+   :scale: 60%
+   :align: center
+.. centered:: Fig 14
+
+.. figure:: imgs/mr7.png
+   :scale: 60%
+   :align: center
+.. centered:: Fig 15
+
+.. figure:: imgs/mr8.png
+   :scale: 60%
+   :align: center
+.. centered:: Fig 16
+
 Pull from Upstream
 ^^^^^^^^^^^^^^
 To keep your local (and origin) in sync with the upstream repository, you'll want to do either a ``fetch`` or ``pull`
