@@ -59,6 +59,7 @@ Now comes time to merge your work back into the Upstream branch or to accept a m
 Create a Merge Request
 ------------------------------
 To create a mergre request, from your repository on left side click **Merge Request**
+
 .. figure:: imgs/mr1.png
    :scale: 60%
    :align: center
