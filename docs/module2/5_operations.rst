@@ -53,6 +53,9 @@ Let's view our remote's now
 
 Merge Request
 ^^^^^^^^^^^
+
+Now comes time to merge your work back into the Upstream branch or to accept a merge request from a forked contributor
+
 .. figure:: imgs/mr1.png
    :scale: 60%
    :align: center
