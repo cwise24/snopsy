@@ -10,6 +10,7 @@ Some VIM features I used for this project
     Shift + V           { block editor }
     y                   { yank }
     p                   { paste }
+    dd                  { delete/cut }
 
 To edit files in VIM with tabs use the command  ``:tabedit <filename>``
 
