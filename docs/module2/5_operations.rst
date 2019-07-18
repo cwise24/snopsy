@@ -71,6 +71,21 @@ Then click **New merge request**
    :align: center
 .. centered:: Fig 10
 
+.. figure:: imgs/mr3.png
+   :scale: 60%
+   :align: center
+.. centered:: Fig 11
+
+.. figure:: imgs/mr4.png
+   :scale: 60%
+   :align: center
+.. centered:: Fig 12
+
+.. figure:: imgs/mr5.png
+   :scale: 60%
+   :align: center
+.. centered:: Fig 13
+
 Pull from Upstream
 ^^^^^^^^^^^^^^
 To keep your local (and origin) in sync with the upstream repository, you'll want to do either a ``fetch`` or ``pull`
