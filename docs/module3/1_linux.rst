@@ -5,7 +5,7 @@ Some VIM features I used for this project
 
 ::
 
-    Shift + G           { end of file }
+    Shift + G           { last line }
     Shift + $           { end of line }
     Shift + V           { block editor }
     y                   { yank }
