@@ -72,7 +72,7 @@ Then click **New merge request**
    :align: center
 .. centered:: Fig 10
 
-You must view the compare before you can submit 
+You must view the compare branches before you can submit 
 
 .. figure:: imgs/mr3.png
    :scale: 60%
