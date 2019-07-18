@@ -12,7 +12,16 @@ Some VIM features I used for this project
     p                   { paste }
 
 To edit files in VIM with tabs use the command  ``:tabedit <filename>``
+.. figure:: imgs/tabedit1.png
+   :scale: 40%
+   :align: center
+.. centered:: Fig 1
 
+Now both files will show
+.. figure:: imgs/tabedit2.png
+   :scale: 40%
+   :align: center
+.. centered:: Fig 2
 To navigate between tabs use the keys
  * gt
  * gT
