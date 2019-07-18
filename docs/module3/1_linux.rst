@@ -15,14 +15,14 @@ Some VIM features I used for this project
 To edit files in VIM with tabs use the command  ``:tabedit <filename>``
 
 .. figure:: imgs/tabedit1.png
-   :scale: 60%
+   :scale: 50%
    :align: center
 .. centered:: Fig 1
 
 Now both files will show
 
 .. figure:: imgs/tabedit2.png
-   :scale: 40%
+   :scale: 50%
    :align: center
 .. centered:: Fig 2
 To navigate between tabs use the keys
@@ -38,16 +38,16 @@ Earlier copies
     Examples:
 
 .. figure:: imgs/time1.png
-   :scale: 40%
+   :scale: 50%
    :align: center
 .. centered:: Fig 3
 
 .. figure:: imgs/time2.png
-   :scale: 40%
+   :scale: 50%
    :align: center
 .. centered:: Fig 4
 
 .. figure:: imgs/time3.png
-   :scale: 40%
+   :scale: 50%
    :align: center
 .. centered:: Fig 5
