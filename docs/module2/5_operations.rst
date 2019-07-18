@@ -55,6 +55,7 @@ Merge Request
 ^^^^^^^^^^^
 
 Now comes time to merge your work back into the Upstream branch or to accept a merge request from a forked contributor
+
 Create a Merge Request
 ------------------------------
 
