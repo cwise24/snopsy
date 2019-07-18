@@ -82,14 +82,14 @@ You must view the compare branches before you can submit
 Click Submit Merge Request
 
 .. figure:: imgs/mr4.png
-   :scale: 60%
+   :scale: 50%
    :align: center
 .. centered:: Fig 12
 
 Your submitted Merge Request
 
 .. figure:: imgs/mr5.png
-   :scale: 30%
+   :scale: 40%
    :align: center
 .. centered:: Fig 13
 
