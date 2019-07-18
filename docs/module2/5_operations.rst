@@ -89,7 +89,7 @@ Click Submit Merge Request
 Your submitted Merge Request
 
 .. figure:: imgs/mr5.png
-   :scale: 60%
+   :scale: 30%
    :align: center
 .. centered:: Fig 13
 
@@ -97,12 +97,12 @@ Accepting a Merge Request
 ------------------------------
 
 .. figure:: imgs/mr6.png
-   :scale: 60%
+   :scale: 30%
    :align: center
 .. centered:: Fig 14
 
 .. figure:: imgs/mr7.png
-   :scale: 60%
+   :scale: 30%
    :align: center
 .. centered:: Fig 15
 
