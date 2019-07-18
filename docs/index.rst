@@ -13,8 +13,8 @@ This serves as a starting point to a much deeper training such as F5's SUPER-NET
 `Chad Wise <https://github.com/cwise24>`_
 
 | Contributors: 
-`TonyPNode <https://github.com/tonypnode>`_
-`Marcus Moreno <https://gitlab.com/marcus_moreno>`_
+| `TonyPNode <https://github.com/tonypnode>`_
+| `Marcus Moreno <https://gitlab.com/marcus_moreno>`_
 
 .. toctree::
    :maxdepth: 1
