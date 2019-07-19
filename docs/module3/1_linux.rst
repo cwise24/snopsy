@@ -35,7 +35,7 @@ Go back in time to earlier versions
 
     :earlier 2m
 
-    Examples:
+Examples:
 
 .. figure:: imgs/time1.png
    :scale: 50%
