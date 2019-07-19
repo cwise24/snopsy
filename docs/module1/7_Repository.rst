@@ -50,7 +50,7 @@ Now let's set the remote repository (Gitlab) and sync our local files to the rem
 
 ::
 
-    git push --set-upstream git@gitlab.com:<username>/ansible_lab.git master
+    git push -u git@gitlab.com:<username>/ansible_lab.git master
 
 You can also see what branches you have within your repository:
 
