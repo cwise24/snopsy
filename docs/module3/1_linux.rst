@@ -51,3 +51,14 @@ Examples:
    :scale: 50%
    :align: center
 .. centered:: Fig 5
+
+Now, we have all this content (these modules built on RTD) and so many speling errorrs everywere....
+
+We have some options in either VIM (slow process) or with ``aspell``
+
+How I did it:: 
+
+    for f in *.rst
+    do
+        aspell check $f
+    done
