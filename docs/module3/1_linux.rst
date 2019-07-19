@@ -54,12 +54,12 @@ Examples:
 
 Now, we have all this content (these modules built on RTD) and so many speling errorrs everywere....
 
-We have some options in either VIM (slow process) or with ``aspell``
-
 .. sidebar:: aspell
 
    brew install aspell
    yum/apt install aspell
+
+We have some options in either VIM (slow process) or with ``aspell``
 
 How I did it:: 
 
