@@ -44,10 +44,10 @@ This will open a shell to the container as the user 'ansible'
 
 Suggested list of packages to install:
 
- - Ansible
- - Yamllint
- - Jmespath
- - Netmiko
- - git
+- Ansible
+- Yamllint
+- Jmespath
+- Netmiko
+- git
 
 .. note:: If you are using the container, the above packages have been installed
