@@ -62,3 +62,15 @@ How I did it::
     do
         aspell check $f
     done
+
+Or as a one-liner::
+
+    for f in *.rst;do aspell check $f;done
+
+
+Within VIM we add the directive ``set spell spelllang=en_us`` and it will highlight words
+
+.. figure:: imgs/vim_spell.png
+   :scale: 50%
+   :align: center
+.. centered:: Fig 6
