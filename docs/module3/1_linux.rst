@@ -29,7 +29,7 @@ To navigate between tabs use the keys
  * gt
  * gT
 
-Earlier copies
+Go back in time to earlier versions
 
 ::
 
