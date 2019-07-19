@@ -30,4 +30,4 @@ Jinja Playbook
        - debug:
            var: interface
 
-Now that we have captured only index 2 of our inner list, we can further split the string up by white spaces and only keeping those strings starting with *Fa* or *Gi* and storing those items into our new list *interface*
+Now that we have captured only index 2 of our inner list, we can further split the string up by whitespaces and only keeping those strings starting with *Fa* or *Gi* and storing those items into our new list *interface*

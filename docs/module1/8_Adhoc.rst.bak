@@ -7,7 +7,7 @@ Using Ansible, the host (localhost in this case) is defined and the ``-m`` switc
 
     ansible localhost -m setup
 
-This returns a large amount of data that would be extremely time consuming to sift through.
+This returns a large amout of data that would be extremely time consuming to sift through.
 Let's filter it using the ``-a`` switch for *argument*
 
 ::

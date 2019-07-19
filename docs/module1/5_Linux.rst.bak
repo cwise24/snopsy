@@ -7,7 +7,7 @@ Help - you will find help for any package in the 'man' pages or 'info' pages. Ea
 
 ::
 
-   man  <package name>
+   man  <pachage name>
    info <package name>
 
 

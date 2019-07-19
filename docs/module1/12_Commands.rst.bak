@@ -3,7 +3,7 @@ Commands
 
 To run this playbook:
 
-Make sure you are in the working directory for both your play and inventory
+Make suer you are in the working directory for both your play and inventory
 
 ::
 
@@ -16,7 +16,7 @@ Other switches that can be added:
 
  * -b for *become*
  * -K *ask for password*
- * -e *pass extra variables in*
+ * -e *pass extra varialbes in*
 
 Extra runs with verbose (for troubleshooting):
 
