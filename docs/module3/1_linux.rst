@@ -57,6 +57,7 @@ Now, we have all this content (these modules built on RTD) and so many speling e
 We have some options in either VIM (slow process) or with ``aspell``
 
 .. sidebar:: aspell
+
    brew install aspell
    yum/apt install aspell
 
