@@ -7,7 +7,7 @@ Help - you will find help for any package in the 'man' pages or 'info' pages. Ea
 
 ::
 
-   man  <pachage name>
+   man  <package name>
    info <package name>
 
 
@@ -31,6 +31,7 @@ Directories
   cd ..          { change directory up one level }
   cd -           { return to last directory }
   mkdir          { make directory }
+  rm -rf         { remove directory }
   ls             { list contents of a directory; files and folders }
   ls -la         { list contents to include hidden files and permissions }
 
@@ -42,7 +43,7 @@ Files
   touch          { creates a blank file; or updates the timestamp on the file } 
   rm             { remove file }
 
-No in scope for this particular training, but build some aliases. These are located in different places depending on your OS and shell. For the BASH shell in Linux
+No in scope for this particular training, but build some aliases. These are located in different places depending on your OS and shell. For BASH in Linux (for Mac this will be ``.bash_profile``)
 ::
 
     vim .bashrc

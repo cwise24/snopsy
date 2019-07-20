@@ -104,6 +104,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../module2/module2.html">Module 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module3/module3.html">Module 3</a></li>
 </ul>
 
             
@@ -172,9 +173,11 @@
             
   <div class="section" id="configurations">
 <h1>Configurations<a class="headerlink" href="#configurations" title="Permalink to this headline">¶</a></h1>
-<p>For Mac you’ll want to associate this new key for use (automatically), otherwise you will have to use the  <code class="docutils literal notranslate"><span class="pre">-i</span></code>  switch every time.</p>
+<p>We will associate our newly generated key to be used for Gitlab connections.  Doing it this way, we can separate ssh keys between many sites.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">vim</span> <span class="o">.</span><span class="n">ssh</span><span class="o">/</span><span class="n">config</span>
-<span class="n">IdentityFile</span> <span class="o">~/.</span><span class="n">ssh</span><span class="o">/</span><span class="n">ansible_key</span>
+<span class="n">Host</span> <span class="n">gitlab</span><span class="o">.</span><span class="n">com</span>
+  <span class="n">HostName</span> <span class="n">gitlab</span><span class="o">.</span><span class="n">com</span>
+  <span class="n">IdentityFile</span> <span class="o">~/.</span><span class="n">ssh</span><span class="o">/</span><span class="n">ansible_key</span>
 </pre></div>
 </div>
 <p>To exit vim:</p>
@@ -184,6 +187,10 @@
 </pre></div>
 </div>
 <p>Now we can configure the Ansible config file:</p>
+<p><em>Ansible has host key checking enabled by default.</em></p>
+<p><em>If a host is reinstalled and has a different key in ‘known_hosts’, this will result in an error message until corrected. If a host is not initially in ‘known_hosts’ this will result in prompting for confirmation of the key, which results in an interactive experience if using Ansible, from say, cron. You might not want this.</em></p>
+<p><em>If you understand the implications and wish to disable this behavior,
+you can do so by editing</em> <code class="docutils literal notranslate"><span class="pre">.ansible.cfg</span></code> <a class="footnote-reference brackets" href="#id2" id="id1">1</a></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">vim</span> <span class="o">.</span><span class="n">ansible</span><span class="o">.</span><span class="n">cfg</span>
 
 <span class="p">[</span><span class="n">defaults</span><span class="p">]</span>
@@ -205,6 +212,12 @@
 <p class="admonition-title">Warning</p>
 <p>Make certain you are <code class="docutils literal notranslate"><span class="pre">NOT</span></code> about to put your private keys in the cloud</p>
 </div>
+<p class="rubric">Footnotes</p>
+<dl class="footnote brackets">
+<dt class="label" id="id2"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p><a class="reference external" href="https://docs.ansible.com/ansible/latest/user_guide/intro_getting_started.html#host-key-checking">https://docs.ansible.com/ansible/latest/user_guide/intro_getting_started.html#host-key-checking</a></p>
+</dd>
+</dl>
 </div>
 
 

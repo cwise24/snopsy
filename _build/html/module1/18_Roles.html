@@ -107,6 +107,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../module2/module2.html">Module 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module3/module3.html">Module 3</a></li>
 </ul>
 
             
@@ -175,9 +176,9 @@
             
   <div class="section" id="roles">
 <h1>Roles<a class="headerlink" href="#roles" title="Permalink to this headline">¶</a></h1>
-<p>Definintion:
+<p>Definition:
 “Roles are a robust feature of Ansible that facilitate reuse and further promote modularization of configuration, but Ansible roles are often overlooked in lieu of straightforward playbooks for the task at hand. The good news is that Ansible roles are simple to get set up and allow for complexity when necessary” <a class="footnote-reference brackets" href="#id2" id="id1">1</a></p>
-<p>With roles we can define how things get built, what actions need to be taken after (i.e. restart webserver after config file is updated) and make all of this modular to be consumed by others.</p>
+<p>With roles we can define how things get built, what actions need to be taken after (i.e. restart web-server after config file is updated) and make all of this modular to be consumed by others.</p>
 <p>Let’s use Ansible Galaxy to build our file structure for our role <code class="docutils literal notranslate"><span class="pre">ansible_role</span></code></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ansible</span><span class="o">-</span><span class="n">galaxy</span> <span class="n">init</span> <span class="n">ansible_role</span>
 </pre></div>

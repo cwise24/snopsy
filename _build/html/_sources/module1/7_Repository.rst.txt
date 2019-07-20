@@ -28,17 +28,17 @@ Let's configure our git config
 
   
   git config --global user.email "your@email.com"
-  
   git config --global user.name "username"
+  git config --list
 
 
-This marks all files ``.`` in the working directory to be added to stagging
+This marks all files ``.`` in the working directory to be added to staging
 
 ::
 
     git add .
 
-Now we can move the stagged files to commit.  We use the ``-m`` for the commit message and will see this in Gitlab.
+Now we can move the staged files to commit.  We use the ``-m`` for the commit message and will see this in Gitlab.
 
 ::
 
@@ -50,7 +50,7 @@ Now let's set the remote repository (Gitlab) and sync our local files to the rem
 
 ::
 
-    git push --set-upstream git@gitlab.com:<username>/ansible_lab.git master
+    git push -u git@gitlab.com:<username>/ansible_lab.git master
 
 You can also see what branches you have within your repository:
 
