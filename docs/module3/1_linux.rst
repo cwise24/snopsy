@@ -82,7 +82,7 @@ Within VIM we add the directive ``:set spell spelllang=en_us`` and it will highl
 
 .. nwdiag:: 
 
-   nwdiag {
+    nwdiag {
       network dmz {
           web01;
           web02;
