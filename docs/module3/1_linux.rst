@@ -80,8 +80,11 @@ Within VIM we add the directive ``:set spell spelllang=en_us`` and it will highl
    :align: center
 .. centered:: Fig 6
 
-.. graphviz:: 
+.. nwdiag:: 
 
-   digraph {
-      "From" -> "To";
+   nwdiag {
+      network dmz {
+          web01;
+          web02;
+          }
       }
