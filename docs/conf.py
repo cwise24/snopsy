@@ -38,9 +38,13 @@ extensions = [
     'sphinx.ext.mathjax',
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
-    'sphinx.ext.graphviz'
+    'sphinx.ext.graphviz',
+    'sphinxcontrib.nwdiag',
+    'sphinxcontrib.rackdiag',
+    'sphinxcontrib.packetdiag'
 ]
 
+nwdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
 
 # -- General configuration ---------------------------------------------------
 
