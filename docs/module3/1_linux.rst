@@ -79,8 +79,3 @@ Within VIM we add the directive ``:set spell spelllang=en_us`` and it will highl
    :scale: 50%
    :align: center
 .. centered:: Fig 6
-
-Some bash
-
-.. code-block:: yaml 
-   mkdir dir
