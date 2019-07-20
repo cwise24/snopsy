@@ -82,5 +82,5 @@ Within VIM we add the directive ``:set spell spelllang=en_us`` and it will highl
 
 Some bash
 
-.. code-block:: console 
+.. code-block:: yaml 
    mkdir dir
