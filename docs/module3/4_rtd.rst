@@ -30,7 +30,7 @@ From here you can navigate to localhost:8000 from your browser
     sphinx-build -b html docs/ _build/html
 
 Bullets
-^^^^^^
+~~~~~~
 
 Bullets
 
@@ -38,7 +38,7 @@ Bullets
 - item
 
 Images/Figures
-^^^^^^^^^^^^
+~~~~~~~~~~~~~
 
 To place images or figures on pages.  I have found it better to use ``.. figure::`` and set a ``:scale:``, this way the image can be opened
 
@@ -53,7 +53,7 @@ To place images or figures on pages.  I have found it better to use ``.. figure:
        :align: center
 
 Code Blocks
-^^^^^^^^^^
+~~~~~~~~~~~
 
 Example below, `reference <www.sphinx-doc.org/es/stable/markup/code.html>`_
 
@@ -82,7 +82,7 @@ Example below, `reference <www.sphinx-doc.org/es/stable/markup/code.html>`_
        </html>
 
 Notes_Warnings
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~
 
 .. note:: This is a note
 .. seealso:: See also
@@ -105,7 +105,7 @@ Notes_Warnings
     .. deprecated:: 1.1 
 
 Network Diagrams
-^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 Edit the conf.py file to include new extensions::
 
@@ -236,7 +236,7 @@ Rack El
        8: Fuse Panel
    }
 Links and References
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 `Link <www.google.com>`_ 
 
