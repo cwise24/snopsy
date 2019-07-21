@@ -43,6 +43,19 @@ Code Blocks
    </body>
    </html>
 
+::
+
+    .. code-block:: html
+       :linenos:
+       :emphasize-lines: 2
+
+       <html>
+       <title> Title</title>
+       <body>
+       Text
+       </body>
+       </html>
+
 Notes_Warnings
 ^^^^^^^^^^^^^^^^
 
