@@ -29,6 +29,19 @@ From here you can navigate to localhost:8000 from your browser
 
     sphinx-build -b html docs/ _build/html
 
+Images/Figures
+^^^^^^^^^^^^
+
+.. figure:: imgs/rtd.png
+   :scale: 50%
+   :align: center
+
+::
+
+    .. figure:: imgs/rtd.png
+       :scale: 50%
+       :align: center
+
 Code Blocks
 ^^^^^^^^^^
 
