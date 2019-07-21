@@ -225,6 +225,7 @@ Links and References
 Something quoted[#]_
 
 .. rubric:: Footnote
+
 .. [#] www.google.com
 
 Using the ``[#]`` will auto number the footnotes
@@ -233,4 +234,5 @@ Using the ``[#]`` will auto number the footnotes
     Something quoted[#]_
 
     .. rubric:: Footnote
+    
     .. [#] www.google.com
