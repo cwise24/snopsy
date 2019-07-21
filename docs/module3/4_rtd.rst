@@ -220,3 +220,17 @@ Links and References
 ::
 
     `Link <www.google.com>`_
+
+
+Something quoted[#]_
+
+.. rubric:: Footnote
+.. [#] www.google.com
+
+Using the ``[#]`` will auto number the footnotes
+::
+
+    Something quoted[#]_
+
+    .. rubric:: Footnote
+    .. [#] www.google.com
