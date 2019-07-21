@@ -46,6 +46,7 @@ extensions = [
 ]
 
 nwdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
+todo_include_todos=True
 
 # -- General configuration ---------------------------------------------------
 
