@@ -34,9 +34,17 @@ Notes_Warnings
 
 .. note:: This is a note
 .. seealso:: See also
-.. warning:: Warning 
+.. warning:: Warning ``here``
 .. todo:: Todo 
 .. important:: Important
+
+::
+
+    .. note:: This is a note
+    .. seealso:: See also
+    .. warning:: Warning ``here``
+    .. todo:: Todo 
+    .. important:: Important
 
 Network Diagrams
 ^^^^^^^^^^^^^^
