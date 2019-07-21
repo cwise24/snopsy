@@ -54,6 +54,7 @@ This now enables
 Example Diagram
 
 .. nwdiag::
+
     nwdiag {
       network dmz {
           web01;
