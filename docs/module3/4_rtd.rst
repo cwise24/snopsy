@@ -231,8 +231,8 @@ Something quoted [#]_
 Using the ``[#]`` will auto number the footnotes
 ::
 
-    Something quoted[#]_
+    Something quoted [#]_
 
     .. rubric:: Footnote
     
-    .. [#] www.google.com
+    .. [#] https://www.google.com
