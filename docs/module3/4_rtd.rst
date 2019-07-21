@@ -66,9 +66,9 @@ Notes_Warnings
 .. warning:: Warning ``here``
 .. todo:: Todo 
 .. important:: Important
-.. versionadded:: new version add
-.. versionchanged:: changed
-.. deprecated:: No longer here 
+.. versionadded:: Upgrade to 1.X
+.. versionchanged:: Newer Version is available
+.. deprecated:: Since version 2.X 
 
 ::
 
@@ -77,6 +77,9 @@ Notes_Warnings
     .. warning:: Warning ``here``
     .. todo:: Todo 
     .. important:: Important
+    .. versionadded:: Upgrade to 1.X
+    .. versionchanged:: Newer Version is available
+    .. deprecated:: Since version 2.X 
 
 Network Diagrams
 ^^^^^^^^^^^^^^
