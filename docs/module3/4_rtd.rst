@@ -117,15 +117,30 @@ Or highlight groups
 
 Or Racks
 
-.. rackdiag::
+::
+
+    .. rackdiag::
 
    rackdiag {
        //define height of rack
-       42U;
+       8U;
 
        //define position of items
        1: UPS
        2: UPS
-       41: TOR Switch
-       42: Fuse Panel
+       7: TOR Switch
+       8: Fuse Panel
+   }
+
+.. rackdiag::
+
+   rackdiag {
+       //define height of rack
+       8U;
+
+       //define position of items
+       1: UPS
+       2: UPS
+       7: TOR Switch
+       8: Fuse Panel
    }
