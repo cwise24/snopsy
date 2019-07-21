@@ -94,8 +94,11 @@ Edit the conf.py file to include new extensions::
     'sphinx.ext.graphviz',
     'sphinxcontrib.nwdiag',
     'sphinxcontrib.rackdiag',
-    'sphinxcontrib.packetdiag'
+    'sphinxcontrib.packetdiag',
+     'sphinx.ext.todo'
      ]
+
+     todo_include_todos=True
 
 You must also create a ``requirements.txt`` file and add::
 
