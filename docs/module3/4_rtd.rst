@@ -32,6 +32,8 @@ From here you can navigate to localhost:8000 from your browser
 Code Blocks
 ^^^^^^^^^^
 
+Example below, `reference <www.sphinx-doc.org/es/stable/markup/code.html>`_
+
 .. code-block:: html
    :linenos:
    :emphasize-lines: 2
