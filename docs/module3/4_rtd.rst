@@ -37,6 +37,13 @@ Bullets
 * item
 - item
 
+::
+
+    Bullets
+
+    * item
+    - item
+
 Images/Figures
 ~~~~~~~~~~~~~
 
