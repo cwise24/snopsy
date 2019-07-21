@@ -51,7 +51,7 @@ This now enables
             }
         }
 
-Example Diagram
+Example Diagrams
 
 .. nwdiag::
 
@@ -60,4 +60,28 @@ Example Diagram
           web01;
           web02;
        }
+    }
+
+.. nwdiag::
+
+   nwdiag{
+      network web_tier {
+        address = "172.10.1.0/24";
+          //define group
+            group web {
+              web01 [ address = ".1 "];
+              web02 [address  = ".2"];
+           }
+        }
+    network db {
+       address = "172.20.1.0/24";
+          web01 [ address = ".1"];
+          web02 [ address = ".1"];
+          db01 [ address = ".101"];
+          db02 [ address = ".102"];
+          group db {
+             db01;
+             db02;
+             }
+        }
     }
