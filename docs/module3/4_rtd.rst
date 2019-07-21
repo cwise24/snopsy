@@ -29,7 +29,15 @@ From here you can navigate to localhost:8000 from your browser
 
     sphinx-build -b html docs/ _build/html
 
-    
+Notes_Warnings
+^^^^^^^^^^^^^^^^
+
+.. note:: This is a note
+.. seealso:: See also
+.. warning:: Warning 
+.. todo:: Todo 
+.. important:: Important
+
 Network Diagrams
 ^^^^^^^^^^^^^^
 
@@ -128,7 +136,8 @@ Or highlight groups
         }
     }
 
-Or Racks
+Rack El 
+^^^^^^
 
 ::
 
