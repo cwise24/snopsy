@@ -32,6 +32,8 @@ From here you can navigate to localhost:8000 from your browser
 Images/Figures
 ^^^^^^^^^^^^
 
+To place images or figures on pages
+
 .. figure:: imgs/rtd.png
    :scale: 50%
    :align: center
