@@ -42,7 +42,8 @@ extensions = [
     'sphinxcontrib.nwdiag',
     'sphinxcontrib.rackdiag',
     'sphinxcontrib.packetdiag',
-    'sphinx.ext.todo'
+    'sphinx.ext.todo',
+    'todo_include_todos=True'
 ]
 
 nwdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
