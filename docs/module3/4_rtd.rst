@@ -29,6 +29,12 @@ From here you can navigate to localhost:8000 from your browser
 
     sphinx-build -b html docs/ _build/html
 
+Bullets
+^^^^^^
+
+Bullets
+* item
+
 Images/Figures
 ^^^^^^^^^^^^
 
