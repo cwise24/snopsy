@@ -66,12 +66,9 @@ Notes_Warnings
 .. warning:: Warning ``here``
 .. todo:: Todo 
 .. important:: Important
-.. versionadded:: 
-    Upgrade to 1.X
-.. versionchanged:: 
-    Newer Version is available
-.. deprecated:: 
-    Since version 2.X 
+.. versionadded:: 1.2
+.. versionchanged:: 2.1
+.. deprecated:: 1.1
 
 ::
 
