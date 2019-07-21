@@ -32,7 +32,7 @@ From here you can navigate to localhost:8000 from your browser
 Images/Figures
 ^^^^^^^^^^^^
 
-To place images or figures on pages
+To place images or figures on pages.  I have found it better to use ``.. figure::`` and set a ``:scale:``, this way the image can be opened
 
 .. figure:: imgs/rtd.png
    :scale: 50%
