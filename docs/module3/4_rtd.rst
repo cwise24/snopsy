@@ -66,6 +66,9 @@ Notes_Warnings
 .. warning:: Warning ``here``
 .. todo:: Todo 
 .. important:: Important
+.. versionadded:: new version add
+..versionchanged:: changed
+.. deprecated:: No longer here 
 
 ::
 
