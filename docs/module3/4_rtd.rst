@@ -16,7 +16,20 @@ First create a new directory to start your project::
     sphinx-quickstart
     sphinx-build -b html docs _build/html
 
+To run the files/builds locally and see how the web links and pages are run
 
+::
+
+    sphinx-autobuild -b html docs/ _build/html 
+
+From here you can navigate to localhost:8000 from your browser
+
+
+::
+
+    sphinx-build -b html docs/ _build/html
+
+    
 Network Diagrams
 ^^^^^^^^^^^^^^
 
