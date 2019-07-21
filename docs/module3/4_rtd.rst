@@ -35,6 +35,7 @@ Bullets
 Bullets
 
 * item
+- item
 
 Images/Figures
 ^^^^^^^^^^^^
