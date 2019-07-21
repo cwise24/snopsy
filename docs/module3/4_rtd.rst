@@ -29,6 +29,20 @@ From here you can navigate to localhost:8000 from your browser
 
     sphinx-build -b html docs/ _build/html
 
+Code Blocks
+^^^^^^^^^^
+
+.. code-block:: html
+   :linenos:
+   :emphasize-lines: 2
+
+   <html>
+   <title> Title</title>
+   <body>
+   Text
+   </body>
+   </html>
+
 Notes_Warnings
 ^^^^^^^^^^^^^^^^
 
