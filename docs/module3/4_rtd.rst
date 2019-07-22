@@ -294,8 +294,6 @@ Rack El
 Packet Diagrams
 ^^^^^^^^^^^^^
 
-.. literalinclude:: diag/tcp_header.diag
-
 .. packetdiag:: 
 
    packetdiag {
