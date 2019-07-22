@@ -259,7 +259,7 @@ Rack El
        1: UPS
        2: UPS
        7: TOR Switch
-       8: Fuse Panel [-48 VDC]
+       8: Fuse Panel
    }
    
 Links and References
