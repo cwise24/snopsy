@@ -66,15 +66,19 @@ Example below, `reference <www.sphinx-doc.org/es/stable/markup/code.html>`_
 
 .. code-block:: html
    :linenos:
-   :emphasize-lines: 2
+   :emphasize-lines: 2-4,6
 
    <html>
+   <head>
+   <link rel="stylesheet" type="text/css" href="mystyle.css">
    <title> Title</title>
+   </head>
    <body>
    Text
    </body>
    </html>
 
+You use the ``:emphasize-lines:`` directive to highlight a line or lines of code
 ::
 
     .. code-block:: html
