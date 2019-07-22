@@ -294,6 +294,8 @@ Rack El
 Packet Diagrams
 ^^^^^^^^^^^^^
 
+.. literalinclude:: diag/tcp_header.diag
+
 .. packetdiag:: 
 
    packetdiag {
@@ -305,7 +307,7 @@ Packet Diagrams
     64-95: Acknowledgment Number
     96-99: Data Offset
     100-105: Reserved
-    106: URG 
+    106: URG
     107: ACK 
     108: PSH 
     109: RST 
