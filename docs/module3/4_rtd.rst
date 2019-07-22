@@ -24,11 +24,11 @@ Table of Contents building, you must add ``:glob:`` if you plan to use a wildcar
 ::
 
     .. toctree::
-   :maxdepth: 1
-   :caption: Contents:
-   :glob:
+    :maxdepth: 1
+    :caption: Contents:
+    :glob:
 
-   module*/module*
+    module*/module*
 
 ::
 
