@@ -9,11 +9,29 @@ Sphinx
      pip3 install sphinx sphinx-autobuild 
      pip3 install sphinxcontrib-nwdiag  { requires extra configs }
 
-First create a new directory to start your project::
+First create a new directory to start your project
+::
 
     mkdir newproject
+    cd newproject
     mkdir docs 
     sphinx-quickstart
+
+Placeholder for questions
+
+Table of Contents building, you must add ``:glob:`` if you plan to use a wildcard ``*``
+
+::
+
+    .. toctree::
+   :maxdepth: 1
+   :caption: Contents:
+   :glob:
+
+   module*/module*
+
+::
+
     sphinx-build -b html docs _build/html
 
 To run the files/builds locally and see how the web links and pages are run
