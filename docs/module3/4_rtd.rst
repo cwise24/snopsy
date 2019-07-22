@@ -109,7 +109,7 @@ Notes_Warnings
     .. note:: This is a note
     .. seealso:: See also
     .. warning:: Warning ``here``
-    .. todo:: Todo 
+    .. todo:: Todo see the next section for extensions and todo_include_todos
     .. important:: Important
     .. versionadded:: 1.2
     .. versionchanged:: 2.1
