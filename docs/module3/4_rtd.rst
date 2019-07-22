@@ -30,6 +30,11 @@ Table of Contents building, you must add ``:glob:`` if you plan to use a wildcar
 
     module*/module*
 
+I used individual folders for each module and in this example I will cover ``module3``. This breaks down the individual module Table of Contents (toc)
+
+.. literalinclude:: module3.rst 
+   :linenos:
+
 ::
 
     sphinx-build -b html docs _build/html
