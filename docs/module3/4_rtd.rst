@@ -30,6 +30,11 @@ Table of Contents building, you must add ``:glob:`` if you plan to use a wildcar
 
     module*/module*
 
+.. figure:: imgs/tree_m3.png
+   :scale: 50%
+   :align: center
+.. centered:: Fig 1
+
 I used individual folders for each module and in this example I will cover ``module3``. This breaks down the individual module Table of Contents (toc)
 
 .. literalinclude:: module3.rst 
@@ -73,7 +78,7 @@ To place images or figures on pages.  I can use ``.. figure::`` or ``.. image::`
 .. figure:: imgs/rtd.png
    :scale: 50%
    :align: center
-.. centered:: Fig 1
+.. centered:: Fig 2
 
 .. image:: imgs/rtd.png
    :align: center
@@ -84,7 +89,7 @@ To place images or figures on pages.  I can use ``.. figure::`` or ``.. image::`
     .. figure:: imgs/rtd.png
        :scale: 50%
        :align: center
-    .. centered:: Fig 1
+    .. centered:: Fig 2
 
     .. image:: imgs/rtd.png
        :align: center
