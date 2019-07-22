@@ -52,7 +52,7 @@ Examples:
    :align: center
 .. centered:: Fig 5
 
-Now, we have all this content (these modules built on RTD) and so many speling errorrs everywere....
+Now, we have all this content (these modules built on RTD) and so many spelling errors everywhere....
 
 .. sidebar:: Aspell Installation
 
