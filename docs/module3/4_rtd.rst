@@ -31,7 +31,7 @@ Table of Contents building, you must add ``:glob:`` if you plan to use a wildcar
     module*/module*
 
 .. figure:: imgs/tree_m3.png
-   :scale: 50%
+   :scale: 70%
    :align: center
 .. centered:: Fig 1
 
