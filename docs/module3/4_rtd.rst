@@ -226,12 +226,13 @@ Rack El
    rackdiag {
        //define height of rack
        8U;
-
+        //define description
+        description = "Test Rack"
        //define position of items
        1: UPS
        2: UPS
        7: TOR Switch
-       8: Fuse Panel
+       8: Fuse Panel [-48 VDC]
    }
 
 .. rackdiag::
