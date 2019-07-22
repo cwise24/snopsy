@@ -52,12 +52,18 @@ To place images or figures on pages.  I have found it better to use ``.. figure:
 .. figure:: imgs/rtd.png
    :scale: 50%
    :align: center
+.. centered:: Fig 1
 
+.. image:: imgs/rtd.png
+   :align: center
+   :scale: 50%
+.. centered:: Image 1
 ::
 
     .. figure:: imgs/rtd.png
        :scale: 50%
        :align: center
+    .. centered:: Fig 1
 
 Code Blocks
 ~~~~~~~~~~~
