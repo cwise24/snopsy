@@ -92,6 +92,12 @@ You use the ``:emphasize-lines:`` directive to highlight a line or lines of code
        </body>
        </html>
 
+.. code-block:: text
+   :linenos:
+
+   mkdir X
+   rm -rf X
+   
 Notes_Warnings
 ~~~~~~~~~~~~~~
 
