@@ -19,7 +19,7 @@ First create a new directory to start your project
 
 Placeholder for questions
 
-Table of Contents building, you must add ``:glob:`` if you plan to use a wildcard ``*``
+Table of Contents building, you must add ``:glob:`` if you plan to use a wildcard ``*``.  Below will search the directory structure for the module folders, followed by the moduleN.rst file to show the local table of contents
 
 ::
 
