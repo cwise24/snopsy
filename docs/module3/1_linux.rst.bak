@@ -54,7 +54,7 @@ Examples:
 
 Now, we have all this content (these modules built on RTD) and so many speling errorrs everywere....
 
-.. sidebar:: Aspell Installation
+.. sidebar:: aspell Installation
 
    | brew install aspell
    | (yum/apt) install aspell
