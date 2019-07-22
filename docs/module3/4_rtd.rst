@@ -47,7 +47,7 @@ Bullets
 Images/Figures
 ~~~~~~~~~~~~~
 
-To place images or figures on pages.  I have found it better to use ``.. figure::`` and set a ``:scale:``, this way the image can be opened
+To place images or figures on pages.  I can use ``.. figure::`` or ``.. image::`` and set a ``:scale:``, this way the image can be opened
 
 .. figure:: imgs/rtd.png
    :scale: 50%
@@ -64,6 +64,11 @@ To place images or figures on pages.  I have found it better to use ``.. figure:
        :scale: 50%
        :align: center
     .. centered:: Fig 1
+
+    .. image:: imgs/rtd.png
+       :align: center
+       :scale: 50%
+    .. centered:: Image 1
 
 Code Blocks
 ~~~~~~~~~~~
