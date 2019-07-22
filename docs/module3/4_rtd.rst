@@ -260,7 +260,7 @@ Rack El
     1: UPS
     2: UPS
     7: TOR Switch
-    8: Fuse Panel [48 VDC]
+    8: Fuse Panel
    }
 
     rack {
@@ -271,7 +271,7 @@ Rack El
     2: UCS
     3: N/A [4U];
     7: TOR Switch
-    8: Fuse Panel [48 VDC]
+    8: Fuse Panel
     }
    }
    
