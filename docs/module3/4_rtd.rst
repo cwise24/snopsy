@@ -243,7 +243,7 @@ Rack El
        2: UCS
        2: UCS
        3: N/A [4U];
-       7: TOR Switch
+       7: TOR Switch [10A]  //define Amps
        8: Fuse Panel
        }
    }
