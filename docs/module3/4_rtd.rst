@@ -279,6 +279,7 @@ Packet Diagrams
 ^^^^^^^^^^^^
 
 .. literalinclude:: diag/tcp_header.diag
+
 .. packetdiag:: diag/tcp_header.diag
 
 Links and References
