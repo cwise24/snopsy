@@ -254,8 +254,10 @@ Rack El
        rack {
        //define height of rack
        8U;
+
         //define description
         description = "Rack A1";
+        
        //define position of items
        1: UPS
        2: UPS
@@ -265,7 +267,9 @@ Rack El
 
        rack {
        8U;
+
        description = "Rack A2";
+
        1: UPS
        2: UCS
        2: UCS
