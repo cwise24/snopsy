@@ -233,8 +233,8 @@ Rack El
        1: UPS
        2: UPS
        7: TOR Switch
-       8: Fuse Panel [-48 VDC];
-   }
+       8: Fuse Panel [-48 VDC]
+      }
        rack {
        8U;
        description = "Rack A2";
@@ -243,14 +243,13 @@ Rack El
        2: UCS
        3: N/A [4U];
        7: TOR Switch
-       8: Fuse Panel [-48 VDC];
+       8: Fuse Panel [-48 VDC]
        }
    }
 
 .. rackdiag::
 
    rackdiag {
-       
        rack {
        //define height of rack
        8U;
@@ -260,7 +259,7 @@ Rack El
        1: UPS
        2: UPS
        7: TOR Switch
-       8: Fuse Panel [-48 VDC];
+       8: Fuse Panel [-48 VDC]
        }
        rack {
        8U;
@@ -270,7 +269,7 @@ Rack El
        2: UCS
        3: N/A [4U];
        7: TOR Switch
-       8: Fuse Panel [-48 VDC];
+       8: Fuse Panel [-48 VDC]
        }
    }
 Links and References
