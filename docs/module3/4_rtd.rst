@@ -45,10 +45,6 @@ To run the files/builds locally and see how the web links and pages are run
 From here you can navigate to localhost:8000 from your browser
 
 
-::
-
-    sphinx-build -b html docs/ _build/html
-
 Bullets
 ~~~~~~
 
