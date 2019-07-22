@@ -40,7 +40,7 @@ To run the files/builds locally and see how the web links and pages are run
 
     sphinx-autobuild -b html docs/ _build/html 
 
-.. note:: Watch for errors on the cli when this runs
+.. note:: Watch for errors on the cli when autobuild runs
 
 From here you can navigate to localhost:8000 from your browser
 
