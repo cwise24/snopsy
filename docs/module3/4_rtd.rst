@@ -92,12 +92,18 @@ You use the ``:emphasize-lines:`` directive to highlight a line or lines of code
        </body>
        </html>
 
+After the ``.. code-block::`` directive you can add the language or use ``text`` as below
 .. code-block:: text
    :linenos:
 
    mkdir X
    rm -rf X
-   
+ ::
+
+     .. code-block:: text
+        mkdir X
+        rm -rf X
+
 Notes_Warnings
 ~~~~~~~~~~~~~~
 
