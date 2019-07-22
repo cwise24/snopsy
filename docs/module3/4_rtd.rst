@@ -274,7 +274,15 @@ Rack El
     8: Fuse Panel
     }
    }
-   
+
+Packet Diagrams
+^^^^^^^^^^^^
+
+.. packetdiag::
+   packetdiag {
+
+   }
+
 Links and References
 ~~~~~~~~~~~~~~~~~~
 
