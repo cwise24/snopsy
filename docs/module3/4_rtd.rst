@@ -233,18 +233,18 @@ Rack El
        1: UPS
        2: UPS
        7: TOR Switch
-       8: Fuse Panel [-48 VDC]
+       8: Fuse Panel [-48 VDC];
    }
-   rack {
-    8U;
-    description = "Rack A2";
-    1: UPS
-    2: UCS
-    2: UCS
-    3: N/A [4U]
-    7: TOR Switch
-    8: Fuse Panel [-48 VDC]
-     }
+       rack {
+       8U;
+       description = "Rack A2";
+       1: UPS
+       2: UCS
+       2: UCS
+       3: N/A [4U];
+       7: TOR Switch
+       8: Fuse Panel [-48 VDC];
+       }
    }
 
 .. rackdiag::
@@ -260,7 +260,7 @@ Rack El
        1: UPS
        2: UPS
        7: TOR Switch
-       8: Fuse Panel [-48 VDC]
+       8: Fuse Panel [-48 VDC];
        }
        rack {
        8U;
@@ -268,9 +268,9 @@ Rack El
        1: UPS
        2: UCS
        2: UCS
-       3: N/A [4U]
+       3: N/A [4U];
        7: TOR Switch
-       8: Fuse Panel [-48 VDC]
+       8: Fuse Panel [-48 VDC];
        }
    }
 Links and References
