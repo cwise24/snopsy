@@ -251,32 +251,15 @@ Rack El
 .. rackdiag::
 
    rackdiag {
-       rack {
        //define height of rack
        8U;
-
         //define description
         description = "Rack A1";
-        
        //define position of items
        1: UPS
        2: UPS
        7: TOR Switch
        8: Fuse Panel [-48 VDC]
-       }
-
-       rack {
-       8U;
-
-       description = "Rack A2";
-
-       1: UPS
-       2: UCS
-       2: UCS
-       3: N/A [4U];
-       7: TOR Switch
-       8: Fuse Panel [-48 VDC]
-       }
    }
    
 Links and References
