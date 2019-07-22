@@ -100,7 +100,13 @@ After the ``.. code-block::`` directive you can add the language or use ``text``
     mkdir X
     rm -rf X
    
+::
 
+    .. code-block:: text
+       :linenos:
+       
+       mkdir X
+       rm -rf X
 
 Notes_Warnings
 ~~~~~~~~~~~~~~
