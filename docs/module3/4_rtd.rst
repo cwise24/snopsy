@@ -235,6 +235,7 @@ Rack El
        7: TOR Switch
        8: Fuse Panel [-48 VDC]
       }
+      
        rack {
        8U;
        description = "Rack A2";
@@ -261,6 +262,7 @@ Rack El
        7: TOR Switch
        8: Fuse Panel [-48 VDC]
        }
+
        rack {
        8U;
        description = "Rack A2";
