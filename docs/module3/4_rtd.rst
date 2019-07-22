@@ -279,6 +279,7 @@ Packet Diagrams
 ^^^^^^^^^^^^
 
 .. packetdiag::
+
    packetdiag {
     colwidth = 32
     node_height = 72
