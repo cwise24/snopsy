@@ -97,8 +97,8 @@ After the ``.. code-block::`` directive you can add the language or use ``text``
 .. code-block:: text
    :linenos:
 
-   mkdir X
-   rm -rf X
+    mkdir X
+    rm -rf X
    
  ::
 
