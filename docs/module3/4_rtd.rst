@@ -140,6 +140,13 @@ After the ``.. code-block::`` directive you can add the language or use ``text``
        mkdir X
        rm -rf X
 
+One other good ability to to present code/files that already exist within your repository.  The ``.. literalinclude::`` directive does this for us
+
+::
+
+    .. literalinclude:: path/to/file
+       :linenos:
+
 Notes_Warnings
 ~~~~~~~~~~~~~~
 
