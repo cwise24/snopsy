@@ -18,7 +18,7 @@ First create a new directory to start your project
     sphinx-quickstart
 
 .. image:: imgs/sphinx-quickstart.png
-   :scale: 60%
+   :scale: 50%
    :align: center
 
 Now build your html pages
