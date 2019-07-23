@@ -79,7 +79,7 @@ pygments_style = 'sphinx'
 #---sphinx-themes-----
 html_theme = 'solar_theme'
 #import solar_theme
-html_theme_path = [solar_theme.theme_path]
+#html_theme_path = [solar_theme.theme_path]
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
