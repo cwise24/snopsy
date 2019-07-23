@@ -17,7 +17,9 @@ First create a new directory to start your project
     cd newproject/docs
     sphinx-quickstart
 
-Placeholder for questions
+.. image:: imgs/sph_quick.png
+   :scale: 60%
+   :align: center
 
 Now build your html pages
 
