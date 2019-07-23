@@ -6,18 +6,34 @@ Sphinx
 
 ::
 
+     pip3 install sphinx
      pip3 install sphinx sphinx-autobuild 
      pip3 install sphinxcontrib-nwdiag  { requires extra configs }
 
 First create a new directory to start your project
 ::
 
-    mkdir newproject
-    cd newproject
-    mkdir docs 
+    mkdir -p newproject/docs
+    cd newproject/docs
     sphinx-quickstart
 
 Placeholder for questions
+
+Now build your html pages
+
+::
+
+    sphinx-build -b html . _build/html
+
+To run the files/builds locally and see how the web links and pages are run
+
+::
+
+    sphinx-autobuild -b html . _build/html 
+
+.. note:: Watch for errors on the cli when autobuild runs
+
+From here you can navigate to localhost:8000 from your browser
 
 Table of Contents building, you must add ``:glob:`` if you plan to use a wildcard ``*``.  Below will search the directory structure for the module folders, followed by the moduleN.rst file to show the local table of contents
 
@@ -39,20 +55,6 @@ I used individual folders for each module and in this example I will cover ``mod
 
 .. literalinclude:: module3.rst 
    :linenos:
-
-::
-
-    sphinx-build -b html docs _build/html
-
-To run the files/builds locally and see how the web links and pages are run
-
-::
-
-    sphinx-autobuild -b html docs/ _build/html 
-
-.. note:: Watch for errors on the cli when autobuild runs
-
-From here you can navigate to localhost:8000 from your browser
 
 
 Bullets
