@@ -17,7 +17,7 @@ First create a new directory to start your project
     cd newproject/docs
     sphinx-quickstart
 
-.. image:: imgs/sph_quick.png
+.. image:: imgs/sphinx-quickstart.png
    :scale: 60%
    :align: center
 
