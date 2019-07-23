@@ -26,7 +26,7 @@ You can also edit the ``conf.py`` file to use specific themes.  Alabaster is the
 locally (sphinx-autobuild) you will need to install ``pip3 install sphinx-rtd-theme`` 
 
 .. image:: imgs/theme.png
-   :scale: 60%
+   :scale: 80%
    :align: center
 .. centered:: Fig 2
 
