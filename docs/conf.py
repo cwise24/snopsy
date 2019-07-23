@@ -75,7 +75,11 @@ pygments_style = 'sphinx'
 # a list of builtin themes.
 #
 #html_theme = 'alabaster'
-html_theme = 'sphinx_rtd_theme'
+#html_theme = 'sphinx_rtd_theme'
+#---sphinx-themes-----
+html_theme = 'solar_theme'
+import solar_theme
+html_theme_path = [solar_theme.theme_path]
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
