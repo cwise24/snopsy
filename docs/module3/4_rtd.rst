@@ -22,6 +22,14 @@ First create a new directory to start your project
    :align: center
 .. centered:: Fig 1
 
+You can also edit the ``conf.py`` file to use specific themes.  Alabaster is the default but from the image below I changed mine to use ``sphinx_rtd_theme``, to render this new themes
+locally (sphinx-autobuild) you will need to install ``pip3 install sphinx-rtd-theme`` 
+
+.. image:: imgs/theme.png
+   :scale: 40%
+   :align: center
+.. centered:: Fig 2
+
 Now build your html pages
 
 ::
@@ -52,7 +60,7 @@ Table of Contents building, you must add ``:glob:`` if you plan to use a wildcar
 .. figure:: imgs/tree_m3.png
    :scale: 70%
    :align: center
-.. centered:: Fig 2
+.. centered:: Fig 3
 
 I used individual folders for each module and in this example I will cover ``module3``. This breaks down the individual module Table of Contents (toc)
 
@@ -83,7 +91,7 @@ To place images or figures on pages.  I can use ``.. figure::`` or ``.. image::`
 .. figure:: imgs/rtd.png
    :scale: 50%
    :align: center
-.. centered:: Fig 3
+.. centered:: Fig 4
 
 .. image:: imgs/rtd.png
    :align: center
@@ -94,7 +102,7 @@ To place images or figures on pages.  I can use ``.. figure::`` or ``.. image::`
     .. figure:: imgs/rtd.png
        :scale: 50%
        :align: center
-    .. centered:: Fig 2
+    .. centered:: Fig 4
 
     .. image:: imgs/rtd.png
        :align: center
