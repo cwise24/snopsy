@@ -1,0 +1,330 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Operations &mdash; SNOPsy .1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Pull" href="4_pull.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> SNOPsy
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../module1/module1.html">Module 1</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="module2.html">Module 2</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="1_git.html">Git</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_branch.html">Branch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_merge.html">Merge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_pull.html">Pull</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Operations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#clone">Clone</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fork">Fork</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#origin-and-upstream">Origin and Upstream</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#origin">Origin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#upstream">Upstream</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#merge-request">Merge Request</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#create-a-merge-request">Create a Merge Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#accepting-a-merge-request">Accepting a Merge Request</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#pull-from-upstream">Pull from Upstream</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">SNOPsy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="module2.html">Module 2</a> &raquo;</li>
+        
+      <li>Operations</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/module2/5_operations.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="operations">
+<h1>Operations<a class="headerlink" href="#operations" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="clone">
+<h2>Clone<a class="headerlink" href="#clone" title="Permalink to this headline">¶</a></h2>
+<p>Cloning creates a local repository (on your computer) from your repository say on Gitlab or GitHub. You cannot contribute back to the source repository (if it is not yours)  unless you are added
+as an collaborator.  For this module, we will only clone a forked repository so we may have a local working copy.</p>
+</div>
+<div class="section" id="fork">
+<h2>Fork<a class="headerlink" href="#fork" title="Permalink to this headline">¶</a></h2>
+<p>When you fork a repository, you make a copy of the source repository and are able to freely make changes without affecting the source repository. There will be a connection between the source
+repository and yours so you may contribute back.  You may also pull updates from the source repository into your fork.</p>
+<p>I have a public repository that you can Fork <a class="reference external" href="https://gitlab.com/cwise24/ansible_lab">here</a></p>
+</div>
+<div class="section" id="origin-and-upstream">
+<h2>Origin and Upstream<a class="headerlink" href="#origin-and-upstream" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/g_o_u.png"><img alt="../_images/g_o_u.png" src="../_images/g_o_u.png" style="width: 862.8px; height: 626.4px;" /></a>
+</div>
+<p class="centered">
+<strong>Fig 8</strong></p><p>Let’s check what remotes (if any) you currently have in your local repository</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you cloned a repository you will have your origin listed</p>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">remote</span> <span class="o">-</span><span class="n">v</span>
+</pre></div>
+</div>
+<div class="section" id="origin">
+<h3>Origin<a class="headerlink" href="#origin" title="Permalink to this headline">¶</a></h3>
+<p>Your own repository (i.e. <a class="reference external" href="mailto:git&#37;&#52;&#48;gitlab&#46;com">git<span>&#64;</span>gitlab<span>&#46;</span>com</a>:your_username/your_reposity.git )
+To set an origin (and origin is just a name space, could easy be just your name)
+<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">add</span> <span class="pre">origin</span> <span class="pre">git&#64;gitlab.com:&lt;username&gt;/&lt;repo&gt;.git</span></code></p>
+</div>
+<div class="section" id="upstream">
+<h3>Upstream<a class="headerlink" href="#upstream" title="Permalink to this headline">¶</a></h3>
+<p>The source repository you’re forked from (i.e. <a class="reference external" href="mailto:git&#37;&#52;&#48;gitlab&#46;com">git<span>&#64;</span>gitlab<span>&#46;</span>com</a>:someonelse_username/their_reposity.git  )</p>
+<p>To set an upstream:</p>
+<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">add</span> <span class="pre">upstream</span> <span class="pre">https://gitlab.com/someonelse_username/their_reposity.git</span></code></p>
+<p>Let’s view our remote’s now</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">remote</span> <span class="o">-</span><span class="n">v</span>
+<span class="n">origin</span>      <span class="n">git</span><span class="nd">@gitlab</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">your_username</span><span class="o">/</span><span class="n">ansible_lab</span><span class="o">.</span><span class="n">git</span> <span class="p">(</span><span class="n">fetch</span><span class="p">)</span>
+<span class="n">origin</span>      <span class="n">git</span><span class="nd">@gitlab</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">your_username</span><span class="o">/</span><span class="n">ansible_lab</span><span class="o">.</span><span class="n">git</span> <span class="p">(</span><span class="n">push</span><span class="p">)</span>
+<span class="n">upstream</span>    <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">gitlab</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">cwise24</span><span class="o">/</span><span class="n">ansible_lab</span><span class="o">.</span><span class="n">git</span> <span class="p">(</span><span class="n">fetch</span><span class="p">)</span>
+<span class="n">upstream</span>    <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">gitlab</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">cwise24</span><span class="o">/</span><span class="n">ansible_lab</span><span class="o">.</span><span class="n">git</span> <span class="p">(</span><span class="n">push</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="merge-request">
+<h2>Merge Request<a class="headerlink" href="#merge-request" title="Permalink to this headline">¶</a></h2>
+<p>Now comes time to merge your work back into the Upstream branch or to accept a merge request from a forked contributor</p>
+<div class="section" id="create-a-merge-request">
+<h3>Create a Merge Request<a class="headerlink" href="#create-a-merge-request" title="Permalink to this headline">¶</a></h3>
+<p>To create a merge request, from your repository on left side click <strong>Merge Request</strong></p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/mr1.png"><img alt="../_images/mr1.png" src="../_images/mr1.png" style="width: 764.4000000000001px; height: 335.6px;" /></a>
+</div>
+<p class="centered">
+<strong>Fig 9</strong></p><p>Then click <strong>New merge request</strong></p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/mr2.png"><img alt="../_images/mr2.png" src="../_images/mr2.png" style="width: 757.2px; height: 300.8px;" /></a>
+</div>
+<p class="centered">
+<strong>Fig 10</strong></p><p>You must view the compare branches before you can submit</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/mr3.png"><img alt="../_images/mr3.png" src="../_images/mr3.png" style="width: 761.2px; height: 269.6px;" /></a>
+</div>
+<p class="centered">
+<strong>Fig 11</strong></p><p>Click Submit Merge Request</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/mr4.png"><img alt="../_images/mr4.png" src="../_images/mr4.png" style="width: 950.0px; height: 471.5px;" /></a>
+</div>
+<p class="centered">
+<strong>Fig 12</strong></p><p>Your submitted Merge Request</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/mr5.png"><img alt="../_images/mr5.png" src="../_images/mr5.png" style="width: 763.6px; height: 374.0px;" /></a>
+</div>
+<p class="centered">
+<strong>Fig 13</strong></p></div>
+<div class="section" id="accepting-a-merge-request">
+<h3>Accepting a Merge Request<a class="headerlink" href="#accepting-a-merge-request" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/mr6.png"><img alt="../_images/mr6.png" src="../_images/mr6.png" style="width: 864.0px; height: 331.8px;" /></a>
+</div>
+<p class="centered">
+<strong>Fig 14</strong></p><div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/mr7.png"><img alt="../_images/mr7.png" src="../_images/mr7.png" style="width: 864.0px; height: 414.0px;" /></a>
+</div>
+<p class="centered">
+<strong>Fig 15</strong></p><div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/mr8.png"><img alt="../_images/mr8.png" src="../_images/mr8.png" style="width: 856.8px; height: 414.59999999999997px;" /></a>
+</div>
+<p class="centered">
+<strong>Fig 16</strong></p></div>
+</div>
+<div class="section" id="pull-from-upstream">
+<h2>Pull from Upstream<a class="headerlink" href="#pull-from-upstream" title="Permalink to this headline">¶</a></h2>
+<p>To keep your local (and origin) in sync with the upstream repository, you’ll want to do either a <code class="docutils literal notranslate"><span class="pre">fetch</span></code> or <code class="docutils literal notranslate"><span class="pre">pull</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">fetch</span> <span class="n">upstream</span> <span class="o">&lt;</span><span class="n">branch</span><span class="o">&gt;</span>
+<span class="n">git</span> <span class="n">pull</span> <span class="n">upstream</span> <span class="o">&lt;</span><span class="n">branch</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="4_pull.html" class="btn btn-neutral float-left" title="Pull" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Chad Wise
+      <span class="lastupdated">
+        Last updated on True.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,274 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Branch &mdash; SNOPsy .1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Merge" href="3_merge.html" />
+    <link rel="prev" title="Git" href="1_git.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> SNOPsy
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../module1/module1.html">Module 1</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="module2.html">Module 2</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="1_git.html">Git</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Branch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_merge.html">Merge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_pull.html">Pull</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5_operations.html">Operations</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">SNOPsy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="module2.html">Module 2</a> &raquo;</li>
+        
+      <li>Branch</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/module2/2_branch.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="branch">
+<h1>Branch<a class="headerlink" href="#branch" title="Permalink to this headline">¶</a></h1>
+<p>Let’s first take a definition straight from git <a class="footnote-reference brackets" href="#id2" id="id1">1</a> itself</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;Branching means you diverge from the main line of development and continue to do work without messing with that main line.&quot;</span>
+</pre></div>
+</div>
+<p>What does this mean to a NetOps person.  We aren’t building applications, but we are enabling them.  As a NetOps person we can use Git to track network infrastructure configurations and catch unwanted drift.
+We can define how Vlans, routes or any simple task gets built.  By building our Ansible playbook in Git, we can version control it, even allow others to contribute (in a feature branch) in which we decide to allow the new additions or reject them.  It even allows
+users to file issues they’ve experienced and use to fix those.</p>
+<p class="centered">
+<strong>Commands we will use for Branch</strong></p><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">branch</span>                      <span class="p">{</span> <span class="n">show</span> <span class="n">the</span> <span class="n">working</span> <span class="n">branch</span> <span class="p">}</span>
+<span class="n">git</span> <span class="n">checkout</span> <span class="o">&lt;</span><span class="n">branch</span> <span class="n">name</span><span class="o">&gt;</span>      <span class="p">{</span> <span class="n">command</span> <span class="n">to</span> <span class="n">switch</span> <span class="n">our</span> <span class="n">working</span> <span class="n">branch</span> <span class="p">}</span>
+<span class="n">git</span> <span class="n">checkout</span> <span class="o">-</span><span class="n">b</span> <span class="o">&lt;</span><span class="n">new</span> <span class="n">branch</span><span class="o">&gt;</span>    <span class="p">{</span> <span class="n">creates</span> <span class="n">a</span> <span class="n">new</span> <span class="n">branch</span> <span class="p">}</span>
+<span class="n">git</span> <span class="n">checkout</span> <span class="o">-</span><span class="n">d</span> <span class="o">&lt;</span><span class="n">branch</span> <span class="n">name</span><span class="o">&gt;</span>   <span class="p">{</span> <span class="n">deletes</span> <span class="n">branch</span> <span class="n">name</span> <span class="p">}</span>
+</pre></div>
+</div>
+<p>From module 1 we created our master branch (default branch), let’s verify that using:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">branch</span>
+</pre></div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>DO NOT MAKE CHANGES IN THE MASTER BRANCH, HARD LESSON LEARNED HERE</strong></p>
+</div>
+<p>Now we will create a new branch <em>‘dev’</em>, this is where we will make our changes and merge them back into the mainline <em>Master</em></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="o">-</span><span class="n">b</span> <span class="n">dev</span>
+</pre></div>
+</div>
+<p>This will create a branch locally, We’ll now add a README.md to our <em>dev</em> branch.</p>
+<div class="sidebar">
+<p class="sidebar-title">Linux Cheat Sheet</p>
+<div class="line-block">
+<div class="line">i     { for insert }</div>
+<div class="line">esc   { to exit for saving }</div>
+<div class="line">:wq   { write &amp; quit }</div>
+</div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">vim</span> <span class="n">README</span><span class="o">.</span><span class="n">md</span>
+</pre></div>
+</div>
+<p>And now insert some text</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">This</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">readme</span> <span class="n">file</span>
+</pre></div>
+</div>
+<p>Once that file is created and saved, let’s set our up-stream dev branch and commit our file</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">push</span> <span class="o">--</span><span class="nb">set</span><span class="o">-</span><span class="n">upstream</span> <span class="n">git</span><span class="nd">@gitlab</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="o">&lt;</span><span class="n">username</span><span class="o">&gt;/</span><span class="n">ansible_lab</span><span class="o">.</span><span class="n">git</span> <span class="n">dev</span>
+</pre></div>
+</div>
+<p>Now we can verify our new file and branch are present from out Gitlab page</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/devb.png"><img alt="../_images/devb.png" src="../_images/devb.png" style="width: 1081.8px; height: 354.59999999999997px;" /></a>
+</div>
+<p class="centered">
+<strong>Fig 1</strong></p><p class="rubric">Footnotes</p>
+<dl class="footnote brackets">
+<dt class="label" id="id2"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p><a class="reference external" href="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell">https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell</a></p>
+</dd>
+</dl>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="3_merge.html" class="btn btn-neutral float-right" title="Merge" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="1_git.html" class="btn btn-neutral float-left" title="Git" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Chad Wise
+      <span class="lastupdated">
+        Last updated on True.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

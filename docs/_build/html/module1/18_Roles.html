@@ -1,0 +1,276 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Roles &mdash; SNOPsy .1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Module 2" href="../module2/module2.html" />
+    <link rel="prev" title="Facts" href="17_Facts.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> SNOPsy
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="module1.html">Module 1</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="1_What_is_Ansible.html">Ansible</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_Terminology.html">Terminology</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_SSH_Key_Generation.html">SSH Key Generation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_Installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5_Linux.html">Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="6_Configurations.html">Configurations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="7_Repository.html">Repository</a></li>
+<li class="toctree-l2"><a class="reference internal" href="8_Adhoc.html">Adhoc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="9_YAML.html">YAML</a></li>
+<li class="toctree-l2"><a class="reference internal" href="10_Linting.html">Linting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="11_Playbook.html">Playbook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="12_Commands.html">Commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="13_Debug1.html">Debug1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="14_Jinja_Playbook.html">Jinja Playbook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="15_Debug2.html">Debug2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="16_Loop.html">Loop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="17_Facts.html">Facts</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Roles</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#folder-breakdown">Folder breakdown</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../module2/module2.html">Module 2</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">SNOPsy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="module1.html">Module 1</a> &raquo;</li>
+        
+      <li>Roles</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/module1/18_Roles.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="roles">
+<h1>Roles<a class="headerlink" href="#roles" title="Permalink to this headline">¶</a></h1>
+<p>Definition:
+“Roles are a robust feature of Ansible that facilitate reuse and further promote modularization of configuration, but Ansible roles are often overlooked in lieu of straightforward playbooks for the task at hand. The good news is that Ansible roles are simple to get set up and allow for complexity when necessary” <a class="footnote-reference brackets" href="#id2" id="id1">1</a></p>
+<p>With roles we can define how things get built, what actions need to be taken after (i.e. restart web-server after config file is updated) and make all of this modular to be consumed by others.</p>
+<p>Let’s use Ansible Galaxy to build our file structure for our role <code class="docutils literal notranslate"><span class="pre">ansible_role</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ansible</span><span class="o">-</span><span class="n">galaxy</span> <span class="n">init</span> <span class="n">ansible_role</span>
+</pre></div>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/galaxy_init.png"><img alt="../_images/galaxy_init.png" src="../_images/galaxy_init.png" style="width: 357.0px; height: 118.8px;" /></a>
+</div>
+<p class="centered">
+<strong>Fig 8</strong></p><p>Ansible Galaxy has now made our directory <code class="docutils literal notranslate"><span class="pre">ansible_role</span></code> and the complete folder structure as shown below</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/galaxy_tree.png"><img alt="../_images/galaxy_tree.png" src="../_images/galaxy_tree.png" style="width: 330.0px; height: 406.8px;" /></a>
+</div>
+<p class="centered">
+<strong>Fig 9</strong></p><div class="section" id="folder-breakdown">
+<h2>Folder breakdown<a class="headerlink" href="#folder-breakdown" title="Permalink to this headline">¶</a></h2>
+<dl class="simple">
+<dt>Tasks</dt><dd><ul class="simple">
+<li><p>main.yml - this is file will contain our plays; this serves as the same <code class="docutils literal notranslate"><span class="pre">tasks</span></code> section of our playbook</p></li>
+</ul>
+</dd>
+<dt>Vars</dt><dd><ul class="simple">
+<li><p>main.yml -</p></li>
+</ul>
+</dd>
+<dt>Handlers</dt><dd><ul class="simple">
+<li><p>main.yml</p></li>
+</ul>
+</dd>
+<dt>Meta</dt><dd><ul class="simple">
+<li><p>main.yml</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Footnote</p>
+<dl class="footnote brackets">
+<dt class="label" id="id2"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p><a class="reference external" href="https://linuxacademy.com/blog/red-hat/ansible-roles-explained/">https://linuxacademy.com/blog/red-hat/ansible-roles-explained/</a></p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../module2/module2.html" class="btn btn-neutral float-right" title="Module 2" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="17_Facts.html" class="btn btn-neutral float-left" title="Facts" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Chad Wise
+      <span class="lastupdated">
+        Last updated on True.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
