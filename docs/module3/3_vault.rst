@@ -42,12 +42,13 @@ Playbooks
 
 Now that some basics are covered with vault, I will cover how to implement vault with automated playbooks.
 
-Create a *become* sudo password file to encrypt
+Create a *become* sudo password file to encrypt, remember that this is a YAML file and vault will expect the file to be in a *dictionary* format ``key: value``
 
 ``vim pass.yml``
 
 .. code-block:: yaml
    :linenos:    
+    
     ---
     sudo_become: "S3creT!"
 
