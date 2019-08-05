@@ -12,6 +12,6 @@ This modules focus is only on Ansible { Under construction }
    :maxdepth: 1
    :glob:
 
-   1_Ansible
-   2_Galaxy
-   3_Vault
+   1_ansible
+   2_galaxy
+   3_vault
