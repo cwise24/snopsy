@@ -64,9 +64,6 @@ With ansible vault, let's evaluate our playbook again
 .. blockdiag::
    
     blockdiag {
-        orientation = portrait
-        default_shape = roundbox
-
         Inventory -> Play;
         Pass.yml -> Play;
         }
