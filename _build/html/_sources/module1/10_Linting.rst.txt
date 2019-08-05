@@ -89,3 +89,9 @@ One more "linting" item to cover before we look into plays/playbooks.  We can us
 ::
 
     ansible-playbook error.yml --syntax-check
+
+Or you can install ``ansible-lint``
+
+::
+
+    pip3 install ansible-lint --user
