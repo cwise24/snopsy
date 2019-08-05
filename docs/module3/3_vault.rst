@@ -29,4 +29,4 @@ Now you may create new files by using ``ansible-vault create <filename>``, this 
 
 Another way to encrypt a new file is ``ansible-vault create <filename>`` or an existing file ``ansible-vault encrypt <filename>`` and you will be prompted for the new passphrase 
 
-.. note:: If you configure the ``vault_password_file`` this will automatically be used as the passphrase
+.. note:: If you configure the ``vault_password_file`` this will automatically be used as the passphrase and you will **NOT** be prompted
