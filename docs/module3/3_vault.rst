@@ -73,6 +73,6 @@ With ansible vault, let's evaluate our playbook again
         default_shape = roundedbox
 
         Inventory -> Play;
-        Pass.yml -> Play;
-        Play -> Target;
+        Pass.yml -> Play [ label = "Vault" ];
+        Play -> Target [label = "SSH" ];
         }
