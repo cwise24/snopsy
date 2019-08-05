@@ -67,13 +67,13 @@ With ansible vault, let's evaluate our playbook again
     blockdiag {
     
         default_node_color = lightyellow;
-        default_linecolor = magenta;
+        #default_linecolor = magenta;
         default_textcolor = red;
         
         default_shape = roundedbox
 
         Inventory -> Play;
-        Pass.yml -> Play [label = "Ecrypted" ];
+        Pass.yml -> Play [label = "Ecrypted", color = "green" ];
         Play -> Target [label = "SSH" ];
-        ansible.cfg -> Play [label = "Decrypt", dir = both ];
+        ansible.cfg -> Play [label = "Decrypt", dir = both, color = "red" ];
         }
