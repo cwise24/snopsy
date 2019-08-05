@@ -70,6 +70,8 @@ With ansible vault, let's evaluate our playbook again
         default_linecolor = magenta;
         default_textcolor = red;
         
+        default_shape = roundedbox
+
         Inventory -> Play;
         Pass.yml -> Play;
         }
