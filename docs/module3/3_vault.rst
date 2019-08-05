@@ -65,6 +65,12 @@ With ansible vault, let's evaluate our playbook again
 .. blockdiag::
    
     blockdiag {
+        orientation = protrait;
+        default_shape = roundbox;
+        default_node_color = lightyellow;
+        default_linecolor = magenta;
+        default_textcolor = red;
+        
         Inventory -> Play;
         Pass.yml -> Play;
         }
