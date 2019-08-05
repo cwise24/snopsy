@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Docker &mdash; SNOPsy .1 documentation</title>
+  <title>Module 3 &mdash; SNOPsy .1 documentation</title>
   
 
   
@@ -35,7 +35,8 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" /> 
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Operations" href="../module2/5_operations.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -80,9 +81,12 @@
             
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../module1/module1.html">Module 1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../module2/module2.html">Module 2</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Module 3</a><ul class="simple">
+</ul>
+</li>
 </ul>
 
             
@@ -128,13 +132,13 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>Docker</li>
+      <li>Module 3</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/section3/2_docker.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/module3/module3.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -147,20 +151,17 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="docker">
-<h1>Docker<a class="headerlink" href="#docker" title="Permalink to this headline">¶</a></h1>
-<p>This <a class="reference external" href="https://www.codementor.io/djangostars/tutorial-what-is-docker-and-how-to-use-it-with-python-wowos9qte">link</a> is a very good high level cover of most basic Docker commands you will use.</p>
-<p>One thing not covered, and is a bit more advanced, is creating your own Docker network versus using the <code class="docutils literal notranslate"><span class="pre">docker0</span></code> bridge assigned IP address. I will cover the steps to build a custom
-Docker network and assign that network and an IP address to a container.</p>
-<p>First you have to create the network and give it an alias name:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">network</span> <span class="n">create</span> <span class="o">--</span><span class="n">subnet</span><span class="o">=</span><span class="mf">172.10</span><span class="o">.</span><span class="mf">1.0</span><span class="o">/</span><span class="mi">24</span> <span class="n">mynet</span>
-</pre></div>
+  <div class="section" id="module-3">
+<h1>Module 3<a class="headerlink" href="#module-3" title="Permalink to this headline">¶</a></h1>
+<p>This modules focus is only on Ansible { Under construction }</p>
+<ul class="simple">
+<li><p>Ansible</p></li>
+<li><p>Galaxy</p></li>
+<li><p>Vault</p></li>
+<li><p>Jinja2</p></li>
+</ul>
+<div class="toctree-wrapper compound">
 </div>
-<p>To run a new container within this new network:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">run</span>  <span class="o">--</span><span class="n">net</span> <span class="n">mynet</span> <span class="o">--</span><span class="n">ip</span> <span class="mf">172.10</span><span class="o">.</span><span class="mf">1.3</span> <span class="o">-</span><span class="n">p</span> <span class="mi">81</span><span class="p">:</span><span class="mi">80</span> <span class="o">-</span><span class="n">h</span> <span class="n">web1</span><span class="o">.</span><span class="n">local</span><span class="o">.</span><span class="n">com</span> <span class="o">--</span><span class="n">name</span> <span class="n">web1</span> <span class="o">--</span><span class="n">restart</span> <span class="n">unless</span><span class="o">-</span><span class="n">stopped</span> <span class="o">-</span><span class="n">dit</span> <span class="n">nginx</span>
-</pre></div>
-</div>
-<p>Where <code class="docutils literal notranslate"><span class="pre">-h</span></code> sets the hostname and <code class="docutils literal notranslate"><span class="pre">--name</span></code> sets an alias name for the container</p>
 </div>
 
 
@@ -168,6 +169,13 @@ Docker network and assign that network and an IP address to a container.</p>
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../module2/5_operations.html" class="btn btn-neutral float-left" title="Operations" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

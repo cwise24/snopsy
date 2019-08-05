@@ -105,6 +105,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../module2/module2.html">Module 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module3/module3.html">Module 3</a></li>
 </ul>
 
             
@@ -305,6 +306,10 @@
 <p class="centered">
 <strong>default.yaml</strong></p><p>One more “linting” item to cover before we look into plays/playbooks.  We can use Ansible to find other issues that are more Ansible related</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ansible</span><span class="o">-</span><span class="n">playbook</span> <span class="n">error</span><span class="o">.</span><span class="n">yml</span> <span class="o">--</span><span class="n">syntax</span><span class="o">-</span><span class="n">check</span>
+</pre></div>
+</div>
+<p>Or you can install <code class="docutils literal notranslate"><span class="pre">ansible-lint</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip3</span> <span class="n">install</span> <span class="n">ansible</span><span class="o">-</span><span class="n">lint</span> <span class="o">--</span><span class="n">user</span>
 </pre></div>
 </div>
 </div>

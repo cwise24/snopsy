@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Markdown &mdash; SNOPsy .1 documentation</title>
+  <title>Vault &mdash; SNOPsy .1 documentation</title>
   
 
   
@@ -83,6 +83,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../module1/module1.html">Module 1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../module2/module2.html">Module 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="module3.html">Module 3</a></li>
 </ul>
 
             
@@ -128,13 +129,13 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>Markdown</li>
+      <li>Vault</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/section3/3_markdown.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/module3/3_vault.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -147,40 +148,18 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="markdown">
-<h1>Markdown<a class="headerlink" href="#markdown" title="Permalink to this headline">¶</a></h1>
-<p>Markdown is used in multiple places, git repos, dockerhub.  I will add a few that I have used and a reference to GitHub’s Guide <a class="footnote-reference brackets" href="#id2" id="id1">1</a></p>
-<div class="section" id="text">
-<h2>Text<a class="headerlink" href="#text" title="Permalink to this headline">¶</a></h2>
-<p><strong>Bold</strong></p>
-<p><em>italics</em></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">**</span><span class="n">Bold</span><span class="o">**</span>
-<span class="o">*</span><span class="n">italics</span><span class="o">*</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="lists">
-<h2>Lists<a class="headerlink" href="#lists" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>item 1</p></li>
-<li><p>item 2</p></li>
-</ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">*</span> <span class="n">item</span> <span class="mi">1</span>
-<span class="o">*</span> <span class="n">item</span> <span class="mi">2</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="links">
-<h2>Links<a class="headerlink" href="#links" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">Google</span><span class="p">](</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">google</span><span class="o">.</span><span class="n">com</span><span class="p">)</span>
-</pre></div>
-</div>
-<p class="rubric">Footnotes</p>
-<dl class="footnote brackets">
-<dt class="label" id="id2"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
-<dd><p><a class="reference external" href="https://guides.github.com/features/mastering-markdown/">https://guides.github.com/features/mastering-markdown/</a></p>
-</dd>
-</dl>
+  <div class="section" id="vault">
+<h1>Vault<a class="headerlink" href="#vault" title="Permalink to this headline">¶</a></h1>
+<p>We will use ansible vault to encrypt all of our sensitive information AND to make sure our playbooks stay automated. I’m not saying this is the only way but this is how I
+keep my playbooks automated without having to enter any credentials.</p>
+<p>From the <code class="docutils literal notranslate"><span class="pre">.ansible.cfg</span></code> in Module 1, we’ll now uncomment the <code class="docutils literal notranslate"><span class="pre">vault_password_file</span></code> directive</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span> vim .ansible.cfg
+
+ [defaults]
+ Host_key_checking = False
+ Log_path = ~/ansible_lab
+<span class="hll"> vault_password_file = .vault.key
+</span></pre></div>
 </div>
 </div>
 
