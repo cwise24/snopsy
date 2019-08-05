@@ -75,5 +75,5 @@ With ansible vault, let's evaluate our playbook again
         Inventory -> Play;
         Pass.yml -> Play [ label = "Vault" ];
         Play -> Target [label = "SSH" ];
-        Pass.yml -> .ansible.cfg ->Play;
+        Pass.yml -> .ansible.cfg -> Play;
         }
