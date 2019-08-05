@@ -30,3 +30,32 @@ Now you may create new files by using ``ansible-vault create <filename>``, this 
 Another way to encrypt a new file is ``ansible-vault create <filename>`` or an existing file ``ansible-vault encrypt <filename>`` and you will be prompted for the new passphrase 
 
 .. note:: If you configure the ``vault_password_file`` this will automatically be used as the passphrase and you will **NOT** be prompted
+
+Some useful vault commands:
+
+``ansible-vault edit <filename>`` will open the file in vim
+``ansible-vault decrypt <filename>`` returns file to plaintext status
+``ansible-vault rekey <filename>`` to assign a new passphrase to the file, again see Note above on ``vault_password_file``
+
+Playbooks
+--------------
+
+Now that some basics are covered with vault, I will cover how to implement vault with automated playbooks.
+
+Create a *become* sudo password file to encrypt
+
+``vim pass.yml``
+
+.. code-block:: yaml
+   :linenos:    
+    ---
+    sudo_become: "S3creT!"
+
+Standard playbook call without vault, from Module 1 the ``-b`` switch is for *Become* and the ``-K`` is *ask for password*.  Not very automated at all if you have to sit at the keyboard
+::
+    ansible-playbook -i inventory someplay.yml -b -K 
+
+With ansible vault, let's evaluate our playbook again
+::
+
+    ansible-playbook -i inventory someplay.yml -e "@pass.yml"
