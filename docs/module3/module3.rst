@@ -11,3 +11,7 @@ This modules focus is only on Ansible { Under construction }
 .. toctree::
    :maxdepth: 1
    :glob:
+
+   1_Ansible
+   2_Galaxy
+   3_Vault
