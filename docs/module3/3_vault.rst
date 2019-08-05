@@ -74,4 +74,5 @@ With ansible vault, let's evaluate our playbook again
 
         Inventory -> Play;
         Pass.yml -> Play;
+        Play -> Target;
         }
