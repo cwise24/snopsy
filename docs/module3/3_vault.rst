@@ -61,6 +61,7 @@ With ansible vault, let's evaluate our playbook again
 
     ansible-playbook -i inventory someplay.yml -e "@pass.yml"
 
+
 .. blockdiag::
    
     blockdiag {
