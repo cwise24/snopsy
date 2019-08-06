@@ -67,6 +67,10 @@ And now for the file we will encrypt
    var1: "is var one"
    var2: "is var two"
 
+Now to run our play we will use the below command, calling our localhost as the only inventory member, our ``vault_play.yml`` play file and passing in the external ``-e`` vault file ``@vault_test.yml``
+::
+
+    ansible-playbook -i "localhost," vault_play.yml -e "@vault_test.yml"
 
 .. figure:: imgs/vault_play.png
    :scale: 50%
