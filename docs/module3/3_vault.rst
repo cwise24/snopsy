@@ -78,7 +78,8 @@ Ansible Play::
     
         default_node_color = lightyellow;
         #default_linecolor = magenta;
-        default_textcolor = red;
+        default_textcolor = black;
+        default_fontsize = 12;
         
         default_shape = roundedbox
         
