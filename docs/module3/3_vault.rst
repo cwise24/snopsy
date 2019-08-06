@@ -58,6 +58,7 @@ Now let's build a playbook and a encrypted file to show vault in action
 
 And now for the file we will encrypt
 ``ansible-vault create vault_test.yml``
+
 .. code-block:: yaml
    :caption: Vault file
    :linenos:
