@@ -67,6 +67,11 @@ And now for the file we will encrypt
    var1: "is var one"
    var2: "is var two"
 
+
+.. figure:: imgs/vault_play.png
+   :scale: 50%
+   :align: center
+
 Playbooks
 --------------
 
