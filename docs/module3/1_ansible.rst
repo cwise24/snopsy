@@ -100,6 +100,32 @@ Loops
 Conditionals
 -----------------
 
+There are too many to cover and that's why we have the internet.  ` Ansible Docs <https://docs.ansible.com/ansible/latest/user_guide/playbooks_error_handling.html>`_
+
+My most used:
+* ignore_errors
+* until/retries/delay
+* status_code
+* when
+* fail_when
+
+This play will download the checksum file from F5 if it does not exist within the 
+
+.. code-block:: yaml 
+   :linenos:
+   :caption: File Exists Check
+
+  - name: Check if DO rpm exist
+    stat:
+      path: "{{ roles_d }}/f5_do_install/files/{{ doRPM }}"
+    register: do_stat
+
+   - name: Download DO RPM sha256 checksum
+     get_url:
+       url: https://github.com/F5Networks/f5-declarative-onboarding/raw/master/dist/{{ doSha }}
+       dest: "{{ roles_d }}/f5_do_install/files/{{ doSha }}"
+     when: do_stat.stat.exists == False
+
 Pause
 --------------
 
