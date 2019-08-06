@@ -109,7 +109,7 @@ My most used:
  * when
  * fail_when
 
-This play will download the checksum file from F5 if it does not exist within the 
+This play will download the checksum file from F5 if it does not exist within the specified directory (the ``path`` directive)
 
 .. code-block:: yaml 
    :linenos:
