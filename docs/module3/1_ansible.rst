@@ -54,5 +54,34 @@ Loops
 
 Conditionals
 -----------------
+
+Pause
+--------------
+
+Give a process time before running the next inline task
+
+.. code-block:: yaml
+   :linenos:
+   :caption: Pause
+
+   - pause:
+        seconds: 10
+
+When an action fails, prompt user to accept and continue rather than stop/fail.  I use the below when my docker network already exists
+
+.. code-block:: yaml
+   :linenos:
+   :caption: Pause & Prompt
+
+   - pause:
+       prompt: "{{ dnet.results[0].stderr_lines[0] }}.  Press Enter to continue "
+     when: dnet.results[0].rc  != 0
+
 Meta
 --------
+
+.. code-block:: yaml
+   :linenos:
+   :caption: refresh inventory
+
+   - meta: refresh_inventory
