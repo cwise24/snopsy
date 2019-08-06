@@ -9,7 +9,7 @@ This module and setting the verbose level::
     -v
     -vv
     -vvv
-    -vvvv
+    -vvvv  { connection level }
 
 will truly become your best allies as you build playbooks.  You can use debug to print registered variables to screen or even print messages.  Below I'll cover using the ``msg:`` function and 
 in a very Pythonic way, concatenating stings into our messages with ``+`` and quotes.
@@ -42,7 +42,7 @@ Let's create a new playbook called ``ext.yml`` and use the contents below
    :scale: 50%
    :align: center
    
-.. centered:: Fig
+.. centered:: Fig 1
 Limit
 -------
 
