@@ -56,7 +56,7 @@ Standard playbook call without vault, from Module 1 the ``-b`` switch is for *Be
 ::
     ansible-playbook -i inventory someplay.yml -b -K 
 
-With ansible vault and a modification to your inventory file, let's evaluate our playbook again
+With ansible vault and a modification to your inventory file like below.  Notice my KVM HyperVisor group ``[kvm_hv]`` has a hostvar association ``[kvm_hv:vars]``. Let's evaluate our playbook again
 
 Inventory host variable::
 
