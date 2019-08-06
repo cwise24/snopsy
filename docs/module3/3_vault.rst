@@ -14,7 +14,7 @@ Let's create a new *master* ansible-vault key, this will be stored as a hidden f
 
 From the ``.ansible.cfg`` in Module 1, we'll now un-comment the ``vault_password_file`` directive
 
-.. code-block:: text
+.. code-block:: bash
    :emphasize-lines: 6
 
     vim .ansible.cfg
