@@ -26,7 +26,7 @@ Let's create a new playbook called ``ext.yml`` and use the contents below
 
     ansible-playbook -i "localhost," ext.yml -e "var1= 'is var one' var2='is var two'"
     
-.. figure:: imgs/ext_play.yml
+.. figure:: imgs/ext_play.png
    :scale: 50%
    :align: center
    
