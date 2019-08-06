@@ -59,6 +59,40 @@ Limit
 Tags
 -------
 
+Adding tags to individual plays can greatly help when you only want to test or skip specific plays. 
+
+.. code-block:: yaml
+   :linenos:
+   :caption: Tags
+
+   ---
+   - hosts: all
+     connection: local
+
+     tasks:
+
+     - name: Ansible Date Example
+       debug:
+            var=ansible_date_time.date
+       tags:
+         - tag1
+
+     - name: Ansible Date Example
+       debug:
+            var=ansible_date_time.epoch
+       tags:
+        - tag2
+
+
+Only show date ``ansible-playbook -i inventory someplay.yml --tags "tag1"``
+Only show epoch ``ansible-playbook -i inventory someplay.yml --skip-tags "tag1"``
+
+.. figure:: imgs/date_tag.png
+   :scale: 50%
+   :align: center
+
+.. centered:: Fig 2
+
 Loops
 ---------
 
