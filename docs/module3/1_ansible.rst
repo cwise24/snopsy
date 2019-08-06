@@ -85,6 +85,7 @@ Adding tags to individual plays can greatly help when you only want to test or s
 
 
 Only show date ``ansible-playbook -i inventory someplay.yml --tags "tag1"``
+
 Only show epoch ``ansible-playbook -i inventory someplay.yml --skip-tags "tag1"``
 
 .. figure:: imgs/date_tag.png
