@@ -56,8 +56,18 @@ Standard playbook call without vault, from Module 1 the ``-b`` switch is for *Be
 ::
     ansible-playbook -i inventory someplay.yml -b -K 
 
-With ansible vault, let's evaluate our playbook again
-::
+With ansible vault and a modification to your inventory file, let's evaluate our playbook again
+
+Inventory host variable::
+
+    [kvm_hv]
+    localhost
+
+    [kvm_hv:vars]
+    ansible_become_pass="{{ sudo_become }}"
+
+
+Ansible Play::
 
     ansible-playbook -i inventory someplay.yml -e "@pass.yml"
 
