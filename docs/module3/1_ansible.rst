@@ -8,6 +8,7 @@ External Vars
 ------------------
 
 Let's create a new playbook called ``ext.yml`` and use the contents below
+``vim ext.yml``
 
 .. code-block:: yaml
    :caption: Playbook
