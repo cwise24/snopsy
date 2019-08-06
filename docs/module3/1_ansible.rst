@@ -29,6 +29,7 @@ Let's create a new playbook called ``ext.yml`` and use the contents below
 .. figure:: imgs/ext_play.yml
    :scale: 50%
    :align: center
+   
 .. centered:: Fig
 Limit
 -------
