@@ -4,10 +4,21 @@ Ansible
 Debug
 ---------
 
+This module and setting the verbose level::
+
+    -v
+    -vv
+    -vvv
+    -vvvv
+
+will truly become your best allies as you build playbooks.  You can use debug to print registered variables to screen or even print messages.  Below I'll cover using the ``msg:`` function and 
+in a very Pythonic way, concatenating stings into our messages with ``+`` and quotes.
+
 External Vars
 ------------------
 
 Let's create a new playbook called ``ext.yml`` and use the contents below
+
 ``vim ext.yml``
 
 .. code-block:: yaml
