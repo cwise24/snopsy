@@ -81,7 +81,7 @@ Ansible Play::
         default_textcolor = black;
         default_fontsize = 24;
         
-        default_shape = roundedbox
+        default_shape = roundedbox;
         
         Inventory -> Play;
         Pass.yml -> ansible.cfg  [label = "Encrypted", color = "green" ];
