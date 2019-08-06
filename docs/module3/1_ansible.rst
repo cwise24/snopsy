@@ -125,6 +125,8 @@ When an action fails, prompt user to accept and continue rather than stop/fail. 
 Meta
 --------
 
+In one of my playbooks I use dynamic inventory to populate my inventory file, meaning I must refresh (inventory files are loaded at runtime)
+
 .. code-block:: yaml
    :linenos:
    :caption: refresh inventory
