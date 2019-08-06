@@ -82,7 +82,7 @@ Ansible Play::
         default_shape = roundedbox;
         
         Inventory -> Play;
-        Pass.yml -> ansible.cfg  [label = "Encrypted", color = "green" ];
-        ansible.cfg -> Play  [label = "Decrypted", color = "red" ];
+        Pass.yml -> ansible.cfg  [label = "Encrypt", color = "green" ];
+        ansible.cfg -> Play  [label = "Decrypt", color = "red" ];
         Play -> Target [label = "SSH" ];
         }
