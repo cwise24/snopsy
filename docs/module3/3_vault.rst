@@ -37,6 +37,25 @@ Some useful vault commands:
 ``ansible-vault decrypt <filename>`` returns file to plain-text status
 ``ansible-vault re-key <filename>`` to assign a new passphrase to the file, again see Note above on ``vault_password_file``
 
+Experimentation
+---------------------
+
+Now let's build a playbook and a encrypted file to show vault in action 
+
+.. code-block:: yaml
+   :caption: Playbook
+   :linenos:
+
+   ---
+   - hosts: all
+   connection: local
+
+   tasks:
+
+   - debug:
+        msg: "{{ \"This is var1: \" + var1 + \" 'and also' \" + \"This is var2: \" + var2 }}"
+
+
 Playbooks
 --------------
 
