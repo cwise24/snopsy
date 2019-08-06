@@ -73,6 +73,7 @@ With ansible vault, let's evaluate our playbook again
         default_shape = roundedbox
         
         Inventory -> Play;
-        Pass.yml -> ansible.cfg -> Play [label = "Decrypt", dir = both, color = "red" ];
+        Pass.yml -> ansible.cfg  [label = "Encrypted", color = "green" ];
+        ansible.cfg -> Play  [label = "Decrypted", color = "red" ];
         Play -> Target [label = "SSH" ];
         }
