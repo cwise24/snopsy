@@ -4,7 +4,7 @@ Vault
 We will use ansible vault to encrypt all of our sensitive information AND to make sure our playbooks stay automated. I'm not saying this is the only way but this is how I 
 keep my playbooks automated without having to enter any credentials.
 
-Let's create a new *master* ansible-vault key, this will be stored as a hiden file within your home directory
+Let's create a new *master* ansible-vault key, this will be stored as a hidden file within your home directory
 
 ::
 
@@ -12,7 +12,7 @@ Let's create a new *master* ansible-vault key, this will be stored as a hiden fi
     
     s3cr3T1
 
-From the ``.ansible.cfg`` in Module 1, we'll now uncomment the ``vault_password_file`` directive
+From the ``.ansible.cfg`` in Module 1, we'll now un-comment the ``vault_password_file`` directive
 
 .. code-block:: text
    :emphasize-lines: 6
@@ -24,7 +24,7 @@ From the ``.ansible.cfg`` in Module 1, we'll now uncomment the ``vault_password_
     Log_path = ~/ansible_lab
     vault_password_file = .vault.key
 
-Now you may create new files by using ``ansible-vault create <filename>``, this will create the new file and open vim. This new file will use the passphrase from our previouly generated file
+Now you may create new files by using ``ansible-vault create <filename>``, this will create the new file and open vim. This new file will use the passphrase from our previously generated file
 ``.vault.key``
 
 Another way to encrypt a new file is ``ansible-vault create <filename>`` or an existing file ``ansible-vault encrypt <filename>`` and you will be prompted for the new passphrase 
@@ -34,8 +34,8 @@ Another way to encrypt a new file is ``ansible-vault create <filename>`` or an e
 Some useful vault commands:
 
 ``ansible-vault edit <filename>`` will open the file in vim
-``ansible-vault decrypt <filename>`` returns file to plaintext status
-``ansible-vault rekey <filename>`` to assign a new passphrase to the file, again see Note above on ``vault_password_file``
+``ansible-vault decrypt <filename>`` returns file to plain-text status
+``ansible-vault re-key <filename>`` to assign a new passphrase to the file, again see Note above on ``vault_password_file``
 
 Playbooks
 --------------
