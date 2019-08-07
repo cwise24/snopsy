@@ -35,8 +35,7 @@ Vars
  * main.yml - Variables you may wish to include in the role
 
 Handlers
- * main.yml - Here is where we'll define actions to take. Example, your task changes a config file for Apache and you must now restart the Apache service.  Your task would 
- notify a handler to perform that action for you 
+ * main.yml - Here is where we'll define actions to take. Example, your task changes a config file for Apache and you must now restart the Apache service.  Your task would notify a handler to perform that action for you 
 
 .. code-block:: yaml
    :linenos:
