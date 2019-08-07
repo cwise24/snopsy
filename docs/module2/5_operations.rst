@@ -138,6 +138,14 @@ When you have to delete files from your project, it can cause some issues.  And 
     git rm -r <directory>
     git rm <file>
 
+Now that the file is staged
+
+::
+
+    git commit -m "rm <file>"
+    git push origin <branch>
+
+Git Clean, this is useful to remove untracked files (be sure to see the **IMPORTANT** banner below)
 ::
 
     git clean -x -n 
