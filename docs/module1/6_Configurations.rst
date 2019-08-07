@@ -28,9 +28,11 @@ Now we can configure the Ansible config file:
 *If you understand the implications and wish to disable this behavior, 
 you can do so by editing* ``.ansible.cfg`` [#]_
 
-.. code-block:: bash
+``vim .ansible.cfg``
 
-    vim .ansible.cfg
+.. code-block:: bash 
+   :linenos:
+   :caption: ansible.cfg
 
     [defaults]
     Host_key_checking = False
