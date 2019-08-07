@@ -53,7 +53,7 @@ You will see two files, default and relaxed.  These come included during install
 
 .. code-block:: yaml
    :linenos:
-   :caption: Yamllint Config
+   :caption: default.yaml
 
     ---
     rules:
@@ -82,8 +82,6 @@ You will see two files, default and relaxed.  These come included during install
       trailing-spaces: enable
       truthy:
         level: warning
-
-.. centered:: default.yaml
 
 One more "linting" item to cover before we look into plays/playbooks.  We can use Ansible to find other issues that are more Ansible related
 ::

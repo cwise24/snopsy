@@ -1,7 +1,8 @@
 Playbook
 =========
 
-::
+.. code-block:: text
+   :caption: inventory file 
 
   [switches]
   mdf1 ansible_host=172.1.10.1
@@ -13,13 +14,13 @@ Playbook
   ansible_ssh_pass="S3cret!"
   ansible_user=maintUser
 
-.. centered:: inventory file
-
 .. sidebar::  Play Details
  
     This play will log into the group [switches] and get the vlan info from each mdf1 and mdf2. The information will be stored in the variable *'vland'*.
 
-::
+.. code-block:: yaml
+   :linenos:
+   :caption: playbook1.yml
 
   ---
   - hosts: [switches]
@@ -38,7 +39,4 @@ Playbook
     - debug:
         var: vland
 
-.. centered:: playbook1.yml
-
 This play will log into the group [switches] and get the vlan info from each mdf1 and mdf2. The information will be stored in the variable *'vland'*.
-
