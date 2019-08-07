@@ -53,6 +53,12 @@ Let's view our remote's now
     upstream	https://gitlab.com/cwise24/ansible_lab.git (fetch)
     upstream	https://gitlab.com/cwise24/ansible_lab.git (push)
 
+In case you make a mistake adding an upstream or origin (destination)
+
+::
+
+    git remote rm <destination>
+
 Pull Request or Merge Request
 ^^^^^^^^^^^^^^^^^^^^^^
 
