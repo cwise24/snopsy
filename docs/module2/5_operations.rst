@@ -53,10 +53,10 @@ Let's view our remote's now
     upstream	https://gitlab.com/cwise24/ansible_lab.git (fetch)
     upstream	https://gitlab.com/cwise24/ansible_lab.git (push)
 
-Merge Request
-^^^^^^^^^^^
+Pull Request or Merge Request
+^^^^^^^^^^^^^^^^^^^^^^
 
-Now comes time to merge your work back into the Upstream branch or to accept a merge request from a forked contributor
+Now comes time to merge your work back into the Upstream branch or to accept a merge request(Gitlab/Gitorious) or a Pull Request(GitHub, BitBucket) from a forked contributor
 
 Create a Merge Request
 ------------------------------
