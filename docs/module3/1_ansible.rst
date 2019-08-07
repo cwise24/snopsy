@@ -62,7 +62,6 @@ Below we run a play on only ``host1`` @ line 1 but @ line 2 we run the playbook 
 .. code-block:: text
    :linenos:
    :caption: Limit
-   :emphasize-lines: 10,11,16,17
 
     ansible-playbook -i inventory someplay.yml --limit "host1"
     ansible-playbook -i inventory someplay.yml --limit "all:!host1"
@@ -75,6 +74,7 @@ Adding tags to individual plays can greatly help when you only want to test or s
 .. code-block:: yaml
    :linenos:
    :caption: Tags
+   :emphasize-lines: 10-11,16-17
 
    ---
    - hosts: all
