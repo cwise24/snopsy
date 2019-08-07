@@ -145,3 +145,5 @@ When you have to delete files from your project, it can cause some issues.  And 
 ::
 
     git clean -x -f 
+
+.. important:: Read notes on ``git clean`` before use `git clean <https://git-scm.com/docs/git-clean>`_
