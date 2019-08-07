@@ -55,9 +55,18 @@ Example of connection directive missing from YAML file
 .. centered:: Fig 1
 Limit
 -------
+One way to reduce all awesome power of automation (to kill everything) is to limit what hosts your playbooks run on.  This can be accomplished with ``limit`` or ``tags``.
+Below we run a play on only ``host1`` @ line 1 but @ line 2 we run the playbook against all hosts *except* ``host1``
+
+.. code-block:: text
+   :linenos:
+   :caption: Limit
+
+    ansible-playbook -i inventory someplay.yml --limit "host1"
+    ansible-playbook -i inventory someplay.yml --limit "all:!host1"
 
 Tags
--------
+^^^^^
 
 Adding tags to individual plays can greatly help when you only want to test or skip specific plays. 
 
