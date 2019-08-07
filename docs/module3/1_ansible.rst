@@ -159,6 +159,6 @@ In one of my playbooks I use dynamic inventory to populate my inventory file, me
 
    - meta: refresh_inventory
 
-Networking
-----------------
+Network Automation
+---------------------------
 No reason for me to repeat, `Ansible Docs <https://docs.ansible.com/ansible/latest/network/getting_started/network_differences.html>`_
