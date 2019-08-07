@@ -133,14 +133,16 @@ Cleaning Up
 
 When you have to delete files from your project, it can cause some issues.  And since git is making snapshots with every commit, you may find ``.bak`` files in your repository
 
-::
+.. code-block:: bash
+   :caption: Remove File or Directory
 
     git rm -r <directory>
     git rm <file>
 
 Now that the file is staged
 
-::
+.. code-block:: bash  
+   :caption: Commit Change
 
     git commit -m "rm <file>"
     git push origin <branch>
