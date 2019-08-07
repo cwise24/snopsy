@@ -20,7 +20,8 @@ In our example files:
    :caption: noerror.yml
    :language: yaml
 
-::
+.. code-block:: bash
+   :caption: yamllint
 
    yamllint error.yml
    yamllint noerror.yml
