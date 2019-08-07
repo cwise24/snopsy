@@ -146,10 +146,11 @@ Now that the file is staged
     git push origin <branch>
 
 Git Clean, this is useful to remove untracked files (be sure to see the **IMPORTANT** banner below)
+
 .. code-block:: bash
    :caption: Dry run
 
-    git clean -x -n 
+   git clean -x -n 
 
 .. code-block:: bash
    :caption: Force Clean
