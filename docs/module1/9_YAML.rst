@@ -8,6 +8,7 @@ It's easy to read!
 
 .. code-block:: yaml
    :linenos:
+   :caption: Example YAML
    :emphasize-lines: 6
 
 

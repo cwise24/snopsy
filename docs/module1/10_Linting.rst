@@ -12,15 +12,13 @@ In our example files:
 
 .. literalinclude:: ../../error.yml
    :linenos:
+   :caption: error.yml
    :language: yaml
-
-.. centered:: error.yml
 
 .. literalinclude:: ../../noerror.yml
    :linenos:
+   :caption: noerror.yml
    :language: yaml
-
-.. centered:: noerror.yml
 
 ::
 
@@ -54,6 +52,7 @@ You will see two files, default and relaxed.  These come included during install
 
 .. code-block:: yaml
    :linenos:
+   :caption: Yamllint Config
 
     ---
     rules:
