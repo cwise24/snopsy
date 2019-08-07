@@ -14,6 +14,7 @@ We will need to make a new entry into our inventory file:
 
 .. code-block:: yaml
    :linenos:
+   :caption: f5.yml 
 
 
     ---
@@ -50,5 +51,3 @@ We will need to make a new entry into our inventory file:
         copy:
           dest: facts.json
           content: "{{ bigip_fact_out }}"
-
-.. centered::  f5.yml
