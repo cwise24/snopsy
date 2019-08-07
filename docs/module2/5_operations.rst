@@ -127,3 +127,21 @@ To keep your local (and origin) in sync with the upstream repository, you'll wan
     
     git fetch upstream <branch>
     git pull upstream <branch>
+
+Cleaning Up
+^^^^^^^^^^
+
+When you have to delete files from your project, it can cause some issues.  And since git is making snapshots with every commit, you may find ``.bak`` files in your repository
+
+::
+
+    git rm -r <directory>
+    git rm <file>
+
+::
+
+    git clean -x -n 
+
+::
+
+    git clean -x -f 
