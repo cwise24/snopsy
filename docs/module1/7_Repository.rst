@@ -34,6 +34,7 @@ Let's configure our git config
   git config --global user.name "username"
   git config --list
 
+.. info:: Git config options set the email and username and is used when making commits, you can also see what url you are using
 
 This marks all files ``.`` in the working directory to be added to staging
 
