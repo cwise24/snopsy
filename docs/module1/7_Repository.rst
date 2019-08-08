@@ -34,15 +34,21 @@ Let's configure our git config
   git config --global user.name "username"
   git config --list
 
-.. info:: Git config options set the email and username and is used when making commits, you can also see what url you are using
+.. note:: Git config options set the email and username and is used when making commits, you can also see what url you are using
 
-This marks all files ``.`` in the working directory to be added to staging
+Let's start pushing code from our local repository up to GitLab. You and add individual files or all files. This marks all files ``.`` in the working directory to be added to staging
 
-::
+.. code-block:: bash 
+   :caption: Add all Files
 
     git add .
 
-Now we can move the staged files to commit.  We use the ``-m`` for the commit message and will see this in Gitlab.
+.. code-block:: bash 
+   :caption: Add individual Files
+
+    git add <filename1> <filename2>
+
+Now we can move the staged files to commit.  We use the switch ``-m`` for the commit message and will see this in Gitlab.
 
 ::
 
