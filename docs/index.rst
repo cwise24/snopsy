@@ -15,6 +15,7 @@ This serves as a starting point to a much deeper training such as F5's SUPER-NET
 | Contributors: 
 | `TonyPNode <https://github.com/tonypnode>`_
 | `Marcus Moreno <https://gitlab.com/marcus_moreno>`_
+  `Bill Brazill <https://gitlab.com/brazill>`_
 
 .. toctree::
    :maxdepth: 1
