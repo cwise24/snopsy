@@ -22,7 +22,7 @@ Windows
 
 Assure that the registry key HKLM\CurrentControlSet\Control\Session Manager\Environment _PSLockdownPolicy is set to 0. If it is not your installation of Docker CE will not be able to start due to Powershell code execution lockdown. 
 
-Install Windows Subsystem for Linux(WSL) `here < https://docs.microsoft.com/en-us/windows/wsl/install-win10>`_
+Install Windows Subsystem for Linux(WSL) `here <https://docs.microsoft.com/en-us/windows/wsl/install-win10>`_
 Folow this `guide <https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly>`_ to allow you to use WSL Ubuntu as your terminal for Docker.
 
 
