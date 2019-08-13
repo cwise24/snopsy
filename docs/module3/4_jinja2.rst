@@ -13,7 +13,7 @@ Delimiters
 
 Within a j2 template
 
-This example (thanks to Forrest Crenshaw @F5) is used to loop through all our pool members from inventory and add them to the Virtual Server
+This example (thanks to Forrest Crenshaw @F5 on `Linklight <https://ansible.github.io/workshops/exercises/ansible_f5/>`_) is used to loop through all our pool members from inventory and add them to the Virtual Server
 
 ::
 
