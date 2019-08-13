@@ -17,9 +17,8 @@ Install python3-pip (apt/yum)
 Windows
 ~~~~~~~~
 
-|Just move to Linux already, Windows is a more involved install.
-| 
-Follow the Docker CE link below. 
+| Just move to Linux already, Windows is a more involved install.
+| Follow the Docker CE link below. 
 
 Assure that the registry key HKLM\CurrentControlSet\Control\Session Manager\Environment _PSLockdownPolicy is set to 0. If it is not your installation of Docker CE will not be able to start due to Powershell code execution lockdown. 
 
