@@ -17,8 +17,19 @@ Install python3-pip (apt/yum)
 Windows
 ~~~~~~~~
 
-| Just move to Linux already, Windows is
-| Follow the Docker CE link below
+|Just move to Linux already, Windows is a more involved install.
+| 
+Follow the Docker CE link below. 
+
+Assure that the registry key HKLM\CurrentControlSet\Control\Session Manager\Environment _PSLockdownPolicy is set to 0. If it is not your installation of Docker CE will not be able to start due to Powershell code execution lockdown. 
+
+Install Windows Subsystem for Linux(WSL): https://docs.microsoft.com/en-us/windows/wsl/install-win10
+Folow this guide to allow you to use WSL Ubuntu as your terminal for Docker:
+https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly
+
+In your newly configured WSL shell run the following commands: 
+apt install python3-pip
+pip3 install ansible
 
 Docker
 ~~~~~~~~
