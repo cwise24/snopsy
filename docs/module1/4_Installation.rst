@@ -23,7 +23,7 @@ Windows
 WSL
 ^^^^^
 
-However, for those more adventurous Windows Subsystem for Linux (WSL) can work nicely (Thank you Jason)
+However, for those more adventurous Windows Subsystem for Linux (**WSL**) can work nicely (Thank you Jason)
 
 Ensure that the registry key ``HKLM\CurrentControlSet\Control\Session Manager\Environment _PSLockdownPolicy`` is set to ``0``. If it is not your installation of Docker CE will not be able to start due to Powershell code execution lockdown. 
 
