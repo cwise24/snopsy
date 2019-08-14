@@ -159,4 +159,4 @@ Git Clean, this is useful to remove untracked files (be sure to see the **IMPORT
 
     git clean -x -f 
 
-.. important:: Read notes on ``git clean`` before use `git clean <https://git-scm.com/docs/git-clean>`_
+.. important:: Read notes on ``git clean`` before use (docs->`git clean <https://git-scm.com/docs/git-clean>`_)
