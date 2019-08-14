@@ -14,7 +14,7 @@ We can validate what branch we are on, you should see the asterisk on the *dev* 
 
     git branch
 
-    *dev
+    * dev
       master
 
 Now using the *checkout* command, switch back to the *master* branch
