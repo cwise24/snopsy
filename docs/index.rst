@@ -17,6 +17,7 @@ This serves as a starting point to a much deeper training such as F5's SUPER-NET
 | `Marcus Moreno <https://gitlab.com/marcus_moreno>`_
 | `Bill Brazill <https://gitlab.com/brazill>`_
 | `Jason Herre <https://github.com/jdherre>`_
+| `Vamsi Atluri <https://#>`_
 
 .. toctree::
    :maxdepth: 1
