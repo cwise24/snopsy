@@ -16,6 +16,8 @@ an article that made total sense, Why do this?? Why have your CI tool import a p
      
      pip3 install pre-commit
 
+Next you'll have to add the ``.pre-commit-config.yaml`` file to your repository
+
 .. code-block:: yaml
    :linenos:
    :caption: .pre-commit-config.yaml
@@ -43,3 +45,8 @@ In my local lab, I have Gitlab running on a container using a self signed certif
 
 Tags
 -------
+
+.. code-block:: bash 
+   :caption: git tag  
+
+   git tag -a "v1.2" -m "version 1.2"
