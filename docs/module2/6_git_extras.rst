@@ -20,6 +20,12 @@ From your project folder you can now run
 ``pre-commit install``
 This will install the git hooks scripts needed
 
+.. figure:: imgs/pre-commit.png
+   :scale: 50%
+   :align: center
+   
+   Fig 17
+   
 
 Next you'll have to add the ``.pre-commit-config.yaml`` file to your repository
 
