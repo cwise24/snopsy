@@ -16,6 +16,11 @@ an article that made total sense, Why do this?? Why have your CI tool import a p
      
      pip3 install pre-commit
 
+From your project folder you can now run 
+``pre-commit install``
+This will install the git hooks scripts needed
+
+
 Next you'll have to add the ``.pre-commit-config.yaml`` file to your repository
 
 .. code-block:: yaml
