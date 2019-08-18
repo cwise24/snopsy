@@ -39,7 +39,7 @@ Next you'll have to add the ``.pre-commit-config.yaml`` file to your repository
      hooks:
         - id: ansible-lint  
 
-Other pre-canned hooks can be found `here <https://github.com/pre-commit/pre-commit-hooks>`_
+Other pre-canned hooks can be found `here <https://pre-commit.com/hooks.html>`_
 
 Pre-commit site for `installation <https://pre-commit.com>`_  instructions
 
