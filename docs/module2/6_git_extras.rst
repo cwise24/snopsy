@@ -35,7 +35,7 @@ Next you'll have to add the ``.pre-commit-config.yaml`` file to your repository
 
    ---
    - repo: https://github.com/ansible/ansible-lint.git
-     rev: v0.9
+     rev: v4.1.0
      hooks:
         - id: ansible-lint  
 
