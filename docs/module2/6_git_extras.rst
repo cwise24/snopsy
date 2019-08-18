@@ -35,13 +35,13 @@ Next you'll have to add the ``.pre-commit-config.yaml`` file to your repository
 
    ---
    - repo: https://github.com/ansible/ansible-lint.git
-     rev:
+     rev: v0.9
      hooks:
         - id: ansible-lint  
 
 Other pre-canned hooks can be found `here <https://github.com/pre-commit/pre-commit-hooks>`_
 
-`Installation <https://pre-commit.com>`_
+Pre-commit site for `installation <https://pre-commit.com>`_  instructions
 
 Self Signed Certificate
 ------------------------------
@@ -57,7 +57,14 @@ In my local lab, I have Gitlab running on a container using a self signed certif
 Tags
 -------
 
+Used to mark specific points in a repository's history.
+
 .. code-block:: bash 
    :caption: git tag  
 
    git tag -a "v1.2" -m "version 1.2"
+
+.. code-block:: bash
+   :caption: list git tags
+
+   git tag -l 
