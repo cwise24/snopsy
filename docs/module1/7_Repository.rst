@@ -17,6 +17,8 @@ Create directories to serve as our local repository
    touch inventory
    touch ios.yml
 
+.. note:: Highlighted lines show files already created in the container
+
 Time to test our ssh key with Gitlab:
 
 ::
