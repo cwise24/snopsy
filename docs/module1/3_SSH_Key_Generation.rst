@@ -13,13 +13,11 @@ From a terminal screen you can generate a ssh key of type (-t) rsa and length (-
    ssh-keygen -t rsa -b 2048
 
 
-   .. figure:: imgs/ssh_key_gen.png
-      :scale: 40%
-      :align: center
+.. figure:: imgs/ssh_key_gen.png
+   :scale: 40%
+   :align: center
 
-      Fig 1
-
-..
+   Fig 1
 
 
 The above command would produce two files:
