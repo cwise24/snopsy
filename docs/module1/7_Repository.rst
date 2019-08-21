@@ -4,18 +4,18 @@ Repository
 
 Create directories to serve as our local repository
 
-::
+.. code-block:: bash
+   :caption: make directory and files
+   :emphasize-lines: 2,4,5
 
 
    mkdir ansible_roles
-   mkdir ansible_lab*
+   mkdir ansible_lab
    cd ansible_lab       { change directory to ansible_lab }
-   touch error.yml*      { create blank file named error.yml }
-   touch noerror.yml*
+   touch error.yml      { create blank file named error.yml }
+   touch noerror.yml
    touch inventory
    touch ios.yml
-
-.. note:: ``*`` denotes already installed on the container
 
 Time to test our ssh key with Gitlab:
 
