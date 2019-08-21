@@ -3,7 +3,7 @@ Linux
 
 .. centered::  Some useful Linux commands
 
-Help - you will find help for any package in the 'man' pages or 'info' pages. Each switch will be described and some examples. 
+Help - you will find help for any package in the **man** pages or **info** pages. Each switch will be described and some examples. 
 
 ::
 
