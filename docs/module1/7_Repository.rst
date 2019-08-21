@@ -13,7 +13,7 @@ Create directories to serve as our local repository
  * touch ios.yml
  * git init             { initialize git }
 
-.. note:: `*` denotes already installed on the container
+.. note:: ``*`` denotes already installed on the container
 
 Time to test our ssh key with Gitlab:
 
