@@ -4,14 +4,16 @@ Repository
 
 Create directories to serve as our local repository
 
- * mkdir ansible_roles
- * mkdir ansible_lab*
- * cd ansible_lab       { change directory to ansible_lab }
- * touch error.yml*      { create blank file named error.yml }
- * touch noerror.yml*
- * touch inventory
- * touch ios.yml
- * git init             { initialize git }
+::
+
+
+   mkdir ansible_roles
+   mkdir ansible_lab*
+   cd ansible_lab       { change directory to ansible_lab }
+   touch error.yml*      { create blank file named error.yml }
+   touch noerror.yml*
+   touch inventory
+   touch ios.yml
 
 .. note:: ``*`` denotes already installed on the container
 
