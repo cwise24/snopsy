@@ -28,7 +28,10 @@ Now we can configure the Ansible config file:
 *If you understand the implications and wish to disable this behavior, 
 you can do so by editing* ``.ansible.cfg`` [#]_
 
-``vim .ansible.cfg``
+.. code-block:: bash
+   :caption: VIM editor
+
+   vim .ansible.cfg
 
 .. code-block:: bash 
    :linenos:
