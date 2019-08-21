@@ -55,9 +55,9 @@ Copy the output, it should start like below:
 
     ssh-rsa
 
-Now go to |Gitlab| and create an account, once that is created upload your public ssh key to Gitlab (ansible_lab.pub)  Click on your icon (top right, then Settings).  On the left hand side you should see SSH Keys
+Now go to |location_link| and create an account, once that is created upload your public ssh key to Gitlab (ansible_lab.pub)  Click on your icon (top right, then Settings).  On the left hand side you should see SSH Keys
 
-.. |Gitlab| raw::html
+.. |location_link| raw::html
     <a href="https://gitlab.com/users/sign_in" target="_blank">Gitlab</a>
     
 .. warning:: Make certain you are ``NOT`` about to put your private keys in the cloud
