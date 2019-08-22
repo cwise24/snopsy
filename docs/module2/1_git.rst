@@ -21,6 +21,13 @@ Its goals include speed, data integrity, and support for distributed, non-linear
 | **TL;DR** 
 | A nice way to manage chaos across distributed teams
 
+So here are the basics
+
+.. figure:: imgs/gitflow.png
+   :scale: 60%
+   :align: center
+   :caption: Git Flow
+
 .. rubric::  Footnotes
 
 .. [#f1] https://en.wikipedia.org/wiki/Git
