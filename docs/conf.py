@@ -14,7 +14,7 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
-#The master toctree document
+# The master toctree document
 master_doc = 'index'
 
 # -- Project information -----------------------------------------------------
@@ -24,7 +24,7 @@ copyright = '2019, Chad Wise'
 author = 'Chad Wise'
 
 # The full version, including alpha/beta/rc tags
-release = '.1'
+release = '1.0.1'
 
 
 # Add any Sphinx extension module names here, as strings. They can be
@@ -47,15 +47,15 @@ extensions = [
 ]
 
 nwdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
-todo_include_todos=True
+todo_include_todos = True
 
 # -- General configuration ---------------------------------------------------
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-#extensions = [
-#]
+# extensions = [
+# ]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -77,7 +77,7 @@ pygments_style = 'sphinx'
 #
 #html_theme = 'alabaster'
 html_theme = 'sphinx_rtd_theme'
-#---sphinx-themes-----
+# ---sphinx-themes-----
 #html_theme = 'solar_theme'
 #import solar_theme
 #html_theme_path = [solar_theme.theme_path]
@@ -88,9 +88,9 @@ html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 
 html_context = {
-"display_github": False, # Add 'Edit on Github' link instead of 'View page source'
-"last_updated": True,
-"commit": False,
+    "display_github": False,  # Add 'Edit on Github' link instead of 'View page source'
+    "last_updated": True,
+    "commit": False,
 }
 
 # html_theme_options = {}
