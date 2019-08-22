@@ -12,10 +12,12 @@ From a terminal screen you can generate a ssh key of type (-t) rsa and length (-
    
    ssh-keygen -t rsa -b 2048
 
+This will prompt the below, note the file name to save to ``.ssh/ansible_key`` No passphrase is needed, just hit *Enter*
+
 ::
 
     Generating public/private rsa key pair.
-    Enter file in which to save the key (/home/ansible/.ssh/id_rsa): ``.ssh/ansible_key``
+    Enter file in which to save the key (/home/ansible/.ssh/id_rsa): .ssh/ansible_key
     Enter passphrase (empty for no passphrase): 
     Enter same passphrase again: 
 
