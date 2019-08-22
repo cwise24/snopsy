@@ -24,8 +24,23 @@ Its goals include speed, data integrity, and support for distributed, non-linear
 So here are the basics
 
 .. figure:: imgs/gitflow.png
-   :scale: 60%
+   :scale: 50%
    :align: center
+
+git add
+ * Marks edited files for staging
+ * Additional edits will not be staged without git add
+
+git commit
+ * Commit staged changes to local repository
+ * The ‘-m’ provides important message about the change
+
+git push
+ * Push committed files to remote repository (i.e. Gitlab)
+
+git pull
+ * Pull files from Remote repository
+ * Example - Project owner makes changes to files, in order to have the lastest copy you ‘pull’ from the Remote repo to update you local files
 
 .. rubric::  Footnotes
 
