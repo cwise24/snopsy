@@ -26,7 +26,6 @@ So here are the basics
 .. figure:: imgs/gitflow.png
    :scale: 60%
    :align: center
-   :caption: Git Flow
 
 .. rubric::  Footnotes
 
