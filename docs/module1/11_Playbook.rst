@@ -10,8 +10,8 @@ Playbook
 
    [switches:vars]
    ansible_connection=network_cli
-   ansible_network=ios
-   ansible_ssh_pass="S3cret!"
+   ansible_network_os=ios
+   ansible_ssh_pass="YourSecretHere"
    ansible_user=maintUser
 
 .. sidebar::  Play Details
