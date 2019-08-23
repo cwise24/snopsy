@@ -31,6 +31,7 @@ It's easy to read!
           module_command:
 
 The three  ``---``  dashes indicate the start of a YML file.  Then comes the playbook definitions based on indention's much like that of Python. 
+
 **Please look** at Figure 3 below to take note of how everything lines up.
 
 .. figure:: imgs/yml_spaces.png
