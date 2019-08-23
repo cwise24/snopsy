@@ -39,4 +39,4 @@ Let's validate our files exist
       :scale: 40%
       :align: center
 
-      Fig 2
+.. centered:: Fig 2
