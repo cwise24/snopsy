@@ -34,7 +34,7 @@ In our example files:
 .. figure:: imgs/lint.png
    :align: center
 
-   Fig 4
+.. centered:: Fig 4
 
 Configurations of yamllint
 

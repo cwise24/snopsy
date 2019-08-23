@@ -26,7 +26,7 @@ This will prompt the below, note the file name to save to ``.ssh/ansible_key`` N
    :scale: 40%
    :align: center
 
-   Fig 1
+.. centered:: Fig 1
 
 
 The above command would produce two files:
