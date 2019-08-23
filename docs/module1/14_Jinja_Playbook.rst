@@ -24,7 +24,7 @@ Jinja Playbook
 
 
        - set_fact:
-           interface: "{{ vland.stdout_lines[0][2].split(\"\") | select('match', '^(Fa|Gi)') | list }}"
+           interface: "{{ vland.stdout_lines[0][2].split(\" \") | select('match', '^(Fa|Gi)') | list }}"
 
 
        - debug:
