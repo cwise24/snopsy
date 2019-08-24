@@ -35,7 +35,7 @@ The three  ``---``  dashes indicate the start of a YML file.  Then comes the pla
 **Please look** at Figure 3 below to take note of how everything lines up.
 
 .. figure:: imgs/indent.png
-   :scale: 80%
+   :scale: 95%
    :align: center
 
 .. centered:: Fig 3
