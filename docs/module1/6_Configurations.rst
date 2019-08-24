@@ -3,9 +3,14 @@ Configurations
 
 We will associate our newly generated key to be used for Gitlab connections.  Doing it this way, we can separate ssh keys between many sites.
 
-::
+.. code-block:: bash
+   :caption: vim 
 
-    vim .ssh/config
+   vim .ssh/config
+
+.. code-block:: bash
+   :caption: ssh config file
+
     Host gitlab.com
       HostName gitlab.com
       IdentityFile ~/.ssh/ansible_key
