@@ -35,6 +35,13 @@ The above command would produce two files:
  - ansible_key.pub
 
 Let's validate our files exist
+
+.. code-block:: bash
+   :caption: List files
+
+   ls -la .ssh/
+
+
    .. figure:: imgs/validate_key.png
       :scale: 40%
       :align: center
