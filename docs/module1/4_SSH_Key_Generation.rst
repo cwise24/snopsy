@@ -42,8 +42,8 @@ Let's validate our files exist
    ls -la .ssh/
 
 
-   .. figure:: imgs/validate_key.png
-      :scale: 40%
-      :align: center
+.. figure:: imgs/validate_key.png
+   :scale: 40%
+   :align: center
 
 .. centered:: Fig 2
