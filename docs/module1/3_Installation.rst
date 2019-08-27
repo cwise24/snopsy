@@ -35,6 +35,19 @@ In your newly configured WSL shell run the following commands:
  * apt install python3-pip
  * pip3 install ansible
 
+OS packages
+^^^^^^^^^^
+
+Suggested list of packages to install:
+
+- Ansible
+- Ansible-Lint
+- Yamllint
+- Jmespath
+- Netmiko
+- Git
+
+
 Docker
 ~~~~~~~~
 
@@ -57,13 +70,5 @@ To run the Ansible container's shell:
 
 This will open a shell to the container as the user 'ansible'
 
-Suggested list of packages to install:
-
-- Ansible
-- Ansible-Lint
-- Yamllint
-- Jmespath
-- Netmiko
-- Git
 
 .. note:: If you are using the container, the above packages have been installed
