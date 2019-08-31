@@ -6,7 +6,8 @@ Now let collect facts from a F5 and store those facts into a json file.
 
 We will need to make a new entry into our inventory file:
 
-::
+.. code-block:: yaml 
+   :caption: inventory group adc
 
     [adc]
     BigIp1 ansible_host=x.x.x.x
