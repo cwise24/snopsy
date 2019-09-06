@@ -3,8 +3,8 @@ Jinja Playbook
 
 What is Jinja2?
 
-*"Jinja2 is a modern day templating language for Python developers. It was made after Django’s template. 
-It is used to create HTML, XML or other markup formats that are returned to the user via an HTTP request."*[#]_
+"*Jinja2 is a modern day templating language for Python developers. It was made after Django’s template. 
+It is used to create HTML, XML or other markup formats that are returned to the user via an HTTP request.*"[#]_
 
 | Using ``set_fact`` to build a new variable ``interface`` and using Jinja filters for only the interfaces
 | { Lines 13-14 }
