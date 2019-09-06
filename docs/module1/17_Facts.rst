@@ -10,7 +10,7 @@ We will need to make a new entry into our inventory file:
    :caption: inventory group adc
 
     [adc]
-    BigIp1 ansible_host=x.x.x.x
+    BigIp1 ansible_host=
 
 
 .. code-block:: yaml
@@ -25,9 +25,9 @@ We will need to make a new entry into our inventory file:
     
       vars:
         provider:
-           server:
-           user:
-           password:
+           server: 
+           user: "f5guest"
+           password: ""
            validate_certs: no  
 
       tasks:
