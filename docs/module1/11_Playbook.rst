@@ -32,7 +32,7 @@ Playbook
    :caption: playbook1.yml
 
    ---
-   - hosts: [switches]
+   - hosts: [ios]
      gather_facts: no
 
       tasks:
