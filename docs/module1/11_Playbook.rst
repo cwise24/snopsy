@@ -4,15 +4,24 @@ Playbook
 .. code-block:: text
    :caption: inventory file 
 
-   [switches]
-   mdf1 ansible_host=172.1.10.1
-   mdf2 ansible_host=172.1.10.2
+   [ios]
+   S1 ansible_host=192.168.2.11
+   S3 ansible_host=192.168.2.12
 
-   [switches:vars]
+   [ios:vars]
    ansible_connection=network_cli
    ansible_network_os=ios
    ansible_ssh_pass="YourSecretHere"
-   ansible_user=maintUser
+   ansible_user=f5usergrp
+
+   [junos]
+   S2 ansible_host=192.168.2.21
+
+   [junos:vars]
+   ansible_connection=network_cli
+   ansible_network_os=junos
+   ansible_ssh_pass="YourSecretHere"
+   ansible_user=f5usergrp
 
 .. sidebar::  Play Details
  

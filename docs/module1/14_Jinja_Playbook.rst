@@ -28,7 +28,7 @@ It is used to create HTML, XML or other markup formats that are returned to the 
 
 
        - set_fact:
-           interface: "{{ vland.stdout_lines[0][2].split(\" \") | select('match', '^(Fa|Gi)') | list }}"
+           interface: "{{ vland.stdout_lines[0][3].split(\" \") | select('match', '^(Fa|Gi)') | list }}"
 
 
        - debug:
