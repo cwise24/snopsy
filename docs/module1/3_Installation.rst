@@ -20,6 +20,8 @@ Windows
 | Just move to Linux already! Windows can be a more complex installation
 | Follow the Docker CE link below to use the containerized version of this class. 
 
+Or you can use `Docker Toolbox <https://docs.docker.com/toolbox/toolbox_install_windows/>`_
+
 WSL
 ^^^^^
 
