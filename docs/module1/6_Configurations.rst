@@ -44,8 +44,8 @@ you can do so by editing* *.ansible.cfg* [#]_
 
     [defaults]
     Host_key_checking = False
-    #inventory = /home/ansible/inventory
-    #Log_path = ~/ansible_lab/ansible.log
+    inventory = ~/ansible_lab/inventory
+    Log_path = ~/ansible_lab/ansible.log
     #vault_password_file = .vault.key
 
 
