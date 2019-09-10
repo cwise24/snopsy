@@ -23,7 +23,7 @@ This will prompt the below, note the file name to save to ``.ssh/ansible_key`` N
 
 
 .. figure:: imgs/ssh_key_gen.png
-   :scale: 50%
+   :scale: 60%
    :align: center
 
 .. centered:: Fig 1
