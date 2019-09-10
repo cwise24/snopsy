@@ -43,7 +43,7 @@ Let's validate our files exist
 
 
 .. figure:: imgs/validate_key.png
-   :scale: 40%
+   :scale: 70%
    :align: center
 
 .. centered:: Fig 2
