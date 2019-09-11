@@ -24,12 +24,14 @@ To exit vim:
 
    type   :wq
 
-Now we can configure the Ansible config file:
+Now we can configure the Ansible config file, but first let's move to our Project Directory
 
 .. code-block:: bash
    :caption: Change Directory
 
    cd ansible_lab
+
+Fist let's add our Ansible Config file with a few directives:
 
 *Ansible has host key checking enabled by default.*
 
