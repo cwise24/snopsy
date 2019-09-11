@@ -26,17 +26,22 @@ To exit vim:
 
 Now we can configure the Ansible config file:
 
+.. code-block:: bash
+   :caption: Change Directory
+
+   cd ansible_lab
+
 *Ansible has host key checking enabled by default.*
 
 *If a host is reinstalled and has a different key in ‘known_hosts’, this will result in an error message until corrected. If a host is not initially in ‘known_hosts’ this will result in prompting for confirmation of the key, which results in an interactive experience if using Ansible, from say, cron. You might not want this.*
 
 *If you understand the implications and wish to disable this behavior, 
-you can do so by editing* *.ansible.cfg* [#]_
+you can do so by editing* *ansible.cfg* [#]_
 
 .. code-block:: bash
    :caption: VIM editor
 
-   vim .ansible.cfg
+   vim ansible.cfg
 
 .. code-block:: bash 
    :linenos:
