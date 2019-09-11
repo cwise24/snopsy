@@ -10,9 +10,7 @@ Create directories to serve as our local repository
    :emphasize-lines: 2,4,5
 
 
-   mkdir ansible_roles
    mkdir ansible_lab
-   cd ansible_lab       { change directory to ansible_lab }
    touch error.yml      { create blank file named error.yml }
    touch noerror.yml
    touch inventory
