@@ -35,7 +35,7 @@ Playbook
    - hosts: [ios]
      gather_facts: no
 
-      tasks:
+     tasks:
 
       - name: Play to run
         ios_command:
