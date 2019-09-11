@@ -53,3 +53,10 @@ Now that the play has executed, let's look at the logs generated.
    :caption: Ansible logs
 
    cat ansible.logs 
+
+If time permits, you can re-run this play but `limit` the play to a single host even though we are using the group name
+
+.. code-block:: bash
+   :caption: Limit 
+
+   ansible-playbook -i inventory playbook1.yml --limit "S1"
