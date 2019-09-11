@@ -48,9 +48,9 @@ you can do so by editing* *ansible.cfg* [#]_
    :caption: ansible.cfg
 
     [defaults]
-    Host_key_checking = False
-    inventory = ~/ansible_lab/inventory
-    Log_path = ~/ansible_lab/ansible.log
+    host_key_checking = False
+    inventory = inventory
+    log_path = ansible.log
     #vault_password_file = .vault.key
 
 
