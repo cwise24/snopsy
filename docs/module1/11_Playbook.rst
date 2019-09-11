@@ -25,7 +25,7 @@ Playbook
 
 .. sidebar::  Play Details
  
-    This play will log into the group [switches] and get the vlan info from each mdf1 and mdf2. The information will be stored in the variable *'vland'*.
+    This play will log into the group [ios] and get the vlan info from each S1 and S3. The information will be stored in the variable *'vland'*.
 
 .. code-block:: yaml
    :linenos:
