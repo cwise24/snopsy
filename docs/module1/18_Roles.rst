@@ -21,7 +21,7 @@ Let's use Ansible Galaxy to build our file structure for our role ``ansible_role
 Ansible Galaxy has now made our directory ``ansible_role`` and the complete folder structure as shown below
 
 .. figure:: imgs/galaxy_tree.png
-   :scale: 60%
+   :scale: 80%
    :align: center
 .. centered:: Fig 9
 
