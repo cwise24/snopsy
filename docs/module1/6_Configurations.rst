@@ -24,6 +24,22 @@ To exit vim:
 
    type   :wq
 
+Now let's get a copy of your public ssh key
+
+::
+
+    cat .ssh/ansible_key.pub 
+
+Copy the output, it should start like below:
+
+::
+
+    ssh-rsa
+
+Now go to `Gitlab <https://gitlab.com/users/sign_in>`_ and create an account, once that is created upload your public ssh key to Gitlab (ansible_lab.pub)  Click on your icon (top right, then Settings).  On the left hand side you should see SSH Keys
+    
+.. warning:: Make certain you are ``NOT`` about to put your private keys in the cloud
+
 Now we can configure the Ansible config file, but first let's move to our Project Directory
 
 .. code-block:: bash
@@ -55,22 +71,9 @@ you can do so by editing* *ansible.cfg* [#]_
     log_path = ansible.log
     #vault_password_file = .vault.key
 
+.. note::Pro-Tip configure an **ansible.cfg** per project
 
-Now let's get a copy of your public ssh key
 
-::
-
-    cat .ssh/ansible_key.pub 
-
-Copy the output, it should start like below:
-
-::
-
-    ssh-rsa
-
-Now go to `Gitlab <https://gitlab.com/users/sign_in>`_ and create an account, once that is created upload your public ssh key to Gitlab (ansible_lab.pub)  Click on your icon (top right, then Settings).  On the left hand side you should see SSH Keys
-    
-.. warning:: Make certain you are ``NOT`` about to put your private keys in the cloud
 
 .. rubric:: Footnotes
 .. [#] https://docs.ansible.com/ansible/latest/user_guide/intro_getting_started.html#host-key-checking
