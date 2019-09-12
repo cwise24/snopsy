@@ -29,3 +29,4 @@ Now let's make use of our new variable
 
 We can now loop through all the interfaces in our list *interface* using the Ansible *with_items* module and collect each interfaces configuration.
 
+For an even better experience, check out the `Network Engine command parser <https://galaxy.ansible.com/ansible-network/network-engine>`_
