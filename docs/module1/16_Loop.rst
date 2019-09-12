@@ -21,6 +21,10 @@ Now let's make use of our new variable
      - set_fact:
           interface: "{{ vland.stdout_lines[0][3].split(\" \") | select('match', '^(Fa|Gi)') | list  }}"
 
+     - name: Show interfaces debug
+       debug:
+         var: interfaces 
+
      #- name: Get interface config
        #ios_command:
           #commands: show running-config interface {{ item }}
