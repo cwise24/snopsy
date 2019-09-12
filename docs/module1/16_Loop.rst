@@ -8,7 +8,7 @@ Now let's make use of our new variable
    :emphasize-lines: 17, 18
 
    ---
-   - hosts: [switches]
+   - hosts: [ios]
      gather_facts: false
 
      tasks:
@@ -19,7 +19,7 @@ Now let's make use of our new variable
        register: vland
 
      - set_fact:
-          interface: "{{ vland.stdout_lines[0][2].split(\"\") | select('match', '^(Fa|Gi) | list  }}"
+          interface: "{{ vland.stdout_lines[0][3].split(\" \") | select('match', '^(Fa|Gi)') | list  }}"
 
      #- name: Get interface config
        #ios_command:
