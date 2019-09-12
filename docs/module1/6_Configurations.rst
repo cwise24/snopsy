@@ -71,7 +71,7 @@ you can do so by editing* *ansible.cfg* [#]_
     log_path = ansible.log
     #vault_password_file = .vault.key
 
-.. note::Pro-Tip configure an **ansible.cfg** per project
+.. note:: Pro-Tip configure an **ansible.cfg** per project
 
 
 
