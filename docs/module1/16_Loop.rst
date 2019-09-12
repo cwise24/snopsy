@@ -25,11 +25,18 @@ Now let's make use of our new variable
        debug:
          var: interfaces 
 
-     #- name: Get interface config
-       #ios_command:
-          #commands: show running-config interface {{ item }}
-       #with_items: "{{ interface }}"
-       #register: shorunint
+     - name: Get interface config
+       tags: shorun
+       ios_command:
+          commands: show running-config view full | section interface *{{ item }}
+       with_items: "{{ interfaces }}"
+       register: shorunint
+
+     - name: show interface variable
+       tags: showrun
+       debug:
+         var: shorunint    
+
 
 We can now loop through all the interfaces in our list *interface* using the Ansible *with_items* module and collect each interfaces configuration.
 
