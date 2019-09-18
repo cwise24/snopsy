@@ -4,8 +4,8 @@ Playbook
 Connect to Lab WiFi
 ~~~~~~~~~~~~~~~~~~
 
-| SSID: F5UserGrp_5
-| Password: f5usergrp123!
+| SSID:        F5UserGrp_5
+| Password:    f5usergrp123!
 
 .. note:: Lab WiFi is only for running plays against the switches, no internet connectivity
 
