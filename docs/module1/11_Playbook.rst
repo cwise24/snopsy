@@ -29,7 +29,7 @@ Playbook
 
 .. code-block:: yaml
    :linenos:
-   :caption: playbook1.yml
+   :caption: ios.yml
 
    ---
    - hosts: [ios]
