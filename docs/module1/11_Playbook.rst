@@ -6,6 +6,7 @@ Connect to Lab WiFi
 
 .. code-block:: bash
    :caption: WiFi
+   
     SSID:                F5UserGrp_5
     Password:            f5usergrp123!
 
