@@ -1,6 +1,13 @@
 Playbook
 =========
 
+Connect to Lab WiFi
+~~~~~~~~~~~~~~~~~~
+
+SSID: F5UserGrp_5
+Password: f5usergrp123!
+
+
 .. code-block:: text
    :caption: inventory file 
 
@@ -59,4 +66,4 @@ If time permits, you can re-run this play but ``limit`` the play to a single hos
 .. code-block:: bash
    :caption: Limit 
 
-   ansible-playbook -i inventory playbook1.yml --limit "S1"
+   ansible-playbook -i inventory ios.yml --limit "S1"
