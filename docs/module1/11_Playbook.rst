@@ -4,7 +4,7 @@ Playbook
 Connect to Lab WiFi
 ~~~~~~~~~~~~~~~~~~
 
-.. code-block:: bash
+.. code-block:: text
    :caption: WiFi
    
     SSID:                F5UserGrp_5
