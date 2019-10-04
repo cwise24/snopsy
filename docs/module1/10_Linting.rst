@@ -41,7 +41,7 @@ Configurations of yamllint
 Depending on your OS
 
 Container
- - ``ls usr/lib/python3.7/site-packages/yamllint/conf``
+ - ``ls /usr/lib/python3.7/site-packages/yamllint/conf``
 
 pip3 on Ubuntu
  - ``ls /usr/lib/python3/dist-packages/yamllint/conf``
