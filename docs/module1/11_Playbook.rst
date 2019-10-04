@@ -6,7 +6,7 @@ Connect to Lab WiFi
 
 .. code-block:: text
    :caption: WiFi
-   
+      
     SSID:                F5UserGrp_5
     Password:            f5usergrp123!
 
