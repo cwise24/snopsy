@@ -40,7 +40,7 @@ Now go to `Gitlab <https://gitlab.com/users/sign_in>`_ and create an account, on
 
  * Click on your icon (top right, then Settings)
  * On the left hand side you should see SSH Keys
- * Paster your public key
+ * Paste your public key
     
 .. warning:: Make certain you are ``NOT`` about to put your private keys in the cloud
 
