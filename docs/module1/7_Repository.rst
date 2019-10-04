@@ -7,7 +7,7 @@ Create directories to serve as our local repository
 .. code-block:: bash
    :caption: make directory and files
    :linenos:
-   :emphasize-lines: 1,2,4,5
+   :emphasize-lines: 1,2,3
 
 
    mkdir ansible_lab
