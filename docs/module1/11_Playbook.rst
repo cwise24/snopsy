@@ -22,7 +22,7 @@ Connect to Lab WiFi
    [ios:vars]
    ansible_connection=network_cli
    ansible_network_os=ios
-   ansible_ssh_pass="YourSecretHere"
+   ansible_ssh_pass="P@55w0rd!"
    ansible_user=f5usergrp
 
    [junos]
@@ -31,7 +31,7 @@ Connect to Lab WiFi
    [junos:vars]
    ansible_connection=network_cli
    ansible_network_os=junos
-   ansible_ssh_pass="YourSecretHere"
+   ansible_ssh_pass="P@55w0rd!"
    ansible_user=f5usergrp
 
 .. sidebar::  Play Details
