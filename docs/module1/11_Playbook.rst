@@ -12,6 +12,10 @@ Connect to Lab WiFi
 
 .. note:: Lab WiFi is only for running plays against the switches, no internet connectivity
 
+
+Running a play
+~~~~~~~~~~~~~~~
+
 .. code-block:: text
    :caption: inventory file 
 
