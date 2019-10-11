@@ -44,6 +44,13 @@ Now go to `Gitlab <https://gitlab.com/users/sign_in>`_ and create an account, on
     
 .. warning:: Make certain you are ``NOT`` about to put your private keys in the cloud
 
+Time to test our ssh key with Gitlab:
+
+::
+
+    ssh -T git@gitlab.com
+
+
 Now we can configure the Ansible config file, but first let's move to our Project Directory
 
 .. code-block:: bash

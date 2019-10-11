@@ -18,11 +18,6 @@ Create directories to serve as our local repository
 
 .. note:: Highlighted lines show files already created in the container
 
-Time to test our ssh key with Gitlab:
-
-::
-
-    ssh -T git@gitlab.com
 
 If this was successful then let's add the blank inventory to the repository.  From our project directory ``ansible_lab`` let's initialize this project
 ::
