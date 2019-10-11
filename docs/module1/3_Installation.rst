@@ -59,7 +59,7 @@ Docker
 ::
 
 
-    docker pull cwise24/ansiblelab:latest
+    docker pull cwise24/ansiblelab
     docker run --name ansiblec -dit cwise24/ansiblelab
 
 
