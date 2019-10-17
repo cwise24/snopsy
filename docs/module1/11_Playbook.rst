@@ -62,6 +62,12 @@ Running a play
 
 This play will log into the group [ios] and get the vlan info from each S1 and S3. The information will be stored in the variable *'vland'*.
 
+.. code-block:: bash
+   :caption: Run the play  
+
+   ansible-playbook -i inventory ios.yml
+
+
 Now that the play has executed, let's look at the logs generated.
 
 .. code-block:: bash
