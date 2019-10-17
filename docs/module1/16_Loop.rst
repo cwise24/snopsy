@@ -21,15 +21,15 @@ Now let's make use of our new variable
      - set_fact:
           interface: "{{ vland.stdout_lines[0][3].split(\" \") | select('match', '^(Fa|Gi)') | list  }}"
 
-     - name: Show interfaces debug
+     - name: Show interface debug
        debug:
-         var: interfaces 
+         var: interface 
 
      - name: Get interface config
        tags: shorun
        ios_command:
           commands: show running-config view full | section interface *{{ item }}
-       with_items: "{{ interfaces }}"
+       with_items: "{{ interface }}"
        register: shorunint
 
      - name: show interface variable
