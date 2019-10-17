@@ -16,7 +16,7 @@ It is used to create HTML, XML or other markup formats that are returned to the 
 
 
      ---
-     - hosts: [switches]
+     - hosts: [ios]
        gather_facts: false
       
        tasks:
