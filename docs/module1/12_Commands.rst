@@ -1,16 +1,6 @@
 Commands
 =========
 
-To run this playbook:
-
-Make sure you are in the working directory for both your play and inventory
-
-::
-
-  cd ansible_lab
-
-  ansible-playbook -i inventory ios.yml
-
 
 Other switches that can be added:
 
