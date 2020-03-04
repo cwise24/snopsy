@@ -33,18 +33,10 @@ We will need to make a new entry into our inventory file:
       tasks:
 
       - name: Gather F5 Info
-        bigip_device_facts:
+        bigip_device_info:
           provider: "{{ provider }}"
           gather_subset:
-            - system-info
-            - interfaces
-            - vlans
-            - http-monitors
-            - virtual-servers
-            - partitions
-            - self-ips
-            - ltm-pools
-            - nodes
+            - all
         delegate_to: localhost
         register: bigip_fact_out
 
