@@ -72,7 +72,5 @@ Used to mark specific points in a repository's history.
 MIT IAP
 ------------
 
-.. raw:: html
-    <div style="position: relative; padding-bottom: 20%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-     <iframe src = "https://www.youtube.com/watch?v=2sjqTHE0zok" frameborder="0" allowfullscreen style = "position: absolute; top: 0; width: 100%; height: 100%;"></iframe>
-    </div>
+
+     `MIT Video <https://www.youtube.com/watch?v=2sjqTHE0zok>
