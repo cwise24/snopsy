@@ -72,5 +72,7 @@ Used to mark specific points in a repository's history.
 MIT IAP
 ------------
 
-[![video](https://img.youtube.com/vi/2sjqTHE0zok/0.jpg)](https://www.youtube.com/watch?v=2sjqTHE0zok)
-[link](https://www.crashed.dev)
+.. raw:: html
+    <div style="position: relative; padding-bottom: 20%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+     <iframe src = "https://www.youtube.com/watch?v=2sjqTHE0zok" frameborder="0" allowfullscreen style = "position: absolute; top: 0; width: 100%; height: 100%;"></iframe>
+    </div>
