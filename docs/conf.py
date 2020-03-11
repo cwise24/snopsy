@@ -20,11 +20,11 @@ master_doc = 'index'
 # -- Project information -----------------------------------------------------
 
 project = 'SNOPsy'
-copyright = '2019, Chad Wise'
+copyright = '2020, Chad Wise'
 author = 'Chad Wise'
 
 # The full version, including alpha/beta/rc tags
-release = '1.0.1'
+release = '2.0'
 
 
 # Add any Sphinx extension module names here, as strings. They can be
@@ -85,7 +85,8 @@ html_theme = 'sphinx_rtd_theme'
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+#html_static_path = ['_static']
+html_static_path = []
 
 html_context = {
     "display_github": False,  # Add 'Edit on Github' link instead of 'View page source'
