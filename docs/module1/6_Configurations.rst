@@ -68,10 +68,11 @@ Fist let's add our Ansible Config file with a few directives:
 you can do so by editing* *ansible.cfg* [#]_
 
 Configuration file is processed in the following order:
-- ANSIBLE_CONFIG (environment variable if set)
-- ansible.cfg (in current directory)
-- ~/.ansible.cfg (in the home directory)
-- `/etc/ansible/ansible.cfg`
+
+* ANSIBLE_CONFIG (environment variable if set)
+* ansible.cfg (in current directory)
+* ~/.ansible.cfg (in the home directory)
+* `/etc/ansible/ansible.cfg`
 
 Ansible will process the above list and use the first file found, all others are ignored
 
