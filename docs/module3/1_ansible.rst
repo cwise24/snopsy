@@ -124,7 +124,7 @@ My most used:
  * when
  * fail_when
 
-This play will download the checksum file from F5 if it does not exist within the specified directory (the ``path`` directive)
+This play will download the *vault_play.png* if it does not exist within the specified directory (the ``path`` directive)
 
 .. code-block:: yaml 
    :linenos:
@@ -132,14 +132,14 @@ This play will download the checksum file from F5 if it does not exist within th
 
    - name: Check if DO rpm exist
      stat:
-       path: "{{ roles_d }}/f5_do_install/files/{{ doRPM }}"
-     register: do_stat
+       path: "~/Downloads"
+     register: file_stat
 
    - name: Download DO RPM sha256 checksum
      get_url:
-       url: https://github.com/F5Networks/f5-declarative-onboarding/raw/master/dist/{{ doSha }}
-       dest: "{{ roles_d }}/f5_do_install/files/{{ doSha }}"
-     when: do_stat.stat.exists == False
+       url: https://github.com/cwise24/snopsy/raw/master/docs/module3/imgs/vault_play.png
+       dest: "~/Downloads"
+     when: file.stat.exists == False
 
 Pause
 --------------
