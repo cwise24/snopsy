@@ -42,6 +42,18 @@ Let's create a new playbook named **jinja.yml** and use the code below.
 
 Within a j2 template
 
+.. code-block:: yaml 
+   :caption: Example Ansible task
+   :linenos:
+
+   - name: Push Declaration
+     uri:
+       url: "https://{{ hostvar[groups['adc'][0]]['ansible_host']/mgmt/shared/appsvcs/declare"
+       method: POST
+       body: "{{ lookup('template', 'exampleFile.j2', split_lines=False) }}"
+
+
+
 This example (thanks to Forrest Crenshaw @F5 on `Linklight <https://ansible.github.io/workshops/exercises/ansible_f5/>`_ Exercise 3) is used to loop through all our pool members from inventory and add them to the Virtual Server
 
 ::
