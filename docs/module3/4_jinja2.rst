@@ -6,10 +6,10 @@ Jinja2
 
 Delimiters
 
-  *  {%....%} are for statements
-  *  {{....}} are expressions used to print to template output
-  *  {#....#} are for comments which are not included in the template output
-  *  #....## are used as line statements
+  *  ``{%....%}`` are for statements
+  *  ``{{....}}`` are expressions used to print to template output
+  *  ``{#....#}`` are for comments which are not included in the template output
+  *  ``#....##`` are used as line statements
 
 Let's create a new playbook named **jinja.yml** and use the code below.
 
@@ -51,6 +51,14 @@ Within a j2 template
        url: "https://{{ hostvar[groups['adc'][0]]['ansible_host']/mgmt/shared/appsvcs/declare"
        method: POST
        body: "{{ lookup('template', 'exampleFile.j2', split_lines=False) }}"
+       body_format: json
+       headers:
+         Content-type: application/json
+         X-F5-Auth-Token: "{{ Auth.tok.json.token.token }}"
+       status_code: 200
+       timeout: 300
+       validate_certs: no
+     delegate_to: localhost
 
 
 
