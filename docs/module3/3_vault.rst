@@ -44,7 +44,7 @@ Now let's build a playbook and a encrypted file to show vault in action
 ``vim vault_play.yml``
 
 .. code-block:: yaml
-   :caption: Playbook
+   :caption: vault_play.yml
    :linenos:
 
    ---
@@ -53,14 +53,15 @@ Now let's build a playbook and a encrypted file to show vault in action
 
      tasks:
 
-     - debug:
+     - name: Debug variables
+       debug:
            msg: "{{ \"This is var1: \" + var1 + \" 'and also' \" + \"This is var2: \" + var2 }}"
 
 And now for the file we will encrypt
 ``ansible-vault create vault_test.yml``
 
 .. code-block:: yaml
-   :caption: Vault file
+   :caption: vault_test.yml
    :linenos:
 
    ---
