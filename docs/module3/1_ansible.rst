@@ -35,8 +35,8 @@ Let's create a new playbook called ``ext.yml`` and use the contents below
          msg: "{{ \"This is var1: \" + var1 + \" 'and also' \" + \"This is var2: \" + var2 }}"
 
 Now we'll run this play against the localhost.  A couple of items to watch when running playbooks against the localhost
-* The ``hosts:`` line should have the value of all
-* ``connection`` should have the value of local, you can leave this out of the YAML file but you will need to include ``-c local`` in the ansible-playbook command
+The ``hosts:`` line should have the value of **all** 
+``connection`` should have the value of local, you can leave this out of the YAML file but you will need to include ``-c local`` in the ansible-playbook command
 
 ::
 
@@ -55,9 +55,9 @@ Example of connection directive missing from YAML file
 .. centered:: Fig 1
 Limit
 -------
-One way to reduce all awesome power of automation (to kill everything) is to limit what hosts your playbooks run on.  This can be accomplished with ``limit`` or ``tags``.
+One way to reduce the all awesome power of automation (to kill everything) is to limit what hosts your playbooks run on.  This can be accomplished with ``limit`` or ``tags``.
 
-Below we run a play on only ``host1`` @ line 1 but @ line 2 we run the playbook against all hosts *except* ``host1``
+The example below we run a play on only ``host1`` @ line 1 ,but @ line 2 we run the playbook against all hosts *except* ``host1``
 
 .. code-block:: text
    :linenos:
@@ -73,7 +73,7 @@ Adding tags to individual plays can greatly help when you only want to test or s
 
 .. code-block:: yaml
    :linenos:
-   :caption: Tags
+   :caption: tags.yml
    :emphasize-lines: 10-11,16-17
 
    ---
@@ -83,16 +83,20 @@ Adding tags to individual plays can greatly help when you only want to test or s
      tasks:
 
      - name: Ansible Date Example
-       debug:
-            var=ansible_date_time.date
        tags:
          - tag1
+       debug:
+            var=ansible_date_time.date
+
+     - name: Set a fact
+       set_fact:
+          fact_var: ansible_date_time.date
 
      - name: Ansible Date Example
+       tags: 
+         - tag2
        debug:
             var=ansible_date_time.epoch
-       tags:
-        - tag2
 
 
 Only show date ``ansible-playbook -i inventory someplay.yml --tags "tag1"``
@@ -149,15 +153,15 @@ Give a process time before running the next inline task
    - pause:
         seconds: 10
 
-When an action fails, prompt user to accept and continue rather than stop/fail.  I use the below when my docker network already exists
+When an action fails, prompt user to accept and continue rather than stop/fail.  Let's add the below code to the end of your *tags.yml* playbook
 
 .. code-block:: yaml
    :linenos:
    :caption: Pause & Prompt
 
    - pause:
-       prompt: "{{ dnet.results[0].stderr_lines[0] }}.  Press Enter to continue "
-     when: dnet.results[0].rc  != 0
+       prompt: " Press Enter to continue "
+     when: fact_var is defined
 
 Meta
 --------
