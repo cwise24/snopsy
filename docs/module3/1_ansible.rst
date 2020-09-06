@@ -124,18 +124,19 @@ My most used:
  * when
  * fail_when
 
-This play will download the *vault_play.png* if it does not exist within the specified directory (the ``path`` directive)
+This play will download the *vault_play.png* if it does not exist within the specified directory (the ``path`` directive), you 
+can add this to the end of **tags.yml** playbook
 
 .. code-block:: yaml 
    :linenos:
    :caption: File Exists Check
 
-   - name: Check if DO rpm exist
+   - name: Check if image file exists
      stat:
        path: "~/Downloads"
      register: file_stat
 
-   - name: Download DO RPM sha256 checksum
+   - name: Download png file from my repo
      get_url:
        url: https://github.com/cwise24/snopsy/raw/master/docs/module3/imgs/vault_play.png
        dest: "~/Downloads"
