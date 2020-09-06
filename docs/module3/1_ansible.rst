@@ -113,6 +113,7 @@ Loops
 ---------
 
 My most commonly used looping methods. In nearly all cases with_items is fine to use but you should start using loop.
+
 * with_items
 * loop 
 
