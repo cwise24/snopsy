@@ -12,12 +12,12 @@ Let's create a new *master* ansible-vault key, this will be stored as a hidden f
     
     s3cr3T1
 
-From the ``.ansible.cfg`` in Module 1, we'll now un-comment the ``vault_password_file`` directive
+From the ``ansible.cfg`` in Module 1, we'll now un-comment the ``vault_password_file`` directive
 
 .. code-block:: bash
    :emphasize-lines: 6
 
-    vim .ansible.cfg
+    vim ansible.cfg
 
     [defaults]
     Host_key_checking = False
