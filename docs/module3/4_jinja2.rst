@@ -11,6 +11,33 @@ Delimiters
   *  {#....#} are for comments which are not included in the template output
   *  #....## are used as line statements
 
+.. code-block:: yaml
+   :caption: jinja.yml 
+   :lineos:
+
+   ---
+   - hosts: all
+     gather_facts: False
+     connection: local 
+
+     vars:
+       var1: itema,itemb,itemc,itemd
+
+     tasks:
+
+     - name: Set Fact from vars (build a list)
+       set_fact:
+         jinja: "{{ var1.split(',') }}"
+
+     - name: Echo jinja List 
+       debug:
+         var: jinja 
+
+     - name: Echo jinja loop 
+       debug:
+         msg: "{% set comma=joiner(',') %} {% for item in jinja %} {{comma()}} {{ item }} {% endfor %}"
+
+
 Within a j2 template
 
 This example (thanks to Forrest Crenshaw @F5 on `Linklight <https://ansible.github.io/workshops/exercises/ansible_f5/>`_ Exercise 3) is used to loop through all our pool members from inventory and add them to the Virtual Server
