@@ -30,7 +30,7 @@ This serves as a starting point to a much deeper training such as F5's SUPER-NET
 As a NetOps person the new terms and agile deployment causes a lot of heartache between teams. NetOps wants stability, DevOps wants programmability and constant update. 
 This training won’t bridge the divide, but can definitely help with faster NetOps processes and higher reliability.*
 
-| *Having said that, I do work at F5 as a System Engineer and I’m more than willing to talk about what we do.*
+| *Having said that, I do work at F5 as a Solutions Engineer and I’m more than willing to talk about what we do.*
 
 If you're wondering how this was built check out my other build `My_RTD <https://my-rtd-build.readthedocs.io/en/latest/>`_
 
