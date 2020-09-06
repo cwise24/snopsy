@@ -112,6 +112,29 @@ Only show epoch ``ansible-playbook -i inventory someplay.yml --skip-tags "tag1"`
 Loops
 ---------
 
+My most commonly used looping methods. In nearly all cases with_items is fine to use but you should start using loop.
+* with_items
+* loop 
+
+.. code-block:: yaml
+   :caption: loop.yml 
+   :linenos:
+
+   ---
+   - hosts: all
+     gather_facts: False
+     connection: local 
+
+     tasks:
+
+     - name: A loop 
+       debug:
+         msg: "{{ item }}"
+       loop:
+         - one
+         - two
+         - three
+
 Conditionals
 -----------------
 
