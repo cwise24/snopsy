@@ -70,6 +70,8 @@ And now for the file we will encrypt
    var1: "is var one"
    var2: "is var two"
 
+Let's view our newly created and enccryted file ``cat vault_test.yml``
+
 Now to run our play we will use the below command, calling our localhost as the only inventory member, our ``vault_play.yml`` play file and passing in the external ``-e`` vault file ``@vault_test.yml``
 ::
 
