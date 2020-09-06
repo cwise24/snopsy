@@ -15,7 +15,7 @@ Let's create a new playbook named *jinja.yml* and use the code below.
 
 .. code-block:: yaml
    :caption: jinja.yml 
-   :lineos:
+   :linenos:
 
    ---
    - hosts: all
