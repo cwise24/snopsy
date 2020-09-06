@@ -6,10 +6,10 @@ Jinja2
 
 Delimiters
 
-  *  {%....%} are for statements
-  *  {{....}} are expressions used to print to template output
-  *  {#....#} are for comments which are not included in the template output
-  *  #....## are used as line statements
+  *  ``{%....%}`` are for statements
+  *  ``{{....}}`` are expressions used to print to template output
+  *  ``{#....#}`` are for comments which are not included in the template output
+  *  ``#....##`` are used as line statements
 
 Let's create a new playbook named **jinja.yml** and use the code below.
 
