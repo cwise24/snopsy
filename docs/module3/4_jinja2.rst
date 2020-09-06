@@ -11,6 +11,8 @@ Delimiters
   *  {#....#} are for comments which are not included in the template output
   *  #....## are used as line statements
 
+Let's create a new playbook named *jinja.yml* and use the code below.
+
 .. code-block:: yaml
    :caption: jinja.yml 
    :lineos:
