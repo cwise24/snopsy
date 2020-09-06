@@ -96,5 +96,6 @@ Or you can install ``ansible-lint`` See Github project page for more `here <http
 
 
 .. code-block:: shell 
+   :caption: Example ansible-lint 
     
    ansible-lint somefile.yml
