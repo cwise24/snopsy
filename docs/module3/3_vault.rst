@@ -55,7 +55,9 @@ Now let's build a playbook and a encrypted file to show vault in action
 
      - name: Debug variables
        debug:
-           msg: "{{ \"This is var1: \" + var1 + \" 'and also' \" + \"This is var2: \" + var2 }}"
+           msg: 
+             - "{{ \"This is var1: \" + var1 }}"
+             - "{{ \"This is var2: \" + var2 }}"
 
 And now for the file we will encrypt
 ``ansible-vault create vault_test.yml``
