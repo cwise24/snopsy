@@ -7,6 +7,7 @@ Other switches that can be added:
 * -b for *become*
 * -K *ask for password*
 * -e *pass extra variables in*
+
   * pass a variable -e "var=one"
   * pass a file of variables -e "@file.yml"
 
