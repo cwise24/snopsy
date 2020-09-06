@@ -27,14 +27,14 @@ From the ``ansible.cfg`` in Module 1, we'll now un-comment the ``vault_password_
 Now you may create new files by using ``ansible-vault create <filename>``, this will create the new file and open vim. This new file will use the passphrase from our previously generated file
 ``.vault.key``
 
-Another way to encrypt a new file is ``ansible-vault create <filename>`` or an existing file ``ansible-vault encrypt <filename>`` and you will be prompted for the new passphrase 
+To encrypt an existing file ``ansible-vault encrypt <filename>`` and you will be prompted for the new passphrase 
 
 .. note:: If you configure the ``vault_password_file`` this will automatically be used as the passphrase and you will **NOT** be prompted
 
 Some useful vault commands:
 
-``ansible-vault edit <filename>`` will open the file in vim
-``ansible-vault decrypt <filename>`` returns file to plain-text status
+``ansible-vault edit <filename>`` will decrypt and open the file in vim <br />
+``ansible-vault decrypt <filename>`` returns file to plain-text status <br />
 ``ansible-vault re-key <filename>`` to assign a new passphrase to the file, again see Note above on ``vault_password_file``
 
 Experimentation
