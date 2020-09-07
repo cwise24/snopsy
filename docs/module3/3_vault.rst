@@ -33,9 +33,9 @@ To encrypt an existing file ``ansible-vault encrypt <filename>`` and you will be
 
 Some useful vault commands:
 
-``ansible-vault edit <filename>`` will decrypt and open the file in vim  <br />
-``ansible-vault decrypt <filename>`` returns file to plain-text status  <br />
-``ansible-vault re-key <filename>`` to assign a new passphrase to the file, again see **Note** above on ``vault_password_file``
+|  ``ansible-vault edit <filename>`` will decrypt and open the file in vim
+|  ``ansible-vault decrypt <filename>`` returns file to plain-text status 
+|  ``ansible-vault re-key <filename>`` to assign a new passphrase to the file, again see **Note** above on ``vault_password_file``
 
 Experimentation
 ---------------------
@@ -71,6 +71,10 @@ And now for the file we will encrypt
    var2: "is var two"
 
 Let's view our newly created and enccryted file ``cat vault_test.yml``
+
+.. figure:: imgs/ansibleVault.png
+   :scale: 50%
+   :align: center
 
 Now to run our play we will use the below command, calling our localhost as the only inventory member, our ``vault_play.yml`` play file and passing in the external ``-e`` vault file ``@vault_test.yml``
 ::
