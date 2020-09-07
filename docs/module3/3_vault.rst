@@ -33,8 +33,8 @@ To encrypt an existing file ``ansible-vault encrypt <filename>`` and you will be
 
 Some useful vault commands:
 
-``ansible-vault edit <filename>`` will decrypt and open the file in vim <br />
-``ansible-vault decrypt <filename>`` returns file to plain-text status <br />
+``ansible-vault edit <filename>`` will decrypt and open the file in vim  <br />
+``ansible-vault decrypt <filename>`` returns file to plain-text status  <br />
 ``ansible-vault re-key <filename>`` to assign a new passphrase to the file, again see **Note** above on ``vault_password_file``
 
 Experimentation
