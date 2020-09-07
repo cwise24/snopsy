@@ -36,7 +36,8 @@ Let's create a new playbook called ``ext.yml`` and use the contents below
 
 Now we'll run this play against the localhost.  A couple of items to watch when running playbooks against the localhost
 The ``hosts:`` line should have the value of **all** 
-``connection`` should have the value of local, you can leave this out of the YAML file but you will need to include ``-c local`` in the ansible-playbook command
+| ``connection`` should have the value of local
+
 
 ::
 
