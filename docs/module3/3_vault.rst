@@ -75,6 +75,7 @@ Let's view our newly created and enccryted file ``cat vault_test.yml``
 .. figure:: imgs/ansibleVault.png
    :scale: 50%
    :align: center
+   :caption: Ansible Vault File
 
 Now to run our play we will use the below command, calling our localhost as the only inventory member, our ``vault_play.yml`` play file and passing in the external ``-e`` vault file ``@vault_test.yml``
 ::
