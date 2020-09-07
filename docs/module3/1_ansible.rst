@@ -36,14 +36,15 @@ Let's create a new playbook called ``ext.yml`` and use the contents below
 
 Now we'll run this play against the localhost.  A couple of items to watch when running playbooks against the localhost
 The ``hosts:`` line should have the value of **all** 
-| ``connection`` should have the value of local
+
+| ``connection`` should have the value of **local**
 
 
 ::
 
     ansible-playbook -i "localhost," ext.yml -e "var1='is var one' var2='is var two'"
 
-Example of connection directive missing from YAML file
+Example of connection directive missing from YAML file, you must add the ``-c`` connection switch to the cli command
 
 ::
 
