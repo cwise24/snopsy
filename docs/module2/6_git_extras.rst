@@ -8,13 +8,13 @@ A **.gitignore** is an invaluable file to have in your repository. This file exp
 Each line in this file spcifies a file or pattern to be matched. For files like certificates, keys or other file types (i.e. pycache)
 our gitignore will make sure those files do NOT become part of our public repository.
 
-A gitignore file generator I like is `here https://www.toptal.com/developers/gitignore`_
+A gitignore file generator I like is `here <https://www.toptal.com/developers/gitignore>`_
 
 
 Pre-Commit
 -----------------
  
-I had spent (aka wasted) time on using Jenkins to run linting tools on my code after a push triggered my pipeline.  As I was spending time trying to ``groovy`` a simple for loop I stumbled across
+I had spent (aka wasted) time on using Jenkins to run linting tools on my code after a push triggered my pipeline.  As I was spending time trying to ``groovy``(Jenkins language) a simple for loop I stumbled across
 an article that made total sense, Why do this?? Why have your CI tool import a project to find problems, solve them **before** commit. I agree, so below we'll cover the setup of pre-commit
 
  After you have initialzed your local repo, within the ``.git`` folder you will see  ``.git/hooks`` and if we look there we will see the list of examples.
