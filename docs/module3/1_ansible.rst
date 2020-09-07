@@ -40,7 +40,7 @@ The ``hosts:`` line should have the value of **all**
 
 ::
 
-    ansible-playbook -i "localhost," ext.yml -e "var1= 'is var one' var2='is var two'"
+    ansible-playbook -i "localhost," ext.yml -e "var1='is var one' var2='is var two'"
 
 Example of connection directive missing from YAML file
 
