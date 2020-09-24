@@ -1,6 +1,20 @@
 Git Extras
 =========
 
+Remove remote file
+-------------------------
+
+Sometimes we just mess up. We push a file to our remote that we did not want to push. Here is how you can delete the file from your reposity and keep it locally.
+
+.. code-block:: bash
+   :caption: Remove File(s)
+
+   git rm --cached file.txt
+   git rm --cached file1.txt file2.txt
+   git rm -r --cached folder
+
+On you have marked your remote file/folder for removal, `git push` to push your changes.
+
 Pre-Commit
 -----------------
  
