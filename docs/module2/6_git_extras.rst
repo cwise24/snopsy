@@ -10,6 +10,19 @@ our gitignore will make sure those files do NOT become part of our public reposi
 
 A gitignore file generator I like is `here <https://www.toptal.com/developers/gitignore>`_
 
+Remove Remote File
+--------------------------
+
+Sometimes we make a mistake and push a file to our repository that we do not want there.  Let's remove it
+
+.. code-block:: bash
+   :caption: Remove file(s)
+
+   git rm --cached file.txt
+   git rm --cached file1.txt file2.txt
+   git rm -r --cached folder
+
+On your next `git push` you'll no longer see the remote files, make sure to add those file types to your **.gitingnore**
 
 Pre-Commit
 -----------------
