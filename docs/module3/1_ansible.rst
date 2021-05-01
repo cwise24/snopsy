@@ -242,7 +242,8 @@ Host Variables
 You will not need to create the below file **names.yml** as this was cloned from Gitlab in the previous step. You only need to changed to the **snopsy.hostvars** directory
 and run the playbook:
 
-.. code-block:: bash
+::
+
    cd snopsy.hostvars 
    ansible-playbook -i inventory names.yml 
 
