@@ -221,27 +221,25 @@ Let's create a new playbook called *getrepo.yml* and add the code below:
  
      tasks:
  
-    - name: Check if project folder exists
-      ansible.builtin.stat: 
-        path: ./snopsy.hostvars 
-      register: dir_exits 
- 
-     - name: Clone Repo for next exercise
-       ansible.builtin.git:
-         repo: https://gitlab.com/cwise24/snopsy.hostvars 
-         dest: ~/ansible_lab/snopsy.hostvars
-         clone: yes
-         force: yes 
-       when: dir_exists.stat.exists == false 
+     - name: Check if project folder exists
+       ansible.builtin.stat: 
+         path: ./snopsy.hostvars 
+       register: dir_exits 
+  
+      - name: Clone Repo for next exercise
+        ansible.builtin.git:
+          repo: https://gitlab.com/cwise24/snopsy.hostvars 
+          dest: ~/ansible_lab/snopsy.hostvars
+          clone: yes
+          force: yes 
+        when: dir_exists.stat.exists == false 
 
-Now to execute
-
-``ansible-playbook -i "localhost," getrepo.yml``
+Now to execute: ``ansible-playbook -i "localhost," getrepo.yml``
 
 Host Variables
 -------------------
 
-You will not need to create the below file `names.yml` as this was cloned from Gitlab in the previous step. You only need to changed to the *snopsy.hostvars* directory
+You will not need to create the below file **names.yml** as this was cloned from Gitlab in the previous step. You only need to changed to the **snopsy.hostvars** directory
 and run the playbook:
 
 .. code-block:: bash
