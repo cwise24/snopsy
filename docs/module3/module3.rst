@@ -12,4 +12,3 @@ This modules focus is only on Ansible { Under construction }
    2_galaxy
    3_vault
    4_jinja2
-   5_cicd
