@@ -209,30 +209,30 @@ Ansible Git
 Clone a git repo using Ansible. For this exercise we will clone an existing repo in Gitlab. We will use this repo to demo hostvar. 
 Let's create a new playbook called *getrepo.yml* and add the code below:
 
-..code-block:: yaml 
-  :linenos:
-  :caption: getrepo.yml 
+.. code-block:: yaml 
+   :linenos:
+   :caption: getrepo.yml 
 
-  ---
-  - name: Clone git repo
-    hosts: all 
-    gather_facts: no 
-    connection: local 
-
-    tasks:
-
-   - name: Check if project folder exists
-     ansible.builtin.stat: 
-       path: ./snopsy.hostvars 
-     register: dir_exits 
-
-    - name: Clone Repo for next exercise
-      ansible.builtin.git:
-        repo: https://gitlab.com/cwise24/snopsy.hostvars 
-        dest: ~/ansible_lab/snopsy.hostvars
-        clone: yes
-        force: yes 
-      when: dir_exists.stat.exists == false 
+   ---
+   - name: Clone git repo
+     hosts: all 
+     gather_facts: no 
+     connection: local 
+ 
+     tasks:
+ 
+    - name: Check if project folder exists
+      ansible.builtin.stat: 
+        path: ./snopsy.hostvars 
+      register: dir_exits 
+ 
+     - name: Clone Repo for next exercise
+       ansible.builtin.git:
+         repo: https://gitlab.com/cwise24/snopsy.hostvars 
+         dest: ~/ansible_lab/snopsy.hostvars
+         clone: yes
+         force: yes 
+       when: dir_exists.stat.exists == false 
 
 Now to execute
 
@@ -245,37 +245,37 @@ Host Variables
    :linenos:
    :caption: names.yml 
 
-  ---
-  - name: Show hostvar use cases
-    hosts: all
-    gather_facts: no
-  
-    tasks:
-  
-    - name: Show hostvars (all hosts)
-      debug:
-        var: hostvars 
-  
-    - name: Show inventory hostnames
-      debug: 
-        var: inventory_hostname 
-  
-    - name: Show ip addresses of all hosts
-      debug:
-        msg: "{{ hostvars[inventory_hostname]['ansible_host'] }}"
-  
-    - name: Show ip address of host_2 only
-      debug: 
-        msg: "{{ hostvars['host_2']['ansible_host'] }}" 
-      when: inventory_hostname == "host_2"
-  
-    - name: Show groups and hosts within each group
-      debug:
-        msg: "{{ groups }}"
-  
-    - name: Show group names
-      debug:
-        msg: "{{ group_names }}"
+   ---
+   - name: Show hostvar use cases
+     hosts: all
+     gather_facts: no
+   
+     tasks:
+   
+     - name: Show hostvars (all hosts)
+       debug:
+         var: hostvars 
+   
+     - name: Show inventory hostnames
+       debug: 
+         var: inventory_hostname 
+   
+     - name: Show ip addresses of all hosts
+       debug:
+         msg: "{{ hostvars[inventory_hostname]['ansible_host'] }}"
+   
+     - name: Show ip address of host_2 only
+       debug: 
+         msg: "{{ hostvars['host_2']['ansible_host'] }}" 
+       when: inventory_hostname == "host_2"
+   
+     - name: Show groups and hosts within each group
+       debug:
+         msg: "{{ groups }}"
+   
+     - name: Show group names
+       debug:
+         msg: "{{ group_names }}"
   
 
 
