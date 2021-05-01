@@ -245,7 +245,9 @@ and run the playbook:
 ::
 
    cd snopsy.hostvars 
-   ansible-playbook -i inventory names.yml 
+   ansible-playbook names.yml 
+
+If you now look at the files in your **snopsy.hostvars** directory you will also see an **ansible.cfg** file where we declare where our inventory is 
 
 .. code-block:: yaml
    :linenos:
