@@ -1,12 +1,14 @@
 Pipeline
-~~~~~~~
+======
 
 Pipelines allow for continuous integration, delivery and deployment. Anytime your repository is updated we can now run extensive testing to validate changes and produce 
 reports (artifacts) proving new changes will work (or not work).
 
 The CI file
+---------------
 
-The ci file determines how the pipeline workflow will run. We can add variables, conditions and select custom container builds for our testing. Some different versions of this file
+The ci file determines how the pipeline workflow will run. We can add variables, conditions and select custom container builds for our testing. Some different versions of this file are:
+
  - Jenkinsfile {uses Groovy lang)
  - .gitlab-ci.yml {uses YAML}
 
@@ -17,6 +19,13 @@ Here we will build a simple pipeline to run ansible-lint against our playbook to
 
 ``git clone https://gitlab.com/cwise24/snopsy.pipeline``
 
+
+Now, let's go into the new repository you just cloned
+
+::
+   cd snopsy.pipeline
+
+Now you must create the the **ci** file using the below code block
 
 .. code-block:: yaml
    :linenos:
