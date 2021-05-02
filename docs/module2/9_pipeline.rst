@@ -79,7 +79,7 @@ The figure below shows our new pipeline completed. You can click on the commit h
    :align: center
 .. centered:: Fig 2
 
-You can also click on Pipeline-Jobs and the Job number to view the logs from Gitlab Runner (Fig 4)
+You can also click on CI/CD -> Jobs and the Job number to view the logs from Gitlab Runner (Fig 4)
 
 .. figure:: imgs/pipeline3.png
    :scale: 60%
