@@ -16,6 +16,7 @@ Here we will build a simple pipeline to run ansible-lint against our playbook to
 
 ``git clone https://gitlab.com/cwise24/snopsy.pipeline``
 
+
 .. code-block:: yaml
    :lineos:
    :caption: .gitlab-ci.yml 
