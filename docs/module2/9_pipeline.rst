@@ -71,7 +71,7 @@ Now it's time to push and create this repository with the new CI file to begin p
   git commit -m "start pipeline"
   git push -u git@gitlab.com:<your_gitlab_username>/snopsy.pipeline.git 
 
-The figure below shows our new pipeline completed. You can click on the commit hash to view changes and in the blue box you will be able to download artifacts (if any) generated.
+The figure below shows our new pipeline completed. You can click on the commit hash (green box) to view changes and in the blue box you will be able to download artifacts (if any) generated.
 
 
 .. figure:: imgs/pipeline2.png
