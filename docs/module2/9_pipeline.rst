@@ -68,3 +68,9 @@ Now it's time to push and create this repository with the new CI file to begin p
   git add .gitlab-ci.yml 
   git commit -m "start pipeline"
   git push -u git@gitlab.com:<your_gitlab_username>/snopsy.pipeline.git 
+
+
+.. figure:: imgs/pipeline2.png
+   :scale: 60%
+   :align: center
+.. centered:: Fig 2
