@@ -4,6 +4,11 @@ Pipeline
 Pipelines allow for continuous integration, delivery and deployment. Anytime your repository is updated we can now run extensive testing to validate changes and produce 
 reports (artifacts) proving new changes will work (or not work).
 
+.. figure:: imgs/pipeline1.png
+   :scale: 60%
+   :align: center
+.. centered:: Fig 1
+
 The CI file
 ---------------
 
