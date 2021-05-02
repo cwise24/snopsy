@@ -31,11 +31,13 @@ Now, let's go into the new repository you just cloned
    
   cd snopsy.pipeline
 
-Now you must create the the **ci** file using the below code block
+Now you must create the the **ci** file using the below code block. Notice the variable **SITE** has the value `site2`. After your pipeline runs we will change this to `site1` and update the
+repository.
 
 .. code-block:: yaml
    :linenos:
-   :caption: .gitlab-ci.yml 
+   :caption: .gitlab-ci.yml
+   :emphasize-lines: 2
 
    variables:
      SITE: "site2"
