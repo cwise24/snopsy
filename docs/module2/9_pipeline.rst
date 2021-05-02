@@ -9,7 +9,7 @@ reports (artifacts) proving new changes will work (or not work).
    :align: center
 .. centered:: Fig 1
 
-The CI file
+CI file
 ---------------
 
 The ci file determines how the pipeline workflow will run. We can add variables, conditions and select custom container builds for our testing. Some different versions of this file are:
