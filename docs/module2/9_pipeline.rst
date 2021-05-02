@@ -23,7 +23,8 @@ Here we will build a simple pipeline to run ansible-lint against our playbook to
 Now, let's go into the new repository you just cloned
 
 ::
-   cd snopsy.pipeline
+   
+  cd snopsy.pipeline
 
 Now you must create the the **ci** file using the below code block
 
