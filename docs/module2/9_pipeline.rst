@@ -12,7 +12,7 @@ What is a ci file, links examples etc
 
 Building a simple pipeline
 
-Herre we will build a simple pipeline to run ansible-lint against our playbook to look for errors and return artifacts. Let's start off this lab with some pre-built ansible playbooks.
+Here we will build a simple pipeline to run ansible-lint against our playbook to look for errors and return artifacts. Let's start off this lab with some pre-built ansible playbooks.
 
 ``git clone https://gitlab.com/cwise24/snopsy.pipeline``
 
