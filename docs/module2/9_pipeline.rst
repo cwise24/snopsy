@@ -146,10 +146,14 @@ Once this pipeline completes we should see a failure. Navigating back to the Job
    :align: center
 .. centered:: Fig 5
 
+Now you can view the report:
+
 .. figure:: imgs/pipeline6.png
    :scale: 60%
    :align: center
 .. centered:: Fig 6
+
+A helpful link to see all the keywords available in your ci file:
 
 `Gitlab Keyword Link`_
 
