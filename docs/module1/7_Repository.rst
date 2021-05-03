@@ -76,6 +76,6 @@ We can now edit files locally and push them to our remote repository by
 
    git push
 
-**IF moving to Git module click `here`_ **
+**IF moving to Git module click** `here`_ 
 
 .. _here: https://snopsy.readthedocs.io/en/latest/module2/module2.html
