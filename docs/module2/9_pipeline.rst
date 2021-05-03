@@ -94,3 +94,43 @@ You can also click on CI/CD -> Jobs and the Job number to view the logs from Git
    :scale: 60%
    :align: center
 .. centered:: Fig 4
+
+Now, let's change our variable SITE to ``site1`` and run the pipeline again
+
+
+.. code-block:: yaml
+   :linenos:
+   :caption: .gitlab-ci.yml
+   :emphasize-lines: 2
+
+   variables:
+     SITE: "site1"
+
+   stages:
+      - lint 
+
+   Linting:
+     stage: lint 
+     image: 
+       name: cytopia/ansible-lint:latest 
+       entrypoint: ["/bin/sh", "-c"]
+    before_script:
+      - python3 -m pip install --upgrade pip
+      - python3 -m ansible-lint[yamllint]
+      - ansible-lint --version
+    script:
+      - ansible-lint $SITE.yml | tee site_Report.txt
+    artifacts:
+      when: always
+      paths:
+        - site_Report.txt
+      expire_in: 2 days 
+
+
+Now it's time to push and create this repository with the new CI file to begin pipeline execution
+
+::
+
+  git add .gitlab-ci.yml 
+  git commit -m "site1 pipeline"
+  git push -u git@gitlab.com:<your_gitlab_username>/snopsy.pipeline.git 
