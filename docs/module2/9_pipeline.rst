@@ -143,4 +143,4 @@ Now it's time to push with the updated CI file to begin pipeline execution
 
 `Gitlab Keyword Link`_
 
-.. _Gitlab Keyword: https://docs.gitlab.com/ee/ci/yaml/
+.. _Gitlab Keyword Link: https://docs.gitlab.com/ee/ci/yaml/
