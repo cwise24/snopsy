@@ -139,7 +139,17 @@ Now it's time to push with the updated CI file to begin pipeline execution
   git commit -m "site1 pipeline"
   git push
 
+Once this pipeline completes we should see a failure. Navigating back to the Job that just executed we can browse to our report
 
+.. figure:: imgs/pipeline5.png
+   :scale: 60%
+   :align: center
+.. centered:: Fig 5
+
+.. figure:: imgs/pipeline6.png
+   :scale: 60%
+   :align: center
+.. centered:: Fig 6
 
 `Gitlab Keyword Link`_
 
