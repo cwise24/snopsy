@@ -52,7 +52,7 @@ repository.
        entrypoint: ["/bin/sh", "-c"]
     before_script:
       - python3 -m pip install --upgrade pip
-      - python3 -m ansible-lint[yamllint]
+      - python3 -m pip install ansible-lint[yamllint]
       - ansible-lint --version
     script:
       - ansible-lint $SITE.yml | tee site_Report.txt
@@ -116,7 +116,7 @@ Now, let's change our variable SITE to ``site1`` and run the pipeline again
        entrypoint: ["/bin/sh", "-c"]
     before_script:
       - python3 -m pip install --upgrade pip
-      - python3 -m ansible-lint[yamllint]
+      - python3 -m pip install ansible-lint[yamllint]
       - ansible-lint --version
     script:
       - ansible-lint $SITE.yml | tee site_Report.txt
