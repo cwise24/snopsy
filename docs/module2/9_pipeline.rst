@@ -34,7 +34,7 @@ Now, let's go into the new repository you just cloned
 Now you must create the the **ci** file using the below code block. Notice the variable **SITE** has the value `site2`. After your pipeline runs we will change this to `site1` and update the
 repository.
 
-.. note::  Pay close attention to indentation, YAML is very picky!!
+.. important::  Pay close attention to indentation, YAML is very picky!!
 
 .. code-block:: yaml
    :linenos:
