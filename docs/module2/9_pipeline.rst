@@ -133,4 +133,4 @@ Now it's time to push with the updated CI file to begin pipeline execution
 
   git add .gitlab-ci.yml 
   git commit -m "site1 pipeline"
-  git push -u git@gitlab.com:<your_gitlab_username>/snopsy.pipeline.git 
+  git push
