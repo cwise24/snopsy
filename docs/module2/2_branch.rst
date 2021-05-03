@@ -26,13 +26,13 @@ From module 1 we created our master branch (default branch), let's verify that u
     git branch
 .. important:: **DO NOT MAKE CHANGES IN THE MASTER BRANCH, HARD LESSON LEARNED HERE**
 
-Now we will create a new branch *'dev'*, this is where we will make our changes and merge them back into the mainline *Master*
+Now we will create a new branch *'dev'*, this is where we will make our changes and merge them back into the mainline *master* branch.
 
 ::
 
     git checkout -b dev 
 
-This will create a branch locally, We'll now add a README.md to our *dev* branch.
+This will create a branch locally, we'll now add a README.md to our *dev* branch.
 
 .. sidebar::  Linux Cheat Sheet
 
