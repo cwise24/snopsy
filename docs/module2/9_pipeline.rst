@@ -136,3 +136,7 @@ Now it's time to push with the updated CI file to begin pipeline execution
   git add .gitlab-ci.yml 
   git commit -m "site1 pipeline"
   git push
+
+  .. rubric:: Footnote 
+
+  .. https://docs.gitlab.com/ee/ci/yaml/
