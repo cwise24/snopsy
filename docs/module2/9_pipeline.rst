@@ -127,7 +127,7 @@ Now, let's change our variable SITE to ``site1`` and run the pipeline again
       expire_in: 2 days 
 
 
-Now it's time to push and create this repository with the new CI file to begin pipeline execution
+Now it's time to push with the updated CI file to begin pipeline execution
 
 ::
 
