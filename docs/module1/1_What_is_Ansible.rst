@@ -4,12 +4,6 @@ Ansible
 .. centered:: What is Ansible?
 
 
-*  Open Source
-*  Python
-*  Primarily uses ssh
-*  Industry adoption
-*  Tower
-
 According to ansible.com:
 
 
@@ -28,3 +22,9 @@ a "Source Of Truth".
 Ansible is Free Open Source Software (FOSS), however, `Ansible Tower` is a specific product
 offered by RedHat for enterprise deployments of Ansible. It features a web interface, provides Role Based Access
 Controls (RBAC), enables Teams and Orgs, smart inventories and others.
+
+*  Open Source
+*  Python
+*  Primarily uses SSH
+*  Industry adoption
+*  Tower
