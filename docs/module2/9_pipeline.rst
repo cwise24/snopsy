@@ -16,6 +16,7 @@ The ci file determines how the pipeline workflow will run. We can add variables,
 
  - Jenkinsfile {uses Groovy lang)
  - .gitlab-ci.yml {uses YAML}
+ - azure-pipelines.yml {uses YAML }
 
 
 Building a simple pipeline
@@ -67,8 +68,6 @@ repository.
 
 
 Now it's time to push and create this repository with the new CI file to begin pipeline execution
-
-.. important::  Notice the added lines starting at line 24, pipelines will only run if those files have changed
 
 ::
 
@@ -124,7 +123,7 @@ Now, let's change our variable SITE to ``site1`` and run the pipeline again
        - python3 -m pip install ansible-lint[yamllint]
        - ansible-lint --version
      script:
-       - echo "${SITE} Report" > site_Report.txt 
+       - echo "${SITE} Report" > site_Report.txt
        - ansible-lint $SITE.yml >> site_Report.txt 2>&1
      artifacts:
        when: always
@@ -137,6 +136,9 @@ Now, let's change our variable SITE to ``site1`` and run the pipeline again
           - site2.yml 
           - .gitlab-ci.yml  
 
+.. important::  Notice the added lines starting at line 24, pipelines will only run if those files have changed
+
+You could now update your README file and the pipeline would no longer execute.
 
 Now it's time to push with the updated CI file to begin pipeline execution. 
 
