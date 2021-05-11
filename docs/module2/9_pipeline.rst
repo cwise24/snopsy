@@ -38,7 +38,6 @@ repository.
 .. important::  Pay close attention to indentation, YAML is very picky!!
 
 .. code-block:: yaml
-   :linenos:
    :caption: .gitlab-ci.yml
    :emphasize-lines: 2
 
