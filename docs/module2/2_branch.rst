@@ -20,13 +20,13 @@ users to file issues they've experienced and use to fix those.
     git checkout -b <new branch>    { creates a new branch }
     git checkout -d <branch name>   { deletes branch name }
 
-From module 1 we created our master branch (default branch), let's verify that using:
+From module 1 we created our main branch (default branch), let's verify that using:
 ::
 
     git branch
-.. important:: **DO NOT MAKE CHANGES IN THE MASTER BRANCH, HARD LESSON LEARNED HERE**
+.. important:: **DO NOT MAKE CHANGES IN THE MAIN BRANCH, HARD LESSON LEARNED HERE**
 
-Now we will create a new branch *'dev'*, this is where we will make our changes and merge them back into the mainline *master* branch.
+Now we will create a new branch *'dev'*, this is where we will make our changes and merge them back into the mainline *main* branch.
 
 ::
 
