@@ -55,6 +55,8 @@ And now insert some text
 Once that file is created and saved, let's set our up-stream dev branch and commit our file
 ::
 
+    git add README.md
+    git commit -m "new readme"
     git push --set-upstream git@gitlab.com:<username>/ansible_lab.git dev
 
 Now we can verify our new file and branch are present from out Gitlab page
