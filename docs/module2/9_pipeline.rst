@@ -31,7 +31,7 @@ Now, let's go into the new repository you just cloned
    
   cd snopsy.pipeline
 
-Now you must create the the **ci** file using the below code block. Notice the variable **SITE** has the value `site2`. After your pipeline runs we will change this to `site1` and update the
+Now you must create the the **ci** file using the below code block. Notice the variable **SITE** has the value `site2`. After your pipeline runs we will change this to `site1`, add our rules and update the
 repository.
 
 .. important::  Pay close attention to indentation, YAML is very picky!!
@@ -67,6 +67,8 @@ repository.
 
 
 Now it's time to push and create this repository with the new CI file to begin pipeline execution
+
+.. important::  Notice the added lines starting at line 24, pipelines will only run if those files have changed
 
 ::
 
