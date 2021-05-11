@@ -82,7 +82,6 @@ Ansible will process the above list and use the first file found, all others are
    vim ansible.cfg
 
 .. code-block:: bash 
-   :linenos:
    :caption: ansible.cfg
 
     [defaults]
