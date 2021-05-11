@@ -16,9 +16,9 @@ Ansible
 According to ansible.com:
 
 
-    Ansible is a radically simple IT automation engine that automates cloud provisioning,
+    "Ansible is a radically simple IT automation engine that automates cloud provisioning,
     configuration management, application deployment, intra-service orchestration,
-    and many other IT needs.
+    and many other IT needs."
 
 To be a little more clear, and less sales pitchy, Ansible is an abstraction layer for python
 that IT professionals use to provision infrastructure, deploy applications, and manage services.
