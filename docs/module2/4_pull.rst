@@ -7,4 +7,4 @@ Since we now have a local and remote repository, let's see how pull can help us.
 the remote repository we must pull
 ::
 
-    git pull origin master
+    git pull origin main 
