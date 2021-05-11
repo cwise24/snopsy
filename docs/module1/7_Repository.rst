@@ -55,7 +55,7 @@ Now we can move the staged files to commit.  We use the switch ``-m`` for the co
 
 .. warning:: Make sure you use the switch ``-m`` and add a message
     
-Now let's set the remote repository (Gitlab) and sync our local files to the remote master
+Now let's set the remote repository (Gitlab) and sync our local files to the remote main
 
 ::
 
