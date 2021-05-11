@@ -166,7 +166,7 @@ can add this to the end of **tags.yml** playbook
 
    - name: Download png file from my repo
      get_url:
-       url: https://github.com/cwise24/snopsy/raw/master/docs/module3/imgs/vault_play.png
+       url: https://github.com/cwise24/snopsy/raw/main/docs/module3/imgs/vault_play.png
        dest: "~/Downloads"
      when: file.stat.exists == False
 
