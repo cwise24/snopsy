@@ -3,7 +3,7 @@ Operations
 Clone
 ^^^^^
 Cloning creates a local repository (on your computer) from a remote repository say on Gitlab or GitHub. You cannot contribute back to the source repository (if it is not yours)  unless you are added 
-as an collaborator.  For this module, we will only clone a forked repository so we may have a local working copy.
+as an collaborator.  For this module, we will only clone a repository so we may have a local working copy.
 
 
 Fork
