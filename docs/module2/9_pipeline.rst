@@ -138,7 +138,7 @@ Now, let's change our variable SITE to ``site1`` and run the pipeline again
 
 .. important::  Notice the added lines starting at line 24, pipelines will only run if those files have changed
 
-You could now update your README file and the pipeline would no longer execute.
+You could now update your README file (or any file, other than those 3)  and the pipeline would no longer execute.
 
 Now it's time to push with the updated CI file to begin pipeline execution. 
 
