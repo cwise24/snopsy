@@ -10,9 +10,8 @@ Ansible
 - Industry adoption
 - Tower
 
-
-=======
 According to ansible.com:
+
 ::
     Ansible is a radically simple IT automation engine that automates cloud provisioning,
     configuration management, application deployment, intra-service orchestration,
