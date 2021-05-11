@@ -59,14 +59,14 @@ Now let's set the remote repository (Gitlab) and sync our local files to the rem
 
 ::
 
-    git push -u git@gitlab.com:<username>/ansible_lab.git master
+    git push -u git@gitlab.com:<username>/ansible_lab.git main
 
 You can also see what branches you have within your repository:
 
 ::
 
     git branch
-    * master
+    * main 
 
 This shows the branch *'master'* that we just made and that we are in that branch denoted by the ``*``
 
