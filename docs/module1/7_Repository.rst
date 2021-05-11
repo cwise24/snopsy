@@ -68,7 +68,7 @@ You can also see what branches you have within your repository:
     git branch
     * main 
 
-This shows the branch *'master'* that we just made and that we are in that branch denoted by the ``*``
+This shows the branch *'main'* that we just made and that we are in that branch denoted by the ``*``
 
 We can now edit files locally and push them to our remote repository by
 
