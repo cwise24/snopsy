@@ -4,7 +4,7 @@ Merge
 
 Let's now view our *Main* branch on Gitlab, notice our new file *README.md* is not there
 
-.. figure:: imgs/masterb.png
+.. figure:: imgs/mainb.png
    :scale: 60%
    :align: center
 .. centered:: Fig 2
