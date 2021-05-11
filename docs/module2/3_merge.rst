@@ -49,14 +49,14 @@ Remember, this is only a merge locally, you must still push these changed to the
 
 Flipping back over to our Gitlab site
 
-.. figure:: imgs/master_gitlab.png
+.. figure:: imgs/main_gitlab.png
    :scale: 60%
    :align: center
 .. centered:: Fig 6
 
 From here we can click on History to view commits that have been made
 
-.. figure:: imgs/master_gitlab_box.png
+.. figure:: imgs/main_gitlab_box.png
    :scale: 60%
    :align: center
 .. centered:: Fig 7
