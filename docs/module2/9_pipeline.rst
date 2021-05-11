@@ -52,18 +52,18 @@ repository.
      image: 
        name: cytopia/ansible-lint:latest 
        entrypoint: ["/bin/sh", "-c"]
-    before_script:
-      - python3 -m pip install --upgrade pip
-      - python3 -m pip install ansible-lint[yamllint]
-      - ansible-lint --version
-    script:
-      - echo "${SITE} Report" > site_Report.txt 
-      - ansible-lint $SITE.yml >> site_Report.txt 2>&1
-    artifacts:
-      when: always
-      paths:
-        - site_Report.txt
-      expire_in: 2 days 
+     before_script:
+       - python3 -m pip install --upgrade pip
+       - python3 -m pip install ansible-lint[yamllint]
+       - ansible-lint --version
+     script:
+       - echo "${SITE} Report" > site_Report.txt 
+       - ansible-lint $SITE.yml >> site_Report.txt 2>&1
+     artifacts:
+       when: always
+       paths:
+         - site_Report.txt
+       expire_in: 2 days 
 
 
 Now it's time to push and create this repository with the new CI file to begin pipeline execution
@@ -104,7 +104,7 @@ Now, let's change our variable SITE to ``site1`` and run the pipeline again
 .. code-block:: yaml
    :linenos:
    :caption: .gitlab-ci.yml
-   :emphasize-lines: 2
+   :emphasize-lines: 2,24-28
 
    variables:
      SITE: "site1"
@@ -117,21 +117,26 @@ Now, let's change our variable SITE to ``site1`` and run the pipeline again
      image: 
        name: cytopia/ansible-lint:latest 
        entrypoint: ["/bin/sh", "-c"]
-    before_script:
-      - python3 -m pip install --upgrade pip
-      - python3 -m pip install ansible-lint[yamllint]
-      - ansible-lint --version
-    script:
-      - echo "${SITE} Report" > site_Report.txt 
-      - ansible-lint $SITE.yml >> site_Report.txt 2>&1
-    artifacts:
-      when: always
-      paths:
-        - site_Report.txt
-      expire_in: 2 days 
+     before_script:
+       - python3 -m pip install --upgrade pip
+       - python3 -m pip install ansible-lint[yamllint]
+       - ansible-lint --version
+     script:
+       - echo "${SITE} Report" > site_Report.txt 
+       - ansible-lint $SITE.yml >> site_Report.txt 2>&1
+     artifacts:
+       when: always
+       paths:
+         - site_Report.txt
+       expire_in: 2 days
+     rules:
+       - changes:
+          - site1.yml
+          - site2.yml 
+          - .gitlab-ci.yml  
 
 
-Now it's time to push with the updated CI file to begin pipeline execution
+Now it's time to push with the updated CI file to begin pipeline execution. 
 
 ::
 
