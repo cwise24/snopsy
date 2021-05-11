@@ -1,9 +1,8 @@
 Ansible
 ~~~~~~~
 
-.. class:: center
+.. centered:: What is Ansible?
 
-    What is Ansible?
 
 - Open Source
 - Python
