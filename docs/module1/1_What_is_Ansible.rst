@@ -5,13 +5,9 @@ Ansible
 
 
 - Open Source
-
 - Python
-
 - Primarily uses ssh
-
 - Industry adoption
-
 - Tower
 
 According to ansible.com:
