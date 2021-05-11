@@ -1,13 +1,13 @@
 Ansible
 ~~~~~~~
 
-.. centered:: What is Ansible?
+What is Ansible?
 
-   - Open Source
-   - Python
-   - Primarily uses ssh
-   - Industry adoption
-   - Tower
+- Open Source
+- Python
+- Primarily uses ssh
+- Industry adoption
+- Tower
 
 According to ansible.com:
 
