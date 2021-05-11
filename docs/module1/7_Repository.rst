@@ -22,6 +22,7 @@ Create directories to serve as our local repository
 If this was successful then let's add the blank inventory to the repository.  From our project directory ``ansible_lab`` let's initialize this project
 ::
 
+    git config --global init.defaultBranch main
     git init
 
 Let's configure our git config
