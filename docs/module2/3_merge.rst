@@ -37,7 +37,7 @@ Now we call the branch we want to merge into our current working branch.  We wil
    :align: center
 .. centered:: Fig 4
 
-Remember, this is only a merge locally, you must still push these changed to the remote repository at Gitlab
+Remember, this is only a merge locally, you must still push these changes to the remote repository at Gitlab
 ::
 
     git push
