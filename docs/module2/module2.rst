@@ -15,5 +15,4 @@ and merging updates in.
    5_operations
    6_git_extras.rst
    7_rebase
-   8_merge_rebase
    9_pipeline
