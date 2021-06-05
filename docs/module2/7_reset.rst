@@ -179,7 +179,7 @@ In order to push this change to our remote, you must enable **Allow Force Push**
 Cleanup
 ^^^^^^
 
-Let's do some clean up before covering Revert 
+If you want to remove a remote repository to do the reset section here are the steps
 
 .. code ::
     
