@@ -73,7 +73,7 @@ Next you will need to push this file to our repository with our 3 commits
 We will now select the commit we wish to remove, in this example it's commit three.
 
 .. image:: imgs/gitrevert1.png
-   :scale: 60%
+   :scale: 70%
    :align: center
 .. centered:: Fig 1
 
@@ -89,7 +89,7 @@ rollback method.
 
 .. image:: imgs/gitlog_revert.png
    :align: center
-.. centered:: Fig 7
+.. centered:: Fig 2
 
 Now you can push your reverted file
 
@@ -125,7 +125,7 @@ Add this line to the newly created file
 
 .. image:: imgs/gitlog.png
    :align: center
-.. centered:: Fig 1
+.. centered:: Fig 3
 
 Now let's edit the file **example** and add another line
 
@@ -148,7 +148,7 @@ Add this line to the example file:
 
 .. image:: imgs/gitlog2.png
    :align: center
-.. centered:: Fig 2
+.. centered:: Fig 4
 
 Now let's edit the file again and add another line
 
@@ -168,19 +168,19 @@ And now let's save our file with the new changes, then add to staging and commit
 
 .. image:: imgs/gitlog3.png
    :align: center
-.. centered:: Fig 3
+.. centered:: Fig 5
 
 Now let's rollback to our second commit. Using **Fig 4** as a reference we will issue the command ``git reset --hard <hash>`` with the hash of our second commit
 
 .. image:: imgs/gitreset1.png
    :align: center
-.. centered:: Fig 4
+.. centered:: Fig 6
 
 Now the git HEAD has been moved to our second commit and we have completed a *rollback* of our file. As you can see though, all commits prior are now removed.
 
 .. image:: imgs/gitlog_reset.png
    :align: center
-.. centered:: Fig 5
+.. centered:: Fig 7
 
 Running the command ``cat example`` we can now see the third line has been removed.
 
@@ -206,21 +206,21 @@ And delete the repository from Gitlab
 
 Go to Settings and then General
 
-.. figure:: imgs/deletegitrepo1.png
+.. image:: imgs/deletegitrepo1.png
    :scale: 50%
    :align: center
 .. centered:: Fig 8
 
 Scroll to bottom and find Advanced and click Expand
 
-.. figure:: imgs/deletegitrepo2.png
+.. image:: imgs/deletegitrepo2.png
    :scale: 50%
    :align: center
 .. centered:: Fig 9
 
 Now click Delete project
 
-.. figure:: imgs/deletegitrepo3.png
+.. image:: imgs/deletegitrepo3.png
    :scale: 50%
    :align: center
 .. centered:: Fig 10
