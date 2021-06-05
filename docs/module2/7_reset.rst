@@ -164,6 +164,7 @@ Now let's edit the file again and add another line
 ``This is line three``
 
 And now let's save our file with the new changes, then add to staging and commit
+
 .. code:: bash
 
    :wq 
