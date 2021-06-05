@@ -1,7 +1,7 @@
 Rolling Back
 ~~~~~~~~~~~
 
-How do we rollback to a previous commit? Well there are a couple of options. Let's cover them.
+How do we rollback to a previous commit? Well there are a few options. We will demo **Revert** and **Reset**.
 
 Revert 
 ^^^^^
@@ -107,7 +107,7 @@ Reset
 Reset is a simple way to "rollback" to a previous commit. The down side of reset, it will remove all the commit history back to the restoral point.
 We will create a local repository and practice this.
 
-.. code ::
+.. code:: bash
    
    mkdir  resetlab
    cd resetlab
@@ -118,7 +118,7 @@ Add this line to the newly created file
 
 ``This is line one`` 
 
-.. code ::
+.. code:: bash
 
    :wq 
    git add 
@@ -131,7 +131,7 @@ Add this line to the newly created file
 
 Now let's edit the file **example** and add another line
 
-.. code ::
+.. code:: bash
    
    vim example
 
@@ -141,7 +141,7 @@ Add this line to the example file:
 
    And now let's save our file with the new changes, then add to staging and commit
 
-.. code ::
+.. code:: bash
 
    :wq 
    git add example 
@@ -154,14 +154,14 @@ Add this line to the example file:
 
 Now let's edit the file again and add another line
 
-.. code ::
+.. code:: bash
    
    vim example
 
 ``This is line three``
 
 And now let's save our file with the new changes, then add to staging and commit
-.. code ::
+.. code:: bash
 
    :wq 
    git add example 
@@ -200,7 +200,7 @@ Cleanup
 
 If you want to remove a remote repository to do the reset section here are the steps
 
-.. code ::
+.. code:: bash
     
     rm -fr .git 
     rm -fr example 
