@@ -189,6 +189,16 @@ Running the command ``cat example`` we can now see the third line has been remov
 
 In order to push this change to our remote, you must enable **Allow Force Push** as Gitlab will set this branch as protected, but again this is not a best practice method.
 
+.. image:: imgs/protectedbranch1.png 
+   :scale: 50%
+   :align: center
+.. centered:: Fig 8
+
+.. image:: imgs/protectedbranch3.png 
+   :scale: 50%
+   :align: center
+.. centered:: Fig 9
+
 .. code:: bash
    
    git push -f 
@@ -212,18 +222,18 @@ Go to Settings and then General
 .. image:: imgs/deletegitrepo1.png
    :scale: 50%
    :align: center
-.. centered:: Fig 8
+.. centered:: Fig 10
 
 Scroll to bottom and find Advanced and click Expand
 
 .. image:: imgs/deletegitrepo2.png
    :scale: 50%
    :align: center
-.. centered:: Fig 9
+.. centered:: Fig 11
 
 Now click Delete project
 
 .. image:: imgs/deletegitrepo3.png
    :scale: 50%
    :align: center
-.. centered:: Fig 10
+.. centered:: Fig 12
