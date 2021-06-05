@@ -72,8 +72,7 @@ Next you will need to push this file to our repository with our 3 commits
 
 We will now select the commit we wish to remove, in this example it's commit three.
 
-.. figure:: imgs/gitrevert1.png
-   :scale: 60%
+.. image:: imgs/gitrevert1.png
    :align: center
 .. centered:: Fig 6
 
@@ -87,8 +86,7 @@ Once you hit enter, you will be prompted for a revert message. Once you've added
 Here we can see that instead of dropping off the thrid commit using ``reset``, with ``revert`` it actually adds an extra commit and keeps previous commits. This is why revert is the preferred 
 rollback method.
 
-.. figure:: imgs/gitlog_revert.png
-   :scale: 60%
+.. image:: imgs/gitlog_revert.png
    :align: center
 .. centered:: Fig 7
 
@@ -124,8 +122,7 @@ Add this line to the newly created file
    git commit 
    git log --oneline
 
-.. figure:: imgs/gitlog.png
-   :scale: 60%
+.. image:: imgs/gitlog.png
    :align: center
 .. centered:: Fig 1
 
@@ -148,8 +145,7 @@ Add this line to the example file:
    git commit -m "two"
    git log --oneline
 
-.. figure:: imgs/gitlog2.png
-   :scale: 60%
+.. image:: imgs/gitlog2.png
    :align: center
 .. centered:: Fig 2
 
@@ -169,15 +165,13 @@ And now let's save our file with the new changes, then add to staging and commit
    git commit -m "three"
    git log --oneline 
 
-.. figure:: imgs/gitlog3.png
-   :scale: 60%
+.. image:: imgs/gitlog3.png
    :align: center
 .. centered:: Fig 3
 
 Now let's rollback to our second commit. Using **Fig 4** as a reference we will issue the command ``git reset --hard <hash>`` with the hash of our second commit
 
-.. figure:: imgs/gitreset1.png
-   :scale: 60%
+.. image:: imgs/gitreset1.png
    :align: center
 .. centered:: Fig 4
 
