@@ -19,9 +19,7 @@ Let's create a file named **example** then make the following edits and commits
    git init
    vim example
 
-.. code ::
-
-   vim example
+Now that the file is open in *vim* use ``i`` for insert and add the following line:
 
 ``This is line one``
 
@@ -30,6 +28,8 @@ Let's create a file named **example** then make the following edits and commits
    :wq
    git add example 
    git commit -m "one"
+
+Let's open the file in *vim* again and add the next line:
 
 .. code ::
    
@@ -47,6 +47,8 @@ Add this line to the example file:
    git add example 
    git commit -m "two"
    git log --oneline
+
+Add ing the last line in:
 
 .. code ::
    
