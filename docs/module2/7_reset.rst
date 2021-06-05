@@ -88,9 +88,23 @@ Running the command ``cat example`` we can now see the third line has been remov
 Revert 
 ^^^^^
 
-We will now select the commit we wish to remove, in this example it's commit three
+We will now select the commit we wish to remove, in this example it's commit three.
 
 .. figure:: imgs/gitrevert1.png
    :scale: 60%
    :align: center
 .. centered:: Fig 6
+
+Once you hit enter, you will be prompted for a revert message. Once you've added the revert message and saved ``:wq`` let's review the git log 
+
+.. code ::
+
+  git log --oneline
+
+
+Here we can see that instead of dropping off the thrid commit using ``reset``, with ``revert`` it actually adds an extra commit and keeps previous commits
+
+.. figure:: imgs/gitlog_revert.png
+   :scale: 60%
+   :align: center
+.. centered:: Fig 7
