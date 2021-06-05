@@ -4,7 +4,7 @@ Rollback
 How do we rollback to a previous commit? Well there are a couple of options. Let's cover them.
 
 Reset
-^^^^^^
+^^^^^
 
 Reset is a simple way to "rollback" to a previous commit. We will create a local repository and practice this.
 
@@ -14,7 +14,12 @@ Reset is a simple way to "rollback" to a previous commit. We will create a local
    cd resetlab
    git init
    vim example
-   This is line one 
+
+Add this line to the newly created file
+``This is line one`` 
+
+.. code ::
+
    :wq 
    git add 
    git commit 
