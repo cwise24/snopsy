@@ -87,3 +87,10 @@ Running the command ``cat example`` we can now see the third line has been remov
 
 Revert 
 ^^^^^
+
+We will now select the commit we wish to remove, in this example it's commit three
+
+.. figure:: imgs/gitrevert1.png
+   :scale: 60%
+   :align: center
+.. centered:: Fig 6
