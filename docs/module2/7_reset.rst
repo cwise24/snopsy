@@ -108,3 +108,9 @@ Here we can see that instead of dropping off the thrid commit using ``reset``, w
    :scale: 60%
    :align: center
 .. centered:: Fig 7
+
+Now you can push your reverted file
+
+.. code ::
+
+   git push
