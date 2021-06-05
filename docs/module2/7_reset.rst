@@ -70,7 +70,7 @@ Now the git HEAD has been moved to our second commit and we have completed a *ro
    :align: center
 .. centered:: Fig 5
 
-Running the command `cat example`  we can now see the third line has been removed
+Running the command ``cat example`` we can now see the third line has been removed
 
 Revert 
 ^^^^^
