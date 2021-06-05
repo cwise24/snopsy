@@ -20,11 +20,11 @@ master_doc = 'index'
 # -- Project information -----------------------------------------------------
 
 project = 'SNOPsy'
-copyright = '2020, Chad Wise'
+copyright = '2021, Chad Wise'
 author = 'Chad Wise'
 
 # The full version, including alpha/beta/rc tags
-release = '2.0'
+release = '2.1'
 
 
 # Add any Sphinx extension module names here, as strings. They can be
