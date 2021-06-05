@@ -30,9 +30,9 @@ Now let's edit the file **example** and add another line
    
    vim example
 
-Add this line:
+Add this line to the example file:
 
-This is line two
+``This is line two``
 
    And now let's save ``:wq`` our file with the new changes, then add to staging and commit
 .. code ::
@@ -53,8 +53,7 @@ Now let's edit the file again and add another line
    
    vim example
 
-Add this line:
-   This is line three
+``This is line three``
 
 And now let's save ``:wq`` our file with the new changes, then add to staging and commit
 .. code ::
