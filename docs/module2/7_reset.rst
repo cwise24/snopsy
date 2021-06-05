@@ -114,6 +114,7 @@ We will create a local repository and practice this.
    vim example
 
 Add this line to the newly created file
+
 ``This is line one`` 
 
 .. code ::
@@ -138,7 +139,8 @@ Add this line to the example file:
 
 ``This is line two``
 
-   And now let's save ``:wq`` our file with the new changes, then add to staging and commit
+   And now let's save our file with the new changes, then add to staging and commit
+
 .. code ::
 
    :wq 
@@ -159,7 +161,7 @@ Now let's edit the file again and add another line
 
 ``This is line three``
 
-And now let's save ``:wq`` our file with the new changes, then add to staging and commit
+And now let's save our file with the new changes, then add to staging and commit
 .. code ::
 
    :wq 
@@ -179,7 +181,7 @@ Now let's rollback to our second commit. Using **Fig 4** as a reference we will 
    :align: center
 .. centered:: Fig 4
 
-Now the git HEAD has been moved to our second commit and we have completed a *rollback* of our file. 
+Now the git HEAD has been moved to our second commit and we have completed a *rollback* of our file. As you can see though, all commits prior are now removed.
 
 .. figure:: imgs/gitlog_reset.png
    :scale: 60%
