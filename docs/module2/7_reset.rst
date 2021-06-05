@@ -182,6 +182,7 @@ Now let's rollback to our second commit. Using **Fig 6** as a reference we will 
 Now the git HEAD has been moved to our second commit and we have completed a *rollback* of our file. As you can see though, all commits prior are now removed.
 
 .. image:: imgs/gitlog_reset.png
+   :scale: 70%
    :align: center
 .. centered:: Fig 7
 
@@ -189,10 +190,14 @@ Running the command ``cat example`` we can now see the third line has been remov
 
 In order to push this change to our remote, you must enable **Allow Force Push** as Gitlab will set this branch as protected, but again this is not a best practice method.
 
+Under *Settings* select *Repository*, then by Protected Branches click *Expand*
+
 .. image:: imgs/protectedbranch1.png 
    :scale: 50%
    :align: center
 .. centered:: Fig 8
+
+Now you can toggle *Allow force push*
 
 .. image:: imgs/protectedbranch3.png 
    :scale: 50%
