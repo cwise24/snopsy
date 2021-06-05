@@ -10,13 +10,13 @@ Git Revert allows the undoing of a previous commit, but it also keeps all the co
 
 .. note:: This is the preferred method to use.
 
-With a clean slate, let's recreate the **example** file and make the commits
+Let's create a file named **example** then make the following edits and commits
 
 .. code ::
 
    vim example
 
-This is line one
+``This is line one``
 
 .. code ::
 
