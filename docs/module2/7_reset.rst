@@ -29,7 +29,13 @@ Now let's edit the file **example** and add another line
 .. code ::
    
    vim example
+
+Add this line:
    This is line two
+
+   And now let's save ``:wq`` our file with the new changes, then add to staging and commit
+.. code ::
+
    :wq 
    git add example 
    git commit -m "two"
@@ -45,7 +51,13 @@ Now let's edit the file again and add another line
 .. code ::
    
    vim example
+
+Add this line:
    This is line three
+
+And now let's save ``:wq`` our file with the new changes, then add to staging and commit
+.. code ::
+
    :wq 
    git add example 
    git commit -m "three"
@@ -56,7 +68,7 @@ Now let's edit the file again and add another line
    :align: center
 .. centered:: Fig 3
 
-Now let's rollback to our second commit. Using **Fig 4** as a reference we will issue the command *git reset --hard* with the hash of our second commit
+Now let's rollback to our second commit. Using **Fig 4** as a reference we will issue the command ``git reset --hard <hash>`` with the hash of our second commit
 
 .. figure:: imgs/gitreset1.png
    :scale: 60%
