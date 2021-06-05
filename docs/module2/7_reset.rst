@@ -101,7 +101,7 @@ Go to Settings and then General
    :align: center
 .. centered:: Fig 6
 
-Scroll to bottom and click Advanced and click Expand
+Scroll to bottom and find Advanced and click Expand
 
 .. figure:: imgs/deletegitrepo2.png
    :scale: 50%
