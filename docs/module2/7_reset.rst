@@ -6,7 +6,9 @@ How do we rollback to a previous commit? Well there are a couple of options. Let
 Revert 
 ^^^^^
 
-Git Revert allows the undoing of a previous commit, but it also keeps all the commit history by only adding to the commit history. 
+Git Revert allows the undoing of a previous commit, but it also keeps all the commit history by only adding to the commit history.  
+
+.. note:: This is the preferred method to use.
 
 With a clean slate, let's recreate the **example** file and make the commits
 
