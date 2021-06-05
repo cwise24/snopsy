@@ -40,6 +40,7 @@ Add this line to the example file:
 ``This is line two``
 
    And now let's save our file with the new changes, then add to staging and commit
+
 .. code ::
 
    :wq 
@@ -54,6 +55,7 @@ Add this line to the example file:
 ``This is line three``
 
 And now let's save our file with the new changes, then add to staging and commit
+
 .. code ::
 
    :wq 
@@ -62,6 +64,7 @@ And now let's save our file with the new changes, then add to staging and commit
    git log --oneline 
 
 Next you will need to push this file to our repository with our 3 commits
+
 .. code:: bash 
 
    git push -u git@gitlab.com:<username>/resetlab.git main
@@ -95,7 +98,7 @@ Now you can push your reverted file
 
    git push
 
-Please use the :ref:`Cleanup` section below if you want to do the Reset lab
+.. note:: Please use the :ref:`Cleanup` section below if you want to do the Reset lab
 
 Reset
 ^^^^^
