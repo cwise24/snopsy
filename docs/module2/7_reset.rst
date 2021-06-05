@@ -170,9 +170,10 @@ And now let's save our file with the new changes, then add to staging and commit
    :align: center
 .. centered:: Fig 5
 
-Now let's rollback to our second commit. Using **Fig 4** as a reference we will issue the command ``git reset --hard <hash>`` with the hash of our second commit
+Now let's rollback to our second commit. Using **Fig 6** as a reference we will issue the command ``git reset --hard <hash>`` with the hash of our second commit
 
 .. image:: imgs/gitreset1.png
+   :scale: 70%
    :align: center
 .. centered:: Fig 6
 
