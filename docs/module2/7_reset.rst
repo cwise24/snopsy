@@ -73,8 +73,9 @@ Next you will need to push this file to our repository with our 3 commits
 We will now select the commit we wish to remove, in this example it's commit three.
 
 .. image:: imgs/gitrevert1.png
+   :scale: 60%
    :align: center
-.. centered:: Fig 6
+.. centered:: Fig 1
 
 Once you hit enter, you will be prompted for a revert message. Once you've added the revert message and saved ``:wq`` let's review the git log 
 
