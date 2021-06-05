@@ -6,7 +6,8 @@ How do we rollback to a previous commit? Well there are a couple of options. Let
 Reset
 ^^^^^
 
-Reset is a simple way to "rollback" to a previous commit. We will create a local repository and practice this.
+Reset is a simple way to "rollback" to a previous commit. The down side of reset, it will remove all the commit history back to the restoral point.
+We will create a local repository and practice this.
 
 .. code ::
    
@@ -88,7 +89,14 @@ Now the git HEAD has been moved to our second commit and we have completed a *ro
    :align: center
 .. centered:: Fig 5
 
-Running the command ``cat example`` we can now see the third line has been removed
+Running the command ``cat example`` we can now see the third line has been removed.
+
+In order to push this change to our remote, you must enable **Allow Force Push** as Gitlab will set this branch as protected, but again this is not a best practice method.
+
+.. code:: bash
+   :caption: Force
+   
+   git push -f 
 
 Let's do some clean up before covering Revert 
 
@@ -122,6 +130,8 @@ Now click Delete project
 
 Revert 
 ^^^^^
+
+Git Revert allows the undoing of a previous commit, but it also keeps all the commit history by only adding to the commit history. 
 
 With a clean slate, let's recreate the **example** file and make the commits
 
@@ -164,3 +174,37 @@ Now you can push your reverted file
 .. code ::
 
    git push
+
+
+Cleanup
+^^^^^^
+
+Let's do some clean up before covering Revert 
+
+.. code ::
+    
+    rm -fr .git 
+    rm -fr example 
+
+And delete the repository from Gitlab
+
+Go to Settings and then General
+
+.. figure:: imgs/deletegitrepo1.png
+   :scale: 50%
+   :align: center
+.. centered:: Fig 6
+
+Scroll to bottom and find Advanced and click Expand
+
+.. figure:: imgs/deletegitrepo2.png
+   :scale: 50%
+   :align: center
+.. centered:: Fig 7
+
+Now click Delete project
+
+.. figure:: imgs/deletegitrepo3.png
+   :scale: 50%
+   :align: center
+.. centered:: Fig 8
