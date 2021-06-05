@@ -100,7 +100,7 @@ Now you can push your reverted file
 
    git push
 
-.. note:: Please use the :ref:`Cleanup` section below if you want to do the Reset lab
+.. important:: Please use the :ref:`Cleanup` section below if you want to do the Reset lab
 
 Reset
 ^^^^^
