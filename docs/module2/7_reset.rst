@@ -97,19 +97,19 @@ And delete the repository from Gitlab
 Go to Settings and then General
 
 .. figure:: imgs/deletegitrepo1.png
-   :scale: 60%
+   :scale: 50%
    :align: center
 .. centered:: Fig 6
 
 Scroll to bottom and click Advanced and click Expand
 
 .. figure:: imgs/deletegitrepo2.png
-   :scale: 60%
+   :scale: 50%
    :align: center
 .. centered:: Fig 7
 
 .. figure:: imgs/deletegitrepo3.png
-   :scale: 60%
+   :scale: 50%
    :align: center
 .. centered:: Fig 8
 
