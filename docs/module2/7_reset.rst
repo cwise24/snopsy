@@ -90,6 +90,7 @@ Here we can see that instead of dropping off the thrid commit message like using
 rollback method.
 
 .. image:: imgs/gitlog_revert.png
+   :scale: 70%
    :align: center
 .. centered:: Fig 2
 
@@ -126,6 +127,7 @@ Add this line to the newly created file
    git log --oneline
 
 .. image:: imgs/gitlog.png
+   :scale: 70%
    :align: center
 .. centered:: Fig 3
 
@@ -149,6 +151,7 @@ Add this line to the example file:
    git log --oneline
 
 .. image:: imgs/gitlog2.png
+   :scale: 70%
    :align: center
 .. centered:: Fig 4
 
@@ -169,6 +172,7 @@ And now let's save our file with the new changes, then add to staging and commit
    git log --oneline 
 
 .. image:: imgs/gitlog3.png
+   :scale: 70%
    :align: center
 .. centered:: Fig 5
 
