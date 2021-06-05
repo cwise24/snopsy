@@ -4,7 +4,7 @@ Module 2
 GitOps
 ++++++
 
-This modules focus is only on Git.  Building upon the few tasks completed in Module 1, We will now focus on more of the daily uses, building branches and working from outside the *master* branch
+This modules focus is only on Git.  Building upon the few tasks completed in Module 1, We will now focus on more of the daily uses, building branches and working from outside the *main* branch
 and merging updates in.
 
 .. toctree::
