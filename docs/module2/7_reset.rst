@@ -1,5 +1,5 @@
-Rollback
-~~~~~~~
+Rolling Back
+~~~~~~~~~~~
 
 How do we rollback to a previous commit? Well there are a couple of options. Let's cover them.
 
