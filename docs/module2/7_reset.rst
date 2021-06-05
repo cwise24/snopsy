@@ -12,7 +12,7 @@ Git Revert allows the undoing of a previous commit, but it also keeps all the co
 
 Let's create a file named **example** then make the following edits and commits
 
-.. code ::
+.. code:: bash
    
    mkdir  resetlab
    cd resetlab
@@ -23,7 +23,7 @@ Now that the file is open in *vim* use ``i`` for insert and add the following li
 
 ``This is line one``
 
-.. code ::
+.. code:: bash
 
    :wq
    git add example 
@@ -31,7 +31,7 @@ Now that the file is open in *vim* use ``i`` for insert and add the following li
 
 Let's open the file in *vim* again and add the next line:
 
-.. code ::
+.. code:: bash
    
    vim example
 
@@ -41,7 +41,7 @@ Add this line to the example file:
 
    And now let's save our file with the new changes, then add to staging and commit
 
-.. code ::
+.. code:: bash
 
    :wq 
    git add example 
@@ -50,7 +50,7 @@ Add this line to the example file:
 
 Add ing the last line in:
 
-.. code ::
+.. code:: bash
    
    vim example
 
@@ -58,7 +58,7 @@ Add ing the last line in:
 
 And now let's save our file with the new changes, then add to staging and commit
 
-.. code ::
+.. code:: bash
 
    :wq 
    git add example 
@@ -81,12 +81,12 @@ We will now select the commit we wish to remove, in this example it's commit thr
 
 Once you hit enter, you will be prompted for a revert message. Once you've added the revert message and saved ``:wq`` let's review the git log 
 
-.. code ::
+.. code:: bash
 
   git log --oneline
 
 
-Here we can see that instead of dropping off the thrid commit using ``reset``, with ``revert`` it actually adds an extra commit and keeps previous commits. This is why revert is the preferred 
+Here we can see that instead of dropping off the thrid commit message like using ``reset`` would, with ``revert`` it actually adds an extra commit and keeps previous commit messages. This is why revert is the preferred 
 rollback method.
 
 .. image:: imgs/gitlog_revert.png
@@ -95,7 +95,7 @@ rollback method.
 
 Now you can push your reverted file
 
-.. code ::
+.. code:: bash
 
    git push
 
