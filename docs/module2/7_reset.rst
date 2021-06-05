@@ -32,7 +32,7 @@ Add this line to the example file:
 
 ``This is line two``
 
-   And now let's save ``:wq`` our file with the new changes, then add to staging and commit
+   And now let's save our file with the new changes, then add to staging and commit
 .. code ::
 
    :wq 
@@ -46,13 +46,19 @@ Add this line to the example file:
 
 ``This is line three``
 
-And now let's save ``:wq`` our file with the new changes, then add to staging and commit
+And now let's save our file with the new changes, then add to staging and commit
 .. code ::
 
    :wq 
    git add example 
    git commit -m "three"
    git log --oneline 
+
+Next you will need to push this file to our repository with our 3 commits
+.. code:: bash 
+
+   git push -u git@gitlab.com:<username>/resetlab.git main
+   
 
 We will now select the commit we wish to remove, in this example it's commit three.
 
