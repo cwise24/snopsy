@@ -118,6 +118,20 @@ Now click Delete project
 Revert 
 ^^^^^
 
+With a clean slate, let's recreate the **example** file and make the commits
+
+.. code ::
+
+   vim example
+
+This is line one
+
+.. code ::
+
+   :wq
+   git add example 
+   git commit -m "one"
+
 We will now select the commit we wish to remove, in this example it's commit three.
 
 .. figure:: imgs/gitrevert1.png
