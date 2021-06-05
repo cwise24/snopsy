@@ -85,6 +85,30 @@ Now the git HEAD has been moved to our second commit and we have completed a *ro
 
 Running the command ``cat example`` we can now see the third line has been removed
 
+Let's do some clean up before covering Revert 
+
+.. code ::
+    
+    rm -fr .git 
+    rm -fr example 
+
+And delete the repository from Gitlab
+
+.. figure:: imgs/deletegitrepo1.png
+   :scale: 60%
+   :align: center
+.. centered:: Fig 6
+
+.. figure:: imgs/deletegitrepo2.png
+   :scale: 60%
+   :align: center
+.. centered:: Fig 7
+
+.. figure:: imgs/deletegitrepo3.png
+   :scale: 60%
+   :align: center
+.. centered:: Fig 8
+
 Revert 
 ^^^^^
 
@@ -93,7 +117,7 @@ We will now select the commit we wish to remove, in this example it's commit thr
 .. figure:: imgs/gitrevert1.png
    :scale: 60%
    :align: center
-.. centered:: Fig 6
+.. centered:: Fig 9
 
 Once you hit enter, you will be prompted for a revert message. Once you've added the revert message and saved ``:wq`` let's review the git log 
 
@@ -102,12 +126,13 @@ Once you hit enter, you will be prompted for a revert message. Once you've added
   git log --oneline
 
 
-Here we can see that instead of dropping off the thrid commit using ``reset``, with ``revert`` it actually adds an extra commit and keeps previous commits
+Here we can see that instead of dropping off the thrid commit using ``reset``, with ``revert`` it actually adds an extra commit and keeps previous commits. This is why revert is the preferred 
+rollback method.
 
 .. figure:: imgs/gitlog_revert.png
    :scale: 60%
    :align: center
-.. centered:: Fig 7
+.. centered:: Fig 10
 
 Now you can push your reverted file
 
