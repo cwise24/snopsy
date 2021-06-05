@@ -24,10 +24,30 @@ Reset is a simple way to "rollback" to a previous commit. We will create a local
    :align: center
 .. centered:: Fig 1
 
+Now let's edit the file **example** and add another line
+
+.. code ::
+   
+   vim example
+   This is line two
+   :wq 
+   git add example 
+   git commit -m "two"
+
 .. figure:: imgs/gitlog2.png
    :scale: 60%
    :align: center
 .. centered:: Fig 2
+
+Now let's edit the file again and add another line
+
+.. code ::
+   
+   vim example
+   This is line three
+   :wq 
+   git add example 
+   git commit -m "three"
 
 .. figure:: imgs/gitlog3.png
    :scale: 60%
