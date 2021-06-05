@@ -31,7 +31,8 @@ Now let's edit the file **example** and add another line
    vim example
 
 Add this line:
-:code:This is line two
+
+This is line two
 
    And now let's save ``:wq`` our file with the new changes, then add to staging and commit
 .. code ::
