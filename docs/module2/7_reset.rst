@@ -190,7 +190,6 @@ Running the command ``cat example`` we can now see the third line has been remov
 In order to push this change to our remote, you must enable **Allow Force Push** as Gitlab will set this branch as protected, but again this is not a best practice method.
 
 .. code:: bash
-   
    :caption: Force
    
    git push -f 
