@@ -108,6 +108,8 @@ Scroll to bottom and find Advanced and click Expand
    :align: center
 .. centered:: Fig 7
 
+Now click Delete project
+
 .. figure:: imgs/deletegitrepo3.png
    :scale: 50%
    :align: center
