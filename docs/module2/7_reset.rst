@@ -13,6 +13,13 @@ Git Revert allows the undoing of a previous commit, but it also keeps all the co
 Let's create a file named **example** then make the following edits and commits
 
 .. code ::
+   
+   mkdir  resetlab
+   cd resetlab
+   git init
+   vim example
+
+.. code ::
 
    vim example
 
@@ -88,6 +95,7 @@ Now you can push your reverted file
 
    git push
 
+Please use the :ref:`Cleanup` section below if you want to do the Reset lab
 
 Reset
 ^^^^^
