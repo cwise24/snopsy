@@ -13,7 +13,7 @@ A gitignore file generator I like is `here <https://www.toptal.com/developers/gi
 Remove Remote File
 --------------------------
 
-Sometimes we make a mistake and push a file to our repository that we do not want there.  Let's remove it
+Sometimes we make a mistake and push a file to our repository that we do not want there.  So we add it our gitignore but we still need to remove it from the remote repository. Let's remove it
 
 .. code-block:: bash
    :caption: Remove file(s)
