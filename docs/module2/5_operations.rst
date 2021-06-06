@@ -15,10 +15,10 @@ I have a public repository that you can Fork `here <https://gitlab.com/cwise24/a
 
 Origin and Upstream
 ^^^^^^^^^^^^^^^^
-.. figure:: imgs/g_o_u.png
+.. image:: imgs/g_o_u.png
    :scale: 60%
    :align: center
-.. centered:: Fig 8
+.. centered:: Fig 1
 
 Let's check what remotes (if any) you currently have in your local repository
 
@@ -68,56 +68,56 @@ Create a Merge Request
 ------------------------------
 To create a merge request, from your repository on left side click **Merge Request**
 
-.. figure:: imgs/mr1.png
-   :scale: 40%
+.. image:: imgs/mr1.png
+   :scale: 50%
    :align: center
-.. centered:: Fig 9
+.. centered:: Fig 2
 
 Then click **New merge request**
 
-.. figure:: imgs/mr2.png
-   :scale: 40%
+.. image:: imgs/mr2.png
+   :scale: 50%
    :align: center
-.. centered:: Fig 10
+.. centered:: Fig 3
 
 You must view the compare branches before you can submit 
 
-.. figure:: imgs/mr3.png
-   :scale: 40%
+.. image:: imgs/mr3.png
+   :scale: 50%
    :align: center
-.. centered:: Fig 11
+.. centered:: Fig 4
 
 Click Submit Merge Request
 
-.. figure:: imgs/mr4.png
+.. image:: imgs/mr4.png
    :scale: 50%
    :align: center
-.. centered:: Fig 12
+.. centered:: Fig 5
 
 Your submitted Merge Request
 
-.. figure:: imgs/mr5.png
-   :scale: 40%
+.. image:: imgs/mr5.png
+   :scale: 50%
    :align: center
-.. centered:: Fig 13
+.. centered:: Fig 6
 
 Accepting a Merge Request
 ------------------------------
 
-.. figure:: imgs/mr6.png
-   :scale: 30%
+.. image:: imgs/mr6.png
+   :scale: 50%
    :align: center
-.. centered:: Fig 14
+.. centered:: Fig 7
 
-.. figure:: imgs/mr7.png
-   :scale: 30%
+.. image:: imgs/mr7.png
+   :scale: 50%
    :align: center
-.. centered:: Fig 15
+.. centered:: Fig 8
 
-.. figure:: imgs/mr8.png
-   :scale: 30%
+.. image:: imgs/mr8.png
+   :scale: 50%
    :align: center
-.. centered:: Fig 16
+.. centered:: Fig 9
 
 Pull from Upstream
 ^^^^^^^^^^^^^^
