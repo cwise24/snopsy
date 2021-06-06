@@ -8,9 +8,7 @@ A **.gitignore** is an invaluable file to have in your repository. This file exp
 Each line in this file spcifies a file or pattern to be matched. For files like certificates, keys or other file types (i.e. pycache)
 our gitignore will make sure those files do NOT become part of our public repository.
 
-A gitignore file generator I like is `here`_
-
-.. _here: https://www.toptal.com/developers/gitignore
+A gitignore file generator I like is `here <https://www.toptal.com/developers/gitignore>`_
 
 Remove Remote File
 --------------------------
