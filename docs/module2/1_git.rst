@@ -18,6 +18,10 @@ created by Linus Torvalds in 2005 for development of the Linux kernel [#f1]_
 It is designed for coordinating work among programmers, but it can be used to track changes in any set of files. 
 Its goals include speed, data integrity, and support for distributed, non-linear workflows."  [#f1]_
 
+What does this mean to a NetOps person.  We aren't building applications, but we are enabling them.  As a NetOps person we can use Git to track network infrastructure configurations and catch unwanted drift.
+We can define how Vlans, routes or any simple task gets built.  By building our Ansible playbook in Git, we can version control it, even allow others to contribute (in a feature branch) in which we decide to allow the new additions or reject them.  It even allows 
+users to file issues they've experienced and enable a means to fix those.
+
 | **TL;DR** 
 | A nice way to manage chaos across distributed teams
 
