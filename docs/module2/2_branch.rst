@@ -46,7 +46,7 @@ This will create a branch locally, we'll now add a README.md to our *dev* branch
 .. sidebar::  VIM Cheat Sheet
 
 
-    | i     { for insert }
+    | i       { for insert }
     | esc   { to exit for saving }
     | :wq   { write & quit }
 
