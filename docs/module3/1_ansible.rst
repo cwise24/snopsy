@@ -23,7 +23,6 @@ Let's create a new playbook called ``ext.yml`` and use the contents below
 
 .. code-block:: yaml
    :caption: ext.yml
-   :linenos:
 
    ---
    - hosts: all
@@ -52,7 +51,7 @@ Example of connection directive missing from YAML file, you must add the ``-c`` 
 
     ansible-playbook -i "localhost," -c local ext.yml -e "var1='is var one' var2='is var two'"
     
-.. figure:: imgs/ext_play.png
+.. image:: imgs/ext_play.png
    :scale: 50%
    :align: center
    
@@ -107,7 +106,7 @@ Only show date ``ansible-playbook -i inventory someplay.yml --tags "tag1"``
 
 Only show epoch ``ansible-playbook -i inventory someplay.yml --skip-tags "tag1"``
 
-.. figure:: imgs/date_tag.png
+.. image:: imgs/date_tag.png
    :scale: 50%
    :align: center
 
@@ -123,7 +122,6 @@ My most commonly used looping methods. In nearly all cases with_items is fine to
 
 .. code-block:: yaml
    :caption: loop.yml 
-   :linenos:
 
    ---
    - hosts: all
@@ -156,7 +154,6 @@ This play will download the *vault_play.png* if it does not exist within the spe
 can add this to the end of **tags.yml** playbook
 
 .. code-block:: yaml 
-   :linenos:
    :caption: File Exists Check
 
    - name: Check if image file exists
@@ -176,7 +173,6 @@ Pause
 Give a process time before running the next inline task
 
 .. code-block:: yaml
-   :linenos:
    :caption: Pause
 
    - pause:
@@ -185,7 +181,6 @@ Give a process time before running the next inline task
 When an action fails, prompt user to accept and continue rather than stop/fail.  Let's add the below code to the end of your *tags.yml* playbook
 
 .. code-block:: yaml
-   :linenos:
    :caption: Pause & Prompt
 
    - pause:
@@ -198,7 +193,6 @@ Meta
 In one of my playbooks I use dynamic inventory to populate my inventory file, meaning I must refresh (inventory files are loaded at runtime)
 
 .. code-block:: yaml
-   :linenos:
    :caption: refresh inventory
 
    - meta: refresh_inventory
@@ -210,7 +204,6 @@ Clone a git repo using Ansible. For this exercise we will clone an existing repo
 Let's create a new playbook called *getrepo.yml* and add the code below:
 
 .. code-block:: yaml 
-   :linenos:
    :caption: getrepo.yml 
 
    ---
@@ -250,7 +243,6 @@ and run the playbook:
 If you now look at the files in your **snopsy.hostvars** directory you will also see an **ansible.cfg** file where we declare where our inventory is 
 
 .. code-block:: yaml
-   :linenos:
    :caption: names.yml 
 
    ---
