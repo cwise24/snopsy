@@ -25,6 +25,21 @@ Sometimes we make a mistake and push a file to our repository that we do not wan
 
 On your next `git push` you'll no longer see the remote files, make sure to add those file types to your **.gitingnore**
 
+Issues 
+---------
+
+Filing an *issue* in Git is how we work to fix our code. From here you can:
+* Identify a problem
+* Assign the problem to a team or individual
+* Track progress and allow others to view problems being worked
+* Document Document 
+
+When creating an issue, keep in mind that you may not be working on the problem. So include as much detail.
+ * What you did, what you saw
+ * What is the expected outcome
+ * Versions, languages, frameworks used
+ * Log output
+
 Pre-Commit
 -----------------
  
