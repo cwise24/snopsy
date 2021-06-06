@@ -45,7 +45,6 @@ Now let's build a playbook and a encrypted file to show vault in action
 
 .. code-block:: yaml
    :caption: vault_play.yml
-   :linenos:
 
    ---
    - hosts: all
