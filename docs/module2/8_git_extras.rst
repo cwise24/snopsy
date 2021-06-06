@@ -8,8 +8,9 @@ A **.gitignore** is an invaluable file to have in your repository. This file exp
 Each line in this file spcifies a file or pattern to be matched. For files like certificates, keys or other file types (i.e. pycache)
 our gitignore will make sure those files do NOT become part of our public repository.
 
-A gitignore file generator I like is `here https://www.toptal.com/developers/gitignore`_
+A gitignore file generator I like is `here`_
 
+.. _here: https://www.toptal.com/developers/gitignore
 
 Remove Remote File
 --------------------------
@@ -38,7 +39,9 @@ Filing an *issue* in Git is how we work to fix our code. From here you can:
    :align: center 
    :scale: 70%
 
+
 When creating an issue, keep in mind that you may not be working on the problem. So include as much detail.
+
  * What you did, what you saw
  * What is the expected outcome
  * Versions, languages, frameworks used
@@ -67,11 +70,11 @@ From your project folder you can now run
 ``pre-commit install``
 This will install the git hooks scripts needed
 
-.. figure:: imgs/pre-commit.png
+.. image:: imgs/pre-commit.png
    :scale: 50%
    :align: center
    
-   Fig 17
+.. centered:: Fig 1
    
 
 Next you'll have to add the ``.pre-commit-config.yaml`` file to your repository
