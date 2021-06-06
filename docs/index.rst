@@ -20,7 +20,7 @@ This serves as a starting point to a much deeper training such as F5's SUPER-NET
 | `Vamsi Atluri <https://#>`_
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Contents:
    :glob:
 
