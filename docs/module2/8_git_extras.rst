@@ -30,6 +30,7 @@ Issues
 ---------
 
 Filing an *issue* in Git is how we work to fix our code. From here you can:
+
 * Identify a problem
 * Assign the problem to a team or individual
 * Track progress and allow others to view problems being worked
@@ -37,7 +38,7 @@ Filing an *issue* in Git is how we work to fix our code. From here you can:
 
 .. image:: imgs/gitissue1.png
    :align: center 
-   :scale: 70%
+   :scale: 50%
 
 
 When creating an issue, keep in mind that you may not be working on the problem. So include as much detail.
