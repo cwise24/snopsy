@@ -49,7 +49,7 @@ When creating an issue, keep in mind that you may not be working on the problem.
 
 .. image:: imgs/gitissue2.png
    :align: center 
-   :scale: 70%
+   :scale: 50%
    :caption: Create Issue
 
 Pre-Commit
