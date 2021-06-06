@@ -37,6 +37,7 @@ Filing an *issue* in Git is how we work to fix our code. From here you can:
 .. image:: imgs/gitissue1.png
    :align: center 
    :scale: 50%
+   :caption: Issues
 
 
 When creating an issue, keep in mind that you may not be working on the problem. So include as much detail.
@@ -49,6 +50,7 @@ When creating an issue, keep in mind that you may not be working on the problem.
 .. image:: imgs/gitissue2.png
    :align: center 
    :scale: 70%
+   :caption: Create Issue
 
 Pre-Commit
 -----------------
