@@ -11,10 +11,10 @@ With *branches*, we can introduce (or reject) new changes into our production br
 A NetOps example of this would be to clone the repository housing the running router configs. A feature branch could be created to test and develop an improved BGP process. Once designed 
 and tested, this new BGP process can be merged into the production branch. And since this is all in Git, we have necessary documentation:
 
-- who did this?
-- what problem did it solve (commit message)
-- when did this happen?
-- who approved it?
+*  who did this?
+*  what problem did it solve (commit message)
+*  when did this happen?
+*  who approved it?
 
 ..  centered::  Commands we will use for Branch
 
