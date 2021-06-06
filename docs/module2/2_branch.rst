@@ -26,6 +26,7 @@ and tested, this new BGP process can be merged into the production branch. And s
     git checkout -d <branch name>   { deletes branch name }
 
 From module 1 we created our main branch (default branch), let's verify that using:
+
 .. code:: bash 
 
     git branch
