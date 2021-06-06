@@ -16,6 +16,6 @@ and merging updates in.
    3_merge
    4_pull
    5_operations
-   6_git_extras.rst
-   7_reset
-   9_pipeline
+   6_reset
+   7_pipeline
+   8_git_extras.rst
