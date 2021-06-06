@@ -34,11 +34,19 @@ Filing an *issue* in Git is how we work to fix our code. From here you can:
 * Track progress and allow others to view problems being worked
 * Document Document 
 
+.. image:: imgs/gitissue1.png
+   :align: center 
+   :scale: 70%
+
 When creating an issue, keep in mind that you may not be working on the problem. So include as much detail.
  * What you did, what you saw
  * What is the expected outcome
  * Versions, languages, frameworks used
  * Log output
+
+.. image:: imgs/gitissue2.png
+   :align: center 
+   :scale: 70%
 
 Pre-Commit
 -----------------
