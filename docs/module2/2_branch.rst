@@ -60,6 +60,7 @@ And now insert some text
 
 
 Once that file is created and saved, let's set our up-stream dev branch and commit our file
+
 .. code:: bash
 
     git add README.md
