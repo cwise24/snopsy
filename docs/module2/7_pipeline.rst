@@ -170,5 +170,5 @@ A helpful link to see all the keywords available in your ci file:
 
 Bullets
 
-- item
-* item
+-  item
+*  item
