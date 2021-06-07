@@ -4,17 +4,17 @@ Debug2
 Now lets compare our debug values:
 
 
-.. figure:: imgs/jinja_filter.png
+.. image:: imgs/jinja_filter.png
    :scale: 40%
    :align: center
 
-.. centered:: Fig 6
+.. centered:: Fig 1
 
 .. centered::  Versus
 
 
-.. figure:: imgs/stdout_lines.png
+.. image:: imgs/stdout_lines.png
    :scale: 40%
    :align: center
 
-.. centered:: Fig 7
+.. centered:: Fig 2
