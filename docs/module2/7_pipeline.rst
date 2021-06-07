@@ -167,3 +167,8 @@ A helpful link to see all the keywords available in your ci file:
 `Gitlab Keyword Link`_
 
 .. _Gitlab Keyword Link: https://docs.gitlab.com/ee/ci/yaml/
+
+Bullets
+
+- item
+* item
