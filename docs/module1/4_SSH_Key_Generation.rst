@@ -22,7 +22,7 @@ This will prompt the below, note the file name to save to ``.ssh/ansible_key`` N
     Enter same passphrase again: 
 
 
-.. figure:: imgs/ssh_key_gen.png
+.. image:: imgs/ssh_key_gen.png
    :scale: 70%
    :align: center
 
@@ -42,7 +42,7 @@ Let's validate our files exist
    ls -la .ssh/
 
 
-.. figure:: imgs/validate_key.png
+.. image:: imgs/validate_key.png
    :scale: 70%
    :align: center
 
