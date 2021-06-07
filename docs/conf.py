@@ -24,7 +24,7 @@ copyright = '2021, Chad Wise'
 author = 'Chad Wise'
 
 # The full version, including alpha/beta/rc tags
-release = '2.1'
+release = '3.0'
 
 
 # Add any Sphinx extension module names here, as strings. They can be
