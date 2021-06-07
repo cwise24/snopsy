@@ -28,10 +28,10 @@ users to file issues they've experienced and enable a means to fix those.
 So here are the basics
 
 Local 
-* Local working directory/repository on your machine
+ * Local working directory/repository on your machine
 
 Remote 
-* The remote repository in this case Gitlab 
+ * The remote repository in this case Gitlab 
 
 .. figure:: imgs/gitflow.png
    :scale: 50%
