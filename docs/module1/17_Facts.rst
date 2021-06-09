@@ -14,7 +14,6 @@ We will need to make a new entry into our inventory file:
 
 
 .. code-block:: yaml
-   :linenos:
    :caption: f5.yml 
 
 
