@@ -36,6 +36,7 @@ Remote
 .. figure:: imgs/gitflow.png
    :scale: 50%
    :align: center
+.. centered:: Fig 1
 
 git add
  * Marks edited files for staging
