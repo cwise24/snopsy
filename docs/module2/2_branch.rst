@@ -75,7 +75,7 @@ Now we can verify our new file and branch are present from out Gitlab page
    :scale: 60%
    :align: center
 
-.. centered:: Fig 1
+.. centered:: Fig 2
    
 .. rubric:: Footnotes
 ..  [#] https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell
