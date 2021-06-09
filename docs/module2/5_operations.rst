@@ -18,7 +18,7 @@ Origin and Upstream
 .. image:: imgs/g_o_u.png
    :scale: 60%
    :align: center
-.. centered:: Fig 1
+.. centered:: Fig 10
 
 Let's check what remotes (if any) you currently have in your local repository
 
@@ -71,35 +71,35 @@ To create a merge request, from your repository on left side click **Merge Reque
 .. image:: imgs/mr1.png
    :scale: 50%
    :align: center
-.. centered:: Fig 2
+.. centered:: Fig 11
 
 Then click **New merge request**
 
 .. image:: imgs/mr2.png
    :scale: 50%
    :align: center
-.. centered:: Fig 3
+.. centered:: Fig 12
 
 You must view the compare branches before you can submit 
 
 .. image:: imgs/mr3.png
    :scale: 50%
    :align: center
-.. centered:: Fig 4
+.. centered:: Fig 13
 
 Click Submit Merge Request
 
 .. image:: imgs/mr4.png
    :scale: 50%
    :align: center
-.. centered:: Fig 5
+.. centered:: Fig 14
 
 Your submitted Merge Request
 
 .. image:: imgs/mr5.png
    :scale: 50%
    :align: center
-.. centered:: Fig 6
+.. centered:: Fig 15
 
 Accepting a Merge Request
 ------------------------------
@@ -107,17 +107,17 @@ Accepting a Merge Request
 .. image:: imgs/mr6.png
    :scale: 50%
    :align: center
-.. centered:: Fig 7
+.. centered:: Fig 16
 
 .. image:: imgs/mr7.png
    :scale: 50%
    :align: center
-.. centered:: Fig 8
+.. centered:: Fig 17
 
 .. image:: imgs/mr8.png
    :scale: 50%
    :align: center
-.. centered:: Fig 9
+.. centered:: Fig 18
 
 Pull from Upstream
 ^^^^^^^^^^^^^^
