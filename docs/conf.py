@@ -14,9 +14,6 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
-# The master toctree document
-master_doc = 'index'
-
 # -- Project information -----------------------------------------------------
 
 project = 'SNOPsy'
@@ -49,6 +46,12 @@ extensions = [
 
 nwdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
 todo_include_todos = True
+
+# source_suffix = ['.rst', '.md']
+source_suffix = '.rst'
+
+# The master toctree document
+master_doc = 'index'
 
 # -- General configuration ---------------------------------------------------
 
@@ -86,13 +89,13 @@ html_theme = 'sphinx_rtd_theme'
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-#html_static_path = ['_static']
-html_static_path = []
+html_static_path = ['_static']
+#html_static_path = []
 
-html_context = {
-    "display_github": False,  # Add 'Edit on Github' link instead of 'View page source'
-    "last_updated": True,
-    "commit": False,
-}
+# html_context = {
+#    "display_github": False,  # Add 'Edit on Github' link instead of 'View page source'
+#    "last_updated": True,
+#    "commit": False,
+# }
 
 # html_theme_options = {}
