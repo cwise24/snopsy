@@ -14,10 +14,10 @@ CI file
 
 The ci file determines how the pipeline workflow will run. We can add variables, conditions and select custom container builds for our testing. Some different versions of this file are:
 
- - Jenkinsfile {uses Groovy lang)
- - .gitlab-ci.yml {uses YAML}
- - azure-pipelines.yml {uses YAML }
- - cloudbuild.yaml { uses YAML or JSON }
+- Jenkinsfile {uses Groovy lang)
+- .gitlab-ci.yml {uses YAML}
+* azure-pipelines.yml {uses YAML }
+* cloudbuild.yaml { uses YAML or JSON }
 
 
 Building a simple pipeline
