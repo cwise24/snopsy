@@ -7,7 +7,7 @@ reports (artifacts) proving new changes will work (or not work).
 .. figure:: imgs/pipeline1.png
    :scale: 60%
    :align: center
-.. centered:: Fig 1
+.. centered:: Fig 31
 
 CI file
 ---------------
@@ -84,20 +84,20 @@ The figure below shows our new pipeline completed. You can click on the commit h
 .. figure:: imgs/pipeline2.png
    :scale: 60%
    :align: center
-.. centered:: Fig 2
+.. centered:: Fig 32
 
 You can also click on CI/CD -> Jobs and the Job number to view the logs from Gitlab Runner (Fig 4)
 
 .. figure:: imgs/pipeline3.png
    :scale: 60%
    :align: center
-.. centered:: Fig 3
+.. centered:: Fig 33
 
 
 .. figure:: imgs/pipeline4.png
    :scale: 60%
    :align: center
-.. centered:: Fig 4
+.. centered:: Fig 34
 
 Now, let's change our variable SITE to ``site1`` and run the pipeline again
 
@@ -153,14 +153,14 @@ Once this pipeline completes we should see a failure. Navigating back to the Job
 .. figure:: imgs/pipeline5.png
    :scale: 60%
    :align: center
-.. centered:: Fig 5
+.. centered:: Fig 35
 
 Now you can view the report:
 
 .. figure:: imgs/pipeline6.png
    :scale: 60%
    :align: center
-.. centered:: Fig 6
+.. centered:: Fig 36
 
 A helpful link to see all the keywords available in your ci file:
 
