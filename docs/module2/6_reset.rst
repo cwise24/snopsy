@@ -77,7 +77,7 @@ We will now select the commit we wish to remove, in this example it's commit thr
 .. image:: imgs/gitrevert1.png
    :scale: 70%
    :align: center
-.. centered:: Fig 1
+.. centered:: Fig 19
 
 Once you hit enter, you will be prompted for a revert message. Once you've added the revert message and saved ``:wq`` let's review the git log 
 
@@ -92,7 +92,7 @@ rollback method.
 .. image:: imgs/gitlog_revert.png
    :scale: 70%
    :align: center
-.. centered:: Fig 2
+.. centered:: Fig 20
 
 Now you can push your reverted file
 
@@ -129,7 +129,7 @@ Add this line to the newly created file
 .. image:: imgs/gitlog.png
    :scale: 70%
    :align: center
-.. centered:: Fig 3
+.. centered:: Fig 21
 
 Now let's edit the file **example** and add another line
 
@@ -153,7 +153,7 @@ Add this line to the example file:
 .. image:: imgs/gitlog2.png
    :scale: 70%
    :align: center
-.. centered:: Fig 4
+.. centered:: Fig 22
 
 Now let's edit the file again and add another line
 
@@ -175,21 +175,21 @@ And now let's save our file with the new changes, then add to staging and commit
 .. image:: imgs/gitlog3.png
    :scale: 70%
    :align: center
-.. centered:: Fig 5
+.. centered:: Fig 23
 
 Now let's rollback to our second commit. Using **Fig 6** as a reference we will issue the command ``git reset --hard <hash>`` with the hash of our second commit
 
 .. image:: imgs/gitreset1.png
    :scale: 70%
    :align: center
-.. centered:: Fig 6
+.. centered:: Fig 24
 
 Now the git HEAD has been moved to our second commit and we have completed a *rollback* of our file. As you can see though, all commits prior are now removed.
 
 .. image:: imgs/gitlog_reset.png
    :scale: 70%
    :align: center
-.. centered:: Fig 7
+.. centered:: Fig 25
 
 Running the command ``cat example`` we can now see the third line has been removed.
 
@@ -200,14 +200,14 @@ Under *Settings* select *Repository*, then by Protected Branches click *Expand*
 .. image:: imgs/protectedbranch1.png 
    :scale: 50%
    :align: center
-.. centered:: Fig 8
+.. centered:: Fig 26
 
 Now you can toggle *Allow force push*
 
 .. image:: imgs/protectedbranch3.png 
    :scale: 50%
    :align: center
-.. centered:: Fig 9
+.. centered:: Fig 27
 
 .. code:: bash
    
@@ -232,18 +232,18 @@ Go to Settings and then General
 .. image:: imgs/deletegitrepo1.png
    :scale: 50%
    :align: center
-.. centered:: Fig 10
+.. centered:: Fig 28
 
 Scroll to bottom and find Advanced and click Expand
 
 .. image:: imgs/deletegitrepo2.png
    :scale: 50%
    :align: center
-.. centered:: Fig 11
+.. centered:: Fig 29
 
 Now click Delete project
 
 .. image:: imgs/deletegitrepo3.png
    :scale: 50%
    :align: center
-.. centered:: Fig 12
+.. centered:: Fig 30
