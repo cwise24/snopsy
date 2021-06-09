@@ -37,6 +37,7 @@ Filing an *issue* in Git is how we work to fix our code. From here you can:
 .. image:: imgs/gitissue1.png
    :align: center 
    :scale: 50%
+   .. centered:: Fig 37
 
 .. centered:: Issue
 
@@ -50,6 +51,7 @@ When creating an issue, keep in mind that you may not be working on the problem.
 .. image:: imgs/gitissue2.png
    :align: center 
    :scale: 50%
+   .. centered:: Fig 38
 
 .. centered:: Create Issue
 
@@ -76,7 +78,7 @@ This will install the git hooks scripts needed
    :scale: 50%
    :align: center
    
-.. centered:: Fig 1
+.. centered:: Fig 39
    
 
 Next you'll have to add the ``.pre-commit-config.yaml`` file to your repository
