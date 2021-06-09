@@ -9,7 +9,7 @@ the remote repository we must pull
 .. image:: imgs/gitlab_newfile.png
    :scale: 60%
    :align: center
-.. centered:: Fig 1
+.. centered:: Fig 9
 
 
 Now run:
