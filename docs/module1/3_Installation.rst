@@ -74,3 +74,10 @@ This will open a shell to the container as the user 'ansible'
 
 
 .. note:: If you are using the container, the above packages have been installed
+
+Visual Studio Code 
+~~~~~~~~~~~~~~~
+
+This is optional but can be of great help later in your journey. 
+
+`VSCode <https://code.visualstudio.com/>`_
