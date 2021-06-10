@@ -63,7 +63,6 @@ And now for the file we will encrypt
 
 .. code-block:: yaml
    :caption: vault_test.yml
-   :linenos:
 
    ---
    var1: "is var one"
