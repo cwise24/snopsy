@@ -11,7 +11,6 @@ It is used to create HTML, XML or other markup formats that are returned to the 
 
 
 .. code-block:: yaml
-   :linenos:
    :emphasize-lines: 13,14
 
 
