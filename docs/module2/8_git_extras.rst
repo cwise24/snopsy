@@ -109,15 +109,16 @@ In my local lab, I have Gitlab running on a container using a self signed certif
 Tags
 -------
 
-Used to mark specific points in a repository's history.
+Used to mark specific points in a repository's history. This is typically used to mark specific release points in software. Below are examples of tag creation and how to list 
+existing tags.
 
 .. code-block:: bash 
-   :caption: git tag  
+   :caption: Add tag  
 
    git tag -a "v1.2" -m "version 1.2"
 
 .. code-block:: bash
-   :caption: list git tags
+   :caption: List tags
 
    git tag -l 
 
