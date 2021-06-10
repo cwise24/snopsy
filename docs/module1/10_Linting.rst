@@ -34,7 +34,7 @@ In our example files:
 
 .. centered:: Fig 4
 
-Configurations of yamllint
+Configurations of Yamllint
 
 Depending on your OS
 
