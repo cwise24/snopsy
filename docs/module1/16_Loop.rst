@@ -4,7 +4,6 @@ Loop
 Now let's make use of our new variable
 
 .. code-block:: yaml
-   :linenos:
    :emphasize-lines: 23
 
    ---
