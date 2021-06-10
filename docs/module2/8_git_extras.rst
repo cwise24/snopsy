@@ -36,7 +36,7 @@ Filing an *issue* in Git is how we work to fix our code. From here you can:
 
 .. image:: imgs/gitissue1.png
    :align: center 
-   :scale: 50%
+   :scale: 60%
 
 .. centered:: Fig 37
 
@@ -49,7 +49,7 @@ When creating an issue, keep in mind that you may not be working on the problem.
 
 .. image:: imgs/gitissue2.png
    :align: center 
-   :scale: 50%
+   :scale: 60%
    
 .. centered:: Fig 38
 
@@ -73,7 +73,7 @@ From your project folder you can now run
 This will install the git hooks scripts needed
 
 .. image:: imgs/pre-commit.png
-   :scale: 70%
+   :scale: 60%
    :align: center
    
 .. centered:: Fig 39
