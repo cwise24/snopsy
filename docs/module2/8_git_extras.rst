@@ -73,7 +73,7 @@ From your project folder you can now run
 This will install the git hooks scripts needed
 
 .. image:: imgs/pre-commit.png
-   :scale: 50%
+   :scale: 70%
    :align: center
    
 .. centered:: Fig 39
