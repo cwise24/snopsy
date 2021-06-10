@@ -1,8 +1,8 @@
 Git Extras
 =========
 
-gitignore
-----------
+Gitignore
+-------------
 
 A **.gitignore** is an invaluable file to have in your repository. This file explicitly tells Git what files should be ignored.
 Each line in this file spcifies a file or pattern to be matched. For files like certificates, keys or other file types (i.e. pycache)
