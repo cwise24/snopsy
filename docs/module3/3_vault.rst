@@ -71,18 +71,22 @@ And now for the file we will encrypt
 
 Let's view our newly created and enccryted file ``cat vault_test.yml``
 
-.. figure:: imgs/ansibleVault.png
+.. image:: imgs/ansibleVault.png
    :scale: 50%
    :align: center
+
+.. centered:: Fig 3
 
 Now to run our play we will use the below command, calling our localhost as the only inventory member, our ``vault_play.yml`` play file and passing in the external ``-e`` vault file ``@vault_test.yml``
 ::
 
     ansible-playbook -i "localhost," vault_play.yml -e "@vault_test.yml"
 
-.. figure:: imgs/vault_play.png
+.. image:: imgs/vault_play.png
    :scale: 50%
    :align: center
+
+.. centered:: Fig 4
 
 Playbooks
 --------------
