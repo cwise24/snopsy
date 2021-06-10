@@ -11,12 +11,10 @@ Linting
 In our example files:
 
 .. literalinclude:: ../../error.yml
-   :linenos:
    :caption: error.yml
    :language: yaml
 
 .. literalinclude:: ../../noerror.yml
-   :linenos:
    :caption: noerror.yml
    :language: yaml
 
