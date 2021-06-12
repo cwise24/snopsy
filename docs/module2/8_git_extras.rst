@@ -38,7 +38,7 @@ Filing an *issue* in Git is how we work to fix our code. From here you can:
    :align: center 
    :scale: 60%
 
-.. centered:: Fig 37
+.. centered:: Fig 38
 
 When creating an issue, keep in mind that you may not be working on the problem. So include as much detail.
 
@@ -51,7 +51,7 @@ When creating an issue, keep in mind that you may not be working on the problem.
    :align: center 
    :scale: 60%
    
-.. centered:: Fig 38
+.. centered:: Fig 39
 
 Pre-Commit
 -----------------
@@ -76,7 +76,7 @@ This will install the git hooks scripts needed
    :scale: 60%
    :align: center
    
-.. centered:: Fig 39
+.. centered:: Fig 40
    
 
 Next you'll have to add the ``.pre-commit-config.yaml`` file to your repository

@@ -4,7 +4,7 @@ Pipeline
 Pipelines allow for continuous integration, delivery and deployment. Anytime your repository is updated we *may* now run extensive testing to validate changes and produce 
 reports (artifacts) proving new changes will work (or not work).
 
-.. figure:: imgs/pipeline1.png
+.. image:: imgs/pipeline1.png
    :scale: 60%
    :align: center
 .. centered:: Fig 31
@@ -27,10 +27,16 @@ line please verify you are in the */home/ansible* directory
 
 .. code-block:: bash 
    :caption: Working Directory
+
    pwd
    /home/ansible
 
 .. image:: imgs/pwd.png
+   :align: center
+   :scale: 60%
+.. centered:: Fig 32
+
+Now let's clone the below repository:
 
 ``git clone https://gitlab.com/cwise24/snopsy.pipeline``
 
@@ -93,20 +99,20 @@ The figure below shows our new pipeline completed. You can click on the commit h
    :scale: 60%
    :align: center
 
-.. centered:: Fig 32
+.. centered:: Fig 33
 
 You can also click on CI/CD -> Jobs and the Job number to view the logs from Gitlab Runner (Fig 4)
 
 .. figure:: imgs/pipeline3.png
    :scale: 60%
    :align: center
-.. centered:: Fig 33
+.. centered:: Fig 34
 
 
 .. figure:: imgs/pipeline4.png
    :scale: 60%
    :align: center
-.. centered:: Fig 34
+.. centered:: Fig 35
 
 Now, let's change our variable SITE to ``site1`` and run the pipeline again
 
@@ -162,14 +168,14 @@ Once this pipeline completes we should see a failure. Navigating back to the Job
 .. figure:: imgs/pipeline5.png
    :scale: 60%
    :align: center
-.. centered:: Fig 35
+.. centered:: Fig 36
 
 Now you can view the report:
 
 .. figure:: imgs/pipeline6.png
    :scale: 60%
    :align: center
-.. centered:: Fig 36
+.. centered:: Fig 37
 
 A helpful link to see all the keywords available in your ci file:
 
