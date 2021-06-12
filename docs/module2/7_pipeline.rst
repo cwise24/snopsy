@@ -1,7 +1,7 @@
 Pipeline
 ======
 
-Pipelines allow for continuous integration, delivery and deployment. Anytime your repository is updated we can now run extensive testing to validate changes and produce 
+Pipelines allow for continuous integration, delivery and deployment. Anytime your repository is updated we *may* now run extensive testing to validate changes and produce 
 reports (artifacts) proving new changes will work (or not work).
 
 .. figure:: imgs/pipeline1.png
@@ -22,7 +22,15 @@ The ci file determines how the pipeline workflow will run. We can add variables,
 
 Building a simple pipeline
 
-Here we will build a simple pipeline to run ansible-lint against our playbook to look for errors and return artifacts. Let's start off this lab with some pre-built ansible playbooks.
+Here we will build a simple pipeline to run ansible-lint against our playbook to look for errors and return artifacts. Let's start off this lab with some pre-built ansible playbooks. From the command
+line please verify you are in the */home/ansible* directory 
+
+.. code-block:: bash 
+   :caption: Working Directory
+   pwd
+   /home/ansible
+
+.. image:: imgs/pwd.png
 
 ``git clone https://gitlab.com/cwise24/snopsy.pipeline``
 
@@ -81,9 +89,10 @@ Pipeline
 The figure below shows our new pipeline completed. You can click on the commit hash (green box) to view changes and in the blue box you will be able to download artifacts (if any) generated.
 
 
-.. figure:: imgs/pipeline2.png
+.. image:: imgs/pipeline2.png
    :scale: 60%
    :align: center
+
 .. centered:: Fig 32
 
 You can also click on CI/CD -> Jobs and the Job number to view the logs from Gitlab Runner (Fig 4)
