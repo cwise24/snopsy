@@ -41,13 +41,13 @@ Now let's clone the below repository:
 ``git clone https://gitlab.com/cwise24/snopsy.pipeline``
 
 
-Now, let's go into the new repository you just cloned
+Once cloned, change directory `cd` into the new directory
 
 ::
    
   cd snopsy.pipeline
 
-Now you must create the the **ci** file using the below code block. Notice the variable **SITE** has the value `site2`. After your pipeline runs we will change this to `site1`, add our rules and update the
+You must create the the **ci** file using the below code block. Notice the variable **SITE** has the value `site2`. After your pipeline runs we will change this to `site1`, add our rules and update the
 repository.
 
 .. important::  Pay close attention to indentation, YAML is very picky!!
@@ -81,7 +81,7 @@ repository.
        expire_in: 2 days 
 
 
-Now it's time to push and create this repository with the new CI file to begin pipeline execution
+It is time to push and create this repository with the new CI file to begin pipeline execution
 
 ::
 
@@ -114,7 +114,7 @@ You can also click on CI/CD -> Jobs and the Job number to view the logs from Git
    :align: center
 .. centered:: Fig 35
 
-Now, let's change our variable SITE to ``site1`` and run the pipeline again
+Let's change our variable SITE to ``site1`` and run the pipeline again
 
 
 .. code-block:: yaml
@@ -155,7 +155,7 @@ Now, let's change our variable SITE to ``site1`` and run the pipeline again
 
 You could now update your README file (or any file, other than those 3)  and the pipeline would no longer execute.
 
-Now it's time to push with the updated CI file to begin pipeline execution. 
+It's now time to push with the updated CI file to begin pipeline execution. 
 
 ::
 
