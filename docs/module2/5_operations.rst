@@ -62,7 +62,7 @@ In case you make a mistake adding an upstream or origin (destination)
 Pull Request or Merge Request
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Now comes time to merge your work back into the Upstream branch or to accept a merge request(Gitlab/Gitorious) or a Pull Request(GitHub, BitBucket) from a forked contributor
+Now comes time to merge your work back into the Upstream branch or to accept a merge request(Gitlab/BitBucket) or a Pull Request(GitHub) from a forked contributor
 
 Create a Merge Request
 ------------------------------
