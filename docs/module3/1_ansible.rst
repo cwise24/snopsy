@@ -56,6 +56,7 @@ Example of connection directive missing from YAML file, you must add the ``-c`` 
    :align: center
    
 .. centered:: Fig 1
+
 Limit
 -------
 One way to reduce the all awesome power of automation (to kill everything) is to limit what hosts your playbooks run on.  This can be accomplished with ``limit`` or ``tags``.
@@ -277,6 +278,17 @@ If you now look at the files in your **snopsy.hostvars** directory you will also
        debug:
          msg: "{{ group_names }}"
   
+Lookup
+-----------
+  
+`Ansible Lookup Plugin`_ 
+
+.. _Ansible Lookup Plugin: https://docs.ansible.com/ansible/latest/plugins/lookup.html
+
+.. code-block:: yaml
+   :caption: File contents to variable
+   
+    app_cert: "{{ lookup('file', '/home/user/roles/role_certs/files/as3.lab.local.crt') }}"
 
 
 Network Automation
