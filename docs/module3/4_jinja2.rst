@@ -75,13 +75,3 @@ This example (thanks to Forrest Crenshaw @F5 on `Linklight <https://ansible.gith
                   {{comma()}} "{{ hostvars[mem]['ansible_host'] }}"
                 {% endfor %}
                 ]
-
-
-`Ansible Lookup Plugin`_ 
-
-.. _Ansible Lookup Plugin: https://docs.ansible.com/ansible/latest/plugins/lookup.html
-
-.. code-block:: yaml
-   :caption: File contents to variable
-   
-    app_cert: "{{ lookup('file', '/home/user/roles/role_certs/files/as3.lab.local.crt') }}"
