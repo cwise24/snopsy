@@ -96,7 +96,7 @@ Pipeline
 
 .. role:: green
 
-The figure below shows our new pipeline completed. You can click on the commit hash (:green:`green` box) to view changes and in the :blue:`blue` box you will be able to 
+The figure below shows our new pipeline completed. You can click on the commit hash (:green:`green box`) to view changes and in the :blue:`blue box` you will be able to 
 download artifacts (if any) generated.
 
 
