@@ -33,7 +33,7 @@ From module 1 we created our main branch (default branch), let's verify that usi
 
     git branch
 
-.. important:: **DO NOT MAKE CHANGES IN THE MAIN BRANCH, HARD LESSON LEARNED HERE**
+.. important:: **DO NOT MAKE CHANGES IN THE MAIN BRANCH**
 
 Now we will create a new branch *'dev'*, this is where we will make our changes and merge them back into the mainline *main* branch.
 
