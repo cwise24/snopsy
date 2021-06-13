@@ -248,4 +248,4 @@ Now click Delete project
    :align: center
 .. centered:: Fig 30
 
-Return to :ref:`Reset` lab
+.. centered:: Return to :ref:`Reset` lab
