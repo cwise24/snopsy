@@ -38,6 +38,10 @@ Let's create a new playbook named **jinja.yml** and use the code below.
        debug:
          msg: "{% set comma=joiner(',') %} {% for item in jinja %} {{comma()}} {{ item }} {% endfor %}"
 
+To run this example:
+
+:: 
+  ansible-playbook -i "localhost," jinja.yml 
 
 Within a j2 template
 
