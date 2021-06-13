@@ -40,8 +40,9 @@ Let's create a new playbook named **jinja.yml** and use the code below.
 
 To run this example:
 
-:: 
-  ansible-playbook -i "localhost," jinja.yml 
+.. code-block:: bash
+
+   ansible-playbook -i "localhost," jinja.yml 
 
 Within a j2 template
 
