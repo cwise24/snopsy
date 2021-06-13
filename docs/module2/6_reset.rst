@@ -247,3 +247,5 @@ Now click Delete project
    :scale: 50%
    :align: center
 .. centered:: Fig 30
+
+Return to :ref:`Reset`
