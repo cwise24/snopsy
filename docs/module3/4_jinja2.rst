@@ -44,7 +44,7 @@ To run this example:
 
    ansible-playbook -i "localhost," jinja.yml 
 
-Within a j2 template
+An example of a F5 deployment using a j2 (Jinja) template
 
 .. code-block:: yaml 
    :caption: Example Ansible task
