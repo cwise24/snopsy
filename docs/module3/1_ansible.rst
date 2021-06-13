@@ -76,7 +76,6 @@ Tags
 Adding tags to individual plays can greatly help when you only want to test or skip specific plays. 
 
 .. code-block:: yaml
-   :linenos:
    :caption: tags.yml
    :emphasize-lines: 10-11,16-17
 
@@ -102,10 +101,15 @@ Adding tags to individual plays can greatly help when you only want to test or s
        debug:
             var=ansible_date_time.epoch
 
+.. code-block:: bash 
+   :caption: Only show date
+ 
+   ansible-playbook -i inventory someplay.yml --tags "tag1"
 
-Only show date ``ansible-playbook -i inventory someplay.yml --tags "tag1"``
+.. code-block:: bash 
+   :caption: Only show epoch
 
-Only show epoch ``ansible-playbook -i inventory someplay.yml --skip-tags "tag1"``
+   ansible-playbook -i inventory someplay.yml --skip-tags "tag1"
 
 .. image:: imgs/date_tag.png
    :scale: 50%
