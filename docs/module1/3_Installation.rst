@@ -80,8 +80,8 @@ Visual Studio Code
 
 This is optional but **HIGHLY** recommended. Install the Docker plugin
 
+Download `VSCode <https://code.visualstudio.com/>`_ 
+
 .. image:: imgs/vscodeDocker.png 
    :scale: 70%
    :align: center 
-
-`VSCode <https://code.visualstudio.com/>`_
