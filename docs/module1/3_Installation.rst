@@ -78,6 +78,9 @@ This will open a shell to the container as the user 'ansible'
 Visual Studio Code 
 ~~~~~~~~~~~~~~~
 
-This is optional but can be of great help later in your journey. 
+This is optional but **HIGHLY** recommended. Install the Docker plugin
+
+.. image:: imgs/vscodeDocker.png 
+   :align: center 
 
 `VSCode <https://code.visualstudio.com/>`_
