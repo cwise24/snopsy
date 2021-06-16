@@ -36,7 +36,7 @@ Let's configure our git config
 
 .. note:: Git config options set the email and username and is used when making commits, you can also see what url you are using
 
-Let's start pushing code from our local repository up to GitLab. You and add individual files or all files. This marks all files ``.`` in the working directory to be added to staging
+Let's start pushing code from our local repository up to GitLab. You can add individual files or all files. This marks all files ``.`` in the working directory to be added to staging
 
 .. code-block:: bash 
    :caption: Add all Files
