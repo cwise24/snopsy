@@ -1,5 +1,5 @@
-Linux
-======
+Linux Commands
+=============
 
 .. centered::  Some useful Linux commands
 
