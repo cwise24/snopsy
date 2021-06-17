@@ -1,6 +1,8 @@
 Git Extras
 =========
 
+.. note:: There are no labs to complete in this section
+
 Gitignore
 -------------
 
@@ -9,6 +11,15 @@ Each line in this file spcifies a file or pattern to be matched. For files like 
 our gitignore will make sure those files do NOT become part of our public repository.
 
 A gitignore file generator I like is `here <https://www.toptal.com/developers/gitignore>`_
+
+.. code-block:: bash 
+   :caption: Example .gitignore 
+
+   *.pyc        #ignore all files ending in .pyc
+   logs/        #ignore directory logs
+
+
+Documentation for gitignore can be found `here <https://git-scm.com/docs/gitignore>`_
 
 Remove Remote File
 --------------------------
