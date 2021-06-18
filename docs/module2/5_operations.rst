@@ -2,14 +2,14 @@ Operations
 ~~~~~~~~~~
 Clone
 ^^^^^
-Cloning creates a local repository (on your computer) from a remote repository say on Gitlab or GitHub. You cannot contribute back to the source repository (if it is not yours)  unless you are added 
-as an collaborator.  For this module, we will only clone a repository so we may have a local working copy. We will clone in the Pipeline section.
+Cloning creates a local repository (on your computer) from a remote repository say on Gitlab or GitHub. You cannot contribute back to the source repository unless you are added 
+as an collaborator or you own it.  For this module, we will only clone a repository so we may have a local working copy. We will clone in the Pipeline section.
 
 
 Fork
 ^^^^
-When you fork a repository, you make a copy of the source repository and are able to freely make changes without affecting the source repository. There will be a connection between the source
-repository and yours so you may contribute back.  You may also pull updates from the source repository into your fork.
+When you fork a repository, you make a copy of someone else's cloud repository (i.e Gitlab) to your cloud repository. There will be a connection between the forked
+repository and yours so you may contribute back (merge requests).  You may also pull updates from the source repository into your fork.
 
 I have a public repository that you can Fork `here <https://gitlab.com/cwise24/ansible_lab>`_
 
