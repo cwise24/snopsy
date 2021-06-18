@@ -25,4 +25,5 @@ Now run:
 Fetch 
 ^^^^^
 
-What if you only wanted to see changes made to an upstream, but not have them merged in?  This is where **fetch** comes into play. 
+What if you only wanted to see changes made to an upstream, but not have them merged in?  This is where **fetch** comes into play.  This action can really come into
+play when we discuss *Forking* a repository. 
