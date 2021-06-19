@@ -27,7 +27,7 @@ If this comes back with nothing, you will want to add your clone link as the ori
 
   git remote add origin git@gitlab.com:username/ansible_lab.git      # use your Gitlab username
   git remote -v                                                      # Check origin is set
-  git fetch origin                                                    # Fetch origin updates
+  git fetch origin                                                   # Fetch origin updates
   git log origin/ main ^main                                         # Show commit differences 
 
 Pull 
