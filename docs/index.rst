@@ -32,7 +32,7 @@ This training won’t bridge the divide, but can definitely help with faster Net
 
 | *Having said that, I do work at F5 as a Solutions Engineer and I’m more than willing to talk about what we do.*
 
-If you're wondering how this was built check out my other build `My_RTD <https://my-rtd-build.readthedocs.io/en/latest/>`_
+If you're wondering how this was built check out my other build `My_RTD <https://my-rtd.readthedocs.io/en/latest/>`_
 
 Indices and tables
 ==================
