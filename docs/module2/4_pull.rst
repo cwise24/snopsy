@@ -21,7 +21,7 @@ We need to check if we have our Gitlab Repository set as the *origin*
 
   git remote -v 
 
-If this comes back with nothing, you will want to add your clone link as the origin
+If this comes back with nothing,and most likely will, you will want to add your clone link as the origin. The reason this will need to be done, we created the repository locally on your machine.
 
 ::
 
