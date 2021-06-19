@@ -1,8 +1,9 @@
 Fetch and Pull
 ~~~~~~~~~~~
 
-Since we now have a local and remote repository, let's see how fetch and pull can help us. If you go to your UI of Gitlab and alter a file (or create a new one), it will not show locally.  To ensure you are in sync with 
-the remote repository we must pull
+Since we now have a local and remote repository, let's see how fetch and pull can help us. If you go to 
+your UI of Gitlab and alter a file (or create a new one), it will not show locally. 
+To ensure you are in sync with the remote repository we must *get* those new commits into our local repository.
 
 .. image:: imgs/gitlab_newfile.png
    :scale: 60%
