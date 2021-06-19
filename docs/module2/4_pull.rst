@@ -28,7 +28,9 @@ If this comes back with nothing,and most likely will, you will want to add your 
   git remote add origin git@gitlab.com:username/ansible_lab.git      # use your Gitlab username
   git remote -v                                                      # Check origin is set
   git fetch origin                                                   # Fetch origin updates
-  git log origin/ main ^main                                         # Show commit differences 
+  git log origin/main ^main                                          # Show commit differences 
+
+We only see the differences, the new files are not merged into our local project.
 
 Pull 
 ^^^^
