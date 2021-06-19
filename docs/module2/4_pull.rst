@@ -35,11 +35,8 @@ We only see the differences, the new files are not merged into our local project
 Pull 
 ^^^^
 
-We've worked on our branches, keeping careful not to let things get out of sync.  But what happens with they do? This is where ``pull`` shorthand for ``fetch + merge`` comes into play.
-With ``git pull`` we can update our local repository with new commits from the remote repository.
+``Pull`` shorthand for ``fetch + merge``  makes keeping our local repository in sync easy. 
 
-
-Now run:
 
 ::
 
