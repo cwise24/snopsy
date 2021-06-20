@@ -21,7 +21,7 @@ Now let's make use of our new variable
           interface: "{{ vland.stdout_lines[0][3].split(\" \") | select('match', '^(Fa|Gi)') | list  }}"
 
      - name: Show interface debug
-       debug:
+       ansible.builtin.debug:
          var: interface 
 
      - name: Get interface config
@@ -33,7 +33,7 @@ Now let's make use of our new variable
 
      - name: show interface variable
        tags: showrun
-       debug:
+       ansible.builtin.debug:
          var: shorunint    
 
 
