@@ -7,7 +7,8 @@ Now let's make use of our new variable
    :emphasize-lines: 23
 
    ---
-   - hosts: [ios]
+   - name: Looping 
+     hosts: [ios]
      gather_facts: false
 
      tasks:
