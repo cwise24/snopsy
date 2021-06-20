@@ -26,10 +26,15 @@ Strategies
 ----------
 
 * linear
+
   * default; One task after another
+
 * free
+
   * complete each task as fast as possilbe, do not wait
+
 * debug
+
   * Run debug after failure of any task
 
 .. code-block:: yaml 
