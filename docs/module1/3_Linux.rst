@@ -3,6 +3,8 @@ Linux Commands
 
 .. centered::  Some useful Linux commands
 
+.. note:: There are **no** labs in this section
+
 Help - you will find help for any package in the **man** pages or **info** pages. Each switch will be described and some examples. 
 
 ::
