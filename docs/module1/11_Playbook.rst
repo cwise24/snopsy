@@ -10,7 +10,7 @@ Connect to Lab WiFi
     SSID:                F5UserGrp_5
     Password:            f5usergrp123!
 
-.. note:: Lab WiFi is only for running plays against the switches, no internet connectivity
+.. note:: Lab WiFi is only for running plays against the switches, there is **no** internet connectivity
 
 
 Running a play
