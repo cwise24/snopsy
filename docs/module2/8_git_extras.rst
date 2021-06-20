@@ -1,5 +1,5 @@
-Git Extras
-=========
+Git References
+==============
 
 .. note:: There are no labs to complete in this section
 
