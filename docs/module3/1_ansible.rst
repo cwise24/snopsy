@@ -70,7 +70,7 @@ Let's create a new playbook called ``ext.yml`` and use the contents below
      tasks:
 
      - name: Show external variables
-       debug:
+       ansible.builtin.debug:
          msg: "{{ \"This is var1: \" + var1 + \" 'and also' \" + \"This is var2: \" + var2 }}"
 
 Now we'll run this play against the localhost.  A couple of items to watch when running playbooks against the localhost
@@ -127,7 +127,7 @@ Adding tags to individual plays can greatly help when you only want to test or s
      - name: Ansible Date Example
        tags:
          - tag1
-       debug:
+       ansible.builtin.debug:
             var=ansible_date_time.date
 
      - name: Set a fact
@@ -137,7 +137,7 @@ Adding tags to individual plays can greatly help when you only want to test or s
      - name: Ansible Date Example
        tags: 
          - tag2
-       debug:
+       ansible.builtin.debug:
             var=ansible_date_time.epoch
 
 .. code-block:: bash 
@@ -175,7 +175,7 @@ My most commonly used looping methods. In nearly all cases with_items is fine to
      tasks:
 
      - name: A loop 
-       debug:
+       ansible.builtin.debug:
          msg: "{{ item }}"
        loop:
          - one
@@ -193,7 +193,7 @@ My most commonly used looping methods. In nearly all cases with_items is fine to
      tasks:
 
      - name: A loop 
-       debug:
+       ansible.builtin.debug:
          msg: "{{ item }}"
        with_items:
          - one
@@ -315,28 +315,28 @@ If you now look at the files in your **snopsy.hostvars** directory you will also
      tasks:
    
      - name: Show hostvars (all hosts)
-       debug:
+       ansible.builtin.debug:
          var: hostvars 
    
      - name: Show inventory hostnames
-       debug: 
+       ansible.builtin.debug: 
          var: inventory_hostname 
    
      - name: Show ip addresses of all hosts
-       debug:
+       ansible.builtin.debug:
          msg: "{{ hostvars[inventory_hostname]['ansible_host'] }}"
    
      - name: Show ip address of host_2 only
-       debug: 
+       ansible.builtin.debug: 
          msg: "{{ hostvars['host_2']['ansible_host'] }}" 
        when: inventory_hostname == "host_2"
    
      - name: Show groups and hosts within each group
-       debug:
+       ansible.builtin.debug:
          msg: "{{ groups }}"
    
      - name: Show group names
-       debug:
+       ansible.builtin.debug:
          msg: "{{ group_names }}"
   
 Lookup
