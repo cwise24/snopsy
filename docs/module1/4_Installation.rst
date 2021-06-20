@@ -53,6 +53,8 @@ Suggested list of packages to install:
 Docker
 ~~~~~~~~
 
+.. note:: If you are using the container, the above packages have been installed
+
 | Install Docker CE `link <https://docs.docker.com/install/>`_
 | Run the Ansible container:
 
@@ -72,8 +74,6 @@ To run the Ansible container's shell:
 
 This will open a shell to the container as the user 'ansible'
 
-
-.. note:: If you are using the container, the above packages have been installed
 
 Visual Studio Code 
 ~~~~~~~~~~~~~~~
