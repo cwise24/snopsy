@@ -18,16 +18,34 @@ The verbose levels are used when executing an ansible playbook.
 
    ansible-playbook -i inventory someplaybook.yaml -vvv 
 
-Debug and verbose will truly become your best allies as you build playbooks.  You can use debug to print registered variables 
+Debug and verbose will truly become your best allies as you build playbooks.  You can use *debug* to print registered variables 
 to screen or even print messages. Below I'll cover using the ``msg:`` function and in a very Pythonic way, 
 concatenating stings into our messages with ``+`` and quotes.
 
-Strategy
-^^^^^^^^
+Strategies
+----------
 
 * linear
+  * default; One task after another
 * free
+  * complete each task as fast as possilbe, do not wait
 * debug
+  * Run debug after failure of any task
+
+.. code-block:: yaml 
+   :caption: Strategy Per Play  
+
+   ---
+   - name:
+     hosts:
+     gather_facts:
+     strategy: free 
+
+.. code-block:: bash 
+   :caption: Strategy ansible.cfg 
+
+   [defaults]
+   strategy = free 
 
 External Vars
 --------------
