@@ -30,7 +30,8 @@ It is used to create HTML, XML or other markup formats that are returned to the 
            interface: "{{ vland.stdout_lines[0][3].split(\" \") | select('match', '^(Fa|Gi)') | list }}"
 
 
-       - debug:
+       - name: Show new variable interface
+         ansible.builtin.debug:
            var: interface
 
 Now that we have captured only index 2 of our inner list, we can further split the string up by white spaces and only keeping those strings starting with *Fa* or *Gi* and storing those items into our new list *interface*
