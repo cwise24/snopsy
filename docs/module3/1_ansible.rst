@@ -96,7 +96,8 @@ Example of connection directive missing from YAML file, you must add the ``-c`` 
 .. centered:: Fig 1
 
 Limit
--------
+------
+
 One way to reduce the all awesome power of automation (to kill everything) is to limit what hosts your playbooks run on.  This can be accomplished with ``limit`` or ``tags``.
 
 The example below we run a play on only ``host1`` @ line 1 ,but @ line 2 we run the playbook against all hosts *except* ``host1``
@@ -109,7 +110,7 @@ The example below we run a play on only ``host1`` @ line 1 ,but @ line 2 we run 
     ansible-playbook -i inventory someplay.yml --limit "all:!host1"
 
 Tags
-^^^^^
+----
 
 Adding tags to individual plays can greatly help when you only want to test or skip specific plays. 
 
@@ -156,7 +157,7 @@ Adding tags to individual plays can greatly help when you only want to test or s
 .. centered:: Fig 2
 
 Loops
----------
+------
 
 My most commonly used looping methods. In nearly all cases with_items is fine to use but you should start using loop.
 
@@ -182,7 +183,7 @@ My most commonly used looping methods. In nearly all cases with_items is fine to
          - three
 
 Conditionals
------------------
+-------------
 
 There are too many to cover and that's why we have the internet.  `Ansible Docs <https://docs.ansible.com/ansible/latest/user_guide/playbooks_error_handling.html>`_
 
