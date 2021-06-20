@@ -2,9 +2,9 @@ Module 3
 =========
 
 Ansible Extras 
-+++++++++++
+++++++++++++++
 
-This modules focus is only on Ansible { Under construction }
+This modules focus is only on Ansible. These labs can all be run from the container.
 
 
 .. toctree::
