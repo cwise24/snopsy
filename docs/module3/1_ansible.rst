@@ -182,6 +182,24 @@ My most commonly used looping methods. In nearly all cases with_items is fine to
          - two
          - three
 
+.. code-block:: yaml
+   :caption: with_items.yml 
+
+   ---
+   - hosts: all
+     gather_facts: False
+     connection: local 
+
+     tasks:
+
+     - name: A loop 
+       debug:
+         msg: "{{ item }}"
+       with_items:
+         - one
+         - two
+         - three
+
 Conditionals
 -------------
 
