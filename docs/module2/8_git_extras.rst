@@ -67,10 +67,13 @@ When creating an issue, keep in mind that you may not be working on the problem.
 Pre-Commit
 -----------------
  
-I had spent (aka wasted) time on using Jenkins to run linting tools on my code after a push triggered my pipeline.  As I was spending time trying to  *groovy* (Jenkins language) a simple for loop, I stumbled across
-an article that made total sense, Why do this?? Why have your CI tool import a project to find problems, solve them **before** commit. I agree, so below we'll cover the setup of pre-commit
+I had spent time on using Jenkins to run linting tools on my code after a push triggered my pipeline. 
+As I was spending time trying to  *groovy* (Jenkins language) a simple for loop, I stumbled across
+an article that made total sense, Why do this?? Why have your CI tool import a project to find problems?  
+Solve the problmes **before** the commit. Below we'll cover the setup of pre-commit
 
- After you have initialzed your local repo, within the ``.git`` folder you will see  ``.git/hooks`` and if we look there we will see the list of examples.
+ After you have initialzed your local repo, within the ``.git`` folder you will see  ``.git/hooks`` and if we look 
+ there we will see the list of examples.
 
  Here is a link to the pre-commit site, but I will cover how I did it locally.
 
