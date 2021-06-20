@@ -18,7 +18,8 @@ We will need to make a new entry into our inventory file:
 
 
     ---
-    - hosts: [adc]
+    - name: F5 Facts 
+      hosts: [adc]
       gather_facts: false
       connection: local
     
