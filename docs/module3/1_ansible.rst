@@ -1,21 +1,29 @@
 Ansible
 =======
 
-Debug
+Debuging
 ---------
 
-This module and setting the verbose level::
+This section we'll talk about printing messages to screen and setting the verbose level::
 
     -v
     -vv
     -vvv
     -vvvv  { connection level }
 
-will truly become your best allies as you build playbooks.  You can use debug to print registered variables to screen or even print messages.  Below I'll cover using the ``msg:`` function and 
-in a very Pythonic way, concatenating stings into our messages with ``+`` and quotes.
+The verbose levels are used when executing an ansible playbook.
+
+.. code-block:: bash 
+   :caption: Ansible verbose 
+
+   ansible-playbook -i inventory someplaybook.yaml -vvv 
+
+Debug and verbose will truly become your best allies as you build playbooks.  You can use debug to print registered variables 
+to screen or even print messages. Below I'll cover using the ``msg:`` function and in a very Pythonic way, 
+concatenating stings into our messages with ``+`` and quotes.
 
 External Vars
-------------------
+--------------
 
 Let's create a new playbook called ``ext.yml`` and use the contents below
 
