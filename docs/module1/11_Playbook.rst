@@ -56,7 +56,8 @@ Running a play
           commands: show vlan
        register: vland
 
-     - debug:
+     - name: Show registered variable
+       ansible.builtin.debug:
          var: vland
 
 This play will log into the group [ios] and get the vlan info from each S1 and S3. The information will be stored in the variable *'vland'*.
