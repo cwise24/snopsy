@@ -4,7 +4,7 @@ Ansible
 .. centered:: What is Ansible?
 
 
-According to ansible.com:
+According to `ansible.com <https://www.ansible.com/>`_:
 
 
     "Ansible is a radically simple IT automation engine that automates cloud provisioning,
