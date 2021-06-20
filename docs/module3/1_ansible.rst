@@ -1,8 +1,8 @@
 Ansible
 =======
 
-Debuging
----------
+Troubleshooting
+---------------
 
 This section we'll talk about printing messages to screen and setting the verbose level::
 
@@ -21,6 +21,13 @@ The verbose levels are used when executing an ansible playbook.
 Debug and verbose will truly become your best allies as you build playbooks.  You can use debug to print registered variables 
 to screen or even print messages. Below I'll cover using the ``msg:`` function and in a very Pythonic way, 
 concatenating stings into our messages with ``+`` and quotes.
+
+Strategy
+^^^^^^^^
+
+* linear
+* free
+* debug
 
 External Vars
 --------------
