@@ -4,7 +4,7 @@ Loop
 Now let's make use of our new variable
 
 .. code-block:: yaml
-   :emphasize-lines: 23
+   :emphasize-lines: 24
 
    ---
    - name: Looping 
