@@ -29,6 +29,7 @@ release = '3.0'
 # ones.
 extensions = [
     'sphinx.ext.autosectionlabel',
+    'sphinx.ext.autosummary',
     'sphinx.ext.autodoc',
     'sphinx.ext.doctest',
     'sphinx.ext.todo',
@@ -46,7 +47,7 @@ extensions = [
 
 nwdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
 todo_include_todos = True
-
+autosummary_generate = True
 # source_suffix = ['.rst', '.md']
 source_suffix = '.rst'
 
