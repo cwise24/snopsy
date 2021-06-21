@@ -21,7 +21,11 @@ This serves as a starting point to a much deeper training such as F5's SUPER-NET
 
 .. toctree::
    :maxdepth: 2
+   :caption: Contents:
+   :glob:
 
+   module*/module*
+   
    autoapi/index
    
 
