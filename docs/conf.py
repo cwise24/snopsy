@@ -81,7 +81,8 @@ pygments_style = 'sphinx'
 # a list of builtin themes.
 #
 #html_theme = 'alabaster'
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'bizstyle'
+#html_theme = 'sphinx_rtd_theme'
 # ---sphinx-themes-----
 #html_theme = 'solar_theme'
 #import solar_theme
