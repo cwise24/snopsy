@@ -67,7 +67,7 @@ Once that file is created and saved, let's set our up-stream dev branch and comm
 
     git add README.md
     git commit -m "new readme"
-    git push -u git@gitlab.com:<username>/ansible_lab.git dev
+    git push -u git@gitlab.com:username/ansible_lab.git dev  # make sure to use your username
 
 Now we can verify our new file and branch are present from out Gitlab page
 
