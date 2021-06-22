@@ -1,6 +1,7 @@
 Merge
 ~~~~~~
 
+Mergine allows you to combine the independent branch developments into a single branch. Git will also try and merge the different branch commit histories together for you.
 
 Let's now view our *Main* branch on Gitlab, notice our new file *README.md* is not there
 
