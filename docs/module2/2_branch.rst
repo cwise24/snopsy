@@ -7,7 +7,7 @@ Let's first take a definition straight from git [#]_ itself
                 continue to do work without messing with that main line.*"
 
 With *branches*, we can introduce (or reject) new changes into our production branch. We can only have **one** branch checked out
-at a time.
+at a time. The currently checked out branch is also referred to as the *HEAD* branch.
 
 A NetOps example of this would be to clone the repository housing the running router configs. A feature branch could be created to test and develop an improved BGP process. Once designed 
 and tested, this new BGP process can be merged into the production branch. And since this is all in Git, we have the necessary documentation:
