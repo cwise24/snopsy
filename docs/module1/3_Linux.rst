@@ -23,6 +23,7 @@ vim or visual editor
   :wq              { write quit; saves and quits vi }
   :q               { quit vi }
   :q!              { quit and do not save }
+  :set paste       { paste mode; will help to paste content }
 
 Directories
 
