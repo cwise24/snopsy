@@ -8,6 +8,8 @@ We will associate our newly generated key to be used for Gitlab connections.  Do
 
    vim .ssh/config
 
+Make sure to use the ``:set paste`` option to ensure formatting stays correct.
+
 .. image:: imgs/setpaste.png 
    :scale: 60%
    :align: center 
