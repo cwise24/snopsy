@@ -8,6 +8,10 @@ We will associate our newly generated key to be used for Gitlab connections.  Do
 
    vim .ssh/config
 
+.. image:: imgs/setpaste.png 
+   :scale: 60%
+   :align: center 
+
 .. code-block:: bash
    :caption: ssh config file
 
