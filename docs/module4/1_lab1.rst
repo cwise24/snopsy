@@ -58,3 +58,13 @@ What did I just do?
        deny all;
      }
    }
+
+.. code-block:: bash
+   :caption: Dockerfile
+
+   FROM nginx
+
+   RUN rm -f /etc/nginx/conf.d/default.conf 
+
+   COPY web.conf /etc/nginx/conf.d/web.conf
+   COPY index.html /usr/share/nginx/html/index.html 
