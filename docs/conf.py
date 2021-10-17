@@ -38,7 +38,6 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
     'sphinx.ext.graphviz',
-    'sphinxcontrib.nwdiag',
     'sphinx.ext.todo'
 ]
 
