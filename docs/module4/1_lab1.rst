@@ -6,7 +6,7 @@ In this lab you will create a Dockerfile which will be used to create a static c
 Create 
 
 - Project folder called lab1 ( mkdir ~/lab1)
-- Create files:
+- Create the following files inside the *lab1* directory
    * index.html
    * web.conf 
    * Dockerfile
@@ -68,3 +68,15 @@ What did I just do?
 
    COPY web.conf /etc/nginx/conf.d/web.conf
    COPY index.html /usr/share/nginx/html/index.html 
+
+How the Dockerfile works:
+
+FROM the publicly available Nginx container, usually Docker Hub (use this as our base image)
+**FROM nginx**
+
+RUN the Linux command to remove the default.conf file
+**RUN rm -f /etc/nginx/conf.d/default.conf** 
+
+COPY in the new files to the container during creation
+**COPY web.conf /etc/nginx/conf.d/web.conf**
+**COPY index.html /usr/share/nginx/html/index.html**
