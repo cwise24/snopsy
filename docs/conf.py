@@ -39,9 +39,6 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.graphviz',
     'sphinxcontrib.nwdiag',
-    'sphinxcontrib.rackdiag',
-    'sphinxcontrib.packetdiag',
-    'sphinxcontrib.blockdiag',
     'sphinx.ext.todo'
 ]
 
