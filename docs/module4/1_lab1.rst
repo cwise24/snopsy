@@ -37,3 +37,24 @@ What did I just do?
    <p>Demo site for training.</p>
    </body>
    </html>
+
+.. code-block:: bash 
+   :caption: web.conf 
+
+   server {
+     listen 80;
+     server_name docweb.lab.lan;
+
+     root /usr/share/nginx/html;
+     index index.html;
+
+     location / {
+
+     }
+
+     location /doc_status {
+       stub_status on;
+       allow 172.17.0.1;
+       deny all;
+     }
+   }
