@@ -1,4 +1,3 @@
 sphinxcontrib-nwdiag
 sphinxcontrib-seqdiag
 sphinxcontrib-nwdiag
-funcparserlib
