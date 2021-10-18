@@ -43,7 +43,7 @@ http://localhost:81
 
 .. code-block:: html 
    :caption: Alter text
-   :emphasize: 6
+   :emphasize-lines: 6
 
    <html>
    <head>
