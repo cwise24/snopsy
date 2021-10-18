@@ -160,10 +160,11 @@ Now we want to find and delete our now *old* customer docker image. Let's get it
 
    docker images | grep docimg 
 
-Copy the contianer id from the above step and paste it in place of the words *container_id* below
+Copy the contianer id from the above step and paste it in place of the words *container_id* below. 
 
 .. code-block:: bash 
    :caption: Delete Image 
 
    docker rmi container_id
 
+After running the *rmi* (remove image) command we should no longer see our *docimg* when running ``docker images``
