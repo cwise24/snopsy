@@ -13,3 +13,4 @@ This modules focus is only on Ansible. These labs can all be run from the contai
 
    1_lab1
    2_lab2
+   3_lab3
