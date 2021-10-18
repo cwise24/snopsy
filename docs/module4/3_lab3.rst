@@ -49,7 +49,7 @@ Now we'll need to modify the *web.conf* file for our new content
    }
 
    server {
-     listen 833;
+     listen 8333;
      server_name docweb.lab.lan;
 
      root /usr/share/nginx/html;
@@ -98,5 +98,6 @@ Once the image is ready, it's time to run our new container
    docker run -p 81:80 -p 82:8333 --name docweb -dit docnew 
 
 Navigate to 
+
 * http://localhost:81 
 * http://localhost:82
