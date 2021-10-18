@@ -122,3 +122,16 @@ Ansible Play::
     ansible-playbook -i inventory someplay.yml -e "@pass.yml"
 
 
+.. blockdiag::
+   
+    blockdiag {
+    
+        default_node_color = lightyellow;
+        default_textcolor = black;
+        default_shape = roundedbox;
+        
+        Inventory -> Play;
+        Pass.yml -> ansible.cfg  [label = "Encrypt", color = "green" ];
+        ansible.cfg -> Play  [label = "Decrypt", color = "red" ];
+        Play -> Target [label = "SSH" ];
+        }
