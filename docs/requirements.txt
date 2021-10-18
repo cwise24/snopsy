@@ -1,5 +1,5 @@
 sphinxcontrib-nwdiag
 sphinxcontrib-blockdiag
-sphinxcontrib.seqdiag
+sphinxcontrib-seqdiag
 sphinxcontrib-nwdiag
-funcparserlib
+funcparserlib == 0.3.6
