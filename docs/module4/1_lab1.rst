@@ -94,12 +94,12 @@ Build and Run the Container
 From the *lab1* directory
 
 
-.. code:: bash 
+.. code-block:: bash 
    :caption: Build image
 
    docker build -t docimg .
 
-.. code:: bash
+.. code-block:: bash
    :caption: Run Container
 
    docker run -p 81:80 --name docweb -h docweb.lab.local -dit docimg 
@@ -107,7 +107,7 @@ From the *lab1* directory
 Let's validate the new container is running. docker ps -a will show all docker processes both running and excited. Take note 
 of the column hearders. On **note** Container ID, Image, Status, Ports and Names.
 
-.. code:: bash
+.. code-block:: bash
 
    docker ps -a 
 
@@ -115,7 +115,7 @@ For additional container inspection run the command ``ifconfig``, this command i
 all the interfaces on your machine, we want to see the *docker0* interface and ip address. Typically this lives in the 
 172.17.0.0 neighborhood. Mac and Windows do **NOT** expose the docker bridge.
 
-.. code:: bash 
+.. code-block:: bash 
    :caption: Docker inspect
 
    docker inspect docweb 
@@ -123,7 +123,7 @@ all the interfaces on your machine, we want to see the *docker0* interface and i
 This command will show up all the details of our newly constructed container. You should find it's ip address within the docker0
 cidr.
 
-.. code:: bash 
+.. code-block:: bash 
    :caption: Container Shell 
 
    docker exec -it docweb nginx -t
@@ -138,7 +138,7 @@ Using your browser, navigate to
 
 Now let's view the logs from your container 
 
-.. code:: bash 
+.. code-block:: bash 
    :caption: Docker Logs 
 
    docker logs docweb 
@@ -149,20 +149,20 @@ Remove Container
 
 We will *force* remove the container, this will stop and delete it in one command. 
 
-.. code:: bash
+.. code-block:: bash
    
    docker rm -f docweb 
 
 Now we want to find and delete our now *old* customer docker image. Let's get its container id: 
 
-.. code:: bash 
+.. code-block:: bash 
    :caption: Image ID 
 
    docker images | grep docimg 
 
 Copy the contianer id from the above step and paste it in place of the words *container_id* below
 
-.. code:: bash 
+.. code-block:: bash 
    :caption: Delete Image 
 
    docker rmi container_id
