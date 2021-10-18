@@ -78,9 +78,9 @@ How the Dockerfile works:
 FROM the publicly available Nginx container, usually Docker Hub (use this as our base image)
 **FROM nginx**
 
-RUN the Linux command to remove the default.conf file <br>
-**RUN rm -f /etc/nginx/conf.d/default.conf** 
+| RUN the Linux command to remove the default.conf file
+| **RUN rm -f /etc/nginx/conf.d/default.conf** 
 
-COPY in the new files to the container during creation <br>
-**COPY web.conf /etc/nginx/conf.d/web.conf**
-**COPY index.html /usr/share/nginx/html/index.html**
+| COPY in the new files to the container during creation
+| **COPY web.conf /etc/nginx/conf.d/web.conf**
+| **COPY index.html /usr/share/nginx/html/index.html**
