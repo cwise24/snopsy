@@ -1,3 +1,4 @@
 blockdiag == 2.0.0
 sphinxcontrib-seqdiag
 sphinxcontrib-blockdiag
+setuptools < 58
