@@ -84,3 +84,25 @@ FROM the publicly available Nginx container, usually Docker Hub (use this as our
 | COPY in the new files to the container during creation
 | **COPY web.conf /etc/nginx/conf.d/web.conf**
 | **COPY index.html /usr/share/nginx/html/index.html**
+
+Build and Run the Container
++++++++++++++++++++++++++++
+
+From the *lab1* directory
+
+
+.. code:: bash 
+   :caption: Build image
+
+   docker build -t docimg .
+
+.. code:: bash
+   :caption: Run Container
+
+   docker run -p 81:80 --name docweb -h docweb.lab.local -dit docimg 
+
+Let's validate the new container is running
+
+.. code:: bash
+
+   docker ps -a 
