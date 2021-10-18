@@ -32,14 +32,13 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.autodoc',
     'sphinx.ext.doctest',
-    'sphinx.ext.todo',
     'sphinx.ext.coverage',
     'sphinx.ext.mathjax',
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
     'sphinx.ext.graphviz',
-    'sphinxcontrib.blockdiag',
-    'sphinx.ext.todo'
+    'sphinx.ext.todo',
+    'sphinxcontrib.blockdiag'
 ]
 
 blockdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'

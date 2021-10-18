@@ -1,4 +1,3 @@
 sphinxcontrib-seqdiag
 sphinxcontrib-blockdiag
-setuptools
-pillow
+funparserlib == 0.3.5
