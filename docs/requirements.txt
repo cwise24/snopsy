@@ -1,2 +1,4 @@
 sphinxcontrib-seqdiag
 sphinxcontrib-blockdiag
+setuptools
+pillow
