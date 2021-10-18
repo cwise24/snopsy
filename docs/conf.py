@@ -38,10 +38,11 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
     'sphinx.ext.graphviz',
+    'sphinxcontrib.blockdiag',
     'sphinx.ext.todo'
 ]
 
-nwdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
+blockdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
 todo_include_todos = True
 autosummary_generate = True
 # source_suffix = ['.rst', '.md']
