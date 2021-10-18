@@ -5,7 +5,11 @@ In this lab you will create a Dockerfile which will be used to create a static c
 
 Create 
 
-- Project folder called lab1 ( mkdir ~/lab1)
+- Project folder called lab1
+.. code-block:: bash
+
+   mkdir ~/lab1
+   
 - Create the following files inside the *lab1* directory
    * index.html
    * web.conf 
