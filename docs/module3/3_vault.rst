@@ -127,7 +127,6 @@ Ansible Play::
     blockdiag {
     
         default_node_color = lightyellow;
-        #default_linecolor = magenta;
         default_textcolor = black;
         default_shape = roundedbox;
         
