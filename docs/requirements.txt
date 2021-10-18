@@ -1,3 +1,4 @@
 sphinxcontrib-nwdiag
 sphinxcontrib-blockdiag
 sphinxcontrib.seqdiag
+sphinxcontrib-nwdiag
