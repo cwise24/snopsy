@@ -12,3 +12,4 @@ This modules focus is only on Ansible. These labs can all be run from the contai
    :glob:
 
    1_lab1
+   2_lab2
