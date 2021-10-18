@@ -1,4 +1,4 @@
-blockdiag == 2.0.0
+blockdiag == 1.5.4
 sphinxcontrib-seqdiag
 sphinxcontrib-blockdiag == 2.0.0
 funcparserlib
