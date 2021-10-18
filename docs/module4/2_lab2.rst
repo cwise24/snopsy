@@ -41,6 +41,8 @@ Navigate to
 http://localhost:81 
 
 
+Now, lets go to your *index.html* file in *lab2/html/index.html* and alter some text like highlighted below.
+
 .. code-block:: html 
    :caption: Alter text
    :emphasize: 6
@@ -54,3 +56,5 @@ http://localhost:81
    <p>Demo site for training.</p>
    </body>
    </html>
+
+Once your change is made, you should be able to reload your page by either Cntrl r or CMD r and observe your code update.
