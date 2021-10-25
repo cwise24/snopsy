@@ -14,8 +14,10 @@ I highly recommend VSCode and install the Docker plugin;
 Download `VSCode <https://code.visualstudio.com/>`_ 
 
 .. image:: imgs/vscodeDocker.png 
-   :scale: 70%
+   :scale: 50%
    :align: center 
+
+
 
 Create Directory and Files
 +++++++++++++++++++++++++++
