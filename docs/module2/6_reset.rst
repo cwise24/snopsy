@@ -81,9 +81,9 @@ We will now select the commit we wish to remove, in this example it's commit thr
 
 From **Fig 19** our command would be 
 
-..code::bash 
+.. code:: bash 
   
-  git revert eda398b
+   git revert eda398b
 
 Once you hit enter, you will be prompted for a revert message. Once you've added the revert message and saved ``:wq`` let's review the git log 
 
