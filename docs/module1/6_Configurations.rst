@@ -44,7 +44,7 @@ Copy the output, it should start like below:
 
 Now go to `Gitlab <https://gitlab.com/users/sign_in>`_ and create an account, once that is created we will upload your public ssh key to Gitlab (ansible_lab.pub).
 
- * Click on your icon (top right, then Preferences)
+ * Click on your icon (top right, then **Preferences**)
  * On the left hand side you should see SSH Keys
  * Paste your public key
     
