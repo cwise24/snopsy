@@ -48,7 +48,7 @@ Add this line to the example file:
    git commit -m "two"
    git log --oneline
 
-Add ing the last line in:
+Adding the last line in:
 
 .. code:: bash
    
@@ -86,7 +86,7 @@ Once you hit enter, you will be prompted for a revert message. Once you've added
   git log --oneline
 
 
-Here we can see that instead of dropping off the thrid commit message like using ``reset`` would, with ``revert`` it actually adds an extra commit and keeps previous commit messages. This is why revert is the preferred 
+Here we can see that instead of dropping off the third commit message like using ``reset`` would, with ``revert`` it actually adds an extra commit and keeps previous commit messages. This is why revert is the preferred 
 rollback method.
 
 .. image:: imgs/gitlog_revert.png
