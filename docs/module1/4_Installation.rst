@@ -6,6 +6,7 @@ MacOS
 Install `homebrew <https://howtogeek.com/211541/homebrew-for-os-x-easily-installs-desktop-apps-and-terminal-utilities/>`_
 
 - brew install python3
+- brew install git
 - pip3 install ansible
 
 Linux
@@ -13,6 +14,12 @@ Linux
 Install python3-pip (apt/yum)
 
 - pip3 install ansible
+  
+Git   
+
+- apt-get install git 
+- yum install git
+- dnf install git 
 
 Windows
 ~~~~~~~~
@@ -35,6 +42,7 @@ Follow this `guide <https://nickjanetakis.com/blog/setting-up-docker-for-windows
 
 In your newly configured WSL shell run the following commands: 
  * apt install python3-pip
+ * apt install git 
  * pip3 install ansible
 
 OS packages
