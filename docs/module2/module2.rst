@@ -20,6 +20,6 @@ a complete audit trail of changes.
    3_merge
    4_pull
    5_operations
-   6_reset
+   6_rollingback
    7_pipeline
    8_git_extras.rst
