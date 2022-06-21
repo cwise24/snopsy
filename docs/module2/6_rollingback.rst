@@ -16,6 +16,7 @@ Let's create a file named **example** then make the following edits and commits
    
    mkdir  resetlab
    cd resetlab
+   git config --global init.defaultBranch main
    git init
    vim example
 
