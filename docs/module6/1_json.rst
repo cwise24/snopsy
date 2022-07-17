@@ -2,6 +2,15 @@ JSON
 =====
 
 JSON data structure
+Objects and Arrays
+Working JSON data in VIM
+
+Using the `set paste` command in VIM
+
+.. figure:: imgs/setpaste.png
+   :scale: 50%
+   :align: center
+.. centered:: Fig 1
 
 Parsing
 --------
