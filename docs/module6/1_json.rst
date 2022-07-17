@@ -83,6 +83,28 @@ For this first lab, you'll need to copy the below and create a new file *datacen
 
    cat datacenter.json | jq '.["dataCenter"][]["switch"]'
 
+.. code-block:: json
+   :caption: Example Output
+
+   [
+     {
+       "id": 1,
+       "manufacturer": "Cisco",
+       "model": "9600"
+     },
+     {
+       "id": 6,
+       "manufacturer": "Cisco",
+       "model": "9400"
+     },
+     {
+       "id": 2,
+       "manufacturer": "Juniper",
+       "model": "4300"
+     }
+   ]
+
+
 Create a custom JSON object output based on keys:
 
 .. code-block:: bash
