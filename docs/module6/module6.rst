@@ -11,6 +11,4 @@ This modules focus is on parsing JSON data.
    :maxdepth: 1
    :glob:
 
-   1_basics
-   2_vim
-   3_tmux
+   1_json
