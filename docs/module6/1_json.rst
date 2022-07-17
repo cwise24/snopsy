@@ -47,7 +47,7 @@ In these examples, you'll be working with **jq** to extract specific JSON data.
       ]
 
 2 styles used in parsing JSON data:
-* dot notation       `$.data[0].gid`         response: 001   
-* bracket notation   `$.['data'][0]['gid']`  response: 001   
+ * dot notation       `$.data[0].gid`         response: 001   
+ * bracket notation   `$.['data'][0]['gid']`  response: 001   
 
 .. note:: In Ansible, bracket notation is preferred
