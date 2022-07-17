@@ -12,6 +12,14 @@ Using the `set paste` command in VIM
    :align: center
 .. centered:: Fig 1
 
+What about when you use set paste and the formatting is still a mess?  No worries, use this python command in VIM
+
+.. figure:: imgs/json_tool.png 
+   :scale:
+   :align: center
+.. centered:: Fig 2
+
+
 Parsing
 --------
 
@@ -39,7 +47,7 @@ In these examples, you'll be working with **jq** to extract specific JSON data.
       ]
 
 2 styles used in parsing JSON data:
-* dot notation       `$.data[0].gid`         response: 001
-* bracket notation   `$.['data'][0]['gid']`  response: 001
+* dot notation       `$.data[0].gid`         response: 001   
+* bracket notation   `$.['data'][0]['gid']`  response: 001   
 
 .. note:: In Ansible, bracket notation is preferred
