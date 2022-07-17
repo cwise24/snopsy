@@ -69,6 +69,20 @@ Both of these examples reference the same value **(001)**. Bracket notation alwa
 some keys collide with attributes and methods of python dictionaries. Use bracket notation if you use keys which start and end 
 with two uderscores (which are reserved for special meaning in python) or are any of the known public attributes. (add link from Ansible)
 
+For this first lab, you'll need to copy the below and create a new file *datacenter.json*. 
+
 .. literalinclude:: ../../datacenter.json
    :caption: datacenter.json
    :language: json
+
+``cat datacenter.json | jq '.[datacenter]' ``
+
+``cat datacenter.json | jq '.[datacenter][]["switch"]' ``
+
+Create a custom JSON object output based on keys:
+
+``cat datacenter.json | jq '.[datacenter][]["switch"] | {manufacturer,model}' ``
+
+
+
+``cat datacenter.json | jq '.[datacenter][]["switch"][] | select(.["manufacturer == "Cisco")' ``
