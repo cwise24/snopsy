@@ -15,7 +15,7 @@ Using the `set paste` command in VIM
 What about when you use set paste and the formatting is still a mess?  No worries, use this python command in VIM
 
 .. figure:: imgs/json_tool.png 
-   :scale:
+   :scale: 50%
    :align: center
 .. centered:: Fig 2
 
