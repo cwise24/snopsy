@@ -75,7 +75,7 @@ For this first lab, you'll need to copy the below and create a new file *datacen
    :caption: datacenter.json
    :language: json
 
-`` cat datacenter.json | jq '.[datacenter]' ``
+`` cat datacenter.json | jq \\'.[datacenter]\\' ``
 
 `` cat datacenter.json | jq '.[datacenter][]["switch"]' ``
 
