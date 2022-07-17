@@ -90,7 +90,8 @@ Create a custom JSON object output based on keys:
    cat datacenter.json | jq '.["dataCenter"][]["switch"][] | {manufacturer,model}'
 
 
+Only output switches where the **manufacturer** is *Cisco*:
 
 .. code-block:: bash
   
-   cat datacenter.json | jq '.["dataCenter"][]["switch"][] | select(.["manufacturer == "Cisco")'
+   cat datacenter.json | jq '.["dataCenter"][]["switch"][] | select(.["manufacturer"] == "Cisco")'
