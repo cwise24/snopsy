@@ -1,38 +1,40 @@
 {
     "dataCenter": [
-        "switch": [
-            {
-                "id": 1,
-                "manufacturer": "Cisco",
-                "model": "9600"
-            },
-            {
-                "id": 6,
-                "manufacturer": "Cisco",
-                "model": "9400"
-            },
-            {
-                "id": 2,
-                "manufacturer": "Juniper",
-                "model": "4300"
-            },
-        ],
-        "routing": [
-            {
-                "id": 3,
-                "name": "ospf",
-                "dynamic": true
-            },
-            {
-                "id": 4,
-                "name": "isis",
-                "dynamic": true
-            },
-            {
-                "id": 5,
-                "name": "static",
-                "dynamic": false
-            },
-        ]
+        {
+            "switch": [
+                {
+                    "id": 1,
+                    "manufacturer": "Cisco",
+                    "model": "9600"
+                },
+                {
+                    "id": 6,
+                    "manufacturer": "Cisco",
+                    "model": "9400"
+                },
+                {
+                    "id": 2,
+                    "manufacturer": "Juniper",
+                    "model": "4300"
+                }
+            ],
+            "routing": [
+                {
+                    "id": 3,
+                    "name": "ospf",
+                    "dynamic": true
+                },
+                {
+                    "id": 4,
+                    "name": "isis",
+                    "dynamic": true
+                },
+                {
+                    "id": 5,
+                    "name": "static",
+                    "dynamic": false
+                }
+            ]
+        }
     ]
 }
