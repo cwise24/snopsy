@@ -87,7 +87,7 @@ Create a custom JSON object output based on keys:
 
 .. code-block:: bash
    
-   cat datacenter.json | jq '.["dataCenter"][]["switch"] | {manufacturer,model}'
+   cat datacenter.json | jq '.["dataCenter"][]["switch"][] | {manufacturer,model}'
 
 
 
