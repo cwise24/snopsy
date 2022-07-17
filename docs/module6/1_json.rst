@@ -75,14 +75,14 @@ For this first lab, you'll need to copy the below and create a new file *datacen
    :caption: datacenter.json
    :language: json
 
-``cat datacenter.json | jq '.[datacenter]' ``
+``` cat datacenter.json | jq '.[datacenter]' ```
 
-``cat datacenter.json | jq '.[datacenter][]["switch"]' ``
+```cat datacenter.json | jq '.[datacenter][]["switch"]' ```
 
 Create a custom JSON object output based on keys:
 
-``cat datacenter.json | jq '.[datacenter][]["switch"] | {manufacturer,model}' ``
+```cat datacenter.json | jq '.[datacenter][]["switch"] | {manufacturer,model}' ```
 
 
 
-``cat datacenter.json | jq '.[datacenter][]["switch"][] | select(.["manufacturer == "Cisco")' ``
+```cat datacenter.json | jq '.[datacenter][]["switch"][] | select(.["manufacturer == "Cisco")' ```
