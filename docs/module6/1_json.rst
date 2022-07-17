@@ -47,9 +47,10 @@ In these examples, you'll be working with **jq** to extract specific JSON data.
         }
       ]
 
-2 styles used in parsing JSON data:
+Using the example data above, you can use either of the 2 styles in parsing JSON data noted below.
 
 .. list-table:: JSON Notations
+   :align: center
    :header-rows: 1
 
    * - Notation Name 
@@ -63,3 +64,11 @@ In these examples, you'll be working with **jq** to extract specific JSON data.
      - 001
 
 .. note:: In Ansible, bracket notation is preferred
+
+Both of these examples reference the same value **(001)**. Bracket notation always works. Dot notation can cause problems because
+some keys collide with attributes and methods of python dictionaries. Use bracket notation if you use keys which start and end 
+with two uderscores (which are reserved for special meaning in python) or are any of the known public attributes. (add link from Ansible)
+
+.. literalinclude:: ../../datacenter.json
+   :caption: datacenter.json
+   :language: json
