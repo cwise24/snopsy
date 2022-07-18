@@ -169,14 +169,14 @@ Using  variable substitution with **jq**
  * **--arg** - treats the variable as a string (Example --arg foo 123 will bind $foo to "123")
  * **--argjson** - treats the variable as integer (Example --argjson foo 123, $foo will have the value 123)
  * **-r** - raw output - will directly to standard out; unformated 
-  
+
 .. code-block:: bash 
-   :caption:
+   :caption: arg
 
    cat datacenter.json | jq --arg idnum Cisco '.["dataCenter"][]["switch"][] | select(.["manufacturer"] == $idnum)'
 
 .. code-block:: json
-   :caption:
+   :caption: arg output
 
    {
      "id": 1,
@@ -190,12 +190,12 @@ Using  variable substitution with **jq**
    }
 
 .. code-block:: bash 
-   :caption: 
+   :caption: argjson
 
    cat datacenter.json | jq --argjson idnum 4 '.["dataCenter"][]["routing"][] | select(.["id"] == $idnum)'
 
 .. code-block:: json 
-   :caption: 
+   :caption: argjson Output
 
    {
      "id": 4,
