@@ -49,6 +49,7 @@ In these examples, you'll be working with **jq** to extract specific JSON data.
           "data_type": "json"
         }
       ]
+    }
 
 Using the example data above, you can use either of the 2 styles in parsing JSON data noted below.
 
