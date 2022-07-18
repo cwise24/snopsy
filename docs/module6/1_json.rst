@@ -176,3 +176,11 @@ Using  variable substitution with **jq**
      "name": "isis",
      "dynamic": true
    }
+
+Dot Notation
++++++++++++++
+
+.. code-block:: bash
+   :caption: dot notation
+
+   cat datacenter.json| jq --arg idnum Cisco '.dataCenter[].switch[] | select(.manufacturer == $idnum)'
