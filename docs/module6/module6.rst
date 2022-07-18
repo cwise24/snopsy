@@ -1,11 +1,12 @@
 Module 6
 =========
 
-JavaScript Object Notation or JSON 
-++++++++++++++++++++++++++++++++++++
+JSON 
++++++
 
-JSON data structure
+JavaScript Object Notation or JSON data structure
 Objects and Arrays
+
 Working JSON data in VIM
 
 Using the ``set paste`` command in VIM
