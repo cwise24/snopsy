@@ -1,8 +1,8 @@
 Module 6
 =========
 
-JSON 
-+++++
+JavaScript Object Notation or JSON 
+++++++++++++++++++++++++++++++++++++
 
 JSON data structure
 Objects and Arrays
