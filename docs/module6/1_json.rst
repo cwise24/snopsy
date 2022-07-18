@@ -111,9 +111,39 @@ Create a custom JSON object output based on keys:
    
    cat datacenter.json | jq '.["dataCenter"][]["switch"][] | {manufacturer,model}'
 
+.. code-block:: json
+   :caption: Key Output
+
+   {
+       "manufacturer": "Cisco",
+       "model": "9600"
+     }
+     {
+       "manufacturer": "Cisco",
+       "model": "9400"
+     }
+     {
+       "manufacturer": "Juniper",
+       "model": "4300"
+    }
+
 
 Only output switches where the **manufacturer** is *Cisco*:
 
 .. code-block:: bash
   
    cat datacenter.json | jq '.["dataCenter"][]["switch"][] | select(.["manufacturer"] == "Cisco")'
+
+.. code-block:: json 
+   :caption: Filter Output
+
+   {
+     "id": 1,
+     "manufacturer": "Cisco",
+     "model": "9600"
+   }
+   {
+     "id": 6,
+     "manufacturer": "Cisco",
+     "model": "9400"
+   }
