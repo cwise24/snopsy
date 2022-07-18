@@ -166,8 +166,8 @@ Output only the model numbers
 
 Using  variable substitution with **jq** 
 
- * **\-\-arg** - treats the variable as a string (Example \\-\\-arg foo 123 will bind $foo to "123")
- * **\\-\\-argjson** - treats the variable as integer (Example \\-\\-argjson foo 123, $foo will have the value 123)
+ * **\-\-arg** - treats the variable as a string (Example \-\-arg foo 123 will bind $foo to "123")
+ * **\-\-argjson** - treats the variable as integer (Example \-\-argjson foo 123, $foo will have the value 123)
  * **-r** - raw output - will directly to standard out; unformated 
 
 .. code-block:: bash 
