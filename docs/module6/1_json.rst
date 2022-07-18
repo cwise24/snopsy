@@ -24,8 +24,8 @@ What about when you use set paste and the formatting is still a mess?  No worrie
 .. centered:: Fig 2
 
 
-Parsing
---------
+Parsing with JQ
+----------------
 
 In these examples, you'll be working with **jq** to extract specific JSON data.
 
