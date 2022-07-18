@@ -53,6 +53,9 @@ For this first lab, you'll need to copy the below and create a new file *datacen
    :caption: datacenter.json
    :language: json
 
+Bracket Notation
++++++++++++++
+
 .. code-block:: bash 
    
    cat datacenter.json | jq '.["dataCenter"]'
