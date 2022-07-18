@@ -17,7 +17,9 @@
                     "manufacturer": "Juniper",
                     "model": "4300"
                 }
-            ],
+            ]
+        },
+        {
             "routing": [
                 {
                     "id": 3,
