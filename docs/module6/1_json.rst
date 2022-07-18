@@ -54,15 +54,26 @@ For this first lab, you'll need to copy the below and create a new file *datacen
    :language: json
 
 Bracket Notation
-+++++++++++++
+++++++++++++++++
+
+Print out the json file starting at the root level object *dataCenter*
 
 .. code-block:: bash 
    
    cat datacenter.json | jq '.["dataCenter"]'
 
+Print out the array of objects under *switch*, notice that you must include the full array of objects in dataCenter as switch is found in 
+that array:
+
 .. code-block:: bash 
 
    cat datacenter.json | jq '.["dataCenter"][]["switch"]'
+
+Another way we could express this, is to return only the first element of the *dataCenter* array:
+
+.. code-block:: bash 
+
+   cat datacenter.json | jq '.["dataCenter"][0]'
 
 .. code-block:: json
    :caption: Example Output
