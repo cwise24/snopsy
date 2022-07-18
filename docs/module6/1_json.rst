@@ -156,10 +156,49 @@ Output only the model numbers
 
 .. code-block:: bash 
    
-   cat datacenter.json| jq '.["dataCenter"][]["switch"][] | select(.["manufacturer"] == "Cisco")["model"]'
+   cat datacenter.json | jq '.["dataCenter"][]["switch"][] | select(.["manufacturer"] == "Cisco")["model"]'
 
 .. code-block:: json
    :caption: Model Only 
 
    "9600"
    "9400"
+
+Using  variable substitution with **jq** 
+
+ * **--arg** - treats the variable as a string (Example --arg foo 123 will bind $foo to "123")
+ * **--argjson** - treats the variable as integer (Example --argjson foo 123, $foo will have the value 123)
+ * **-r** - raw output - will directly to standard out; unformated 
+  
+.. code-block:: bash 
+   :caption:
+
+   cat datacenter.json | jq --arg idnum Cisco '.["dataCenter"][]["switch"][] | select(.["manufacturer"] == $idnum)'
+
+.. code-block:: json
+   :caption:
+
+   {
+     "id": 1,
+     "manufacturer": "Cisco",
+     "model": "9600"
+   }
+   {
+     "id": 6,
+     "manufacturer": "Cisco",
+     "model": "9400"
+   }
+
+.. code-block:: bash 
+   :caption: 
+
+   cat datacenter.json | jq --argjson idnum 4 '.["dataCenter"][]["routing"][] | select(.["id"] == $idnum)'
+
+.. code-block:: json 
+   :caption: 
+
+   {
+     "id": 4,
+     "name": "isis",
+     "dynamic": true
+   }
