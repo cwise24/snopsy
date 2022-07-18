@@ -150,3 +150,15 @@ Only output switches where the **manufacturer** is *Cisco*:
      "manufacturer": "Cisco",
      "model": "9400"
    }
+
+Output only the model numbers 
+
+.. code-block:: bash 
+   
+   cat datacenter.json| jq '.["dataCenter"][]["switch"][] | select(.["manufacturer"] == "Cisco")["model"]'
+
+.. code-block:: json
+   :caption: Model Only 
+
+   "9600"
+   "9400"
