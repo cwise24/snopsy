@@ -17,7 +17,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'SNOPsy'
-copyright = '2022, Chad Wise'
+copyright = '2023, Chad Wise'
 author = 'Chad Wise'
 
 # The full version, including alpha/beta/rc tags
