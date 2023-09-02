@@ -24,8 +24,7 @@ Let's first display the file with only recursion
 
 You should now see the json output has been *flattened* by one level.
 
-.. code-block:: json 
-   :caption: original file 
+.. code-block:: json
 
    {
      "resultsPerPage": 1,
