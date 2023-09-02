@@ -41,8 +41,8 @@ You should now see the json output has been *flattened* by one level.
    1
    0 
    1 
-   "NVD_CVE", 
-   "2.0", 
+   "NVD_CVE" 
+   "2.0" 
    [
    ....
    ]
