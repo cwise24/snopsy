@@ -9,23 +9,42 @@ but can be viewed from the `repository`_
 
 .. _repository: https://raw.githubusercontent.com/cwise24/snopsy/wise_jsonfile/cvss.json
 
-.. code-block:: json
-   :caption: json file
 
-   {
-        "cars":
-   }
+The task is, we need to sort the scores of the CVE, **HOWEVER** if you viewed the file we have two scoring metrics
+- cvssMetricsV2
+- cvssMetricsV31 
 
+We'll want both base scores along with what is the corresponding metric version.
 
 Let's first display the file with only recursion 
 
 .. code-block:: bash 
 
-    cat file.json | jq ..
+    curl https://raw.githubusercontent.com/cwise24/snopsy/wise_jsonfile/cvss.json | jq ..
 
-You should see something like 
+You should now see the json output has been *flattened* by one level.
 
 .. code-block:: json 
-   :caption: output 
-   
-   "blah": "", 
+   :caption: original file 
+
+   {
+     "resultsPerPage": 1,
+     "startIndex": 0, 
+     "totalResults": 1, 
+     "format": "NVD_CVE", 
+     "version": "2.0", 
+     "Vulnerabilities": [
+     ....
+     ]
+
+.. code-block:: json 
+   :caption: recursive output 
+
+   1
+   0 
+   1 
+   "NVD_CVE", 
+   "2.0", 
+   [
+   ....
+   ]
