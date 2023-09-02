@@ -46,3 +46,7 @@ You should now see the json output has been *flattened* by one level.
    [
    ....
    ]
+
+.. code-block:: bash 
+
+   curl https://raw.githubusercontent.com/cwise24/snopsy/wise_jsonfile/cvss.json | jq '.. | objects | .cvssData?|select(. != null)|{version, baseScore}'
