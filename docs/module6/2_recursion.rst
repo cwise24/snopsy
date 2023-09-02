@@ -47,6 +47,61 @@ You should now see the json output has been *flattened* by one level.
    ....
    ]
 
+Focusing in on the section we want to extract:
+
+.. code-block:: json 
+
+   {
+     "cvssMetricV31": [
+       {
+         "source": "nvd@nist.gov",
+         "type": "Primary",
+         "cvssData": {
+           "version": "3.1",
+           "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+           "attackVector": "NETWORK",
+           "attackComplexity": "LOW",
+           "privilegesRequired": "NONE",
+           "userInteraction": "REQUIRED",
+           "scope": "CHANGED",
+           "confidentialityImpact": "LOW",
+           "integrityImpact": "LOW",
+           "availabilityImpact": "NONE",
+           "baseScore": 6.1,
+           "baseSeverity": "MEDIUM"
+         },
+         "exploitabilityScore": 2.8,
+         "impactScore": 2.7
+       }
+     ],
+     "cvssMetricV2": [
+       {
+         "source": "nvd@nist.gov",
+         "type": "Primary",
+         "cvssData": {
+           "version": "2.0",
+           "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+           "accessVector": "NETWORK",
+           "accessComplexity": "MEDIUM",
+           "authentication": "NONE",
+           "confidentialityImpact": "NONE",
+           "integrityImpact": "PARTIAL",
+           "availabilityImpact": "NONE",
+           "baseScore": 4.3
+         },
+         "baseSeverity": "MEDIUM",
+         "exploitabilityScore": 8.6,
+         "impactScore": 2.9,
+         "acInsufInfo": false,
+         "obtainAllPrivilege": false,
+         "obtainUserPrivilege": false,
+         "obtainOtherPrivilege": false,
+         "userInteractionRequired": true
+       }
+     ]
+    }
+
+
 .. code-block:: bash 
 
    curl https://raw.githubusercontent.com/cwise24/snopsy/wise_jsonfile/cvss.json | jq '.. | objects | .cvssData?|select(. != null)|{version, baseScore}'
