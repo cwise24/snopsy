@@ -5,7 +5,7 @@ Say you'd want to search a returned json response for certain values, however so
 need to write custom filters parse the content twice. What if you could "flatten" out the json data. Let's do this with Recursive Decent **..**.
 
 We'll use a real world example for this lab. Using the NIST National Vulnerability Database (NVD) I have pulled down the json output for *CVE-2022-34305*. The file is large
-but can be viewed from the `repository`_
+but can be viewed from the `repository`_.
 
 .. _repository: https://raw.githubusercontent.com/cwise24/snopsy/wise_jsonfile/cvss.json
 
@@ -48,7 +48,7 @@ You should now see the json output has been *flattened* by one level.
    ]
 
 Focusing in on the section we want to extract, we can see we still have a few layers to go:
- - cvssMetric*
+ - cvssMetricV*
  - cvssData
  - version, baseScore
 
@@ -104,7 +104,23 @@ Focusing in on the section we want to extract, we can see we still have a few la
      ]
     }
 
+We want a way to run through all these objects *cvssMetricsV* to extract data from the *cvssData* array. 
+Knowing the name of the object *cvssData* allows us to use the object identifier *.cvssData?* to filter on.
+
+.. code-block:: bash 
+  
+   curl https://raw.githubusercontent.com/cwise24/snopsy/wise_jsonfile/cvss.json | jq '.. | .cvssData?'
+
+
+This now returns both sets of *cvssData* data blocks (and a lot of null data). Lets form our customer json object:
+
+.. code-block:: bash 
+  
+   curl https://raw.githubusercontent.com/cwise24/snopsy/wise_jsonfile/cvss.json | jq '.. | .cvssData? | {version, baseScore}'
+
+
+And now to remove all the null data, our final filter 
 
 .. code-block:: bash 
 
-   curl https://raw.githubusercontent.com/cwise24/snopsy/wise_jsonfile/cvss.json | jq '.. | objects | .cvssData?|select(. != null)|{version, baseScore}'
+   curl https://raw.githubusercontent.com/cwise24/snopsy/wise_jsonfile/cvss.json | jq '.. | .cvssData?|select(. != null)|{version, baseScore}'
