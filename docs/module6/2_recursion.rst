@@ -37,7 +37,6 @@ You should now see the json output has been *flattened* by one level.
      ]
 
 .. code-block:: json 
-   :caption: recursive output 
 
    1
    0 
