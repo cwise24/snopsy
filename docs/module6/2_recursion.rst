@@ -112,11 +112,31 @@ Knowing the name of the object *cvssData* allows us to use the object identifier
    curl https://raw.githubusercontent.com/cwise24/snopsy/wise_jsonfile/cvss.json | jq '.. | .cvssData?'
 
 
-This now returns both sets of *cvssData* data blocks (and a lot of null data). Lets form our customer json object:
+This now returns both sets of *cvssData* data blocks (and a lot of null data). Lets form our custom json object:
 
 .. code-block:: bash 
   
    curl https://raw.githubusercontent.com/cwise24/snopsy/wise_jsonfile/cvss.json | jq '.. | .cvssData? | {version, baseScore}'
+
+
+.. code-block:: json 
+
+    {
+      "version": null,
+      "baseScore": null
+    }
+    {
+      "version": "3.1",
+      "baseScore": 6.1
+    }
+    {
+      "version": null,
+      "baseScore": null
+    }
+    {
+      "version": "2.0",
+      "baseScore": 4.3
+    }
 
 
 And now to remove all the null data, our final filter 
@@ -124,3 +144,14 @@ And now to remove all the null data, our final filter
 .. code-block:: bash 
 
    curl https://raw.githubusercontent.com/cwise24/snopsy/wise_jsonfile/cvss.json | jq '.. | .cvssData?|select(. != null)|{version, baseScore}'
+
+.. code-block:: json 
+
+   {
+    "version": "3.1",
+    "baseScore": 6.1
+   }
+   {
+    "version": "2.0",
+    "baseScore": 4.3
+   }
