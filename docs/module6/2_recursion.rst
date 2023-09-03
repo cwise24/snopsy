@@ -10,9 +10,9 @@ but can be viewed from the `repository`_.
 .. _repository: https://raw.githubusercontent.com/cwise24/snopsy/main/cvss.json
 
 
-The task
+The Task
 
-We need to sort the scores of the CVE, **HOWEVER** , if you viewed the file we have two scoring metrics:
+We need to obtain the base score of the CVE, **HOWEVER** , if you viewed the file we have two scoring metrics:
 
  - cvssMetricsV2
  - cvssMetricsV31 
