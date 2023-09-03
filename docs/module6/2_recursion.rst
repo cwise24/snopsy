@@ -10,7 +10,7 @@ but can be viewed from the `repository`_.
 .. _repository: https://raw.githubusercontent.com/cwise24/snopsy/wise_jsonfile/cvss.json
 
 
-The task is, we need to sort the scores of the CVE, **HOWEVER** if you viewed the file we have two scoring metrics
+The task is, we need to sort the scores of the CVE, **HOWEVER**, if you viewed the file we have two scoring metrics:
  - cvssMetricsV2
  - cvssMetricsV31 
 
@@ -37,7 +37,8 @@ You should now see the json output has been *flattened* by one level.
      ]
 
 .. code-block:: json 
-
+   :caption: recursion 
+   
    1
    0 
    1 
