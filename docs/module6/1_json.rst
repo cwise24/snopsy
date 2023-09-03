@@ -2,7 +2,7 @@ Parsing with JQ
 ===============
 
 In these examples, you'll be working with **jq** to extract specific JSON data. For more inforamtion please see the **jq** documentation
-located `here`_
+located `here`_.
 
 .. _here: https://jqlang.github.io/jq/manual/
 
