@@ -7,7 +7,7 @@ need to write custom filters parse the content twice. What if you could "flatten
 We'll use a real world example for this lab. Using the NIST National Vulnerability Database (NVD) I have pulled down the json output for *CVE-2022-34305*. The file is large
 but can be viewed from the `repository`_.
 
-.. _repository: https://raw.githubusercontent.com/cwise24/snopsy/wise_jsonfile/cvss.json
+.. _repository: https://raw.githubusercontent.com/cwise24/snopsy/main/cvss.json
 
 
 The task is, we need to sort the scores of the CVE, **HOWEVER**, if you viewed the file we have two scoring metrics:
@@ -20,7 +20,7 @@ Let's first display the file with only recursion
 
 .. code-block:: bash 
 
-    curl https://raw.githubusercontent.com/cwise24/snopsy/wise_jsonfile/cvss.json | jq ..
+    curl https://raw.githubusercontent.com/cwise24/snopsy/main/cvss.json | jq ..
 
 You should now see the json output has been *flattened* by one level.
 
