@@ -38,7 +38,7 @@ You should now see the json output has been *flattened* by one level.
 
 .. code-block:: json 
    :caption: recursion 
-   
+
    1
    0 
    1 
@@ -54,6 +54,7 @@ Focusing in on the section we want to extract, we can see we still have a few la
  - version, baseScore
 
 .. code-block:: json 
+   :emphasize-lines: 2,6,7,17,24,28,29,37
 
    {
      "cvssMetricV31": [
