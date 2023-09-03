@@ -12,7 +12,7 @@ but can be viewed from the `repository`_.
 
 The task
 
-We need to sort the scores of the CVE, **HOWEVER**, if you viewed the file we have two scoring metrics:
+We need to sort the scores of the CVE, **HOWEVER** , if you viewed the file we have two scoring metrics:
  - cvssMetricsV2
  - cvssMetricsV31 
 
