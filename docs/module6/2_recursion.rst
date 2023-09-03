@@ -13,6 +13,7 @@ but can be viewed from the `repository`_.
 The task
 
 We need to sort the scores of the CVE, **HOWEVER** , if you viewed the file we have two scoring metrics:
+
  - cvssMetricsV2
  - cvssMetricsV31 
 
@@ -51,6 +52,7 @@ You should now see the json output has been *flattened* by one level.
    ]
 
 Focusing in on the section we want to extract, we can see we still have a few layers to go:
+
  - cvssMetricV*
  - cvssData
  - version, baseScore
