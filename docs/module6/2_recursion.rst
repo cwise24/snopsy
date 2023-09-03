@@ -110,7 +110,7 @@ Focusing in on the section we want to extract, we can see we still have a few la
      ]
     }
 
-We want a way to run through all these objects *cvssMetricsV* to extract data from the *cvssData* array. 
+We want a way to run through all these objects *cvssMetricsV\** to extract data from the *cvssData* array. 
 Knowing the name of the object *cvssData* allows us to use the object identifier *.cvssData?* to filter on.
 
 .. code-block:: bash 
