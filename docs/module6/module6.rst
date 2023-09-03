@@ -7,10 +7,11 @@ JSON
 JavaScript Object Notation or simply called *JSON* is a very simple data structure. The primary compenents of this structure is
 "key: value" pairs house in *objects* or *arrays* or **both**.
 
-Object
+**Object**
+
 An object in JSON is indicated by ``{}`` and contains key:value pairs.
 
-Array
+**Array**
 
 An array in JSON is indicated by ``[]`` and it's elements can be accessed by it's index(elements start at zero).
 
