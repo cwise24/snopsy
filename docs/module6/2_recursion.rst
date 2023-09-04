@@ -150,7 +150,7 @@ And now to remove all the null data, our final filter
 
 .. code-block:: bash 
 
-   curl https://raw.githubusercontent.com/cwise24/snopsy/main/cvss.json | jq '.. | .cvssData?|select(. != null)|{version, baseScore}'
+   curl https://raw.githubusercontent.com/cwise24/snopsy/main/cvss.json | jq '.. | .cvssData?|objects|{version, baseScore}'
 
 .. code-block:: json 
 
