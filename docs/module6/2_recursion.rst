@@ -162,3 +162,10 @@ And now to remove all the null data, our final filter
     "version": "2.0",
     "baseScore": 4.3
    }
+
+Now, can all this be accomplished with the above? Yes it can, but you'd have to break down a lot of objects/arrays
+
+.. code-block:: bash 
+   :caption: no recursion
+
+   curl https://raw.githubusercontent.com/cwise24/snopsy/main/cvss.json | jq '.["vulnerabilities"][][]["metrics"][][]["cvssData"]|{version,baseScore}'
