@@ -287,7 +287,7 @@ Let's create a new playbook called *getrepo.yml* and add the code below:
           dest: ~/ansible_lab/snopsy.hostvars
           clone: yes
           force: yes 
-        when: dir_exists.stat.exists == false 
+        when: dir_exits["stat"]["exists"] == false 
 
 Now to execute: ``ansible-playbook -i "localhost," getrepo.yml``
 
