@@ -23,8 +23,7 @@ Let's first display the file with only recursion
 
 .. code-block:: bash 
 
-    curl https://raw.githubusercontent.com/cwise24/snopsy/main/cvss.json | jq ..
-
+    curl https://raw.githubusercontent.com/cwise24/snopsy/main/cvss.json | jq '.. []'
 You should now see the json output has been *flattened* by one level.
 
 .. code-block:: json
