@@ -106,7 +106,7 @@ download artifacts (if any) generated.
 
 .. centered:: Fig 33
 
-You can also click on CI/CD -> Jobs and the Job number to view the logs from Gitlab Runner (Fig 4)
+You can also click on Build -> Jobs and the Job number to view the logs from Gitlab Runner (Fig 4)
 
 .. figure:: imgs/pipeline3.png
    :scale: 60%
