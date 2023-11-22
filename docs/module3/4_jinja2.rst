@@ -79,3 +79,40 @@ This example (thanks to Forrest Crenshaw @F5 on `Linklight <https://ansible.gith
                   {{comma()}} "{{ hostvars[mem]['ansible_host'] }}"
                 {% endfor %}
                 ]
+
+You can Jinja2 functions on an online parser at [jinja.quantprogramming.com](jinja.quantprogramming.com).
+
+In this example you can use the online parser to run your tempate code and supply the associated YAML values.
+
+.. code-block:: json
+   : caption: Jinja Template
+
+    {
+      "allowed-ip": [
+        {% set comma = joiner(",") %}
+        {% for acl in acls %}{{ comma() }}
+          {
+            "name": "{{ acl.acl_name }}",
+            "config": {
+                "ipv4": {
+                    "address": "{{ acl.acl_ip }}",
+                    "prefix-length": "{{ acl.acl_prefixLength }}",
+                    "port": {{ acl.acl_port }}
+                }
+            }
+          }{% endfor %}
+      ]
+    }
+
+.. code-block:: yaml
+   :caption: Values(YAML)
+
+   acls:
+     - acl_name: test
+       acl_ip: 10.1.10.11
+       acl_prefixLength: 24
+       acl_port: 22
+     - acl_name: test
+       acl_ip: 10.1.10.12
+       acl_prefixLength: 24
+       acl_port: 22
