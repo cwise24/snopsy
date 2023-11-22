@@ -310,7 +310,7 @@ If you now look at the files in your **snopsy.hostvars** directory you will also
    ---
    - name: Show hostvar use cases
      hosts: all
-     gather_facts: no
+     gather_facts: false
    
      tasks:
    
@@ -349,7 +349,7 @@ Lookup
 .. code-block:: yaml
    :caption: File contents to variable
    
-    app_cert: "{{ lookup('file', '/home/user/roles/role_certs/files/as3.lab.local.crt') }}"
+    app_cert: "{{ lookup('ansible.builtin.file', '/home/user/roles/role_certs/files/as3.lab.local.crt') }}"
 
 
 Network Automation
