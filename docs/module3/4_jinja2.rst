@@ -85,7 +85,7 @@ You can Jinja2 functions on an online parser at [jinja.quantprogramming.com](jin
 In this example you can use the online parser to run your tempate code and supply the associated YAML values.
 
 .. code-block:: json
-   : caption: Jinja Template
+   :caption: Jinja Template
 
     {
       "allowed-ip": [
