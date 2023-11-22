@@ -11,7 +11,8 @@ Delimiters
   *  ``{#....#}`` are for comments which are not included in the template output
   *  ``#....##`` are used as line statements
 
-Let's create a new playbook named **jinja.yml** and use the code below.
+Let's create a new playbook named **jinja.yml** and use the code below. One additional Jinja function we'll use is *joiner*. *Joiner* allows the passing of list items
+and all but the last item will get the delimiter added to it. In our example that's the **,** .
 
 .. code-block:: yaml
    :caption: jinja.yml 
