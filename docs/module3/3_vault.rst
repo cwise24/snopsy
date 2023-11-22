@@ -53,7 +53,7 @@ Now let's build a playbook and a encrypted file to show vault in action
      tasks:
 
      - name: Debug variables
-       debug:
+       ansible.builtin.debug:
            msg: 
              - "{{ \"This is var1: \" + var1 }}"
              - "{{ \"This is var2: \" + var2 }}"
