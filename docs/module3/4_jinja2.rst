@@ -80,7 +80,7 @@ This example (thanks to Forrest Crenshaw @F5 on `Linklight <https://ansible.gith
                 {% endfor %}
                 ]
 
-You can Jinja2 functions on an online parser at `JinjaParser <http://jinja.quantprogramming.com/>`_ .
+You can run Jinja2 functions on an online parser at `here <http://jinja.quantprogramming.com/>`_ .
 
 In this example you can use the online parser to run your tempate code and supply the associated YAML values.
 
