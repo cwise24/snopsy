@@ -28,15 +28,15 @@ and all but the last item will get the delimiter added to it. In our example tha
      tasks:
 
      - name: Set Fact from vars (build a list)
-       set_fact:
+       ansible.builtin.set_fact:
          jinja: "{{ var1.split(',') }}"
 
      - name: Echo jinja List 
-       debug:
+       ansible.builtin.debug:
          var: jinja 
 
      - name: Echo jinja loop 
-       debug:
+       ansible.builtin.debug:
          msg: "{% set comma=joiner(',') %} {% for item in jinja %} {{comma()}} {{ item }} {% endfor %}"
 
 To run this example:
