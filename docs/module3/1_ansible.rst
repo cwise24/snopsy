@@ -131,7 +131,7 @@ Adding tags to individual plays can greatly help when you only want to test or s
             var=ansible_date_time.date
 
      - name: Set a fact
-       set_fact:
+       ansible.builtin.set_fact:
           fact_var: ansible_date_time.date
 
      - name: Ansible Date Example
@@ -219,7 +219,7 @@ can add this to the end of **tags.yml** playbook
    :caption: File Exists Check
 
    - name: Check if image file exists
-     stat:
+     ansible.builtin.stat:
        path: "~/Downloads"
      register: file_stat
 
