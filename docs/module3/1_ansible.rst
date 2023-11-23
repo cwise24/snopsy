@@ -43,7 +43,7 @@ Strategies
    ---
    - name:
      hosts:
-     gather_facts:
+     gather_facts: false
      strategy: free 
 
 .. code-block:: bash 
@@ -64,7 +64,7 @@ Let's create a new playbook called ``ext.yml`` and use the contents below
 
    ---
    - hosts: all
-     gather_facts: no
+     gather_facts: false
      connection: local
 
      tasks:
@@ -169,7 +169,7 @@ My most commonly used looping methods. In nearly all cases with_items is fine to
 
    ---
    - hosts: all
-     gather_facts: False
+     gather_facts: false
      connection: local 
 
      tasks:
@@ -187,7 +187,7 @@ My most commonly used looping methods. In nearly all cases with_items is fine to
 
    ---
    - hosts: all
-     gather_facts: False
+     gather_facts: false
      connection: local 
 
      tasks:
@@ -224,7 +224,7 @@ can add this to the end of **tags.yml** playbook
      register: file_stat
 
    - name: Download png file from my repo
-     get_url:
+     ansible.builtin.get_url:
        url: https://github.com/cwise24/snopsy/raw/main/docs/module3/imgs/vault_play.png
        dest: "~/Downloads"
      when: file.stat.exists == False
@@ -271,7 +271,7 @@ Let's create a new playbook called *getrepo.yml* and add the code below:
    ---
    - name: Clone git repo
      hosts: all 
-     gather_facts: no 
+     gather_facts: false 
      connection: local 
  
      tasks:
