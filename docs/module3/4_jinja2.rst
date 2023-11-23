@@ -52,7 +52,7 @@ An example of a F5 deployment using a j2 (Jinja) template
    :linenos:
 
    - name: Push Declaration
-     uri:
+     ansible.builtin.uri:
        url: "https://{{ hostvar[groups['adc'][0]]['ansible_host']/mgmt/shared/appsvcs/declare"
        method: POST
        body: "{{ lookup('template', 'exampleFile.j2', split_lines=False) }}"
