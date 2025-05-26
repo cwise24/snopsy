@@ -1,6 +1,8 @@
 Self hosted
 ===========
 
+The installation process listed below is from running this lab on my own Linux laptop with Pop_OS (Ubuntu base). You may have to alter some of the commands to get
+gns3 installed/started, but after that we'll only be working with the gns3 UI.
 
 - install `gns3`_
 
@@ -14,7 +16,12 @@ Self hosted
 
 .. _image: https://www.gns3.com/frr
 
+
 You'll now need to add the image as an applicance from the UI.
+
+.. image:: imgs/addappliance.png
+   :align: center
+   :scale: 70%
 
 
 
