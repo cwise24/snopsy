@@ -45,3 +45,6 @@ Once the router is started you should now see in the legend to the far right it'
 
 .. image:: imgs/running.png
    :caption: Running
+
+Now you'll need to start each router, we are doing it this way to keep resoure utilization down. If we started all the routers at once it would overwhelm the VM we have.
+Please allow each router to start before starting the next one.

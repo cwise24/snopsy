@@ -49,8 +49,6 @@ Configurations provided in the lab.
    bgp router-id 1.1.1.1
    neighbor 10.1.12.2 remote-as 1
    neighbor 10.1.12.2 route-reflector-client
-   neighbor 10.1.13.2 remote-as 1
-   neighbor 10.1.13.2 route-reflector-client
    network 1.1.1.1 mask 255.255.255.255
    do wr mem
    
@@ -94,12 +92,6 @@ Configurations provided in the lab.
    int lo
    ip address 1.1.1.3/32
    no shut
-   router bgp 1
-   no bgp ebgp-requires-policy
-   bgp router-id 1.1.1.3
-   neighbor 10.1.13.1 remote-as 1
-   neighbor 192.168.36.2 remote-as 5
-   network 10.1.13.0/24
    do wr mem
    
    ######################################################
