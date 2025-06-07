@@ -26,10 +26,13 @@ You'll now need to add the image as an applicance from the UI.
 
 
 
-Configurations provided in the lab. 
+Configurations provided in the hosted lab. You'll need to add these configurations to the routers based on name below. This will *catch you up* to users of the hosted 
+lab.
+
+Please see next section for starting routers and accessing their console.
 
 .. code-block:: bash
-   :caption: Router x Config
+   :caption: Router 1-1 Config
 
    ##R1-1
    enable
@@ -52,7 +55,8 @@ Configurations provided in the lab.
    network 1.1.1.1 mask 255.255.255.255
    do wr mem
    
-   ######################################################
+.. code-block:: bash
+   :caption: Router 2-1 Config
    
    ##R2-1
    enable
@@ -75,7 +79,8 @@ Configurations provided in the lab.
    network 10.1.12.0/24
    do wr mem
    
-   ######################################################
+.. code-block:: bash
+   :caption: Router 3-1 Config
    
    ##R3-1
    enable
@@ -94,7 +99,8 @@ Configurations provided in the lab.
    no shut
    do wr mem
    
-   ######################################################
+.. code-block:: bash
+   :caption: Router 4-1 Config
    
    ##R1-4
    enable
@@ -118,7 +124,8 @@ Configurations provided in the lab.
    redistribute connected
    do wr mem
    
-   ######################################################
+.. code-block:: bash
+   :caption: Router 5-1 Config
    
    ##R1-5
    enable
@@ -136,6 +143,7 @@ Configurations provided in the lab.
    int lo
    ip address 5.5.5.5/32
    no shut
+   #remove below##############
    router bgp 5
    no bgp ebgp-requires-policy
    bgp router-id 5.5.5.5
@@ -143,9 +151,11 @@ Configurations provided in the lab.
    neighbor 172.24.57.2 remote-as 7
    address-family ipv4 unicast
    redistribute connected
+   ###########################
    do wr mem
    
-   ######################################################
+.. code-block:: bash
+   :caption: Router 6-1 Config
    
    ##R1-6
    enable
@@ -163,6 +173,7 @@ Configurations provided in the lab.
    int lo
    ip address 6.6.6.6/32
    no shut
+   ## remove below ###############
    ip route 6.6.6.0/24 null0
    router bgp 6
    no bgp ebgp-requires-policy
@@ -170,9 +181,11 @@ Configurations provided in the lab.
    neighbor 172.24.46.1 remote-as 4
    neighbor 10.1.67.2 remote-as 7
    network 6.6.6.0 mask 255.255.255.0
+   ###################################
    do wr mem
    
-   ######################################################
+.. code-block:: bash
+   :caption: Router 7-1 Config
    
    ##R1-7
    enable
@@ -190,6 +203,7 @@ Configurations provided in the lab.
    int lo
    ip address 7.7.7.7/32
    no shut
+   ## remove below#########################
    ip route 7.7.7.0/24 null0
    router bgp 7
    no bgp ebgp-requires-policy
@@ -197,4 +211,7 @@ Configurations provided in the lab.
    neighbor 172.24.57.1 remote-as 5
    neighbor 10.1.67.1 remote-as 6
    network 7.7.7.0 mask 255.255.255.0
+   #######################################
    do wr mem
+
+With these configurations now in place, you are ready to begin the lab. All routers should have all interfaces assigned now and even a few are set up to form BGP peers.
