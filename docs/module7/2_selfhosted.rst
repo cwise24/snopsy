@@ -10,7 +10,7 @@ gns3 installed/started, but after that we'll only be working with the gns3 UI.
 
 * set `permissions`_ for packet tracer (Linux)
 
-.. _permisstions: https://askubuntu.com/questions/748941/im-not-able-to-use-wireshark-couldnt-run-usr-bin-dumpcap-in-child-process
+.. _permissions: https://askubuntu.com/questions/748941/im-not-able-to-use-wireshark-couldnt-run-usr-bin-dumpcap-in-child-process
 
 * download the FRR `image`_
 
