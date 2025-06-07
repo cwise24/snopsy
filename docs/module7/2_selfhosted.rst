@@ -4,15 +4,15 @@ Self hosted
 The installation process listed below is from running this lab on my own Linux laptop with Pop_OS (Ubuntu base). You may have to alter some of the commands to get
 gns3 installed/started, but after that we'll only be working with the gns3 UI.
 
-- install `gns3`_
+* install `gns3`_
 
 .. _gns3: (https://www.gns3.com/software/download)
 
-- set `permissions`_ for packet tracer (Linux)
+* set `permissions`_ for packet tracer (Linux)
 
 .. _permisstions: https://askubuntu.com/questions/748941/im-not-able-to-use-wireshark-couldnt-run-usr-bin-dumpcap-in-child-process
 
-- download the FRR `image`_
+* download the FRR `image`_
 
 .. _image: https://www.gns3.com/frr
 
