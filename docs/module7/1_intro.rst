@@ -5,7 +5,10 @@ This lab is meant to make you familiar with BGP and some of its basic concepts. 
 
 * FRR
 * BGP
+
   * iBGP
+
   * eBGP
+  
 * Peering
 * Attributes
