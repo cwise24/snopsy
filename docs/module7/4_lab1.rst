@@ -1,17 +1,8 @@
 BGP LAB 1
 =========
 
-What is bgp
+Now that the basics are taken care of, let's peer the rest of the routers.
 
-Types of bgp:
+Peering
++++++++
 
-iBGP - [200] what is it, full mesh, admin cost
-eBGP - [20]
-
-BGP messages
-- Open
-- Update
-- Keepalive
-- Notification
-
-Attributes image
