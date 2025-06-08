@@ -3,6 +3,21 @@ BGP LAB 1
 
 Now that the basics are taken care of, let's peer the rest of the routers.
 
+
+Terminal
+++++++++
+
+Basic terminal commands 
+
+We won't go into detail on these commands, but here are the basic commands you will need to know.
+
+enable
+show [command]
+configure terminal (config t)
+do [command]
+
+
+
 Peering
 +++++++
 
@@ -14,3 +29,34 @@ peer. Rembering that iBGP needs full mesh or route reflector, in this lab we wil
 .. NOTE:: 
    iBGP does not share routes it learns from other iBGP peers. This is a route loop prevention mechanism and why we need full mesh or route reflector.
 
+Let's beging with R3-1 and R1-1 by accessing their web console. On your tab in the command prompt, issue the command
+
+.. code-block:: bash
+   :caption: Web Console
+   
+   frr# config t
+   frr(config)#
+   
+In either router you can issue the command ``do show run`` to see the running configuration. 
+
+.. list-table:: 
+   :widths: 30 30
+   :header-rows: 1
+
+   * - R1-1
+     - R3-1
+
+   * - Current configuration:
+       !
+       frr version 8.2.2
+       frr defaults datacenter
+       hostname frr
+       service integrated-vtysh-config
+       !
+     - Current configuration:
+       !
+       frr version 8.2.2
+       frr defaults datacenter
+       hostname frr
+       service integrated-vtysh-config
+       !
