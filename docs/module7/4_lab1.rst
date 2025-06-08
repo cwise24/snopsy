@@ -55,8 +55,33 @@ In either router you can issue the command ``do show run`` to see the running co
           hostname frr
           service integrated-vtysh-config
           !
+          interface eth0
+           description link to R3-1
+           ip address 10.1.13.0/31
+          exit 
+          interface eth1
+           description link to R2-1
+           ip address 10.1.12.0/31
+          exit 
+          interface lo
+           description local loopback
+           ip address 1.1.1.1/32
+          exit
+          !
+          router bgp 1
+           bgp router-id 1.1.1.1
+           bgp cluster-id 1.1.1.1
+           neighbor pgroup peer-group
+           neighbor 10.1.12.1 remote-as 1
+           !
+           address-family ipv4 unicast
+            neighbor 10.1.12.1 route-reflector-client 
+           exit address-family
+          exit
+          !
+          end
      - .. code-block::  
-        
+
           Current configuration:
           !
           frr version 8.2.2
@@ -64,3 +89,15 @@ In either router you can issue the command ``do show run`` to see the running co
           hostname frr
           service integrated-vtysh-config
           !
+          interface eth0
+           description link to R3-1
+           ip address 10.1.13.0/31
+          exit 
+          interface eth1
+           description link to R2-1
+           ip address 10.1.12.0/31
+          exit 
+          interface lo
+           description local loopback
+           ip address 1.1.1.1/32
+          exit
