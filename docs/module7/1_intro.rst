@@ -47,6 +47,13 @@ External BGP (eBGP)[20]: This is the primary function of BGP, used for communica
 Internal BGP (iBGP)[200]: This is used within a single Autonomous System to ensure that all routers within that network have a consistent view of 
 the external routes learned via eBGP. iBGP comes with some caveats, and we will cover them in the lab.
 
+What are those numbers in brackets?
+
+Those numbers represent the default `administrative distance`_ for each type of BGP. Each routing protocol has a default administrative distance, the lower the 
+number the more trusted the route is. Lets say we have the same route from two protocols, like OSPF and BGP, since OSPF has an administrative distance of 110
+and BGP has an administrative distance of 20, the BGP route will be preferred.
+
+.. _administrative distance: https://en.wikipedia.org/wiki/Administrative_distance
 
 BGP messages
 - Open
@@ -59,7 +66,7 @@ Attributes image
 .. _FRR: https://frrouting.org/
 
 
-.. list-table:: Title
+.. list-table:: BGP Features
    :widths: 25 25 50
    :header-rows: 1
 
@@ -87,4 +94,44 @@ Attributes image
 
 .. _confederation: https://www.rfc-editor.org/rfc/rfc1966
      
-     
+
+.. list-table:: BGP Path Selection
+   :widths: 25 25 50
+   :header-rows: 1
+  
+   * - Priority
+     - Attribute 
+     - Preference
+   * - 1
+     - Weight
+     - Highest
+   * - 2
+     - Local Preference
+     - Highest 
+   * - 3
+     - Originate
+     - Local
+   * - 4
+     - AS Path
+     - shortest
+   * - 5
+     - Origin
+     - Lowest
+   * - 6
+     - Multi Exit Discriminator (MED)
+     - Lowest
+   * - 7
+     - eBGP Path over iBGP Path
+     - Prefer eBGP
+   * - 8
+     - IGP Cost
+     - Lowest IGP Metric
+   * - 9
+     - Oldest Path
+     - Recieved First
+   * - 10
+     - Router ID
+     - Lowest
+   * - 11
+     - Neighbor IP address
+     - Lowest Neighbor IP 
