@@ -144,10 +144,29 @@ Now time for R3-1
    :align: center
    :scale: 70%
 
+From this output we can see that R3-1 is peered with R1-1 and is *Active* to peer with R1-5 but is not. How do we know we are peered with R1-1?
+We can see *MsgRcvd* and *MsgSent* are both greater than 0, our *Up/Down* and *State/PfxRcvd* shows we have received 1 route from R1-1. How do we see what state 
+our BGP peer is in? 
+
+.. code-block:: bash
+   :caption: R3-1 BGP Neighbors
+
+   frr(config-router)# do show ip bgp neighbors 10.1.13.0
+
+.. image:: imgs/bgpneigh.png
+   :align: center
+   :scale: 70%
+
+
+.. code-block:: bash
+   :caption: R3-1 bgp routes
+
+   frr(config-router)# do show ip bgp
+
 .. image:: imgs/ipbgp.png
    :align: center
    :scale: 70%
-   
+
 
 
 
