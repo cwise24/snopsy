@@ -47,6 +47,7 @@ In either router you can issue the command ``do show run`` to see the running co
      - R3-1
 
    * - .. code-block::  
+
           Current configuration:
           !
           frr version 8.2.2
@@ -55,6 +56,7 @@ In either router you can issue the command ``do show run`` to see the running co
           service integrated-vtysh-config
           !
      - .. code-block::  
+        
           Current configuration:
           !
           frr version 8.2.2
