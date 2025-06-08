@@ -12,8 +12,11 @@ Basic terminal commands
 We won't go into detail on these commands, but here are the basic commands you will need to know.
 
 enable
+
 show [command]
+
 configure terminal (config t)
+
 do [command]
 
 
