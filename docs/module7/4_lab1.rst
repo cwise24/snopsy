@@ -78,6 +78,7 @@ In either router you can issue the command ``do show run`` to see the running co
            neighbor 10.1.12.1 peer-group pgroup
            !
            address-family ipv4 unicast
+            network 1.1.1.1/32
             neighbor 10.1.12.1 route-reflector-client 
            exit address-family
           exit
@@ -133,6 +134,22 @@ Now time for R3-1
    frr(config-router-af)# exit
    frr(config-router)# do wr mem
    frr(config-router)# do show run
+
+.. code-block:: bash
+   :caption: R3-1 bgp summary
+
+   frr(config-router)# do show ip bgp summary
+
+.. image:: imgs/bgpsum.png
+   :align: center
+   :scale: 70%
+
+.. image:: imgs/ipbgp.png
+   :align: center
+   :scale: 70%
+   
+
+
 
 R1-5 
 
