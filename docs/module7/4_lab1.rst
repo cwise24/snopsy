@@ -46,17 +46,19 @@ In either router you can issue the command ``do show run`` to see the running co
    * - R1-1
      - R3-1
 
-   * - Current configuration:
-       !
-       frr version 8.2.2
-       frr defaults datacenter
-       hostname frr
-       service integrated-vtysh-config
-       !
-     - Current configuration:
-       !
-       frr version 8.2.2
-       frr defaults datacenter
-       hostname frr
-       service integrated-vtysh-config
-       !
+   * - .. code-block::  
+          Current configuration:
+          !
+          frr version 8.2.2
+          frr defaults datacenter
+          hostname frr
+          service integrated-vtysh-config
+          !
+     - .. code-block::  
+          Current configuration:
+          !
+          frr version 8.2.2
+          frr defaults datacenter
+          hostname frr
+          service integrated-vtysh-config
+          !
