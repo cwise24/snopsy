@@ -40,7 +40,7 @@ Let's beging with R3-1 and R1-1 by accessing their web console. On your tab in t
    frr# config t
    frr(config)#
    
-In either router you can issue the command ``do show run`` to see the running configuration. 
+In either router you can issue the command ``do show run`` to see the running configuration. They should match up like the table below.
 
 .. list-table:: 
    :widths: 30 30
@@ -74,8 +74,8 @@ In either router you can issue the command ``do show run`` to see the running co
           router bgp 1
            bgp router-id 1.1.1.1
            bgp cluster-id 1.1.1.1
-           neighbor pgroup peer-group
            neighbor 10.1.12.1 remote-as 1
+           neighbor 10.1.12.1 peer-group pgroup
            !
            address-family ipv4 unicast
             neighbor 10.1.12.1 route-reflector-client 
@@ -93,14 +93,47 @@ In either router you can issue the command ``do show run`` to see the running co
           service integrated-vtysh-config
           !
           interface eth0
-           description link to R3-1
-           ip address 10.1.13.0/31
+           description link to R1-1
+           ip address 10.1.13.1/31
           exit 
           interface eth1
-           description link to R2-1
+           description link to R1-5
            ip address 10.1.12.0/31
           exit 
           interface lo
            description local loopback
-           ip address 1.1.1.1/32
+           ip address 1.1.1.3/32
           exit
+
+Let's start with R1-1 and build on the exist BGP configuration.
+
+.. code-block:: bash
+   :caption: R1-1 BGP Configuration
+
+   frr# config t
+   frr(config)# router bgp 1
+   frr(config-router)# neighbor 10.1.13.1 remote-as 1
+   frr(config-router)# neighbor 10.1.13.1 peer-group pgroup
+   frr(config-router)# address-family ipv4 unicast
+   frr(config-router-af)# neighbor 10.1.13.1 route-reflector-client
+   frr(config-router-af)# exit
+   frr(config-router)# do wr mem
+   frr(config-router)# do show run
+
+
+Now time for R3-1
+
+.. code-block:: bash
+   :caption: R1-1 BGP Configuration
+
+   frr# config t
+   frr(config)# router bgp 1
+   frr(config-router)# neighbor 10.1.13.0 remote-as 1
+   frr(config-router)# neighbor 192.168.35.1 remote-as 5
+   frr(config-router-af)# exit
+   frr(config-router)# do wr mem
+   frr(config-router)# do show run
+
+R1-5 
+
+BGP commands block 
