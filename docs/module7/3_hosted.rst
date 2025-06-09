@@ -5,7 +5,7 @@ Once you've started the UDF course. Navigate to the **gns** system box and selec
 
 .. image:: imgs/webshell.png 
    :align: center
-   :scale: 40%
+   :scale: 30%
 
 Once open, issue the commands
 
@@ -16,9 +16,8 @@ Once open, issue the commands
    gns3server
 
 .. image:: imgs/gns3server.png
-   :caption: gns3
    :align: center
-   :scale: 40%
+   :scale: 30%
 
 Once the GNS3 server is up and running, we'll now use the web UI to access the BGP lab. Open the *FIREFOX* option from the *ACCESS* dropdown
 
