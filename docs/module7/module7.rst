@@ -12,6 +12,6 @@ BGP Basics
    :glob:
 
    1_intro
-   2_nothosted
+   2_selfhosted
    3_hosted
    4_lab
