@@ -181,7 +181,38 @@ The items will focus on are:
 
 - Path
 
+From *Next-Hop* we can see the IP address of the router that advertised the route to us.
+From *Metric* we can see it's 0, we'll come back to this one.
+From *LocPrf* we can see it's 100, meaning this route comes from iBGP. 0 would mean eBGP.
+From *Weight* we can see it's 0, meaning this route is not local to this router. If the route 1.1.1.1 was local to this router, the metric would be 32768.
+And lastly, *Path* shows the routes origin code, in this case it's IGP. (The only other you should see is **?** which means unknown and is shown when the route
+comes from redistribution.) These are all parts of the BGP best path selection process.
 
 R1-5 
+
+
+.. code-block:: bash
+   :caption: R1-5 BGP Configuration
+
+   frr# config t
+   frr(config)# router bgp 5
+   frr(config-router)# neighbor 192.168.35.0 remote-as 1
+   frr(config-router)# neighbor 172.2.57.1 remote-as 7
+   frr(config-router)# do wr mem
+   frr(config-router)# do show run
+   frr(config-router)# do show ip bgp summary
+
+Just like before, you should see that you are peered with R3-1 and *Active* to peer with R1-7. You know have an eBGP peer to R3-1. Let's see what that route information
+looks like.
+
+.. code-block:: bash
+   :caption: R1-5 BGP route
+
+   frr(config-router)# do show ip bgp
+
+.. image:: imgs/r15bgp.png
+   :align: center
+   :scale: 70%
+
 
 BGP commands block 
