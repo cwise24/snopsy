@@ -169,7 +169,12 @@ And now we can check for the prefix we received from R1-1 to see what routes we 
    :align: center
    :scale: 70%
 
-
+The items will focus on are:
+- Next-Hop
+- Metric
+- LocPrf (Local Preference)
+- Weight
+- Path
 
 
 R1-5 
