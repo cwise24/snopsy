@@ -1,5 +1,5 @@
-BGP LAB 1
-=========
+LAB 1
+=====
 
 Now that the basics are taken care of, let's peer the rest of the routers.
 
@@ -255,51 +255,26 @@ Let's check routes, as we should be learning routes from R3-1.
 
 Notice no the AS Path now shows 5 1, meaning the route to **1.1.1.1** has traversed AS 5 and AS 1. 
 
-####################################################
-Possible Lab 2
-Move to R1-1 to check for reachability to R1-7.
-
-show ip route 
-Note no route to 172.2.57.0 network
-
-show ip bgp 
-You can see the networks 5.5.5.5, 172.2.57.0 and 192.168.35.0 but they are not valid (no `*>`), notice next hop addess is wrong for R1-1. Those IP's are R1-5
-and should be R3-1. 
-
-This is a problem with iBGP, it does not update the next hop address is not modified and it will just pass on the learned next hop. This makes the route invalid
-and will not be installed in the routing table.
-
-Let's fix this 
+R1-6 
 
 .. code-block:: bash
-   :caption: R3-1 BGP Fix
+   :caption: R1-6 BGP Configuration
 
-   frr(config-router)# address-family ipv4 unicast
-   frr(config-router-af)# neighbor 10.1.13.0 next-hop-self 
-   frr(config-router-af)# do wr mem
-   frr(config-router-af)# do show run
+   frr# config t
+   frr(config)# router bgp 6
+   frr(config-router)# neighbor 10.1.67.1 remote-as 7
+   frr(config-router)# do wr mem
+   frr(config-router)# do show run
 
-.. code-block:: bash
-   :caption: R2-1 BGP Fix
-
-   frr(config-router)# address-family ipv4 unicast
-   frr(config-router-af)# neighbor 10.1.12.0 next-hop-self 
-   frr(config-router-af)# do wr mem
-   frr(config-router-af)# do show run
-
-R1-5 
-address-family ipv4 unicast
- redistribute connected 
-
-
-Now let's test reachability from R1-1 to R1-7.
+Now we should have completed all BGP peering. Let's check our one route advertised from R1-1.
 
 .. code-block:: bash
-   :caption: R1-1 ping
+   :caption: R1-6 routes
 
-   frr(config-router)# do ping 172.2.57.1
-#####################################################
-R1-6
+   frr(config-router)# do show ip bgp
 
+Your output should look like this:
 
-BGP commands block 
+.. image:: imgs/r16bgp.png
+   :align: center
+   :scale: 30%
