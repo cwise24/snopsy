@@ -157,6 +157,8 @@ our BGP peer is in?
    :align: center
    :scale: 70%
 
+And now we can check for the prefix we received from R1-1 to see what routes we have learned. We will learn a lot in what appears to be a small amount of information.
+
 
 .. code-block:: bash
    :caption: R3-1 bgp routes
