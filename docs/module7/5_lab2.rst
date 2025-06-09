@@ -120,7 +120,11 @@ Now, we've fixed a lot of issues, time to verify routes at R1-1.
 Now let's test reachability from R1-1 to R1-7.
 
 .. code-block:: bash
-   :caption: R1-1 ping
+   :caption: R1-1 traceroute
 
-   frr(config-router)# do ping 172.2.57.1
-#####################################################
+   frr(config-router)# do traceroute 172.2.57.1
+
+Fails after first hope, test same at R3-1 
+Jump to R1-7 to check routes, no route to 10.1.13.0/31
+Jump to R3-1 and add network statement network 10.1.13.0/31
+Jump to R2-1 and add network statement network 10.1.12.0/31
