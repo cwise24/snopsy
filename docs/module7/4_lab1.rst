@@ -125,7 +125,7 @@ Let's start with R1-1 and build on the exist BGP configuration.
 Now time for R3-1
 
 .. code-block:: bash
-   :caption: R1-1 BGP Configuration
+   :caption: R3-1 BGP Configuration
 
    frr# config t
    frr(config)# router bgp 1
@@ -142,7 +142,7 @@ Now time for R3-1
 
 .. image:: imgs/bgpsum.png
    :align: center
-   :scale: 70%
+   :scale: 30%
 
 From this output we can see that R3-1 is peered with R1-1 and is *Active* to peer with R1-5 but is not. How do we know we are peered with R1-1?
 We can see *MsgRcvd* and *MsgSent* are both greater than 0, our *Up/Down* and *State/PfxRcvd* shows we have received 1 route from R1-1. How do we see what state 
@@ -155,7 +155,7 @@ our BGP peer is in?
 
 .. image:: imgs/bgpneigh.png
    :align: center
-   :scale: 70%
+   :scale: 30%
 
 And now we can check for the prefix we received from R1-1 to see what routes we have learned. We will learn a lot in what appears to be a small amount of information.
 
@@ -167,7 +167,7 @@ And now we can check for the prefix we received from R1-1 to see what routes we 
 
 .. image:: imgs/ipbgp.png
    :align: center
-   :scale: 70%
+   :scale: 30%
 
 The items will focus on are:
 
@@ -212,7 +212,7 @@ looks like.
 
 .. image:: imgs/r15bgp.png
    :align: center
-   :scale: 70%
+   :scale: 30%
 
 Again you can see the *Weight* is 0, meaning this route is not local to this router. Under *Path* you do see the AS Path we learned the router from, in this case 
 it's R3-1 from AS 1. You will see in later labs steps, this AS Path will show each AS the route has traversed, leading to best path attributes.
@@ -249,7 +249,7 @@ Let's check routes, as we should be learning routes from R3-1.
 
 .. image:: imgs/r17bgp.png
    :align: center
-   :scale: 70%
+   :scale: 30%
 
 Notice no the AS Path now shows 5 1, meaning the route to **1.1.1.1** has traversed AS 5 and AS 1. 
 
