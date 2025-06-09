@@ -15,3 +15,4 @@ BGP Basics
    2_selfhosted
    3_hosted
    4_lab1
+   5_lab2
