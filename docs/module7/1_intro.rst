@@ -94,6 +94,24 @@ Attributes image
 
 .. _confederation: https://www.rfc-editor.org/rfc/rfc1966
      
+.. list-table:: BGP States 
+   :widths: 25 25
+   :header-rows: 1
+
+   * - State
+     - Description
+   * - Idle
+     - Router is waiting for a start event (i.e. new neighbor or reset of established session)
+   * - Connect
+     - The BGP peer is in the process of connecting to the remote peer.
+   * - Active
+     - The BGP peer is in the process of establishing a connection to the remote peer. If success it will transition to OpenSent.
+   * - OpenSent
+     - The BGP peer has sent an Open message to the remote peer.
+   * - OpenConfirm
+     - The BGP peer has received an Open message from the remote peer.
+   * - Established
+     - The BGP peer is fully established and exchanging routes. 
 
 .. list-table:: BGP Path Selection
    :widths: 25 25 50
