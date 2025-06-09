@@ -5,7 +5,7 @@ Once you've started the UDF course. Navigate to the **gns** system box and selec
 
 .. image:: imgs/webshell.png 
    :align: center
-   :scale: 70%
+   :scale: 50%
 
 Once open, issue the commands
 
