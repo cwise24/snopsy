@@ -214,5 +214,45 @@ looks like.
    :align: center
    :scale: 70%
 
+Again you can see the *Weight* is 0, meaning this route is not local to this router. Under *Path* you do see the AS Path we learned the router from, in this case 
+it's R3-1 from AS 1. You will see in later labs steps, this AS Path will show each AS the route has traversed, leading to best path attributes.
+
+
+R1-7
+
+.. code-block:: bash
+   :caption: R1-7 BGP Configuration
+
+   frr# config t
+   frr(config)# router bgp 7
+   frr(config-router)# neighbor 172.2.57.0 remote-as 5
+   frr(config-router)# neighbor 10.1.67.0 remote-as 6
+   frr(config-router)# do wr mem
+   frr(config-router)# do show run
+
+.. code-block:: bash
+   :caption: R1-7 BGP summary
+ 
+   frr(config-router)# do show ip bgp summary
+
+.. code-block:: bash
+   :caption: R1-7 BGP routes
+ 
+   frr(config-router)# do show ip bgp
+
+You should see same info as before
+
+.. code-block:: bash
+   :caption: R1-7 routes
+
+   frr(config-router)# do show ip bgp
+
+.. image:: imgs/r17bgp.png
+   :align: center
+   :scale: 70%
+
+
+R1-6
+
 
 BGP commands block 
