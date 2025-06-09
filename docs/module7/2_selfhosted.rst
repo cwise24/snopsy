@@ -1,4 +1,4 @@
-Self hosted
+Self Hosted
 ===========
 
 The installation process listed below is from running this lab on my own Linux laptop with Pop_OS (Ubuntu base). You may have to alter some of the commands to get
