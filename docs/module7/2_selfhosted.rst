@@ -21,7 +21,7 @@ You'll now need to add the image as an applicance from the UI.
 
 .. image:: imgs/addappliance.png
    :align: center
-   :scale: 70%
+   :scale: 30%
 
 
 
