@@ -11,13 +11,29 @@ Basic terminal commands
 
 We won't go into detail on these commands, but here are the basic commands you will need to know.
 
-enable
+Most routers have 3 prompt levels:
 
-show [command]
+- Exec mode ``frr>`` - type *enable* to move to privileged exec mode.
 
-configure terminal (config t)
+- Privileged Exec ``frr#`` - from here you can run *show*, *ping*, *traceroute* commands to show statistics and test reachability. Type *conf t* (short for configure terminal) 
+to move to global configuration mode.
 
-do [command]
+- Global Configuration ``frr(config)#`` - now you can configure the router, it's interfaces or routing protocols for example.
+
+You do have the ability to auto complete commands, just type the first few characters and hit the tab key. Or you can use the *?* to see the available commands.
+
+Example: ``show ?``
+
+.. note::
+
+   While in global configuration mode, you can use the *do* command to run commands from the privileged exec level.
+
+
+- do show running-config
+
+- do ping 1.1.1.1
+
+- do traceroute 1.1.1.1
 
 
 
