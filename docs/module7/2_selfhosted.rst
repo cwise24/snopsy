@@ -40,9 +40,9 @@ Please see next section for starting routers and accessing their console.
    hostname R1-1
    frr defaults datacenter
    int eth0 
-   ip address 10.1.12.1/24
+   ip address 10.1.12.0/31
    int eth1
-   ip address 10.1.13.1/24
+   ip address 10.1.13.0/31
    no shut
    int lo
    ip address 1.1.1.1/32
@@ -64,9 +64,9 @@ Please see next section for starting routers and accessing their console.
    hostname R2-1
    frr defaults datacenter
    int eth0 
-   ip address 10.1.12.2/24
+   ip address 10.1.12.1/31
    int eth1
-   ip address 192.168.24.1/24
+   ip address 192.168.24.0/31
    no shut
    int lo
    ip address 1.1.1.2/32
@@ -74,9 +74,9 @@ Please see next section for starting routers and accessing their console.
    router bgp 1
    no bgp ebgp-requires-policy
    bgp router-id 1.1.1.2
-   neighbor 10.1.12.1 remote-as 1
-   neighbor 192.168.24.2 remote-as 4
-   network 10.1.12.0/24
+   neighbor 10.1.12.0 remote-as 1
+   neighbor 192.168.24.1 remote-as 4
+   network 10.1.12.0/31
    do wr mem
    
 .. code-block:: bash
@@ -88,10 +88,10 @@ Please see next section for starting routers and accessing their console.
    hostname R3-1
    frr defaults datacenter
    int eth0 
-   ip address 10.1.13.2/24
+   ip address 10.1.13.1/31
    desc link to R1-1
    int eth1
-   ip address 192.168.36.1/24
+   ip address 192.168.36.0/31
    desc link to R1-5
    no shut
    int lo
@@ -108,18 +108,21 @@ Please see next section for starting routers and accessing their console.
    hostname R1-4
    frr defaults datacenter
    int eth0 
-   ip address 192.168.24.2/24
+   ip address 192.168.24.1/31
+   desc link to R2-1
    int eth1
-   ip address 172.24.46.1/24
+   ip address 172.2.46.0/31
+   desc link to R1-6
    no shut
    int lo
    ip address 4.4.4.4/32
+   desc local loopback
    no shut
    router bgp 4
    no bgp ebgp-requires-policy
    bgp router-id 4.4.4.4
-   neighbor 192.168.24.1 remote-as 1
-   neighbor 172.24.46.2 remote-as 6
+   neighbor 192.168.24.0 remote-as 1
+   neighbor 172.24.46.1 remote-as 6
    address-family ipv4 unicast
    redistribute connected
    do wr mem
@@ -133,12 +136,12 @@ Please see next section for starting routers and accessing their console.
    hostname R1-5
    frr defaults datacenter
    int eth0 
-   ip address 192.168.36.2/24
+   ip address 192.168.35.1/31
    desc link to R3-1
    no shut
    int eth1
    no shut
-   ip address 172.24.57.1/24
+   ip address 172.24.57.0/31
    no shut
    int lo
    ip address 5.5.5.5/32
@@ -147,8 +150,8 @@ Please see next section for starting routers and accessing their console.
    router bgp 5
    no bgp ebgp-requires-policy
    bgp router-id 5.5.5.5
-   neighbor 192.168.36.1 remote-as 1
-   neighbor 172.24.57.2 remote-as 7
+   neighbor 192.168.35.0 remote-as 1
+   neighbor 172.24.57.1 remote-as 7
    address-family ipv4 unicast
    redistribute connected
    ###########################
@@ -163,11 +166,11 @@ Please see next section for starting routers and accessing their console.
    hostname R1-6
    frr defaults datacenter
    int eth0 
-   ip address 172.24.46.2/24
+   ip address 172.24.46.1/31
    desc link to R1-4
    no shut
    int eth1
-   ip address 10.1.67.1/24
+   ip address 10.1.67.0/31
    desc link to R1-7
    no shut
    int lo
@@ -179,7 +182,7 @@ Please see next section for starting routers and accessing their console.
    no bgp ebgp-requires-policy
    bgp router-id 6.6.6.6
    neighbor 172.24.46.1 remote-as 4
-   neighbor 10.1.67.2 remote-as 7
+   neighbor 10.1.67.1 remote-as 7
    network 6.6.6.0 mask 255.255.255.0
    ###################################
    do wr mem
@@ -193,11 +196,11 @@ Please see next section for starting routers and accessing their console.
    hostname R1-7
    frr defaults datacenter
    int eth0 
-   ip address 172.24.57.2/24
+   ip address 172.24.57.1/31
    desc link to R1-5
    no shut
    int eth1
-   ip address 10.1.67.2/24
+   ip address 10.1.67.1/31
    desc link to R1-6
    no shut
    int lo
