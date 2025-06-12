@@ -44,6 +44,7 @@ In either router you can issue the command ``do show run`` to see the running co
 
 .. list-table:: 
    :widths: 30 30
+   :align: left
    :header-rows: 1
 
    * - R1-1
