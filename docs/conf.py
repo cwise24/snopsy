@@ -21,7 +21,7 @@ copyright = '2025, Chad Wise'
 author = 'Chad Wise'
 
 # The full version, including alpha/beta/rc tags
-release = '3.0'
+release = '4.0'
 
 
 # Add any Sphinx extension module names here, as strings. They can be
@@ -83,6 +83,10 @@ html_theme = 'sphinx_rtd_theme'
 #import solar_theme
 #html_theme_path = [solar_theme.theme_path]
 
+html_theme_options = {
+    'body_max_width' : 'none',
+    'page_width': 'auto',
+}
 
 def setup(app):
     app.add_css_file('css/static.css')
