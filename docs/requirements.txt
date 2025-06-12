@@ -1,4 +1,4 @@
 sphinxcontrib-seqdiag
 sphinxcontrib-blockdiag
 funcparserlib == 1.0.0a0
-sphinx-rtd-theme
+sphinx-press-theme
