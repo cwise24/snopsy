@@ -102,3 +102,6 @@ You can now connect to each router via its unique port to copy/paste configurati
    * - R1-7
      - 10.1.1.4
      - 5011
+
+.. note::
+   To exit use ``Cntrl + ]`` followed by ``quit`` to exit telnet.
