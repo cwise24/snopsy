@@ -18,19 +18,19 @@ This lab is meant to make you familiar with BGP and some of its basic concepts. 
 This lab will be run on `FRR`_. FRR is capable of running all major routing modules and commands are very similar to Cisco/Arista.
 
 What is Border Gateway Protocol (BGP)?
++++++++++++++++++++++++++++++++++++++++
 
 Border Gateway Protocol (BGP) is the routing protocol that makes the internet work. Think of it as the postal service of the internet, 
 responsible for finding the most efficient routes for data to travel from its source to its destination.
 
-  How it Works: Routing Between Networks
+How it Works: Routing Between Networks
+
 The internet is not a single, monolithic network. Instead, it's a collection of thousands of smaller, independent networks called Autonomous Systems (AS). 
 These can be large internet service providers (ISPs), universities, or large corporations. Each AS manages its own internal routing.
 
 BGP comes into play when data needs to travel between these different Autonomous Systems. It's the protocol that enables these distinct networks 
 to exchange routing information, essentially telling each other which IP addresses they control and what paths are available to reach them.
 
-
-Key Concepts Made Simple
 Path Vector Protocol: BGP is a "path vector" protocol. This means that when a network advertises a route to another network, it includes the 
 entire path of Autonomous Systems that the route traverses. This path information is crucial for preventing routing loops and for making informed 
 routing decisions.
@@ -43,8 +43,9 @@ business relationships between providers. This flexibility is essential for the 
 
 We will reference two key types of BGP through this lab:
 
-External BGP (eBGP)[20]: This is the primary function of BGP, used for communication and routing between different Autonomous Systems.
-Internal BGP (iBGP)[200]: This is used within a single Autonomous System to ensure that all routers within that network have a consistent view of 
+- External BGP (eBGP)[20]: This is the primary function of BGP, used for communication and routing between different Autonomous Systems.
+
+- Internal BGP (iBGP)[200]: This is used within a single Autonomous System to ensure that all routers within that network have a consistent view of 
 the external routes learned via eBGP. iBGP comes with some caveats, and we will cover them in the lab.
 
 What are those numbers in brackets?
@@ -55,16 +56,9 @@ and BGP has an administrative distance of 20, the BGP route will be preferred.
 
 .. _administrative distance: https://en.wikipedia.org/wiki/Administrative_distance
 
-BGP messages
-- Open
-- Update
-- Keepalive
-- Notification
 
-Attributes image
-
-.. _FRR: https://frrouting.org/
-
+Features of each BGP type:
+++++++++++++++++++++++++++
 
 .. list-table:: BGP Features
    :widths: 25 25 50
@@ -114,6 +108,19 @@ Attributes image
    * - Established
      - The BGP peer is fully established and exchanging routes. 
 
+
+BGP messages:
+
+- Open
+
+- Update
+
+- Keepalive
+
+- Notification
+
+Attributes image
+
 .. list-table:: BGP Path Selection
    :widths: 25 25 50
    :header-rows: 1
@@ -154,3 +161,6 @@ Attributes image
    * - 11
      - Neighbor IP address
      - Lowest Neighbor IP 
+
+
+.. _FRR: https://frrouting.org/
