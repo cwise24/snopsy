@@ -117,7 +117,7 @@ BGP messages:
 
 - **Open** - contains AS number, BGP version, and BGP options(hold timers) and BGP Router ID.
 
-- **Update** - Route are updated or withdrawn in this message.
+- **Update** - Route are updated or withdrawn in this message. Includes AS-Path and Next-Hop.
 
 - **Keepalive** - as the name implies, it's a keepalive message to make certain the neighbor is still alive.
 
@@ -148,7 +148,7 @@ Now that BGP peering is established, we need to understand how BGP selects the b
      - Shortest Path
    * - 5
      - Origin
-     - Lowest Value
+     - Lowest Value(i<e<?)
    * - 6
      - Multi Exit Discriminator (MED)
      - Lowest Value
@@ -168,5 +168,8 @@ Now that BGP peering is established, we need to understand how BGP selects the b
      - Neighbor IP address
      - Lowest Neighbor IP 
 
+.. Note::
+  
+   Of the path selection attributes, AS-Path, Origin, and Next-Hop are considered **Well Known Mandatory** attributes. Without these attributes, the BGP will send a notification message.
 
 .. _FRR: https://frrouting.org/
