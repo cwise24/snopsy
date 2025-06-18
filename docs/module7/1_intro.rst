@@ -88,7 +88,10 @@ Features of each BGP type:
      - Requires a full mesh of connections between all iBGP routers or the use of route reflectors or `confederation`_.
 
 .. _confederation: https://www.rfc-editor.org/rfc/rfc1966
-     
+
+
+Once you beging to configure BGP, you will see the following states process on your router. These states will progress based on the BGP messages exchanged between the routers.
+
 .. list-table:: BGP States 
    :widths: 25 25
    :header-rows: 1
@@ -108,18 +111,21 @@ Features of each BGP type:
    * - Established
      - The BGP peer is fully established and exchanging routes. 
 
+Once your BGP session is established, you will see the following BGP messages exchanged between the routers.
 
 BGP messages:
 
-- Open
+- Open - contains AS number, BGP version, and BGP options(hold timers) and BGP Router ID.
 
-- Update
+- Update - Route are updated or withdrawn in this message.
 
-- Keepalive
+- Keepalive - as the name implies, it's a keepalive message to make certain the neighbor is still alive.
 
-- Notification
+- Notification - sent when a BGP error is detected such as hold timer expiration or invalid message. BGP session is terminated. BGP table is cleared of entries from neighbor.
 
 Attributes image
+
+Now that BGP peering is established, we need to understand how BGP selects the best path, and what attributes are used to determine the best path.
 
 .. list-table:: BGP Path Selection
    :widths: 25 25 50
