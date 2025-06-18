@@ -61,3 +61,44 @@ Once all the routers are started, you should see them all in the legend to the f
    :scale: 30%
    
 You may need to verify the routers are all in the proper *starting configuration*. Those configurations are provided in the self hosted section.
+
+An easy way to copy configurations if missing will be to connect to the via terminal option and then use telnet to access the router consoles.
+
+.. image:: imgs/terminal_ssh_telnet.png
+   :align: center
+   :scale: 30%
+
+You can now connect to each router via its unique port to copy/paste configuration. 
+
+.. image:: imgs/ssh_telnet_config.png
+   :align: center
+   :scale: 30%
+
+.. list-table:: Router Telnet Port
+   :widths: 25 25 50
+   :header-rows: 1
+  
+   * - Router
+     - IP
+     - Port
+   * - R1-1
+     - 10.1.1.4
+     - 5001
+   * - R2-1
+     - 10.1.1.4
+     - 5003
+   * - R3-1
+     - 10.1.1.4
+     - 5005
+   * - R1-4
+     - 10.1.1.4
+     - 5009
+   * - R1-5
+     - 10.1.1.4
+     - 5007
+   * - R1-6
+     - 10.1.1.4
+     - 5013
+   * - R1-7
+     - 10.1.1.4
+     - 5011
