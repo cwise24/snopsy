@@ -90,7 +90,7 @@ Features of each BGP type:
 .. _confederation: https://www.rfc-editor.org/rfc/rfc1966
 
 
-Once you beging to configure BGP, you will see the following states process on your router. These states will progress based on the BGP messages exchanged between the routers.
+Once you begin to configure BGP, you will see the following states process on your router. These states will progress based on the BGP messages exchanged between the routers.
 
 .. list-table:: BGP States 
    :widths: 25 25
@@ -115,13 +115,13 @@ Once your BGP session is established, you will see the following BGP messages ex
 
 BGP messages:
 
-- Open - contains AS number, BGP version, and BGP options(hold timers) and BGP Router ID.
+- **Open** - contains AS number, BGP version, and BGP options(hold timers) and BGP Router ID.
 
-- Update - Route are updated or withdrawn in this message.
+- **Update** - Route are updated or withdrawn in this message.
 
-- Keepalive - as the name implies, it's a keepalive message to make certain the neighbor is still alive.
+- **Keepalive** - as the name implies, it's a keepalive message to make certain the neighbor is still alive.
 
-- Notification - sent when a BGP error is detected such as hold timer expiration or invalid message. BGP session is terminated. BGP table is cleared of entries from neighbor.
+- **Notification** - sent when a BGP error is detected such as hold timer expiration or invalid message. BGP session is terminated. BGP table is cleared of entries from neighbor.
 
 Attributes image
 
