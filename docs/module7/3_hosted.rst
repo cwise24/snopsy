@@ -60,3 +60,4 @@ Once all the routers are started, you should see them all in the legend to the f
    :align: center
    :scale: 30%
    
+You may need to verify the routers are all in the proper *starting configuration*. Those configurations are provided in the self hosted section.
