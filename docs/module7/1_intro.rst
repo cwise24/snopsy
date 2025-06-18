@@ -11,9 +11,9 @@ This lab is meant to make you familiar with BGP and some of its basic concepts. 
 
   * eBGP
 
-* Peering
+* BGP Peering
 
-* Attributes
+* BGP Attributes
 
 This lab will be run on `FRR`_. FRR is capable of running all major routing modules and commands are very similar to Cisco/Arista.
 
@@ -69,6 +69,7 @@ Attributes image
 .. list-table:: BGP Features
    :widths: 25 25 50
    :header-rows: 1
+   :align: left
 
    * - Feature
      - eBGP (External BGP)
@@ -122,22 +123,22 @@ Attributes image
      - Preference
    * - 1
      - Weight
-     - Highest
+     - Highest Value 
    * - 2
      - Local Preference
-     - Highest 
+     - Highest Value 
    * - 3
      - Originate
      - Local
    * - 4
      - AS Path
-     - shortest
+     - Shortest Path
    * - 5
      - Origin
-     - Lowest
+     - Lowest Value
    * - 6
      - Multi Exit Discriminator (MED)
-     - Lowest
+     - Lowest Value
    * - 7
      - eBGP Path over iBGP Path
      - Prefer eBGP
@@ -149,7 +150,7 @@ Attributes image
      - Recieved First
    * - 10
      - Router ID
-     - Lowest
+     - Lowest Value
    * - 11
      - Neighbor IP address
      - Lowest Neighbor IP 
