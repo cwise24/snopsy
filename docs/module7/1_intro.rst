@@ -90,7 +90,7 @@ Features of each BGP type:
 .. _confederation: https://www.rfc-editor.org/rfc/rfc1966
 
 
-Once you beging to configure BGP, you will see the following states process on your router. These states will progress based on the BGP messages exchanged between the routers.
+Once you begin to configure BGP, you will see the following states process on your router. These states will progress based on the BGP messages exchanged between the routers.
 
 .. list-table:: BGP States 
    :widths: 25 25
@@ -115,13 +115,13 @@ Once your BGP session is established, you will see the following BGP messages ex
 
 BGP messages:
 
-- Open - contains AS number, BGP version, and BGP options(hold timers) and BGP Router ID.
+- **Open** - contains AS number, BGP version, and BGP options(hold timers) and BGP Router ID.
 
-- Update - Route are updated or withdrawn in this message.
+- **Update** - Route are updated or withdrawn in this message. Includes AS-Path and Next-Hop.
 
-- Keepalive - as the name implies, it's a keepalive message to make certain the neighbor is still alive.
+- **Keepalive** - as the name implies, it's a keepalive message to make certain the neighbor is still alive.
 
-- Notification - sent when a BGP error is detected such as hold timer expiration or invalid message. BGP session is terminated. BGP table is cleared of entries from neighbor.
+- **Notification** - sent when a BGP error is detected such as hold timer expiration or invalid message. BGP session is terminated. BGP table is cleared of entries from neighbor.
 
 Attributes image
 
@@ -148,7 +148,7 @@ Now that BGP peering is established, we need to understand how BGP selects the b
      - Shortest Path
    * - 5
      - Origin
-     - Lowest Value
+     - Lowest Value(i<e<?)
    * - 6
      - Multi Exit Discriminator (MED)
      - Lowest Value
@@ -168,5 +168,8 @@ Now that BGP peering is established, we need to understand how BGP selects the b
      - Neighbor IP address
      - Lowest Neighbor IP 
 
+.. Note::
+  
+   Of the path selection attributes, AS-Path, Origin, and Next-Hop are considered **Well Known Mandatory** attributes. Without these attributes, the BGP will send a notification message.
 
 .. _FRR: https://frrouting.org/
