@@ -16,7 +16,7 @@ Most routers have 3 prompt levels:
 - Exec mode ``frr>`` - type *enable* to move to privileged exec mode.
 
 - Privileged Exec ``frr#`` - from here you can run *show*, *ping*, *traceroute* commands to show statistics and test reachability. Type *conf t* (short for configure terminal) 
-to move to global configuration mode.
+  to move to global configuration mode.
 
 - Global Configuration ``frr(config)#`` - now you can configure the router, it's interfaces or routing protocols for example.
 
