@@ -39,8 +39,7 @@ We will reference two key types of BGP through this lab:
 
 - External BGP (*eBGP*)[**20**]: This is the primary function of BGP, used for communication and routing between different Autonomous Systems.
 
-- Internal BGP (*iBGP*)[**200**]: This is used within a single Autonomous System to ensure that all routers within that network have a consistent view of 
-the external routes learned via eBGP. iBGP comes with some caveats, and we will cover them in the lab.
+- Internal BGP (*iBGP*)[**200**]: This is used within a single Autonomous System to ensure that all routers within that network have a consistent view of the external routes learned via eBGP. iBGP comes with some caveats, and we will cover them in the lab.
 
 What are those numbers in brackets?
 
