@@ -31,21 +31,15 @@ These can be large internet service providers (ISPs), universities, or large cor
 BGP comes into play when data needs to travel between these different Autonomous Systems. It's the protocol that enables these distinct networks 
 to exchange routing information, essentially telling each other which IP addresses they control and what paths are available to reach them.
 
-Path Vector Protocol: BGP is a "path vector" protocol. This means that when a network advertises a route to another network, it includes the 
+BGP is a "path vector" protocol. This means that when a network advertises a route to another network, it includes the 
 entire path of Autonomous Systems that the route traverses. This path information is crucial for preventing routing loops and for making informed 
 routing decisions.
 
-
-Policy-Based Routing: Unlike many internal routing protocols that simply look for the shortest path, BGP allows network administrators to implement 
-routing policies. These policies can consider various factors beyond just the number of network hops, such as cost, network congestion, and 
-business relationships between providers. This flexibility is essential for the commercial and political realities of the internet.
-
-
 We will reference two key types of BGP through this lab:
 
-- External BGP (eBGP)[20]: This is the primary function of BGP, used for communication and routing between different Autonomous Systems.
+- External BGP (*eBGP*)[**20**]: This is the primary function of BGP, used for communication and routing between different Autonomous Systems.
 
-- Internal BGP (iBGP)[200]: This is used within a single Autonomous System to ensure that all routers within that network have a consistent view of 
+- Internal BGP (*iBGP*)[**200**]: This is used within a single Autonomous System to ensure that all routers within that network have a consistent view of 
 the external routes learned via eBGP. iBGP comes with some caveats, and we will cover them in the lab.
 
 What are those numbers in brackets?
