@@ -60,8 +60,8 @@ and BGP has an administrative distance of 20, the BGP route will be preferred.
 Features of each BGP type:
 ++++++++++++++++++++++++++
 
-.. list-table:: BGP Features
-   :widths: 25 25 50
+.. list-table:: **BGP Features**
+   :widths: 20 35 35
    :header-rows: 1
    :align: left
 
