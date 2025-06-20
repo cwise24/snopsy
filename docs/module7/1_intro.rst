@@ -93,7 +93,7 @@ Features of each BGP type:
 Once you begin to configure BGP, you will see the following states process on your router. These states will progress based on the BGP messages exchanged between the routers.
 
 .. list-table:: BGP States 
-   :widths: 25 25
+   :widths: 20 20
    :header-rows: 1
 
    * - State
@@ -128,7 +128,7 @@ Attributes image
 Now that BGP peering is established, we need to understand how BGP selects the best path, and what attributes are used to determine the best path.
 
 .. list-table:: BGP Path Selection
-   :widths: 25 25 50
+   :widths: 20 35 35
    :header-rows: 1
   
    * - Priority
