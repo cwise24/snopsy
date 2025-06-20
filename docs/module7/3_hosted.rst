@@ -76,6 +76,7 @@ You can now connect to each router via its unique port to copy/paste configurati
 
 .. list-table:: Router Telnet Port
    :widths: 20 20 20
+   :align: center
    :header-rows: 1
   
    * - Router
