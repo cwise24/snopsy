@@ -38,9 +38,11 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.graphviz',
     'sphinx.ext.todo',
-    'sphinxcontrib.blockdiag'
+    'sphinxcontrib.blockdiag',
+    'sphinx_rtd_dark_mode'
 ]
-
+# user starts in light mode
+default_dark_mode = False
 blockdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
 todo_include_todos = True
 autosummary_generate = True
